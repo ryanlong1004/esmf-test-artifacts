@@ -1,4 +1,4 @@
-Sat Mar 5 01:18:54 EST 2022
+Sat Mar 5 01:52:01 EST 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o build-gfortran_10.1.0_intelmpi_g.bat_%j.o
