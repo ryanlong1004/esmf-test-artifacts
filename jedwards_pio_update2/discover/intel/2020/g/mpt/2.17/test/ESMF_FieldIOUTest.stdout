@@ -1,0 +1,95 @@
+build time -- 2022-03-05 01:17:51.351000
+0:   Beginning Test, file ESMF_FieldIOUTest.F90, line 123
+2:   Beginning Test, file ESMF_FieldIOUTest.F90, line 123
+0:   NUMBER_OF_PROCESSORS           4
+1:   Beginning Test, file ESMF_FieldIOUTest.F90, line 123
+1:   NUMBER_OF_PROCESSORS           4
+3:   Beginning Test, file ESMF_FieldIOUTest.F90, line 123
+3:   NUMBER_OF_PROCESSORS           4
+0:   PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 146
+1:   PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 146
+3:   PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 146
+2:   NUMBER_OF_PROCESSORS           4
+2:   PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 146
+0:   PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 157
+1:   PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 157
+2:   PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 157
+3:   PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 157
+0:   PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+0:   line 179
+1:   PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+1:   line 179
+2:   PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+2:   line 179
+3:   PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+3:   line 179
+0:   PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 190
+1:   PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 190
+2:   PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 190
+3:   PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 190
+0: MPT ERROR: Rank 0(g:0) received signal SIGSEGV(11).
+0: 	Process ID: 22534, Host: borgj066, Program: /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default/ESMF_FieldIOUTest
+0: 	MPT Version: HPE MPT 2.17  11/30/17 07:45:32
+0: 
+0: MPT: --------stack traceback-------
+0: MPT: Attaching to program: /proc/22534/exe, process 22534
+0: MPT: [Thread debugging using libthread_db enabled]
+0: MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+0: MPT: done.
+0: MPT: 0x00007ffff02c87ea in waitpid () from /lib64/libpthread.so.0
+0: MPT: Missing separate debuginfos, use: zypper install glibc-debuginfo-2.22-62.19.1.x86_64 krb5-debuginfo-1.12.5-40.34.1.x86_64 libcom_err2-debuginfo-1.42.11-15.1.x86_64 libcurl4-debuginfo-7.37.0-37.40.1.x86_64 libgcc_s1-debuginfo-8.2.1+r264010-1.3.3.x86_64 libidn11-debuginfo-1.28-5.6.1.x86_64 libkeyutils1-debuginfo-1.5.9-3.29.x86_64 libldap-2_4-2-debuginfo-2.4.41-18.43.1.x86_64 libnl3-200-debuginfo-3.2.23-2.21.x86_64 libopenssl1_0_0-debuginfo-1.0.2j-60.52.1.x86_64 libpcre1-debuginfo-8.39-8.3.1.x86_64 libsasl2-3-debuginfo-2.1.26-8.7.1.x86_64 libselinux1-debuginfo-2.5-8.79.x86_64 libssh2-1-debuginfo-1.4.3-20.9.1.x86_64 libstdc++6-debuginfo-8.2.1+r264010-1.3.3.x86_64 libz1-debuginfo-1.2.8-12.3.1.x86_64 sssd-debuginfo-1.13.4-34.37.1.x86_64
+0: MPT: (gdb) #0  0x00007ffff02c87ea in waitpid () from /lib64/libpthread.so.0
+0: MPT: #1  0x00007fffefbe9d9c in mpi_sgi_system (command=<optimized out>, 
+0: MPT:     __statbuf=<optimized out>, __fd=<optimized out>) at sig.c:98
+0: MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:339
+0: MPT: #3  0x00007fffefbea8a4 in first_arriver_handler (signo=11, 
+0: MPT:     stack_trace_sem=0x7fffe8600080) at sig.c:488
+0: MPT: #4  0x00007fffefbeab2f in slave_sig_handler (signo=11, 
+0: MPT:     siginfo=<optimized out>, extra=<optimized out>) at sig.c:563
+0: MPT: #5  <signal handler called>
+0: MPT: #6  0x00007ffff7de9650 in _dl_fixup () from /lib64/ld-linux-x86-64.so.2
+0: MPT: #7  0x00007ffff7deff30 in _dl_runtime_resolve ()
+0: MPT:    from /lib64/ld-linux-x86-64.so.2
+0: MPT: #8  0x00007ffff39119fe in ESMCI::IO::write (this=0x18f7b50, file=..., 
+0: MPT:     iofmt=ESMF_IOFMT_NETCDF_64BIT_OFFSET, overwrite=true, 
+0: MPT:     status=ESMC_FILESTATUS_UNKNOWN, timeslice=0x0)
+0: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/src/ESMCI_IO.C:465
+0: MPT: #9  0x00007ffff3900b55 in c_esmc_iowrite_ (ptr=0x7fffffff03b8, 
+0: MPT:     file=0x7fffffff0340 "field.nc", len_file=0x7fffffff0124, 
+0: MPT:     opt_iofmt=0x7fffffff01a8, opt_overwrite=0x7fffffff0198, 
+0: MPT:     opt_status=0x7fffffff0188, timeslice=0x0, schema=0x0, 
+0: MPT:     len_schema=0x7fffffff0118, rc=0x7fffffff0130, file_l=8, schema_l=0)
+0: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/interface/ESMCI_IO_F.C:169
+0: MPT: #10 0x00007ffff4dfefc8 in esmf_iomod::esmf_iowrite (io=..., filename=..., 
+0: MPT:     keywordenforcer=<error reading variable: Cannot access memory at address 0x0>, overwrite=4294967295, status=..., 
+0: MPT:     timeslice=<error reading variable: Cannot access memory at address 0x0>, 
+0: MPT:     iofmt=..., schema=..., rc=18, .tmp.FILENAME.len_V$120=8, 
+0: MPT:     .tmp.SCHEMA.len_V$128=0)
+0: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/interface/ESMF_IO.F90:519
+0: MPT: #11 0x00007ffff4a01e64 in esmf_fieldwrmod::esmf_fieldwrite (field=..., 
+0: MPT:     filename=..., 
+0: MPT:     keywordenforcer=<error reading variable: Cannot access memory at address 0x0>, variablename=..., convention=..., purpose=..., overwrite=4294967295, 
+0: MPT:     status=..., 
+0: MPT:     timeslice=<error reading variable: Cannot access memory at address 0x0>, 
+0: MPT:     iofmt=..., rc=18, .tmp.FILENAME.len_V$8a7=8, 
+0: MPT:     .tmp.VARIABLENAME.len_V$8ab=0, .tmp.CONVENTION.len_V$8ae=0, 
+0: MPT:     .tmp.PURPOSE.len_V$8b1=0)
+0: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldWr.F90:298
+0: MPT: #12 0x0000000000414080 in esmf_fieldioutest () at ESMF_FieldIOUTest.F90:212
+0: MPT: #13 0x0000000000410ae2 in main ()
+0: MPT: #14 0x00007fffeeab7725 in __libc_start_main () from /lib64/libc.so.6
+0: MPT: #15 0x00000000004109e9 in _start () at ../sysdeps/x86_64/start.S:118
+0: MPT: (gdb) A debugging session is active.
+0: MPT: 
+0: MPT: 	Inferior 1 [process 22534] will be detached.
+0: MPT: 
+0: MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+0: MPT: Detaching from program: /proc/22534/exe, process 22534
+0: MPT: [Inferior 1 (process 22534) detached]
+0: 
+0: MPT: -----stack traceback ends-----
+0: MPT: On host borgj066, Program /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default/ESMF_FieldIOUTest, Rank 0, Process 22534: Dumping core on signal SIGSEGV(11) into directory /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default
+-1: MPT ERROR: MPI_COMM_WORLD rank 0 has terminated without calling MPI_Finalize()
+-1: 	aborting job
+MPT: Received signal 11
+
