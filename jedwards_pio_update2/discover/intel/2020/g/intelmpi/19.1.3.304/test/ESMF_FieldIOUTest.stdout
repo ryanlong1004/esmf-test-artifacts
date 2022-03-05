@@ -1,0 +1,396 @@
+build time -- 2022-03-05 01:18:03.542386
+srun: cluster configuration lacks support for cpu binding
+  Beginning Test, file ESMF_FieldIOUTest.F90, line 123
+  Beginning Test, file ESMF_FieldIOUTest.F90, line 123
+  NUMBER_OF_PROCESSORS           4
+  Beginning Test, file ESMF_FieldIOUTest.F90, line 123
+  NUMBER_OF_PROCESSORS           4
+  Beginning Test, file ESMF_FieldIOUTest.F90, line 123
+  NUMBER_OF_PROCESSORS           4
+  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 146
+  NUMBER_OF_PROCESSORS           4
+  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 146
+  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 146
+  PASS  Array Spec Set, ESMF_FieldIOUTest.F90, line 146
+  PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 157
+  PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 157
+  PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 157
+  PASS  Creating a Grid to use in Field Tests, ESMF_FieldIOUTest.F90, line 157
+  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+  line 179
+  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+  line 179
+  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+  line 179
+  line 179
+  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 190
+  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 190
+  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 190
+  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 190
+[borgv161:22527:0:22527] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fff057b94f0)
+[borgv161:22528:0:22528] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fff057b94f0)
+[borgv161:22529:0:22529] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fff057b94f0)
+[borgv161:22530:0:22530] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fff057b94f0)
+==== backtrace (tid:  22527) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff1de53da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff1de5410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff1de542c2]
+ 3  /lib64/ld-linux-x86-64.so.2(+0xe650) [0x7ffff7de9650]
+ 4  /lib64/ld-linux-x86-64.so.2(+0x14f30) [0x7ffff7deff30]
+==== backtrace (tid:  22528) ====
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(+0xf390ec66) [0x7ffff390ec66]
+=================================
+==== backtrace (tid:  22529) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff1de53da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff1de5410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff1de542c2]
+==== backtrace (tid:  22530) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff1de53da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff1de5410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff1de542c2]
+ 3  /lib64/ld-linux-x86-64.so.2(+0xe650) [0x7ffff7de9650]
+ 4  /lib64/ld-linux-x86-64.so.2(+0x14f30) [0x7ffff7deff30]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(+0xf390ec66) [0x7ffff390ec66]
+=================================
+ 3  /lib64/ld-linux-x86-64.so.2(+0xe650) [0x7ffff7de9650]
+ 4  /lib64/ld-linux-x86-64.so.2(+0x14f30) [0x7ffff7deff30]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(+0xf390ec66) [0x7ffff390ec66]
+=================================
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff1de53da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff1de5410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff1de542c2]
+ 3  /lib64/ld-linux-x86-64.so.2(+0xe650) [0x7ffff7de9650]
+ 4  /lib64/ld-linux-x86-64.so.2(+0x14f30) [0x7ffff7deff30]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(+0xf390ec66) [0x7ffff390ec66]
+=================================
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C34EA  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF390EC66  _ZN5ESMCI2IO5writ         465  ESMCI_IO.C
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C34EA  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF390EC66  _ZN5ESMCI2IO5writ         465  ESMCI_IO.C
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C34EA  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF390EC66  _ZN5ESMCI2IO5writ         465  ESMCI_IO.C
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C34EA  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF390EC66  _ZN5ESMCI2IO5writ         465  ESMCI_IO.C
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEA866  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE468869  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE4688B5  Unknown               Unknown  Unknown
+ESMF_FieldIOUTest  00000000004B96AB  Unknown               Unknown  Unknown
+ESMF_FieldIOUTest  00000000004C34EA  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF390EC66  _ZN5ESMCI2IO5writ         465  ESMCI_IO.C
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEA866  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE468869  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE4688B5  Unknown               Unknown  Unknown
+ESMF_FieldIOUTest  00000000004B96AB  Unknown               Unknown  Unknown
+ESMF_FieldIOUTest  00000000004C34EA  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF390EC66  _ZN5ESMCI2IO5writ         465  ESMCI_IO.C
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEA866  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE468869  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE4688B5  Unknown               Unknown  Unknown
+ESMF_FieldIOUTest  00000000004B96AB  Unknown               Unknown  Unknown
+ESMF_FieldIOUTest  00000000004C34EA  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF390EC66  _ZN5ESMCI2IO5writ         465  ESMCI_IO.C
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEA866  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE468869  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE4688B5  Unknown               Unknown  Unknown
+ESMF_FieldIOUTest  00000000004B96AB  Unknown               Unknown  Unknown
+ESMF_FieldIOUTest  00000000004C34EA  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF390EC66  _ZN5ESMCI2IO5writ         465  ESMCI_IO.C
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF5A78DF8  _ZNSt6vectorIPN4m         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF5A78DF8  _ZNSt6vectorIPN4m         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF5A78DF8  _ZNSt6vectorIPN4m         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF5A78DF8  _ZNSt6vectorIPN4m         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF557B63F  _ZN13GlobalContex         108  iMOAB.cpp
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF557B63F  _ZN13GlobalContex         108  iMOAB.cpp
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF557B63F  _ZN13GlobalContex         108  iMOAB.cpp
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF557B63F  _ZN13GlobalContex         108  iMOAB.cpp
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF5492670  _ZNSt4listIPN4moa         438  stl_list.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF5492670  _ZNSt4listIPN4moa         438  stl_list.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF5492670  _ZNSt4listIPN4moa         438  stl_list.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF5492670  _ZNSt4listIPN4moa         438  stl_list.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF304F96C  _ZNSt6vectorISsSa         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF304F96C  _ZNSt6vectorISsSa         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF304F96C  _ZNSt6vectorISsSa         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF304F96C  _ZNSt6vectorISsSa         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF304F96C  _ZNSt6vectorISsSa         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF304F96C  _ZNSt6vectorISsSa         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF304F96C  _ZNSt6vectorISsSa         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF304F96C  _ZNSt6vectorISsSa         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3DA9179  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3DA9179  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3DA9179  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3DA8FD4  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3DA8FD4  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3DA9179  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3D56AB8  _ZN5ESMCI10Region         109  ESMCI_RegionNode.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3D56AB8  _ZN5ESMCI10Region         109  ESMCI_RegionNode.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3DA8FD4  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3DA8FD4  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3C85CBC  _ZNSt6vectorIPN5E         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3C85CBC  _ZNSt6vectorIPN5E         416  stl_vector.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3D56AB8  _ZN5ESMCI10Region         109  ESMCI_RegionNode.h
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_FieldIOUTest  00000000004C358E  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DE9650  Unknown               Unknown  Unknown
+ld-2.22.so         00007FFFF7DEFF30  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF3D56AB8  _ZN5ESMCI10Region         109  ESMCI_RegionNode.h
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 22529 RUNNING AT borgv161
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 22530 RUNNING AT borgv161
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
