@@ -1,0 +1,112 @@
+build time -- 2022-03-06 01:20:32.336044
+0:   Beginning Test, file ESMF_FieldSMMFromFileUTest.F90, line 287
+1:   Beginning Test, file ESMF_FieldSMMFromFileUTest.F90, line 287
+1:   NUMBER_OF_PROCESSORS           4
+2:   Beginning Test, file ESMF_FieldSMMFromFileUTest.F90, line 287
+2:   NUMBER_OF_PROCESSORS           4
+3:   Beginning Test, file ESMF_FieldSMMFromFileUTest.F90, line 287
+0:   NUMBER_OF_PROCESSORS           4
+3:   NUMBER_OF_PROCESSORS           4
+1:   PASS  ESMF_FieldSMMFromFile Unit Test, ESMF_FieldSMMFromFileUTest.F90, line 30
+2:   PASS  ESMF_FieldSMMFromFile Unit Test, ESMF_FieldSMMFromFileUTest.F90, line 30
+2:  0
+3:   PASS  ESMF_FieldSMMFromFile Unit Test, ESMF_FieldSMMFromFileUTest.F90, line 30
+3:  0
+1:  0
+0:  data/test_smm_from_file_weights.nc - ESMF Offline Regridding Weight Generator
+0:   
+0:  Grid 1 min:    1.00059293675517          Grid 1 max:    2.99940706324483     
+0:  Grid 2 min:    1.00059293675517          Grid 2 max:    2.99940706324483     
+0:   
+0:  Maximum negative weight =   0.000000000000000E+000
+0:  Maximum positive weight =    1.00000000000000     
+0:   
+0:  Mean relative error     =   0.000000000000000E+000
+0:  Maximum relative error  =   0.000000000000000E+000
+0:  Least squares error     =   0.000000000000000E+000
+0:   
+0:  Grid 1 area = 0.000000000000000
+0:  Grid 2 area = 0.000000000000000
+0:  Conservation error = 0.000000000000000
+0:   PASS  ESMF_FieldSMMFromFile Unit Test, ESMF_FieldSMMFromFileUTest.F90, line 30
+0:  0
+3: MPT ERROR: Rank 3(g:3) received signal SIGSEGV(11).
+3: 	Process ID: 3795, Host: borgl071, Program: /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default/ESMF_FieldSMMFromFileUTest
+3: 	MPT Version: HPE MPT 2.17  11/30/17 07:45:32
+3: 
+3: MPT: --------stack traceback-------
+3: MPT: Attaching to program: /proc/3795/exe, process 3795
+3: MPT: [Thread debugging using libthread_db enabled]
+3: MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+3: MPT: done.
+3: MPT: 0x00007ffff02c87ea in waitpid () from /lib64/libpthread.so.0
+3: MPT: Missing separate debuginfos, use: zypper install glibc-debuginfo-2.22-62.19.1.x86_64 krb5-debuginfo-1.12.5-40.34.1.x86_64 libcom_err2-debuginfo-1.42.11-15.1.x86_64 libcurl4-debuginfo-7.37.0-37.40.1.x86_64 libgcc_s1-debuginfo-8.2.1+r264010-1.3.3.x86_64 libidn11-debuginfo-1.28-5.6.1.x86_64 libkeyutils1-debuginfo-1.5.9-3.29.x86_64 libldap-2_4-2-debuginfo-2.4.41-18.43.1.x86_64 libnl3-200-debuginfo-3.2.23-2.21.x86_64 libopenssl1_0_0-debuginfo-1.0.2j-60.52.1.x86_64 libpcre1-debuginfo-8.39-8.3.1.x86_64 libsasl2-3-debuginfo-2.1.26-8.7.1.x86_64 libselinux1-debuginfo-2.5-8.79.x86_64 libssh2-1-debuginfo-1.4.3-20.9.1.x86_64 libstdc++6-debuginfo-8.2.1+r264010-1.3.3.x86_64 libz1-debuginfo-1.2.8-12.3.1.x86_64 sssd-debuginfo-1.13.4-34.37.1.x86_64
+3: MPT: (gdb) #0  0x00007ffff02c87ea in waitpid () from /lib64/libpthread.so.0
+3: MPT: #1  0x00007fffefbe9d9c in mpi_sgi_system (command=<optimized out>, 
+3: MPT:     __statbuf=<optimized out>, __fd=<optimized out>) at sig.c:98
+3: MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:339
+3: MPT: #3  0x00007fffefbea8a4 in first_arriver_handler (signo=11, 
+3: MPT:     stack_trace_sem=0x7fffe8600080) at sig.c:488
+3: MPT: #4  0x00007fffefbeab2f in slave_sig_handler (signo=11, 
+3: MPT:     siginfo=<optimized out>, extra=<optimized out>) at sig.c:563
+3: MPT: #5  <signal handler called>
+3: MPT: #6  0x00007ffff393a547 in ESMCI::LogErr::MsgFoundError (
+3: MPT:     this=0x7ffff7c57420 <ESMC_LogDefault>, rcToCheck=0, 
+3: MPT:     msg=0x7ffff5f1f3ac "Internal subroutine call returned Error", LINE=464, 
+3: MPT:     FILE=0x7ffff5f1f38c "ESMCI_IO.C", 
+3: MPT:     method=0x7ffff5f1f498 "ESMCI::IO::write()", rcToReturn=0xa1443c7c)
+3: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+3: MPT: #7  0x00007ffff39119a1 in ESMCI::IO::write (this=0x1c42140, file=..., 
+3: MPT:     iofmt=ESMF_IOFMT_NETCDF, overwrite=false, status=ESMC_FILESTATUS_UNKNOWN, 
+3: MPT:     timeslice=0x0)
+3: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/src/ESMCI_IO.C:464
+3: MPT: #8  0x00007ffff3379698 in ESMCI::Array::write (this=0x1c4ddd0, file=..., 
+3: MPT:     variableName=..., convention=..., purpose=..., overwrite=0x7fffffff7133, 
+3: MPT:     status=0x7fffffff7328, timeslice=0x0, iofmt=0x7fffffff7318)
+3: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/Array/src/ESMCI_Array.C:4091
+3: MPT: #9  0x00007ffff335ada1 in c_esmc_arraywrite_ (array=0x7fffffff77d0, 
+3: MPT:     file=0x5335bc <__STRLITPACK_14> "weights_esmf_smmsff.nc", 
+3: MPT:     variableName=0x7ffff65f7750 <__STRLITPACK_1550> "S", 
+3: MPT:     convention=0x7ffff65f7754 <__STRLITPACK_1549> "netcdf", 
+3: MPT:     purpose=0x7ffff65f775c <__STRLITPACK_1548> "metadata", 
+3: MPT:     opt_overwriteflag=0x7fffffff7338, status=0x7fffffff7328, timeslice=0x0, 
+3: MPT:     iofmt=0x7fffffff7318, rc=0x7fffffff72b8, file_l=22, varname_l=1, 
+3: MPT:     convention_l=6, purpose_l=8)
+3: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/Array/interface/ESMCI_Array_F.C:798
+3: MPT: #10 0x00007ffff3fe2ec7 in esmf_arraymod::esmf_arraywrite (array=..., 
+3: MPT:     filename=..., 
+3: MPT:     keywordenforcer=<error reading variable: Cannot access memory at address 0x0>, variablename=..., convention=..., purpose=..., overwrite=.FALSE., 
+3: MPT:     status=<error reading variable: Cannot access memory at address 0x0>, 
+3: MPT:     timeslice=<error reading variable: Cannot access memory at address 0x0>, 
+3: MPT:     iofmt=<error reading variable: Cannot access memory at address 0x0>, 
+3: MPT:     rc=18, .tmp.FILENAME.len_V$5abf=22, .tmp.VARIABLENAME.len_V$5ac3=1, 
+3: MPT:     .tmp.CONVENTION.len_V$5ac6=6, .tmp.PURPOSE.len_V$5ac9=8)
+3: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/Array/interface/ESMF_Array.F90:3989
+3: MPT: #11 0x00007ffff4e3492a in esmf_ioscripmod::esmf_outputweightfile (
+3: MPT:     weightfile=..., factorlist=..., factorindexlist=..., rc=18, 
+3: MPT:     .tmp.WEIGHTFILE.len_V$3a49=22)
+3: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/interface/ESMF_IOScrip.F90:346
+3: MPT: #12 0x00007ffff4e2fe3b in esmf_ioscripmod::esmf_sparsematrixwrite (
+3: MPT:     factorlist=..., factorindexlist=..., filename=..., 
+3: MPT:     keywordenforcer=<error reading variable: Cannot access memory at address 0x0>, rc=18, .tmp.FILENAME.len_V$3a31=22)
+3: MPT:     at /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/interface/ESMF_IOScrip.F90:133
+3: MPT: #13 0x000000000041387a in esmf_fieldsmmfromfileutestmod::test_regrid_store_from_file (rc=-1) at ESMF_FieldSMMFromFileUTest.F90:180
+3: MPT: #14 0x0000000000414b74 in esmf_fieldsmmfromfileutest ()
+3: MPT:     at ESMF_FieldSMMFromFileUTest.F90:312
+3: MPT: #15 0x000000000040fde2 in main ()
+3: MPT: #16 0x00007fffeeab7725 in __libc_start_main () from /lib64/libc.so.6
+3: MPT: #17 0x000000000040fce9 in _start () at ../sysdeps/x86_64/start.S:118
+3: MPT: (gdb) A debugging session is active.
+3: MPT: 
+3: MPT: 	Inferior 1 [process 3795] will be detached.
+3: MPT: 
+3: MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+3: MPT: Detaching from program: /proc/3795/exe, process 3795
+3: MPT: [Inferior 1 (process 3795) detached]
+3: 
+3: MPT: -----stack traceback ends-----
+3: MPT: On host borgl071, Program /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default/ESMF_FieldSMMFromFileUTest, Rank 3, Process 3795: Dumping core on signal SIGSEGV(11) into directory /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default
+-1: MPT ERROR: MPI_COMM_WORLD rank 3 has terminated without calling MPI_Finalize()
+-1: 	aborting job
+MPT: Received signal 11
+
