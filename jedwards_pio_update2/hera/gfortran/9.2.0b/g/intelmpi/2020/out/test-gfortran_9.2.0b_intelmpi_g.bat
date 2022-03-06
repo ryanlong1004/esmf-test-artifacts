@@ -1,4 +1,4 @@
-Sun Mar 6 06:17:24 UTC 2022
+Sun Mar 6 06:39:59 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-gfortran_9.2.0b_intelmpi_g.bat_%j.o
