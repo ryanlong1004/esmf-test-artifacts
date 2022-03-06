@@ -1,0 +1,461 @@
+build time -- 2022-03-06 02:42:45
+20220306 043234.974 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220306 043234.974 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220306 043234.974 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220306 043234.974 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220306 043234.974 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220306 043234.974 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220306 043234.974 INFO             PET0 Running with ESMF Version   : v8.3.0b08-90-g763a128
+20220306 043234.978 INFO             PET0 ESMF library build date/time: "Mar  6 2022" "02:41:16"
+20220306 043234.979 INFO             PET0 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_jedwards_pio_update2
+20220306 043234.979 INFO             PET0 ESMF_COMM                   : intelmpi
+20220306 043234.981 INFO             PET0 ESMF_MOAB                   : enabled
+20220306 043234.981 INFO             PET0 ESMF_LAPACK                 : enabled
+20220306 043234.981 INFO             PET0 ESMF_NETCDF                 : enabled
+20220306 043234.981 INFO             PET0 ESMF_PNETCDF                : disabled
+20220306 043234.983 INFO             PET0 ESMF_PIO                    : enabled
+20220306 043234.983 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220306 043235.009 INFO             PET0  Beginning Test, file ESMF_GridCreateUTest.F90, line 100
+20220306 043235.009 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20220306 043235.018 INFO             PET0  PASS  Testing Grid IsCreated for uncreated object, ESMF_GridCreateUTest.F90, line 119
+20220306 043235.018 INFO             PET0  PASS  Testing Grid IsCreated for uncreated object, ESMF_GridCreateUTest.F90, line 127
+20220306 043235.023 INFO             PET0  PASS  Create test Grid for IsCreated, ESMF_GridCreateUTest.F90, line 135
+20220306 043235.023 INFO             PET0  PASS  Testing Grid IsCreated for created object, ESMF_GridCreateUTest.F90, line 143
+20220306 043235.023 INFO             PET0  PASS  Testing Grid IsCreated for created object, ESMF_GridCreateUTest.F90, line 151
+20220306 043235.029 INFO             PET0  PASS  Print Grid info, ESMF_GridCreateUTest.F90, line 159
+20220306 043235.029 INFO             PET0  PASS  Destroy test Grid for IsCreated, ESMF_GridCreateUTest.F90, line 167
+20220306 043235.029 INFO             PET0  PASS  Testing Grid IsCreated for destroyed object, ESMF_GridCreateUTest.F90, line 175
+20220306 043235.029 INFO             PET0  PASS  Testing Grid IsCreated for destroyed object, ESMF_GridCreateUTest.F90, line 183
+20220306 043235.029 INFO             PET0  PASS  Grid creation Test, ESMF_GridCreateUTest.F90, line 191
+20220306 043235.030 INFO             PET0  PASS  Grid equality before assignment Test, ESMF_GridCreateUTest.F90, line 198
+20220306 043235.030 INFO             PET0  PASS  Grid assignment and equality Test, ESMF_GridCreateUTest.F90, line 207
+20220306 043235.030 INFO             PET0  PASS  GridDestroy Test, ESMF_GridCreateUTest.F90, line 214
+20220306 043235.030 INFO             PET0  PASS  Grid equality after destroy Test, ESMF_GridCreateUTest.F90, line 222
+20220306 043235.030 INFO             PET0  PASS  Grid non-equality after destroy Test, ESMF_GridCreateUTest.F90, line 230
+20220306 043235.030 INFO             PET0  PASS  Double GridDestroy through alias Test, ESMF_GridCreateUTest.F90, line 237
+20220306 043235.030 ERROR            PET0 ESMF_Grid.F90:27718 ESMF_GridValidate() Object being used after deletion  - Bad Object
+20220306 043235.030 INFO             PET0  PASS  Testing Grid Validate, ESMF_GridCreateUTest.F90, line 265
+20220306 043235.100 INFO             PET0  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Test, ESMF_GridCreateUTest.F90, line 279
+20220306 043235.118 INFO             PET0  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test, ESMF_GridCreateUTest.F90, line 300
+20220306 043235.133 INFO             PET0  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < petCount Test, ESMF_GridCreateUTest.F90, line 321
+20220306 043235.219 INFO             PET0  PASS  Grid creation from a regular structured grid in GRIDSPEC format with default ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 338
+20220306 043235.247 INFO             PET0  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coordTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 353
+20220306 043235.311 INFO             PET0  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 368
+20220306 043235.355 INFO             PET0  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 383
+20220306 043235.399 INFO             PET0  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDecomp Test, ESMF_GridCreateUTest.F90, line 403
+20220306 043235.410 INFO             PET0  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDecomp < petCount Test, ESMF_GridCreateUTest.F90, line 424
+20220306 043235.410 ERROR            PET0 ESMF_Grid.F90:24548 ESMF_GridMatch() Object being used after deletion  - Bad Object
+20220306 043235.411 INFO             PET0  PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
+20220306 043254.202 INFO             PET0  PASS  Testing Grid copy from grid and distgrid, ESMF_GridCreateUTest.F90, line 638
+20220306 043254.203 INFO             PET0  PASS  Creating a Grid with only a distgrid and the rest defaults, ESMF_GridCreateUTest.F90, line 676
+20220306 043254.203 INFO             PET0  PASS  Destroying a Grid, ESMF_GridCreateUTest.F90, line 684
+20220306 043254.203 INFO             PET0  PASS  Test ESMF_StaggerLocPrint public interface, ESMF_GridCreateUTest.F90, line 693
+20220306 043254.203 INFO             PET0  PASS  Creating a Grid with a non-default name, ESMF_GridCreateUTest.F90, line 718
+20220306 043254.204 INFO             PET0  PASS  Creating a Grid with non-default coordTypeKind, ESMF_GridCreateUTest.F90, line 742
+20220306 043254.204 INFO             PET0  PASS  Creating a Grid with non-default coordSys, ESMF_GridCreateUTest.F90, line 767
+20220306 043254.205 INFO             PET0  PASS  Creating a Grid with non-default coordDimCount, ESMF_GridCreateUTest.F90, line 794
+20220306 043254.205 INFO             PET0  PASS  Creating a Grid with non-default coordDimMap, ESMF_GridCreateUTest.F90, line 824
+20220306 043254.206 INFO             PET0  PASS  Creating a Grid with non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 849
+20220306 043254.206 INFO             PET0  PASS  Creating a Grid with non-default indexflag, ESMF_GridCreateUTest.F90, line 875
+20220306 043254.206 INFO             PET0  PASS  Creating a Grid with non-default EdgeWidths and Aligns, ESMF_GridCreateUTest.F90, line 904
+20220306 043254.273 INFO             PET0  PASS  Creating a 2D non periodic Grid with GridCreateNoPeriDimIrreg, ESMF_GridCreateUTest.F90, line 934
+20220306 043254.313 INFO             PET0  PASS  Creating a 2D 1 periodic Grid with GridCreate1PeriDimIrreg, ESMF_GridCreateUTest.F90, line 965
+20220306 043254.321 INFO             PET0  PASS  Creating a 2D 2 periodic Grid with GridCreate2PeriDimIrreg, ESMF_GridCreateUTest.F90, line 996
+20220306 043254.323 INFO             PET0  PASS  Creating a 2D  Grid with default edge connections with GridCreateIrreg(), ESMF_GridCreateUTest.F90, line 1027
+20220306 043254.325 INFO             PET0  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateIrreg(), ESMF_GridCreateUTest.F90, line 1059
+20220306 043254.328 INFO             PET0  PASS  Creating a 3D distributed Grid with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1091
+20220306 043254.430 INFO             PET0  PASS  Test getting Grid status, ESMF_GridCreateUTest.F90, line 1130
+20220306 043254.431 INFO             PET0  PASS  Test getting information from an empty Grid, ESMF_GridCreateUTest.F90, line 1169
+20220306 043254.437 INFO             PET0  PASS  Creating a 1 DE 3D  Grid with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1200
+20220306 043254.442 INFO             PET0  PASS  Creating a 1 DE 3D  Grid with GridEmptyCompleteIrreg, ESMF_GridCreateUTest.F90, line 1233
+20220306 043254.445 INFO             PET0  PASS  Creating a 2D distributed Grid with 1 non-distributed dim. with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1264
+20220306 043254.448 INFO             PET0  PASS  Creating a Grid with non-default coordDeps, ESMF_GridCreateUTest.F90, line 1303
+20220306 043254.450 INFO             PET0  PASS  Creating a 2D distributed Grid with 1 undistributed dim. with CreateShapeTileIrreg and no-default gridEdgeWidths, ESMF_GridCreateUTest.F90, line 1340
+20220306 043254.451 INFO             PET0  PASS  Creating a Grid with default coordDeps, ESMF_GridCreateUTest.F90, line 1378
+20220306 043254.452 INFO             PET0  PASS  Creating/Destroying an Empty Grid, ESMF_GridCreateUTest.F90, line 1395
+20220306 043254.454 INFO             PET0  PASS  Creating a 2D non periodic Grid with GridCreateNoPeriDimReg, ESMF_GridCreateUTest.F90, line 1424
+20220306 043254.455 INFO             PET0  PASS  Creating a 2D 1 periodic Grid with GridCreate1PeriDimReg, ESMF_GridCreateUTest.F90, line 1453
+20220306 043254.457 INFO             PET0  PASS  Creating a 2D 2 periodic Grid with GridCreate2PeriDimReg, ESMF_GridCreateUTest.F90, line 1482
+20220306 043254.458 INFO             PET0  PASS  Creating a 2D  Grid with default edge connections with GridCreateReg(), ESMF_GridCreateUTest.F90, line 1512
+20220306 043254.460 INFO             PET0  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateReg(), ESMF_GridCreateUTest.F90, line 1543
+20220306 043254.461 INFO             PET0  PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1571
+20220306 043254.463 INFO             PET0  PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1600
+20220306 043254.464 INFO             PET0  PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1627
+20220306 043254.465 INFO             PET0  PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1654
+20220306 043254.467 INFO             PET0  PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, ESMF_GridCreateUTest.F90, line 1692
+20220306 043254.468 INFO             PET0  PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
+20220306 043254.468 INFO             PET0  PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and the rest defaults, ESMF_GridCreateUTest.F90, line 1762
+20220306 043254.494 INFO             PET0  PASS  Creating a 2D  Grid with all defaults with GridEmptyCompleteReg, ESMF_GridCreateUTest.F90, line 1796
+20220306 043254.500 INFO             PET0  PASS  Test getting minIndex and maxIndex for 2D Grid, ESMF_GridCreateUTest.F90, line 1866
+20220306 043254.501 INFO             PET0  PASS  Test getting minIndex and maxIndex for 3D Grid, ESMF_GridCreateUTest.F90, line 1932
+20220306 043254.526 INFO             PET0  PASS  Test ArrayCreateFromGrid with only distributed bounds, ESMF_GridCreateUTest.F90, line 1977
+20220306 043254.594 INFO             PET0  PASS  Test ArrayCreateFromGrid with non-default ungriddedBounds, ESMF_GridCreateUTest.F90, line 2036
+20220306 043254.628 INFO             PET0  PASS  Test ArrayCreateFromGrid with replicated dims, ESMF_GridCreateUTest.F90, line 2089
+20220306 043254.641 INFO             PET0  PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, line 2151
+20220306 043254.642 INFO             PET0  PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 2208
+20220306 043254.644 INFO             PET0  PASS  Test ArrayCreateFromGrid with replicated dims, ESMF_GridCreateUTest.F90, line 2260
+20220306 043254.646 INFO             PET0  PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, line 2321
+20220306 043254.647 INFO             PET0  PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 2378
+20220306 043254.648 INFO             PET0  PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
+20220306 043254.673 INFO             PET0  PASS  Checking isLBound and isUBound functionality, ESMF_GridCreateUTest.F90, line 2548
+20220306 043254.701 INFO             PET0  PASS  Test ESMF_GridCreateNoPeriDimUfrm with Cartesian, ESMF_GridCreateUTest.F90, line 2594
+20220306 043254.702 INFO             PET0  PASS  Test ESMF_GridCreateNoPeriDimUfrm with Default CoordSys (Spherical), ESMF_GridCreateUTest.F90, line 2621
+20220306 043254.708 INFO             PET0  PASS  Test ESMF_GridCreate1PeriDimUfrm, ESMF_GridCreateUTest.F90, line 2667
+20220306 043254.725 INFO             PET0  PASS  Test ESMF_GridCreate1PeriDimUfrm with two bipole flags, ESMF_GridCreateUTest.F90, line 2707
+20220306 043254.726 INFO             PET0  PASS  Test getting tile number from localDE, ESMF_GridCreateUTest.F90, line 2778
+20220306 043259.918 INFO             PET0  PASS  Testing GridCreateCubedSphere, ESMF_GridCreateUTest.F90, line 2849
+20220306 043259.932 INFO             PET0  PASS  Testing GridCreateCubedSphere with SchmidtTransform, ESMF_GridCreateUTest.F90, line 2902
+20220306 043259.935 INFO             PET0  PASS  Testing PetMap with non-sequential order and >1 DE on some PETs, ESMF_GridCreateUTest.F90, line 2956
+20220306 043300.071 INFO             PET0  PASS  Testing GridCreateMosaic with different CoordTypeKind, ESMF_GridCreateUTest.F90, line 3045
+20220306 043300.094 INFO             PET0  PASS  Test ESMF_GridCreate with different coordTypeKind with GRIDSPEC supergrid tile file, ESMF_GridCreateUTest.F90, line 3114
+20220306 043300.094 INFO             PET0  Ending Test, file ESMF_GridCreateUTest.F90, line 3120
+20220306 043300.094 INFO             PET0 Finalizing ESMF
+20220306 043300.094 INFO             PET0 ESMCI_IO_Handler.C:331 ESMCI::IO_Handler::finalize() 
+20220306 043300.094 INFO             PET0 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220306 043300.094 INFO             PET0 ESMCI_IO_Handler.C:333 ESMCI::IO_Handler::finalize() after finalize, localrc = 0
+20220306 043300.094 INFO             PET0 ESMCI_IO_Handler.C:356 ESMCI::IO_Handler::finalize() before return, localrc = 0
+20220306 043234.977 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220306 043234.977 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220306 043234.977 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220306 043234.977 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220306 043234.977 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220306 043234.977 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220306 043234.977 INFO             PET1 Running with ESMF Version   : v8.3.0b08-90-g763a128
+20220306 043234.978 INFO             PET1 ESMF library build date/time: "Mar  6 2022" "02:41:16"
+20220306 043234.979 INFO             PET1 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_jedwards_pio_update2
+20220306 043234.979 INFO             PET1 ESMF_COMM                   : intelmpi
+20220306 043234.981 INFO             PET1 ESMF_MOAB                   : enabled
+20220306 043234.981 INFO             PET1 ESMF_LAPACK                 : enabled
+20220306 043234.981 INFO             PET1 ESMF_NETCDF                 : enabled
+20220306 043234.981 INFO             PET1 ESMF_PNETCDF                : disabled
+20220306 043234.983 INFO             PET1 ESMF_PIO                    : enabled
+20220306 043234.983 INFO             PET1 ESMF_YAMLCPP                : enabled
+20220306 043235.022 INFO             PET1  Beginning Test, file ESMF_GridCreateUTest.F90, line 100
+20220306 043235.022 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20220306 043235.022 INFO             PET1  PASS  Testing Grid IsCreated for uncreated object, ESMF_GridCreateUTest.F90, line 119
+20220306 043235.022 INFO             PET1  PASS  Testing Grid IsCreated for uncreated object, ESMF_GridCreateUTest.F90, line 127
+20220306 043235.023 INFO             PET1  PASS  Create test Grid for IsCreated, ESMF_GridCreateUTest.F90, line 135
+20220306 043235.023 INFO             PET1  PASS  Testing Grid IsCreated for created object, ESMF_GridCreateUTest.F90, line 143
+20220306 043235.023 INFO             PET1  PASS  Testing Grid IsCreated for created object, ESMF_GridCreateUTest.F90, line 151
+20220306 043235.029 INFO             PET1  PASS  Print Grid info, ESMF_GridCreateUTest.F90, line 159
+20220306 043235.029 INFO             PET1  PASS  Destroy test Grid for IsCreated, ESMF_GridCreateUTest.F90, line 167
+20220306 043235.029 INFO             PET1  PASS  Testing Grid IsCreated for destroyed object, ESMF_GridCreateUTest.F90, line 175
+20220306 043235.029 INFO             PET1  PASS  Testing Grid IsCreated for destroyed object, ESMF_GridCreateUTest.F90, line 183
+20220306 043235.029 INFO             PET1  PASS  Grid creation Test, ESMF_GridCreateUTest.F90, line 191
+20220306 043235.029 INFO             PET1  PASS  Grid equality before assignment Test, ESMF_GridCreateUTest.F90, line 198
+20220306 043235.029 INFO             PET1  PASS  Grid assignment and equality Test, ESMF_GridCreateUTest.F90, line 207
+20220306 043235.029 INFO             PET1  PASS  GridDestroy Test, ESMF_GridCreateUTest.F90, line 214
+20220306 043235.029 INFO             PET1  PASS  Grid equality after destroy Test, ESMF_GridCreateUTest.F90, line 222
+20220306 043235.030 INFO             PET1  PASS  Grid non-equality after destroy Test, ESMF_GridCreateUTest.F90, line 230
+20220306 043235.030 INFO             PET1  PASS  Double GridDestroy through alias Test, ESMF_GridCreateUTest.F90, line 237
+20220306 043235.030 ERROR            PET1 ESMF_Grid.F90:27718 ESMF_GridValidate() Object being used after deletion  - Bad Object
+20220306 043235.030 INFO             PET1  PASS  Testing Grid Validate, ESMF_GridCreateUTest.F90, line 265
+20220306 043235.113 INFO             PET1  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Test, ESMF_GridCreateUTest.F90, line 279
+20220306 043235.116 INFO             PET1  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test, ESMF_GridCreateUTest.F90, line 300
+20220306 043235.136 INFO             PET1  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < petCount Test, ESMF_GridCreateUTest.F90, line 321
+20220306 043235.219 INFO             PET1  PASS  Grid creation from a regular structured grid in GRIDSPEC format with default ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 338
+20220306 043235.251 INFO             PET1  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coordTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 353
+20220306 043235.311 INFO             PET1  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 368
+20220306 043235.356 INFO             PET1  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 383
+20220306 043235.408 INFO             PET1  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDecomp Test, ESMF_GridCreateUTest.F90, line 403
+20220306 043235.419 INFO             PET1  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDecomp < petCount Test, ESMF_GridCreateUTest.F90, line 424
+20220306 043235.419 ERROR            PET1 ESMF_Grid.F90:24548 ESMF_GridMatch() Object being used after deletion  - Bad Object
+20220306 043235.420 INFO             PET1  PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
+20220306 043254.207 INFO             PET1  PASS  Testing Grid copy from grid and distgrid, ESMF_GridCreateUTest.F90, line 638
+20220306 043254.207 INFO             PET1  PASS  Creating a Grid with only a distgrid and the rest defaults, ESMF_GridCreateUTest.F90, line 676
+20220306 043254.207 INFO             PET1  PASS  Destroying a Grid, ESMF_GridCreateUTest.F90, line 684
+20220306 043254.208 INFO             PET1  PASS  Test ESMF_StaggerLocPrint public interface, ESMF_GridCreateUTest.F90, line 693
+20220306 043254.208 INFO             PET1  PASS  Creating a Grid with a non-default name, ESMF_GridCreateUTest.F90, line 718
+20220306 043254.208 INFO             PET1  PASS  Creating a Grid with non-default coordTypeKind, ESMF_GridCreateUTest.F90, line 742
+20220306 043254.209 INFO             PET1  PASS  Creating a Grid with non-default coordSys, ESMF_GridCreateUTest.F90, line 767
+20220306 043254.209 INFO             PET1  PASS  Creating a Grid with non-default coordDimCount, ESMF_GridCreateUTest.F90, line 794
+20220306 043254.210 INFO             PET1  PASS  Creating a Grid with non-default coordDimMap, ESMF_GridCreateUTest.F90, line 824
+20220306 043254.210 INFO             PET1  PASS  Creating a Grid with non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 849
+20220306 043254.210 INFO             PET1  PASS  Creating a Grid with non-default indexflag, ESMF_GridCreateUTest.F90, line 875
+20220306 043254.211 INFO             PET1  PASS  Creating a Grid with non-default EdgeWidths and Aligns, ESMF_GridCreateUTest.F90, line 904
+20220306 043254.276 INFO             PET1  PASS  Creating a 2D non periodic Grid with GridCreateNoPeriDimIrreg, ESMF_GridCreateUTest.F90, line 934
+20220306 043254.316 INFO             PET1  PASS  Creating a 2D 1 periodic Grid with GridCreate1PeriDimIrreg, ESMF_GridCreateUTest.F90, line 965
+20220306 043254.329 INFO             PET1  PASS  Creating a 2D 2 periodic Grid with GridCreate2PeriDimIrreg, ESMF_GridCreateUTest.F90, line 996
+20220306 043254.330 INFO             PET1  PASS  Creating a 2D  Grid with default edge connections with GridCreateIrreg(), ESMF_GridCreateUTest.F90, line 1027
+20220306 043254.331 INFO             PET1  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateIrreg(), ESMF_GridCreateUTest.F90, line 1059
+20220306 043254.332 INFO             PET1  PASS  Creating a 3D distributed Grid with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1091
+20220306 043254.442 INFO             PET1  PASS  Test getting Grid status, ESMF_GridCreateUTest.F90, line 1130
+20220306 043254.442 INFO             PET1  PASS  Test getting information from an empty Grid, ESMF_GridCreateUTest.F90, line 1169
+20220306 043254.443 INFO             PET1  PASS  Creating a 1 DE 3D  Grid with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1200
+20220306 043254.444 INFO             PET1  PASS  Creating a 1 DE 3D  Grid with GridEmptyCompleteIrreg, ESMF_GridCreateUTest.F90, line 1233
+20220306 043254.446 INFO             PET1  PASS  Creating a 2D distributed Grid with 1 non-distributed dim. with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1264
+20220306 043254.447 INFO             PET1  PASS  Creating a Grid with non-default coordDeps, ESMF_GridCreateUTest.F90, line 1303
+20220306 043254.449 INFO             PET1  PASS  Creating a 2D distributed Grid with 1 undistributed dim. with CreateShapeTileIrreg and no-default gridEdgeWidths, ESMF_GridCreateUTest.F90, line 1340
+20220306 043254.450 INFO             PET1  PASS  Creating a Grid with default coordDeps, ESMF_GridCreateUTest.F90, line 1378
+20220306 043254.450 INFO             PET1  PASS  Creating/Destroying an Empty Grid, ESMF_GridCreateUTest.F90, line 1395
+20220306 043254.451 INFO             PET1  PASS  Creating a 2D non periodic Grid with GridCreateNoPeriDimReg, ESMF_GridCreateUTest.F90, line 1424
+20220306 043254.452 INFO             PET1  PASS  Creating a 2D 1 periodic Grid with GridCreate1PeriDimReg, ESMF_GridCreateUTest.F90, line 1453
+20220306 043254.455 INFO             PET1  PASS  Creating a 2D 2 periodic Grid with GridCreate2PeriDimReg, ESMF_GridCreateUTest.F90, line 1482
+20220306 043254.456 INFO             PET1  PASS  Creating a 2D  Grid with default edge connections with GridCreateReg(), ESMF_GridCreateUTest.F90, line 1512
+20220306 043254.458 INFO             PET1  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateReg(), ESMF_GridCreateUTest.F90, line 1543
+20220306 043254.459 INFO             PET1  PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1571
+20220306 043254.460 INFO             PET1  PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1600
+20220306 043254.462 INFO             PET1  PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1627
+20220306 043254.463 INFO             PET1  PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1654
+20220306 043254.464 INFO             PET1  PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, ESMF_GridCreateUTest.F90, line 1692
+20220306 043254.467 INFO             PET1  PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
+20220306 043254.467 INFO             PET1  PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and the rest defaults, ESMF_GridCreateUTest.F90, line 1762
+20220306 043254.491 INFO             PET1  PASS  Creating a 2D  Grid with all defaults with GridEmptyCompleteReg, ESMF_GridCreateUTest.F90, line 1796
+20220306 043254.498 INFO             PET1  PASS  Test getting minIndex and maxIndex for 2D Grid, ESMF_GridCreateUTest.F90, line 1866
+20220306 043254.502 INFO             PET1  PASS  Test getting minIndex and maxIndex for 3D Grid, ESMF_GridCreateUTest.F90, line 1932
+20220306 043254.529 INFO             PET1  PASS  Test ArrayCreateFromGrid with only distributed bounds, ESMF_GridCreateUTest.F90, line 1977
+20220306 043254.591 INFO             PET1  PASS  Test ArrayCreateFromGrid with non-default ungriddedBounds, ESMF_GridCreateUTest.F90, line 2036
+20220306 043254.635 INFO             PET1  PASS  Test ArrayCreateFromGrid with replicated dims, ESMF_GridCreateUTest.F90, line 2089
+20220306 043254.638 INFO             PET1  PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, line 2151
+20220306 043254.641 INFO             PET1  PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 2208
+20220306 043254.642 INFO             PET1  PASS  Test ArrayCreateFromGrid with replicated dims, ESMF_GridCreateUTest.F90, line 2260
+20220306 043254.645 INFO             PET1  PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, line 2321
+20220306 043254.646 INFO             PET1  PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 2378
+20220306 043254.647 INFO             PET1  PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
+20220306 043254.672 INFO             PET1  PASS  Checking isLBound and isUBound functionality, ESMF_GridCreateUTest.F90, line 2548
+20220306 043254.701 INFO             PET1  PASS  Test ESMF_GridCreateNoPeriDimUfrm with Cartesian, ESMF_GridCreateUTest.F90, line 2594
+20220306 043254.702 INFO             PET1  PASS  Test ESMF_GridCreateNoPeriDimUfrm with Default CoordSys (Spherical), ESMF_GridCreateUTest.F90, line 2621
+20220306 043254.708 INFO             PET1  PASS  Test ESMF_GridCreate1PeriDimUfrm, ESMF_GridCreateUTest.F90, line 2667
+20220306 043254.725 INFO             PET1  PASS  Test ESMF_GridCreate1PeriDimUfrm with two bipole flags, ESMF_GridCreateUTest.F90, line 2707
+20220306 043254.726 INFO             PET1  PASS  Test getting tile number from localDE, ESMF_GridCreateUTest.F90, line 2778
+20220306 043259.913 INFO             PET1  PASS  Testing GridCreateCubedSphere, ESMF_GridCreateUTest.F90, line 2849
+20220306 043259.932 INFO             PET1  PASS  Testing GridCreateCubedSphere with SchmidtTransform, ESMF_GridCreateUTest.F90, line 2902
+20220306 043259.933 INFO             PET1  PASS  Testing PetMap with non-sequential order and >1 DE on some PETs, ESMF_GridCreateUTest.F90, line 2956
+20220306 043300.055 INFO             PET1  PASS  Testing GridCreateMosaic with different CoordTypeKind, ESMF_GridCreateUTest.F90, line 3045
+20220306 043300.095 INFO             PET1  PASS  Test ESMF_GridCreate with different coordTypeKind with GRIDSPEC supergrid tile file, ESMF_GridCreateUTest.F90, line 3114
+20220306 043300.095 INFO             PET1  Ending Test, file ESMF_GridCreateUTest.F90, line 3120
+20220306 043300.095 INFO             PET1 Finalizing ESMF
+20220306 043300.095 INFO             PET1 ESMCI_IO_Handler.C:331 ESMCI::IO_Handler::finalize() 
+20220306 043300.095 INFO             PET1 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220306 043300.095 INFO             PET1 ESMCI_IO_Handler.C:333 ESMCI::IO_Handler::finalize() after finalize, localrc = 0
+20220306 043300.095 INFO             PET1 ESMCI_IO_Handler.C:356 ESMCI::IO_Handler::finalize() before return, localrc = 0
+20220306 043234.977 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220306 043234.978 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220306 043234.978 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220306 043234.978 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220306 043234.978 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220306 043234.978 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220306 043234.978 INFO             PET2 Running with ESMF Version   : v8.3.0b08-90-g763a128
+20220306 043234.978 INFO             PET2 ESMF library build date/time: "Mar  6 2022" "02:41:16"
+20220306 043234.979 INFO             PET2 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_jedwards_pio_update2
+20220306 043234.979 INFO             PET2 ESMF_COMM                   : intelmpi
+20220306 043234.981 INFO             PET2 ESMF_MOAB                   : enabled
+20220306 043234.981 INFO             PET2 ESMF_LAPACK                 : enabled
+20220306 043234.981 INFO             PET2 ESMF_NETCDF                 : enabled
+20220306 043234.981 INFO             PET2 ESMF_PNETCDF                : disabled
+20220306 043234.982 INFO             PET2 ESMF_PIO                    : enabled
+20220306 043234.982 INFO             PET2 ESMF_YAMLCPP                : enabled
+20220306 043235.009 INFO             PET2  Beginning Test, file ESMF_GridCreateUTest.F90, line 100
+20220306 043235.009 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20220306 043235.019 INFO             PET2  PASS  Testing Grid IsCreated for uncreated object, ESMF_GridCreateUTest.F90, line 119
+20220306 043235.019 INFO             PET2  PASS  Testing Grid IsCreated for uncreated object, ESMF_GridCreateUTest.F90, line 127
+20220306 043235.023 INFO             PET2  PASS  Create test Grid for IsCreated, ESMF_GridCreateUTest.F90, line 135
+20220306 043235.023 INFO             PET2  PASS  Testing Grid IsCreated for created object, ESMF_GridCreateUTest.F90, line 143
+20220306 043235.023 INFO             PET2  PASS  Testing Grid IsCreated for created object, ESMF_GridCreateUTest.F90, line 151
+20220306 043235.031 INFO             PET2  PASS  Print Grid info, ESMF_GridCreateUTest.F90, line 159
+20220306 043235.031 INFO             PET2  PASS  Destroy test Grid for IsCreated, ESMF_GridCreateUTest.F90, line 167
+20220306 043235.031 INFO             PET2  PASS  Testing Grid IsCreated for destroyed object, ESMF_GridCreateUTest.F90, line 175
+20220306 043235.031 INFO             PET2  PASS  Testing Grid IsCreated for destroyed object, ESMF_GridCreateUTest.F90, line 183
+20220306 043235.031 INFO             PET2  PASS  Grid creation Test, ESMF_GridCreateUTest.F90, line 191
+20220306 043235.031 INFO             PET2  PASS  Grid equality before assignment Test, ESMF_GridCreateUTest.F90, line 198
+20220306 043235.031 INFO             PET2  PASS  Grid assignment and equality Test, ESMF_GridCreateUTest.F90, line 207
+20220306 043235.031 INFO             PET2  PASS  GridDestroy Test, ESMF_GridCreateUTest.F90, line 214
+20220306 043235.031 INFO             PET2  PASS  Grid equality after destroy Test, ESMF_GridCreateUTest.F90, line 222
+20220306 043235.031 INFO             PET2  PASS  Grid non-equality after destroy Test, ESMF_GridCreateUTest.F90, line 230
+20220306 043235.031 INFO             PET2  PASS  Double GridDestroy through alias Test, ESMF_GridCreateUTest.F90, line 237
+20220306 043235.031 ERROR            PET2 ESMF_Grid.F90:27718 ESMF_GridValidate() Object being used after deletion  - Bad Object
+20220306 043235.032 INFO             PET2  PASS  Testing Grid Validate, ESMF_GridCreateUTest.F90, line 265
+20220306 043235.104 INFO             PET2  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Test, ESMF_GridCreateUTest.F90, line 279
+20220306 043235.130 INFO             PET2  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test, ESMF_GridCreateUTest.F90, line 300
+20220306 043235.136 INFO             PET2  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < petCount Test, ESMF_GridCreateUTest.F90, line 321
+20220306 043235.220 INFO             PET2  PASS  Grid creation from a regular structured grid in GRIDSPEC format with default ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 338
+20220306 043235.248 INFO             PET2  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coordTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 353
+20220306 043235.313 INFO             PET2  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 368
+20220306 043235.356 INFO             PET2  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 383
+20220306 043235.410 INFO             PET2  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDecomp Test, ESMF_GridCreateUTest.F90, line 403
+20220306 043235.420 INFO             PET2  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDecomp < petCount Test, ESMF_GridCreateUTest.F90, line 424
+20220306 043235.420 ERROR            PET2 ESMF_Grid.F90:24548 ESMF_GridMatch() Object being used after deletion  - Bad Object
+20220306 043235.421 INFO             PET2  PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
+20220306 043254.207 INFO             PET2  PASS  Testing Grid copy from grid and distgrid, ESMF_GridCreateUTest.F90, line 638
+20220306 043254.207 INFO             PET2  PASS  Creating a Grid with only a distgrid and the rest defaults, ESMF_GridCreateUTest.F90, line 676
+20220306 043254.207 INFO             PET2  PASS  Destroying a Grid, ESMF_GridCreateUTest.F90, line 684
+20220306 043254.208 INFO             PET2  PASS  Test ESMF_StaggerLocPrint public interface, ESMF_GridCreateUTest.F90, line 693
+20220306 043254.208 INFO             PET2  PASS  Creating a Grid with a non-default name, ESMF_GridCreateUTest.F90, line 718
+20220306 043254.208 INFO             PET2  PASS  Creating a Grid with non-default coordTypeKind, ESMF_GridCreateUTest.F90, line 742
+20220306 043254.209 INFO             PET2  PASS  Creating a Grid with non-default coordSys, ESMF_GridCreateUTest.F90, line 767
+20220306 043254.209 INFO             PET2  PASS  Creating a Grid with non-default coordDimCount, ESMF_GridCreateUTest.F90, line 794
+20220306 043254.210 INFO             PET2  PASS  Creating a Grid with non-default coordDimMap, ESMF_GridCreateUTest.F90, line 824
+20220306 043254.210 INFO             PET2  PASS  Creating a Grid with non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 849
+20220306 043254.210 INFO             PET2  PASS  Creating a Grid with non-default indexflag, ESMF_GridCreateUTest.F90, line 875
+20220306 043254.211 INFO             PET2  PASS  Creating a Grid with non-default EdgeWidths and Aligns, ESMF_GridCreateUTest.F90, line 904
+20220306 043254.276 INFO             PET2  PASS  Creating a 2D non periodic Grid with GridCreateNoPeriDimIrreg, ESMF_GridCreateUTest.F90, line 934
+20220306 043254.316 INFO             PET2  PASS  Creating a 2D 1 periodic Grid with GridCreate1PeriDimIrreg, ESMF_GridCreateUTest.F90, line 965
+20220306 043254.329 INFO             PET2  PASS  Creating a 2D 2 periodic Grid with GridCreate2PeriDimIrreg, ESMF_GridCreateUTest.F90, line 996
+20220306 043254.330 INFO             PET2  PASS  Creating a 2D  Grid with default edge connections with GridCreateIrreg(), ESMF_GridCreateUTest.F90, line 1027
+20220306 043254.330 INFO             PET2  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateIrreg(), ESMF_GridCreateUTest.F90, line 1059
+20220306 043254.332 INFO             PET2  PASS  Creating a 3D distributed Grid with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1091
+20220306 043254.434 INFO             PET2  PASS  Test getting Grid status, ESMF_GridCreateUTest.F90, line 1130
+20220306 043254.435 INFO             PET2  PASS  Test getting information from an empty Grid, ESMF_GridCreateUTest.F90, line 1169
+20220306 043254.439 INFO             PET2  PASS  Creating a 1 DE 3D  Grid with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1200
+20220306 043254.440 INFO             PET2  PASS  Creating a 1 DE 3D  Grid with GridEmptyCompleteIrreg, ESMF_GridCreateUTest.F90, line 1233
+20220306 043254.443 INFO             PET2  PASS  Creating a 2D distributed Grid with 1 non-distributed dim. with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1264
+20220306 043254.446 INFO             PET2  PASS  Creating a Grid with non-default coordDeps, ESMF_GridCreateUTest.F90, line 1303
+20220306 043254.449 INFO             PET2  PASS  Creating a 2D distributed Grid with 1 undistributed dim. with CreateShapeTileIrreg and no-default gridEdgeWidths, ESMF_GridCreateUTest.F90, line 1340
+20220306 043254.451 INFO             PET2  PASS  Creating a Grid with default coordDeps, ESMF_GridCreateUTest.F90, line 1378
+20220306 043254.451 INFO             PET2  PASS  Creating/Destroying an Empty Grid, ESMF_GridCreateUTest.F90, line 1395
+20220306 043254.453 INFO             PET2  PASS  Creating a 2D non periodic Grid with GridCreateNoPeriDimReg, ESMF_GridCreateUTest.F90, line 1424
+20220306 043254.454 INFO             PET2  PASS  Creating a 2D 1 periodic Grid with GridCreate1PeriDimReg, ESMF_GridCreateUTest.F90, line 1453
+20220306 043254.456 INFO             PET2  PASS  Creating a 2D 2 periodic Grid with GridCreate2PeriDimReg, ESMF_GridCreateUTest.F90, line 1482
+20220306 043254.458 INFO             PET2  PASS  Creating a 2D  Grid with default edge connections with GridCreateReg(), ESMF_GridCreateUTest.F90, line 1512
+20220306 043254.459 INFO             PET2  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateReg(), ESMF_GridCreateUTest.F90, line 1543
+20220306 043254.461 INFO             PET2  PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1571
+20220306 043254.462 INFO             PET2  PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1600
+20220306 043254.463 INFO             PET2  PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1627
+20220306 043254.465 INFO             PET2  PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1654
+20220306 043254.466 INFO             PET2  PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, ESMF_GridCreateUTest.F90, line 1692
+20220306 043254.467 INFO             PET2  PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
+20220306 043254.468 INFO             PET2  PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and the rest defaults, ESMF_GridCreateUTest.F90, line 1762
+20220306 043254.490 INFO             PET2  PASS  Creating a 2D  Grid with all defaults with GridEmptyCompleteReg, ESMF_GridCreateUTest.F90, line 1796
+20220306 043254.497 INFO             PET2  PASS  Test getting minIndex and maxIndex for 2D Grid, ESMF_GridCreateUTest.F90, line 1866
+20220306 043254.502 INFO             PET2  PASS  Test getting minIndex and maxIndex for 3D Grid, ESMF_GridCreateUTest.F90, line 1932
+20220306 043254.529 INFO             PET2  PASS  Test ArrayCreateFromGrid with only distributed bounds, ESMF_GridCreateUTest.F90, line 1977
+20220306 043254.589 INFO             PET2  PASS  Test ArrayCreateFromGrid with non-default ungriddedBounds, ESMF_GridCreateUTest.F90, line 2036
+20220306 043254.634 INFO             PET2  PASS  Test ArrayCreateFromGrid with replicated dims, ESMF_GridCreateUTest.F90, line 2089
+20220306 043254.636 INFO             PET2  PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, line 2151
+20220306 043254.637 INFO             PET2  PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 2208
+20220306 043254.640 INFO             PET2  PASS  Test ArrayCreateFromGrid with replicated dims, ESMF_GridCreateUTest.F90, line 2260
+20220306 043254.643 INFO             PET2  PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, line 2321
+20220306 043254.644 INFO             PET2  PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 2378
+20220306 043254.646 INFO             PET2  PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
+20220306 043254.672 INFO             PET2  PASS  Checking isLBound and isUBound functionality, ESMF_GridCreateUTest.F90, line 2548
+20220306 043254.695 INFO             PET2  PASS  Test ESMF_GridCreateNoPeriDimUfrm with Cartesian, ESMF_GridCreateUTest.F90, line 2594
+20220306 043254.695 INFO             PET2  PASS  Test ESMF_GridCreateNoPeriDimUfrm with Default CoordSys (Spherical), ESMF_GridCreateUTest.F90, line 2621
+20220306 043254.701 INFO             PET2  PASS  Test ESMF_GridCreate1PeriDimUfrm, ESMF_GridCreateUTest.F90, line 2667
+20220306 043254.717 INFO             PET2  PASS  Test ESMF_GridCreate1PeriDimUfrm with two bipole flags, ESMF_GridCreateUTest.F90, line 2707
+20220306 043254.718 INFO             PET2  PASS  Test getting tile number from localDE, ESMF_GridCreateUTest.F90, line 2778
+20220306 043259.925 INFO             PET2  PASS  Testing GridCreateCubedSphere, ESMF_GridCreateUTest.F90, line 2849
+20220306 043259.930 INFO             PET2  PASS  Testing GridCreateCubedSphere with SchmidtTransform, ESMF_GridCreateUTest.F90, line 2902
+20220306 043259.931 INFO             PET2  PASS  Testing PetMap with non-sequential order and >1 DE on some PETs, ESMF_GridCreateUTest.F90, line 2956
+20220306 043300.023 INFO             PET2  PASS  Testing GridCreateMosaic with different CoordTypeKind, ESMF_GridCreateUTest.F90, line 3045
+20220306 043300.050 INFO             PET2  PASS  Test ESMF_GridCreate with different coordTypeKind with GRIDSPEC supergrid tile file, ESMF_GridCreateUTest.F90, line 3114
+20220306 043300.050 INFO             PET2  Ending Test, file ESMF_GridCreateUTest.F90, line 3120
+20220306 043300.050 INFO             PET2 Finalizing ESMF
+20220306 043300.050 INFO             PET2 ESMCI_IO_Handler.C:331 ESMCI::IO_Handler::finalize() 
+20220306 043300.050 INFO             PET2 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220306 043300.050 INFO             PET2 ESMCI_IO_Handler.C:333 ESMCI::IO_Handler::finalize() after finalize, localrc = 0
+20220306 043300.050 INFO             PET2 ESMCI_IO_Handler.C:356 ESMCI::IO_Handler::finalize() before return, localrc = 0
+20220306 043234.977 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220306 043234.977 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220306 043234.977 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220306 043234.977 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220306 043234.977 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220306 043234.977 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220306 043234.977 INFO             PET3 Running with ESMF Version   : v8.3.0b08-90-g763a128
+20220306 043234.978 INFO             PET3 ESMF library build date/time: "Mar  6 2022" "02:41:16"
+20220306 043234.979 INFO             PET3 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_jedwards_pio_update2
+20220306 043234.979 INFO             PET3 ESMF_COMM                   : intelmpi
+20220306 043234.981 INFO             PET3 ESMF_MOAB                   : enabled
+20220306 043234.981 INFO             PET3 ESMF_LAPACK                 : enabled
+20220306 043234.981 INFO             PET3 ESMF_NETCDF                 : enabled
+20220306 043234.981 INFO             PET3 ESMF_PNETCDF                : disabled
+20220306 043234.982 INFO             PET3 ESMF_PIO                    : enabled
+20220306 043234.982 INFO             PET3 ESMF_YAMLCPP                : enabled
+20220306 043235.023 INFO             PET3  Beginning Test, file ESMF_GridCreateUTest.F90, line 100
+20220306 043235.023 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20220306 043235.024 INFO             PET3  PASS  Testing Grid IsCreated for uncreated object, ESMF_GridCreateUTest.F90, line 119
+20220306 043235.024 INFO             PET3  PASS  Testing Grid IsCreated for uncreated object, ESMF_GridCreateUTest.F90, line 127
+20220306 043235.024 INFO             PET3  PASS  Create test Grid for IsCreated, ESMF_GridCreateUTest.F90, line 135
+20220306 043235.024 INFO             PET3  PASS  Testing Grid IsCreated for created object, ESMF_GridCreateUTest.F90, line 143
+20220306 043235.024 INFO             PET3  PASS  Testing Grid IsCreated for created object, ESMF_GridCreateUTest.F90, line 151
+20220306 043235.048 INFO             PET3  PASS  Print Grid info, ESMF_GridCreateUTest.F90, line 159
+20220306 043235.048 INFO             PET3  PASS  Destroy test Grid for IsCreated, ESMF_GridCreateUTest.F90, line 167
+20220306 043235.049 INFO             PET3  PASS  Testing Grid IsCreated for destroyed object, ESMF_GridCreateUTest.F90, line 175
+20220306 043235.049 INFO             PET3  PASS  Testing Grid IsCreated for destroyed object, ESMF_GridCreateUTest.F90, line 183
+20220306 043235.049 INFO             PET3  PASS  Grid creation Test, ESMF_GridCreateUTest.F90, line 191
+20220306 043235.049 INFO             PET3  PASS  Grid equality before assignment Test, ESMF_GridCreateUTest.F90, line 198
+20220306 043235.049 INFO             PET3  PASS  Grid assignment and equality Test, ESMF_GridCreateUTest.F90, line 207
+20220306 043235.049 INFO             PET3  PASS  GridDestroy Test, ESMF_GridCreateUTest.F90, line 214
+20220306 043235.049 INFO             PET3  PASS  Grid equality after destroy Test, ESMF_GridCreateUTest.F90, line 222
+20220306 043235.049 INFO             PET3  PASS  Grid non-equality after destroy Test, ESMF_GridCreateUTest.F90, line 230
+20220306 043235.049 INFO             PET3  PASS  Double GridDestroy through alias Test, ESMF_GridCreateUTest.F90, line 237
+20220306 043235.049 ERROR            PET3 ESMF_Grid.F90:27718 ESMF_GridValidate() Object being used after deletion  - Bad Object
+20220306 043235.050 INFO             PET3  PASS  Testing Grid Validate, ESMF_GridCreateUTest.F90, line 265
+20220306 043235.101 INFO             PET3  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Test, ESMF_GridCreateUTest.F90, line 279
+20220306 043235.129 INFO             PET3  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test, ESMF_GridCreateUTest.F90, line 300
+20220306 043235.136 INFO             PET3  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < petCount Test, ESMF_GridCreateUTest.F90, line 321
+20220306 043235.233 INFO             PET3  PASS  Grid creation from a regular structured grid in GRIDSPEC format with default ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 338
+20220306 043235.247 INFO             PET3  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coordTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 353
+20220306 043235.311 INFO             PET3  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 368
+20220306 043235.356 INFO             PET3  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 383
+20220306 043235.398 INFO             PET3  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDecomp Test, ESMF_GridCreateUTest.F90, line 403
+20220306 043235.404 INFO             PET3  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDecomp < petCount Test, ESMF_GridCreateUTest.F90, line 424
+20220306 043235.404 ERROR            PET3 ESMF_Grid.F90:24548 ESMF_GridMatch() Object being used after deletion  - Bad Object
+20220306 043235.410 INFO             PET3  PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
+20220306 043254.203 INFO             PET3  PASS  Testing Grid copy from grid and distgrid, ESMF_GridCreateUTest.F90, line 638
+20220306 043254.203 INFO             PET3  PASS  Creating a Grid with only a distgrid and the rest defaults, ESMF_GridCreateUTest.F90, line 676
+20220306 043254.203 INFO             PET3  PASS  Destroying a Grid, ESMF_GridCreateUTest.F90, line 684
+20220306 043254.203 INFO             PET3  PASS  Test ESMF_StaggerLocPrint public interface, ESMF_GridCreateUTest.F90, line 693
+20220306 043254.204 INFO             PET3  PASS  Creating a Grid with a non-default name, ESMF_GridCreateUTest.F90, line 718
+20220306 043254.204 INFO             PET3  PASS  Creating a Grid with non-default coordTypeKind, ESMF_GridCreateUTest.F90, line 742
+20220306 043254.205 INFO             PET3  PASS  Creating a Grid with non-default coordSys, ESMF_GridCreateUTest.F90, line 767
+20220306 043254.205 INFO             PET3  PASS  Creating a Grid with non-default coordDimCount, ESMF_GridCreateUTest.F90, line 794
+20220306 043254.205 INFO             PET3  PASS  Creating a Grid with non-default coordDimMap, ESMF_GridCreateUTest.F90, line 824
+20220306 043254.206 INFO             PET3  PASS  Creating a Grid with non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 849
+20220306 043254.206 INFO             PET3  PASS  Creating a Grid with non-default indexflag, ESMF_GridCreateUTest.F90, line 875
+20220306 043254.207 INFO             PET3  PASS  Creating a Grid with non-default EdgeWidths and Aligns, ESMF_GridCreateUTest.F90, line 904
+20220306 043254.273 INFO             PET3  PASS  Creating a 2D non periodic Grid with GridCreateNoPeriDimIrreg, ESMF_GridCreateUTest.F90, line 934
+20220306 043254.313 INFO             PET3  PASS  Creating a 2D 1 periodic Grid with GridCreate1PeriDimIrreg, ESMF_GridCreateUTest.F90, line 965
+20220306 043254.321 INFO             PET3  PASS  Creating a 2D 2 periodic Grid with GridCreate2PeriDimIrreg, ESMF_GridCreateUTest.F90, line 996
+20220306 043254.323 INFO             PET3  PASS  Creating a 2D  Grid with default edge connections with GridCreateIrreg(), ESMF_GridCreateUTest.F90, line 1027
+20220306 043254.325 INFO             PET3  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateIrreg(), ESMF_GridCreateUTest.F90, line 1059
+20220306 043254.329 INFO             PET3  PASS  Creating a 3D distributed Grid with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1091
+20220306 043254.430 INFO             PET3  PASS  Test getting Grid status, ESMF_GridCreateUTest.F90, line 1130
+20220306 043254.431 INFO             PET3  PASS  Test getting information from an empty Grid, ESMF_GridCreateUTest.F90, line 1169
+20220306 043254.433 INFO             PET3  PASS  Creating a 1 DE 3D  Grid with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1200
+20220306 043254.434 INFO             PET3  PASS  Creating a 1 DE 3D  Grid with GridEmptyCompleteIrreg, ESMF_GridCreateUTest.F90, line 1233
+20220306 043254.438 INFO             PET3  PASS  Creating a 2D distributed Grid with 1 non-distributed dim. with CreateShapeTileIrreg, ESMF_GridCreateUTest.F90, line 1264
+20220306 043254.440 INFO             PET3  PASS  Creating a Grid with non-default coordDeps, ESMF_GridCreateUTest.F90, line 1303
+20220306 043254.450 INFO             PET3  PASS  Creating a 2D distributed Grid with 1 undistributed dim. with CreateShapeTileIrreg and no-default gridEdgeWidths, ESMF_GridCreateUTest.F90, line 1340
+20220306 043254.452 INFO             PET3  PASS  Creating a Grid with default coordDeps, ESMF_GridCreateUTest.F90, line 1378
+20220306 043254.453 INFO             PET3  PASS  Creating/Destroying an Empty Grid, ESMF_GridCreateUTest.F90, line 1395
+20220306 043254.454 INFO             PET3  PASS  Creating a 2D non periodic Grid with GridCreateNoPeriDimReg, ESMF_GridCreateUTest.F90, line 1424
+20220306 043254.456 INFO             PET3  PASS  Creating a 2D 1 periodic Grid with GridCreate1PeriDimReg, ESMF_GridCreateUTest.F90, line 1453
+20220306 043254.457 INFO             PET3  PASS  Creating a 2D 2 periodic Grid with GridCreate2PeriDimReg, ESMF_GridCreateUTest.F90, line 1482
+20220306 043254.459 INFO             PET3  PASS  Creating a 2D  Grid with default edge connections with GridCreateReg(), ESMF_GridCreateUTest.F90, line 1512
+20220306 043254.461 INFO             PET3  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateReg(), ESMF_GridCreateUTest.F90, line 1543
+20220306 043254.462 INFO             PET3  PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1571
+20220306 043254.463 INFO             PET3  PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1600
+20220306 043254.465 INFO             PET3  PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1627
+20220306 043254.465 INFO             PET3  PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1654
+20220306 043254.466 INFO             PET3  PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, ESMF_GridCreateUTest.F90, line 1692
+20220306 043254.467 INFO             PET3  PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
+20220306 043254.467 INFO             PET3  PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and the rest defaults, ESMF_GridCreateUTest.F90, line 1762
+20220306 043254.494 INFO             PET3  PASS  Creating a 2D  Grid with all defaults with GridEmptyCompleteReg, ESMF_GridCreateUTest.F90, line 1796
+20220306 043254.500 INFO             PET3  PASS  Test getting minIndex and maxIndex for 2D Grid, ESMF_GridCreateUTest.F90, line 1866
+20220306 043254.501 INFO             PET3  PASS  Test getting minIndex and maxIndex for 3D Grid, ESMF_GridCreateUTest.F90, line 1932
+20220306 043254.524 INFO             PET3  PASS  Test ArrayCreateFromGrid with only distributed bounds, ESMF_GridCreateUTest.F90, line 1977
+20220306 043254.594 INFO             PET3  PASS  Test ArrayCreateFromGrid with non-default ungriddedBounds, ESMF_GridCreateUTest.F90, line 2036
+20220306 043254.633 INFO             PET3  PASS  Test ArrayCreateFromGrid with replicated dims, ESMF_GridCreateUTest.F90, line 2089
+20220306 043254.636 INFO             PET3  PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, line 2151
+20220306 043254.639 INFO             PET3  PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 2208
+20220306 043254.643 INFO             PET3  PASS  Test ArrayCreateFromGrid with replicated dims, ESMF_GridCreateUTest.F90, line 2260
+20220306 043254.644 INFO             PET3  PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, line 2321
+20220306 043254.647 INFO             PET3  PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGridMap, ESMF_GridCreateUTest.F90, line 2378
+20220306 043254.648 INFO             PET3  PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
+20220306 043254.673 INFO             PET3  PASS  Checking isLBound and isUBound functionality, ESMF_GridCreateUTest.F90, line 2548
+20220306 043254.695 INFO             PET3  PASS  Test ESMF_GridCreateNoPeriDimUfrm with Cartesian, ESMF_GridCreateUTest.F90, line 2594
+20220306 043254.695 INFO             PET3  PASS  Test ESMF_GridCreateNoPeriDimUfrm with Default CoordSys (Spherical), ESMF_GridCreateUTest.F90, line 2621
+20220306 043254.701 INFO             PET3  PASS  Test ESMF_GridCreate1PeriDimUfrm, ESMF_GridCreateUTest.F90, line 2667
+20220306 043254.716 INFO             PET3  PASS  Test ESMF_GridCreate1PeriDimUfrm with two bipole flags, ESMF_GridCreateUTest.F90, line 2707
+20220306 043254.718 INFO             PET3  PASS  Test getting tile number from localDE, ESMF_GridCreateUTest.F90, line 2778
+20220306 043259.926 INFO             PET3  PASS  Testing GridCreateCubedSphere, ESMF_GridCreateUTest.F90, line 2849
+20220306 043259.930 INFO             PET3  PASS  Testing GridCreateCubedSphere with SchmidtTransform, ESMF_GridCreateUTest.F90, line 2902
+20220306 043259.931 INFO             PET3  PASS  Testing PetMap with non-sequential order and >1 DE on some PETs, ESMF_GridCreateUTest.F90, line 2956
+20220306 043300.025 INFO             PET3  PASS  Testing GridCreateMosaic with different CoordTypeKind, ESMF_GridCreateUTest.F90, line 3045
+20220306 043300.061 INFO             PET3  PASS  Test ESMF_GridCreate with different coordTypeKind with GRIDSPEC supergrid tile file, ESMF_GridCreateUTest.F90, line 3114
+20220306 043300.061 INFO             PET3  Ending Test, file ESMF_GridCreateUTest.F90, line 3120
+20220306 043300.061 INFO             PET3 Finalizing ESMF
+20220306 043300.061 INFO             PET3 ESMCI_IO_Handler.C:331 ESMCI::IO_Handler::finalize() 
+20220306 043300.061 INFO             PET3 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220306 043300.061 INFO             PET3 ESMCI_IO_Handler.C:333 ESMCI::IO_Handler::finalize() after finalize, localrc = 0
+20220306 043300.061 INFO             PET3 ESMCI_IO_Handler.C:356 ESMCI::IO_Handler::finalize() before return, localrc = 0
