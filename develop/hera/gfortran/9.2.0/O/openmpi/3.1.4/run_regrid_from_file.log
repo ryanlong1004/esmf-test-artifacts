@@ -1,0 +1,69 @@
+build time -- 2022-03-07 06:04:45
+[1646634871.777701] [h4c48:36040:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1646634871.777813] [h4c48:36041:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1646634871.777873] [h4c48:36042:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1646634871.777827] [h4c48:36043:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1646634871.782894] [h4c48:36040:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1646634871.783370] [h4c48:36041:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1646634871.783412] [h4c48:36042:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1646634871.783461] [h4c48:36043:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+Reading control file...
+Reading control file...
+Reading control file...
+Reading control file...
+Running 1 of 11 regrid_from_file test cases...
+
+Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Running 1 of 11 regrid_from_file test cases...
+
+Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Retrieving regrid_from_file data...
+Running 1 of 11 regrid_from_file test cases...
+
+Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Retrieving http://data.earthsystemmodeling.org/download/data/ll2.5deg_grid.nc...
+
+Error opening http://data.earthsystemmodeling.org/download/data/ll2.5deg_grid.nc
+Running 1 of 11 regrid_from_file test cases...
+
+Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+NetCDF Error: src/ESMF/test/regrid_from_file/data/ll2.5deg_grid.nc : No such file or directory
+NetCDF Error: src/ESMF/test/regrid_from_file/data/ll2.5deg_grid.nc : No such file or directory
+NetCDF Error: src/ESMF/test/regrid_from_file/data/ll2.5deg_grid.nc : No such file or directory
+NetCDF Error: src/ESMF/test/regrid_from_file/data/ll2.5deg_grid.nc : No such file or directory
+NetCDF Error: src/ESMF/test/regrid_from_file/data/ll2.5deg_grid.nc : No such file or directory
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_develop/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_develop/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_develop/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 53, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Grid(filename=filename, filetype=filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_develop/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_develop/src/addon/ESMPy/src/ESMF/api/grid.py", line 347, in __init__
+    self._struct = ESMP_GridCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_develop/src/addon/ESMPy/src/ESMF/util/decorators.py", line 93, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_develop/src/addon/ESMPy/src/ESMF/interface/cbindings.py", line 720, in ESMP_GridCreateFromFile
+    raise NameError('ESMC_GridCreateFromFile() failed with rc = '+str(rc))
+NameError: ESMC_GridCreateFromFile() failed with rc = -1
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 2 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
