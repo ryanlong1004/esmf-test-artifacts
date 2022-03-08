@@ -1,0 +1,218 @@
+build time -- 2022-03-08 01:25:15.301506
+srun: cluster configuration lacks support for cpu binding
+  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+  NUMBER_OF_PROCESSORS           6
+  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+  NUMBER_OF_PROCESSORS           6
+  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+  NUMBER_OF_PROCESSORS           6
+  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+  NUMBER_OF_PROCESSORS           6
+  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+  NUMBER_OF_PROCESSORS           6
+  NUMBER_OF_PROCESSORS           6
+  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 
+  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 
+ 225
+  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 
+ 225
+  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 
+ 225
+ 225
+  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 
+ 225
+  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 
+ 225
+[borgv177:23717:0:23717] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+[borgv177:23718:0:23718] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+[borgv177:23719:0:23719] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+[borgv177:23720:0:23720] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+[borgv177:23721:0:23721] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+[borgv177:23722:0:23722] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+==== backtrace (tid:  23718) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff18a13da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff18a1410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff18a142c2]
+ 3  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+==== backtrace (tid:  23719) ====
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 8  ./ESMF_ArrayIOUTest() [0x419314]
+ 9  ./ESMF_ArrayIOUTest() [0x4111e2]
+10  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffee451725]
+11  ./ESMF_ArrayIOUTest() [0x4110e9]
+=================================
+==== backtrace (tid:  23720) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff18a13da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff18a1410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff18a142c2]
+ 3  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 8  ./ESMF_ArrayIOUTest() [0x419314]
+ 9  ./ESMF_ArrayIOUTest() [0x4111e2]
+10  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffee451725]
+11  ./ESMF_ArrayIOUTest() [0x4110e9]
+=================================
+==== backtrace (tid:  23721) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff18a13da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff18a1410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff18a142c2]
+ 3  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 8  ./ESMF_ArrayIOUTest() [0x419314]
+ 9  ./ESMF_ArrayIOUTest() [0x4111e2]
+10  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffee451725]
+11  ./ESMF_ArrayIOUTest() [0x4110e9]
+=================================
+==== backtrace (tid:  23722) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff18a13da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff18a1410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff18a142c2]
+ 3  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 8  ./ESMF_ArrayIOUTest() [0x419314]
+ 9  ./ESMF_ArrayIOUTest() [0x4111e2]
+10  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffee451725]
+11  ./ESMF_ArrayIOUTest() [0x4110e9]
+=================================
+==== backtrace (tid:  23717) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff18a13da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff18a1410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff18a142c2]
+ 3  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 8  ./ESMF_ArrayIOUTest() [0x419314]
+ 9  ./ESMF_ArrayIOUTest() [0x4111e2]
+10  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffee451725]
+11  ./ESMF_ArrayIOUTest() [0x4110e9]
+=================================
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff18a13da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff18a1410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff18a142c2]
+ 3  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 8  ./ESMF_ArrayIOUTest() [0x419314]
+ 9  ./ESMF_ArrayIOUTest() [0x4111e2]
+10  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffee451725]
+11  ./ESMF_ArrayIOUTest() [0x4110e9]
+=================================
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_ArrayIOUTest  00000000004CC11A  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF39377AF  _ZN5ESMCI6LogErr1         586  ESMCI_LogErr.C
+libesmf.so         00007FFFF390EC09  _ZN5ESMCI2IO5writ         464  ESMCI_IO.C
+libesmf.so         00007FFFF3376900  _ZN5ESMCI5Array5w        4091  ESMCI_Array.C
+libesmf.so         00007FFFF3358009  c_esmc_arraywrite         798  ESMCI_Array_F.C
+libesmf.so         00007FFFF3FE00EB  esmf_arraymod_mp_        3989  ESMF_Array.F90
+ESMF_ArrayIOUTest  0000000000419314  MAIN__                    233  ESMF_ArrayIOUTest.F90
+ESMF_ArrayIOUTest  00000000004111E2  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE451725  __libc_start_main     Unknown  Unknown
+ESMF_ArrayIOUTest  00000000004110E9  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_ArrayIOUTest  00000000004CC11A  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF39377AF  _ZN5ESMCI6LogErr1         586  ESMCI_LogErr.C
+libesmf.so         00007FFFF390EC09  _ZN5ESMCI2IO5writ         464  ESMCI_IO.C
+libesmf.so         00007FFFF3376900  _ZN5ESMCI5Array5w        4091  ESMCI_Array.C
+libesmf.so         00007FFFF3358009  c_esmc_arraywrite         798  ESMCI_Array_F.C
+libesmf.so         00007FFFF3FE00EB  esmf_arraymod_mp_        3989  ESMF_Array.F90
+ESMF_ArrayIOUTest  0000000000419314  MAIN__                    233  ESMF_ArrayIOUTest.F90
+ESMF_ArrayIOUTest  00000000004111E2  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE451725  __libc_start_main     Unknown  Unknown
+ESMF_ArrayIOUTest  00000000004110E9  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_ArrayIOUTest  00000000004CC11A  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF39377AF  _ZN5ESMCI6LogErr1         586  ESMCI_LogErr.C
+libesmf.so         00007FFFF390EC09  _ZN5ESMCI2IO5writ         464  ESMCI_IO.C
+libesmf.so         00007FFFF3376900  _ZN5ESMCI5Array5w        4091  ESMCI_Array.C
+libesmf.so         00007FFFF3358009  c_esmc_arraywrite         798  ESMCI_Array_F.C
+libesmf.so         00007FFFF3FE00EB  esmf_arraymod_mp_        3989  ESMF_Array.F90
+ESMF_ArrayIOUTest  0000000000419314  MAIN__                    233  ESMF_ArrayIOUTest.F90
+ESMF_ArrayIOUTest  00000000004111E2  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE451725  __libc_start_main     Unknown  Unknown
+ESMF_ArrayIOUTest  00000000004110E9  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_ArrayIOUTest  00000000004CC11A  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF39377AF  _ZN5ESMCI6LogErr1         586  ESMCI_LogErr.C
+libesmf.so         00007FFFF390EC09  _ZN5ESMCI2IO5writ         464  ESMCI_IO.C
+libesmf.so         00007FFFF3376900  _ZN5ESMCI5Array5w        4091  ESMCI_Array.C
+libesmf.so         00007FFFF3358009  c_esmc_arraywrite         798  ESMCI_Array_F.C
+libesmf.so         00007FFFF3FE00EB  esmf_arraymod_mp_        3989  ESMF_Array.F90
+ESMF_ArrayIOUTest  0000000000419314  MAIN__                    233  ESMF_ArrayIOUTest.F90
+ESMF_ArrayIOUTest  00000000004111E2  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE451725  __libc_start_main     Unknown  Unknown
+ESMF_ArrayIOUTest  00000000004110E9  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_ArrayIOUTest  00000000004CC11A  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF39377AF  _ZN5ESMCI6LogErr1         586  ESMCI_LogErr.C
+libesmf.so         00007FFFF390EC09  _ZN5ESMCI2IO5writ         464  ESMCI_IO.C
+libesmf.so         00007FFFF3376900  _ZN5ESMCI5Array5w        4091  ESMCI_Array.C
+libesmf.so         00007FFFF3358009  c_esmc_arraywrite         798  ESMCI_Array_F.C
+libesmf.so         00007FFFF3FE00EB  esmf_arraymod_mp_        3989  ESMF_Array.F90
+ESMF_ArrayIOUTest  0000000000419314  MAIN__                    233  ESMF_ArrayIOUTest.F90
+ESMF_ArrayIOUTest  00000000004111E2  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE451725  __libc_start_main     Unknown  Unknown
+ESMF_ArrayIOUTest  00000000004110E9  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+ESMF_ArrayIOUTest  00000000004CC11A  Unknown               Unknown  Unknown
+libpthread-2.22.s  00007FFFEF48BC10  Unknown               Unknown  Unknown
+libesmf.so         00007FFFF39377AF  _ZN5ESMCI6LogErr1         586  ESMCI_LogErr.C
+libesmf.so         00007FFFF390EC09  _ZN5ESMCI2IO5writ         464  ESMCI_IO.C
+libesmf.so         00007FFFF3376900  _ZN5ESMCI5Array5w        4091  ESMCI_Array.C
+libesmf.so         00007FFFF3358009  c_esmc_arraywrite         798  ESMCI_Array_F.C
+libesmf.so         00007FFFF3FE00EB  esmf_arraymod_mp_        3989  ESMF_Array.F90
+ESMF_ArrayIOUTest  0000000000419314  MAIN__                    233  ESMF_ArrayIOUTest.F90
+ESMF_ArrayIOUTest  00000000004111E2  Unknown               Unknown  Unknown
+libc-2.22.so       00007FFFEE451725  __libc_start_main     Unknown  Unknown
+ESMF_ArrayIOUTest  00000000004110E9  Unknown               Unknown  Unknown

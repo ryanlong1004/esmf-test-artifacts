@@ -1,0 +1,114 @@
+build time -- 2022-03-08 01:25:15.301506
+srun: cluster configuration lacks support for cpu binding
+Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41
+Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41
+Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41
+Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41
+Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41NUMBER_OF_PROCESSORS 4
+[borgv177:12347:0:12347] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+[borgv177:12348:0:12348] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+[borgv177:12349:0:12349] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+[borgv177:12350:0:12350] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+==== backtrace (tid:  12349) ====
+==== backtrace (tid:  12347) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff1de53da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff1de5410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff1de542c2]
+ 3  /lib64/libpthread.so.0(+0x10c10) [0x7ffff1c71c10]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 8  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 9  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_ioscripmod_mp_esmf_outputweightfile_+0x4906) [0x7ffff4e31b4e]
+10  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_ioscripmod_mp_esmf_sparsematrixwrite_+0x2ae) [0x7ffff4e2d05f]
+11  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(f_esmf_regridstorefile_+0x14be) [0x7ffff454f7aa]
+12  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Field15regridstorefileEPS0_S1_PKcP18ESMC_InterArrayIntS5_PPNS_11RouteHandleEP22ESMC_RegridMethod_FlagP20ESMC_PoleMethod_FlagPiP18ESMC_LineType_FlagP18ESMC_NormType_FlagP24ESMC_UnmappedAction_FlagP12ESMC_LogicalSL_P18ESMC_FileMode_FlagS3_S3_P20ESMC_FileFormat_FlagSP_SL_S1_S1_+0x673) [0x7ffff37cc77b]
+13  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(ESMC_FieldRegridStoreFile+0x169) [0x7ffff331f0aa]
+14  ./ESMC_FieldSMMFromFileUTest() [0x406325]
+15  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffebc38725]
+16  ./ESMC_FieldSMMFromFileUTest() [0x405419]
+=================================
+==== backtrace (tid:  12348) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff1de53da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff1de5410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff1de542c2]
+ 3  /lib64/libpthread.so.0(+0x10c10) [0x7ffff1c71c10]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 8  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 9  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_ioscripmod_mp_esmf_outputweightfile_+0x4906) [0x7ffff4e31b4e]
+10  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_ioscripmod_mp_esmf_sparsematrixwrite_+0x2ae) [0x7ffff4e2d05f]
+11  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(f_esmf_regridstorefile_+0x14be) [0x7ffff454f7aa]
+12  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Field15regridstorefileEPS0_S1_PKcP18ESMC_InterArrayIntS5_PPNS_11RouteHandleEP22ESMC_RegridMethod_FlagP20ESMC_PoleMethod_FlagPiP18ESMC_LineType_FlagP18ESMC_NormType_FlagP24ESMC_UnmappedAction_FlagP12ESMC_LogicalSL_P18ESMC_FileMode_FlagS3_S3_P20ESMC_FileFormat_FlagSP_SL_S1_S1_+0x673) [0x7ffff37cc77b]
+13  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(ESMC_FieldRegridStoreFile+0x169) [0x7ffff331f0aa]
+14  ./ESMC_FieldSMMFromFileUTest() [0x406325]
+15  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffebc38725]
+16  ./ESMC_FieldSMMFromFileUTest() [0x405419]
+=================================
+==== backtrace (tid:  12350) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff1de53da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff1de5410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff1de542c2]
+ 3  /lib64/libpthread.so.0(+0x10c10) [0x7ffff1c71c10]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 8  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 9  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_ioscripmod_mp_esmf_outputweightfile_+0x4906) [0x7ffff4e31b4e]
+10  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_ioscripmod_mp_esmf_sparsematrixwrite_+0x2ae) [0x7ffff4e2d05f]
+11  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(f_esmf_regridstorefile_+0x14be) [0x7ffff454f7aa]
+12  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Field15regridstorefileEPS0_S1_PKcP18ESMC_InterArrayIntS5_PPNS_11RouteHandleEP22ESMC_RegridMethod_FlagP20ESMC_PoleMethod_FlagPiP18ESMC_LineType_FlagP18ESMC_NormType_FlagP24ESMC_UnmappedAction_FlagP12ESMC_LogicalSL_P18ESMC_FileMode_FlagS3_S3_P20ESMC_FileFormat_FlagSP_SL_S1_S1_+0x673) [0x7ffff37cc77b]
+13  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(ESMC_FieldRegridStoreFile+0x169) [0x7ffff331f0aa]
+14  ./ESMC_FieldSMMFromFileUTest() [0x406325]
+15  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffebc38725]
+16  ./ESMC_FieldSMMFromFileUTest() [0x405419]
+=================================
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fff1de53da4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fff1de5410c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fff1de542c2]
+ 3  /lib64/libpthread.so.0(+0x10c10) [0x7ffff1c71c10]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(c_esmc_arraywrite_+0x59a) [0x7ffff3358009]
+ 8  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_arraymod_mp_esmf_arraywrite_+0xc22) [0x7ffff3fe00eb]
+ 9  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_ioscripmod_mp_esmf_outputweightfile_+0x4906) [0x7ffff4e31b4e]
+10  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(esmf_ioscripmod_mp_esmf_sparsematrixwrite_+0x2ae) [0x7ffff4e2d05f]
+11  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(f_esmf_regridstorefile_+0x14be) [0x7ffff454f7aa]
+12  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Field15regridstorefileEPS0_S1_PKcP18ESMC_InterArrayIntS5_PPNS_11RouteHandleEP22ESMC_RegridMethod_FlagP20ESMC_PoleMethod_FlagPiP18ESMC_LineType_FlagP18ESMC_NormType_FlagP24ESMC_UnmappedAction_FlagP12ESMC_LogicalSL_P18ESMC_FileMode_FlagS3_S3_P20ESMC_FileFormat_FlagSP_SL_S1_S1_+0x673) [0x7ffff37cc77b]
+13  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(ESMC_FieldRegridStoreFile+0x169) [0x7ffff331f0aa]
+14  ./ESMC_FieldSMMFromFileUTest() [0x406325]
+15  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffebc38725]
+16  ./ESMC_FieldSMMFromFileUTest() [0x405419]
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 12347 RUNNING AT borgv177
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 12348 RUNNING AT borgv177
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 12349 RUNNING AT borgv177
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 12350 RUNNING AT borgv177
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================

@@ -1,0 +1,47 @@
+build time -- 2022-03-08 01:25:15.301506
+srun: cluster configuration lacks support for cpu binding
+Beginning Test, file ESMC_FieldGridRegridCsrvUTest.C, line 69
+Beginning Test, file ESMC_FieldGridRegridCsrvUTest.C, line 69NUMBER_OF_PROCESSORS 1
+PASS GridCreate, ESMC_FieldGridRegridCsrvUTest.C, line 114
+PASS GridAddCoord, ESMC_FieldGridRegridCsrvUTest.C, line 130
+PASS GridAddItem, ESMC_FieldGridRegridCsrvUTest.C, line 140
+PASS GridGetItem - mask, ESMC_FieldGridRegridCsrvUTest.C, line 151
+PASS GridGetCoord - X, ESMC_FieldGridRegridCsrvUTest.C, line 176
+PASS GridGetCoord - Y, ESMC_FieldGridRegridCsrvUTest.C, line 199
+PASS GridGetCoord - X, ESMC_FieldGridRegridCsrvUTest.C, line 224
+PASS GridGetCoord - Y, ESMC_FieldGridRegridCsrvUTest.C, line 247
+PASS GridAddItem - area, ESMC_FieldGridRegridCsrvUTest.C, line 271
+PASS GridGetItem - area, ESMC_FieldGridRegridCsrvUTest.C, line 282
+PASS MeshCreate, ESMC_FieldGridRegridCsrvUTest.C, line 366
+PASS MeshAddNodes, ESMC_FieldGridRegridCsrvUTest.C, line 374
+PASS MeshAddElements, ESMC_FieldGridRegridCsrvUTest.C, line 388
+PASS MeshGetLocalNodeCount, ESMC_FieldGridRegridCsrvUTest.C, line 398
+PASS MeshGetLocalElementCount, ESMC_FieldGridRegridCsrvUTest.C, line 409
+PASS Create ESMC_Field object from a Grid via TypeKind, ESMC_FieldGridRegridCsrvUTest.C, line 424
+PASS Create ESMC_Field object from a Mesh via TypeKind, ESMC_FieldGridRegridCsrvUTest.C, line 433
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldGridRegridCsrvUTest.C, line 446
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldGridRegridCsrvUTest.C, line 470
+PASS Create an InterArray for maskValues in ESMC_FieldRegridStore(), ESMC_FieldGridRegridCsrvUTest.C, line 485
+PASS Create an ESMC_RouteHandle via ESMC_FieldRegridStore(), ESMC_FieldGridRegridCsrvUTest.C, line 510
+PASS Execute ESMC_FieldRegrid(), ESMC_FieldGridRegridCsrvUTest.C, line 518
+[borgv177:11355:0:11355] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xa1443c7c)
+==== backtrace (tid:  11355) ====
+ 0  /usr/lib64/libucs.so.0(ucs_handle_error+0xe4) [0x7fffe8adbda4]
+ 1  /usr/lib64/libucs.so.0(+0x2210c) [0x7fffe8adc10c]
+ 2  /usr/lib64/libucs.so.0(+0x222c2) [0x7fffe8adc2c2]
+ 3  /lib64/libpthread.so.0(+0x10c10) [0x7ffff1c71c10]
+ 4  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI6LogErr13MsgFoundErrorEiPKciS2_S2_Pi+0x4b) [0x7ffff39377af]
+ 5  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI2IO5writeERKSs15ESMC_IOFmt_Flagb20ESMC_FileStatus_FlagPi+0x1c5) [0x7ffff390ec09]
+ 6  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZN5ESMCI5Array5writeERKSsS2_S2_S2_PbP20ESMC_FileStatus_FlagPiP15ESMC_IOFmt_Flag+0xd4a) [0x7ffff3376900]
+ 7  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(_ZNK5ESMCI11RouteHandle5printEv+0x1a19) [0x7ffff3cb6f31]
+ 8  /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2/lib/libg/Linux.intel.64.intelmpi.default/libesmf.so(ESMC_RouteHandlePrint+0x32) [0x7ffff3e04663]
+ 9  ./ESMC_FieldGridRegridCsrvUTest() [0x407fbe]
+10  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fffebc38725]
+11  ./ESMC_FieldGridRegridCsrvUTest() [0x405849]
+=================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 11355 RUNNING AT borgv177
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
