@@ -1,0 +1,94 @@
+build time -- 2022-03-08 11:46:07.051888
+0:  sumA =   0.7000000    
+0:  sumB =   0.7000000    
+0:  sumC =   0.9000000    
+0:  sumD =   0.9000000    
+0:  sumE =   0.9000000    
+0:  result SRCSEQ#1 =   0.7000000      expect:   0.7000000    
+0: MPT ERROR: Rank 0(g:0) received signal SIGSEGV(11).
+0: 	Process ID: 41700, Host: r6i7n25, Program: /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/examples/examplesg/Linux.intel.64.mpt.default/ESMF_RHandleBitForBitEx
+0: 	MPT Version: HPE MPT 2.19  02/23/19 05:30:09
+0: 
+0: MPT: --------stack traceback-------
+0: MPT: Attaching to program: /proc/41700/exe, process 41700
+0: MPT: Try: zypper install -C "debuginfo(build-id)=4e96cf37d52b9c2f3648e691878b682da5abfa42"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=5eb2f40ad3b0125943aba8f08dd08609351a2967"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=b115bb26e97505a5bd3b56d70d20459aa1206ac9"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=4f3d05f200db29c6835a48e466e0378a8541fd36"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: [Thread debugging using libthread_db enabled]
+0: MPT: Using host libthread_db library "/glade/u/apps/ch/os/lib64/libthread_db.so.1".
+0: MPT: Try: zypper install -C "debuginfo(build-id)=113718dffda97ded5e3e87c2c557efb3657c185c"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=5f9ec139af58fa59c33f72d1b3e56f083f1613ae"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=93c4deac1088eb84fbd01cf2a2c54399f516e9a7"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=ad6d98e9e3042e77c051f1f27e971460bf1e428b"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=4c08f43bb18e99a7df4bad5c4a52bac67ddf9b8d"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=3ae04b58bd81ea7745dba789d89937e719309568"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=76d8c012144838e4e5466798858289fba2057537"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=ba8002518966160a27c335e04ce8932989f69056"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: 0x00002ba621bb96da in waitpid ()
+0: MPT:    from /glade/u/apps/ch/os/lib64/libpthread.so.0
+0: MPT: Missing separate debuginfos, use: zypper install glibc-debuginfo-2.22-49.16.x86_64
+0: MPT: (gdb) #0  0x00002ba621bb96da in waitpid ()
+0: MPT:    from /glade/u/apps/ch/os/lib64/libpthread.so.0
+0: MPT: #1  0x00002ba6222f8db6 in mpi_sgi_system (
+0: MPT: #2  MPI_SGI_stacktraceback (
+0: MPT:     header=header@entry=0x7ffe8cf7a280 "MPT ERROR: Rank 0(g:0) received signal SIGSEGV(11).\n\tProcess ID: 41700, Host: r6i7n25, Program: /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/examples/examplesg/Linux.intel"...) at sig.c:340
+0: MPT: #3  0x00002ba6222f8fb2 in first_arriver_handler (signo=signo@entry=11, 
+0: MPT:     stack_trace_sem=stack_trace_sem@entry=0x2ba6272a0080) at sig.c:489
+0: MPT: #4  0x00002ba6222f934b in slave_sig_handler (signo=11, 
+0: MPT:     siginfo=<optimized out>, extra=<optimized out>) at sig.c:564
+0: MPT: #5  <signal handler called>
+0: MPT: #6  0x00002ba61c70bd9d in ESMCI::LogErr::MsgFoundError (
+0: MPT:     this=0x2ba620eefb80 <ESMC_LogDefault>, rcToCheck=0, 
+0: MPT:     msg=0x2ba61eff7eec "Internal subroutine call returned Error", LINE=464, 
+0: MPT:     FILE=0x2ba61eff7ecc "ESMCI_IO.C", 
+0: MPT:     method=0x2ba61eff7fd8 "ESMCI::IO::write()", rcToReturn=0xa1443c7c)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+0: MPT: #7  0x00002ba61c6e3287 in ESMCI::IO::write (this=0x2a24510, file=..., 
+0: MPT:     iofmt=ESMF_IOFMT_NETCDF, overwrite=false, status=ESMC_FILESTATUS_REPLACE, 
+0: MPT:     timeslice=0x0)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/src/ESMCI_IO.C:464
+0: MPT: #8  0x00002ba61c14ba4a in ESMCI::Array::write (this=0x2a21b10, file=..., 
+0: MPT:     variableName=..., convention=..., purpose=..., overwrite=0x7ffe8cf7b7bc, 
+0: MPT:     status=0x7ffe8cf7b888, timeslice=0x0, iofmt=0x0)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/Array/src/ESMCI_Array.C:4091
+0: MPT: #9  0x00002ba61ca8b04b in ESMCI::RouteHandle::print (this=0x29be5e0)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/Route/src/ESMCI_RHandle.C:938
+0: MPT: #10 0x00002ba61ca83621 in c_esmc_routehandleprint_ (ptr=0x7ffe8cf7bfa0, 
+0: MPT:     rc=0x7ffe8cf7bdc8)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:209
+0: MPT: #11 0x00002ba61ded7bd4 in esmf_rhandlemod::esmf_routehandleprint (
+0: MPT:     routehandle=..., 
+0: MPT:     keywordenforcer=<error reading variable: Cannot access memory at address 0x0>, rc=18)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMF_RHandle.F90:1152
+0: MPT: #12 0x000000000040fa7e in esmf_rhandlebitforbitex ()
+0: MPT:     at ESMF_RHandleBitForBitEx.F90:467
+0: MPT: #13 0x0000000000408e9e in main ()
+0: MPT: #14 0x00002ba622f676e5 in __libc_start_main ()
+0: MPT:    from /glade/u/apps/ch/os/lib64/libc.so.6
+0: MPT: #15 0x0000000000408da9 in _start () at ../sysdeps/x86_64/start.S:118
+0: MPT: (gdb) A debugging session is active.
+0: MPT: 
+0: MPT: 	Inferior 1 [process 41700] will be detached.
+0: MPT: 
+0: MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+0: MPT: Detaching from program: /proc/41700/exe, process 41700
+0: 
+0: MPT: -----stack traceback ends-----
+0: MPT: On host r6i7n25, Program /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/examples/examplesg/Linux.intel.64.mpt.default/ESMF_RHandleBitForBitEx, Rank 0, Process 41700: Dumping core on signal SIGSEGV(11) into directory /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/examples/examplesg/Linux.intel.64.mpt.default
+-1: MPT ERROR: MPI_COMM_WORLD rank 0 has terminated without calling MPI_Finalize()
+-1: 	aborting job
+MPT: Received signal 11

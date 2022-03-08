@@ -1,0 +1,137 @@
+build time -- 2022-03-08 11:46:07.051888
+0:   Beginning Test, file ESMF_FieldSMMFromFileUTest.F90, line 287
+1:   Beginning Test, file ESMF_FieldSMMFromFileUTest.F90, line 287
+2:   Beginning Test, file ESMF_FieldSMMFromFileUTest.F90, line 287
+3:   Beginning Test, file ESMF_FieldSMMFromFileUTest.F90, line 287
+1:   NUMBER_OF_PROCESSORS           4
+2:   NUMBER_OF_PROCESSORS           4
+0:   NUMBER_OF_PROCESSORS           4
+3:   NUMBER_OF_PROCESSORS           4
+1:   PASS  ESMF_FieldSMMFromFile Unit Test, ESMF_FieldSMMFromFileUTest.F90, line 30
+1:  0
+2:   PASS  ESMF_FieldSMMFromFile Unit Test, ESMF_FieldSMMFromFileUTest.F90, line 30
+2:  0
+3:   PASS  ESMF_FieldSMMFromFile Unit Test, ESMF_FieldSMMFromFileUTest.F90, line 30
+3:  0
+0:  data/test_smm_from_file_weights.nc - ESMF Offline Regridding Weight Generator
+0:   
+0:  Grid 1 min:    1.00059293675517          Grid 1 max:    2.99940706324483     
+0:  Grid 2 min:    1.00059293675517          Grid 2 max:    2.99940706324483     
+0:   
+0:  Maximum negative weight =   0.000000000000000E+000
+0:  Maximum positive weight =    1.00000000000000     
+0:   
+0:  Mean relative error     =   0.000000000000000E+000
+0:  Maximum relative error  =   0.000000000000000E+000
+0:  Least squares error     =   0.000000000000000E+000
+0:   
+0:  Grid 1 area = 0.000000000000000
+0:  Grid 2 area = 0.000000000000000
+0:  Conservation error = 0.000000000000000
+0:   PASS  ESMF_FieldSMMFromFile Unit Test, ESMF_FieldSMMFromFileUTest.F90, line 30
+0:  0
+0: MPT ERROR: Rank 0(g:0) received signal SIGSEGV(11).
+0: 	Process ID: 36570, Host: r6i7n25, Program: /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default/ESMF_FieldSMMFromFileUTest
+0: 	MPT Version: HPE MPT 2.19  02/23/19 05:30:09
+0: 
+0: MPT: --------stack traceback-------
+0: MPT: Attaching to program: /proc/36570/exe, process 36570
+0: MPT: Try: zypper install -C "debuginfo(build-id)=4e96cf37d52b9c2f3648e691878b682da5abfa42"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=5eb2f40ad3b0125943aba8f08dd08609351a2967"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=b115bb26e97505a5bd3b56d70d20459aa1206ac9"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=4f3d05f200db29c6835a48e466e0378a8541fd36"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: [Thread debugging using libthread_db enabled]
+0: MPT: Using host libthread_db library "/glade/u/apps/ch/os/lib64/libthread_db.so.1".
+0: MPT: Try: zypper install -C "debuginfo(build-id)=113718dffda97ded5e3e87c2c557efb3657c185c"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=5f9ec139af58fa59c33f72d1b3e56f083f1613ae"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=93c4deac1088eb84fbd01cf2a2c54399f516e9a7"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=ad6d98e9e3042e77c051f1f27e971460bf1e428b"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=4c08f43bb18e99a7df4bad5c4a52bac67ddf9b8d"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=3ae04b58bd81ea7745dba789d89937e719309568"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=76d8c012144838e4e5466798858289fba2057537"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: Try: zypper install -C "debuginfo(build-id)=ba8002518966160a27c335e04ce8932989f69056"
+0: MPT: (no debugging symbols found)...done.
+0: MPT: 0x00002ab4aa9de6da in waitpid ()
+0: MPT:    from /glade/u/apps/ch/os/lib64/libpthread.so.0
+0: MPT: Missing separate debuginfos, use: zypper install glibc-debuginfo-2.22-49.16.x86_64
+0: MPT: (gdb) #0  0x00002ab4aa9de6da in waitpid ()
+0: MPT:    from /glade/u/apps/ch/os/lib64/libpthread.so.0
+0: MPT: #1  0x00002ab4ab11ddb6 in mpi_sgi_system (
+0: MPT: #2  MPI_SGI_stacktraceback (
+0: MPT:     header=header@entry=0x7fff0f174840 "MPT ERROR: Rank 0(g:0) received signal SIGSEGV(11).\n\tProcess ID: 36570, Host: r6i7n25, Program: /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt."...) at sig.c:340
+0: MPT: #3  0x00002ab4ab11dfb2 in first_arriver_handler (signo=signo@entry=11, 
+0: MPT:     stack_trace_sem=stack_trace_sem@entry=0x2ab4b00c0080) at sig.c:489
+0: MPT: #4  0x00002ab4ab11e34b in slave_sig_handler (signo=11, 
+0: MPT:     siginfo=<optimized out>, extra=<optimized out>) at sig.c:564
+0: MPT: #5  <signal handler called>
+0: MPT: #6  0x00002ab4a5530d9d in ESMCI::LogErr::MsgFoundError (
+0: MPT:     this=0x2ab4a9d14b80 <ESMC_LogDefault>, rcToCheck=0, 
+0: MPT:     msg=0x2ab4a7e1ceec "Internal subroutine call returned Error", LINE=464, 
+0: MPT:     FILE=0x2ab4a7e1cecc "ESMCI_IO.C", 
+0: MPT:     method=0x2ab4a7e1cfd8 "ESMCI::IO::write()", rcToReturn=0xa1443c7c)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+0: MPT: #7  0x00002ab4a5508287 in ESMCI::IO::write (this=0x3bd8ec0, file=..., 
+0: MPT:     iofmt=ESMF_IOFMT_NETCDF, overwrite=false, status=ESMC_FILESTATUS_UNKNOWN, 
+0: MPT:     timeslice=0x0)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/src/ESMCI_IO.C:464
+0: MPT: #8  0x00002ab4a4f70a4a in ESMCI::Array::write (this=0x3c8c2a0, file=..., 
+0: MPT:     variableName=..., convention=..., purpose=..., overwrite=0x7fff0f175cc3, 
+0: MPT:     status=0x7fff0f175eb8, timeslice=0x0, iofmt=0x7fff0f175ea8)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/Array/src/ESMCI_Array.C:4091
+0: MPT: #9  0x00002ab4a4f52173 in c_esmc_arraywrite_ (array=0x7fff0f176340, 
+0: MPT:     file=0x545c9c <__STRLITPACK_14> "weights_esmf_smmsff.nc", 
+0: MPT:     variableName=0x2ab4a84f02d0 <__STRLITPACK_1550> "S", 
+0: MPT:     convention=0x2ab4a84f02d4 <__STRLITPACK_1549> "netcdf", 
+0: MPT:     purpose=0x2ab4a84f02dc <__STRLITPACK_1548> "metadata", 
+0: MPT:     opt_overwriteflag=0x7fff0f175ec8, status=0x7fff0f175eb8, timeslice=0x0, 
+0: MPT:     iofmt=0x7fff0f175ea8, rc=0x7fff0f175e48, file_l=22, varname_l=1, 
+0: MPT:     convention_l=6, purpose_l=8)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/Array/interface/ESMCI_Array_F.C:798
+0: MPT: #10 0x00002ab4a5bafd9b in esmf_arraymod::esmf_arraywrite (array=..., 
+0: MPT:     filename=..., 
+0: MPT:     keywordenforcer=<error reading variable: Cannot access memory at address 0x0>, variablename=..., convention=..., purpose=..., overwrite=.FALSE., 
+0: MPT:     status=<error reading variable: Cannot access memory at address 0x0>, 
+0: MPT:     timeslice=<error reading variable: Cannot access memory at address 0x0>, 
+0: MPT:     iofmt=<error reading variable: Cannot access memory at address 0x0>, 
+0: MPT:     rc=18, .tmp.FILENAME.len_V$5a41=22, .tmp.VARIABLENAME.len_V$5a45=1, 
+0: MPT:     .tmp.CONVENTION.len_V$5a48=6, .tmp.PURPOSE.len_V$5a4b=8)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/Array/interface/ESMF_Array.F90:3989
+0: MPT: #11 0x00002ab4a693a2d2 in esmf_ioscripmod::esmf_outputweightfile (
+0: MPT:     weightfile=..., factorlist=..., factorindexlist=..., rc=18, 
+0: MPT:     .tmp.WEIGHTFILE.len_V$39ee=22)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/interface/ESMF_IOScrip.F90:346
+0: MPT: #12 0x00002ab4a6935d17 in esmf_ioscripmod::esmf_sparsematrixwrite (
+0: MPT:     factorlist=..., factorindexlist=..., filename=..., 
+0: MPT:     keywordenforcer=<error reading variable: Cannot access memory at address 0x0>, rc=18, .tmp.FILENAME.len_V$39d6=22)
+0: MPT:     at /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/src/Infrastructure/IO/interface/ESMF_IOScrip.F90:133
+0: MPT: #13 0x000000000040ca48 in esmf_fieldsmmfromfileutestmod::test_regrid_store_from_file (rc=-1) at ESMF_FieldSMMFromFileUTest.F90:180
+0: MPT: #14 0x000000000040dd42 in esmf_fieldsmmfromfileutest ()
+0: MPT:     at ESMF_FieldSMMFromFileUTest.F90:312
+0: MPT: #15 0x000000000040915e in main ()
+0: MPT: #16 0x00002ab4abd8c6e5 in __libc_start_main ()
+0: MPT:    from /glade/u/apps/ch/os/lib64/libc.so.6
+0: MPT: #17 0x0000000000409069 in _start () at ../sysdeps/x86_64/start.S:118
+0: MPT: (gdb) A debugging session is active.
+0: MPT: 
+0: MPT: 	Inferior 1 [process 36570] will be detached.
+0: MPT: 
+0: MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+0: MPT: Detaching from program: /proc/36570/exe, process 36570
+0: 
+0: MPT: -----stack traceback ends-----
+0: MPT: On host r6i7n25, Program /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default/ESMF_FieldSMMFromFileUTest, Rank 0, Process 36570: Dumping core on signal SIGSEGV(11) into directory /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpt_g_jedwards_pio_update2/test/testg/Linux.intel.64.mpt.default
+-1: MPT ERROR: MPI_COMM_WORLD rank 0 has terminated without calling MPI_Finalize()
+-1: 	aborting job
+MPT: Received signal 11
