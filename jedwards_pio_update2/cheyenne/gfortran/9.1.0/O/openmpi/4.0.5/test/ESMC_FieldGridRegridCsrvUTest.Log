@@ -1,0 +1,853 @@
+build time -- 2022-03-11 06:02:19.908045
+20220311 061629.923 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220311 061629.923 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220311 061629.923 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220311 061629.923 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220311 061629.923 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220311 061629.923 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220311 061629.923 INFO             PET0 Running with ESMF Version   : v8.3.0b09-94-gba2d53fd60
+20220311 061629.923 INFO             PET0 ESMF library build date/time: "Mar 11 2022" "06:00:20"
+20220311 061629.923 INFO             PET0 ESMF library build location : /glade/scratch/rlong/esmf-testing/gfortran_9.1.0_openmpi_O_jedwards_pio_update2
+20220311 061629.923 INFO             PET0 ESMF_COMM                   : openmpi
+20220311 061629.923 INFO             PET0 ESMF_MOAB                   : enabled
+20220311 061629.923 INFO             PET0 ESMF_LAPACK                 : enabled
+20220311 061629.923 INFO             PET0 ESMF_NETCDF                 : enabled
+20220311 061629.923 INFO             PET0 ESMF_PNETCDF                : disabled
+20220311 061629.923 INFO             PET0 ESMF_PIO                    : enabled
+20220311 061629.923 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220311 061629.924 INFO             PET0 Beginning Test, file ESMC_FieldGridRegridCsrvUTest.C, line 69
+20220311 061629.924 INFO             PET0 Beginning Test, file ESMC_FieldGridRegridCsrvUTest.C, line 69NUMBER_OF_PROCESSORS 1
+20220311 061629.924 INFO             PET0 PASS GridCreate, ESMC_FieldGridRegridCsrvUTest.C, line 114
+20220311 061629.924 INFO             PET0 PASS GridAddCoord, ESMC_FieldGridRegridCsrvUTest.C, line 130
+20220311 061629.924 INFO             PET0 PASS GridAddItem, ESMC_FieldGridRegridCsrvUTest.C, line 140
+20220311 061629.924 INFO             PET0 PASS GridGetItem - mask, ESMC_FieldGridRegridCsrvUTest.C, line 151
+20220311 061629.924 INFO             PET0 PASS GridGetCoord - X, ESMC_FieldGridRegridCsrvUTest.C, line 176
+20220311 061629.924 INFO             PET0 PASS GridGetCoord - Y, ESMC_FieldGridRegridCsrvUTest.C, line 199
+20220311 061629.924 INFO             PET0 PASS GridGetCoord - X, ESMC_FieldGridRegridCsrvUTest.C, line 224
+20220311 061629.924 INFO             PET0 PASS GridGetCoord - Y, ESMC_FieldGridRegridCsrvUTest.C, line 247
+20220311 061629.924 INFO             PET0 PASS GridAddItem - area, ESMC_FieldGridRegridCsrvUTest.C, line 271
+20220311 061629.924 INFO             PET0 PASS GridGetItem - area, ESMC_FieldGridRegridCsrvUTest.C, line 282
+20220311 061629.924 INFO             PET0 PASS MeshCreate, ESMC_FieldGridRegridCsrvUTest.C, line 366
+20220311 061629.924 INFO             PET0 PASS MeshAddNodes, ESMC_FieldGridRegridCsrvUTest.C, line 374
+20220311 061629.925 INFO             PET0 PASS MeshAddElements, ESMC_FieldGridRegridCsrvUTest.C, line 388
+20220311 061629.925 INFO             PET0 PASS MeshGetLocalNodeCount, ESMC_FieldGridRegridCsrvUTest.C, line 398
+20220311 061629.925 INFO             PET0 PASS MeshGetLocalElementCount, ESMC_FieldGridRegridCsrvUTest.C, line 409
+20220311 061629.925 INFO             PET0 PASS Create ESMC_Field object from a Grid via TypeKind, ESMC_FieldGridRegridCsrvUTest.C, line 424
+20220311 061629.925 INFO             PET0 PASS Create ESMC_Field object from a Mesh via TypeKind, ESMC_FieldGridRegridCsrvUTest.C, line 433
+20220311 061629.925 INFO             PET0 PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldGridRegridCsrvUTest.C, line 446
+20220311 061629.925 INFO             PET0 PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldGridRegridCsrvUTest.C, line 470
+20220311 061629.925 INFO             PET0 PASS Create an InterArray for maskValues in ESMC_FieldRegridStore(), ESMC_FieldGridRegridCsrvUTest.C, line 485
+20220311 061629.929 INFO             PET0 PASS Create an ESMC_RouteHandle via ESMC_FieldRegridStore(), ESMC_FieldGridRegridCsrvUTest.C, line 510
+20220311 061629.929 INFO             PET0 PASS Execute ESMC_FieldRegrid(), ESMC_FieldGridRegridCsrvUTest.C, line 518
+20220311 061629.929 INFO             PET0 ESMCI_IO.C:150 ESMCI::IO::create() 
+20220311 061629.929 INFO             PET0 ESMCI_IO.C:1027 ESMCI::IO::addArray() 
+20220311 061629.929 INFO             PET0 ESMCI_IO.C:460 ESMCI::IO::write() 
+20220311 061629.929 INFO             PET0 ESMCI_IO.C:805 ESMCI::IO::open() 
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:180 ESMCI::PIO_Handler::initialize() 
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:195 ESMCI::PIO_Handler::initialize() Before PIOc_Init_Intracomm, num_iotasks = 1
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:198 ESMCI::PIO_Handler::initialize() After PIOc_Init_Intracomm, instance = 65536
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:214 ESMCI::PIO_Handler::initialize() After PIOc_Set_IOSystem_Error_Handling
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:217 ESMCI::PIO_Handler::initialize() push_back
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:307 ESMCI::PIO_Handler::initializeVM After initialize, rc = 0
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:309 ESMCI::PIO_Handler::initializeVM Looking for active instance, size = 1
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:311 ESMCI::PIO_Handler::initializeVM Fetched PIO system descriptor, 0x10000
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1220 ESMCI::PIO_Handler::open() 
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.929 INFO             PET0 ESMCI_IO_Handler.C:479 ESMCI::IO_Handler::fileExists() File, "commMatrix.nc" exists
+20220311 061629.929 INFO             PET0 ESMCI_PIO_Handler.C:1297 ESMCI::PIO_Handler::open() Calling PIOc_createfile
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1323 ESMCI::PIO_Handler::open() call to PIOc_createfile: success for commMatrix.nc iotype= 2 Mode 0 ESMF FMT 1
+20220311 061629.939 INFO             PET0 ESMCI_IO.C:468 ESMCI::IO::write() open returned 0
+20220311 061629.939 INFO             PET0 ESMCI_IO.C:537 ESMCI::IO::write() 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:772 ESMCI::PIO_Handler::arrayWrite() 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1640 ESMCI::PIO_Handler::getIODesc() 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1643 ESMCI::PIO_Handler::getIODesc() calling constructPioDecomp
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1896 ESMCI::PIO_IODescHandler::constr 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1913 ESMCI::PIO_IODescHandler::constr localDeCount = 1
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:2038 ESMCI::PIO_IODescHandler::constr , IODesc shape = [ 001, 001 ], calling pio_initdecomp
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:2053 ESMCI::PIO_IODescHandler::constr after call to PIOc_initdecomp_dof
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1646 ESMCI::PIO_Handler::getIODesc() constructPioDecomp call complete, localrc = 0
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:2168 ESMCI::PIO_IODescHandler::getDim 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:2173 ESMCI::PIO_IODescHandler::getDim getDims: found handler, nioDims = 2, ioDims = 0x2655dd0, narrDims = 2
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1673 ESMCI::PIO_Handler::getIODesc() getDims complete, calling getIOType
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:2230 ESMCI::PIO_IODescHandler::getIOT 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:804 ESMCI::PIO_Handler::arrayWrite() baseAddress = 0x0x24e9c70
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:810 ESMCI::PIO_Handler::arrayWrite() arrlen = 1
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:820 ESMCI::PIO_Handler::arrayWrite() varname = "sendMsgCount_src-dst"
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:862 ESMCI::PIO_Handler::arrayWrite() Checking time dimension
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:869 ESMCI::PIO_Handler::arrayWrite() inq_dimid  = 0
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:870 ESMCI::PIO_Handler::arrayWrite() hasTimeDim = 0
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:871 ESMCI::PIO_Handler::arrayWrite() unlim = -1
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:912 ESMCI::PIO_Handler::arrayWrite() ready to check var compat., timeFrame = -1
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:992 ESMCI::PIO_Handler::arrayWrite() Going into NetCDF define mode (redef)
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1037 ESMCI::PIO_Handler::arrayWrite() Defining dimension 0
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1037 ESMCI::PIO_Handler::arrayWrite() Defining dimension 1
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1046 ESMCI::PIO_Handler::arrayWrite() finished defining space dims, timeFrame = -1
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1069 ESMCI::PIO_Handler::arrayWrite() varExists = 0
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1071 ESMCI::PIO_Handler::arrayWrite() niodims = 2
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1072 ESMCI::PIO_Handler::arrayWrite() basepiotype = 4
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1095 ESMCI::PIO_Handler::arrayWrite() NOT calling setframe, timeFrame = -1
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1125 ESMCI::PIO_Handler::arrayWrite() calling enddef, status = 0x7ffdd821658c
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1134 ESMCI::PIO_Handler::arrayWrite() calling write_darray, pio type = 4, address = 0x24e9c70
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1151 ESMCI::PIO_Handler::arrayWrite() cleanup and return
+20220311 061629.939 INFO             PET0 ESMCI_IO.C:484 ESMCI::IO::write() write returned 0
+20220311 061629.939 INFO             PET0 ESMCI_IO.C:929 ESMCI::IO::close() 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1536 ESMCI::PIO_Handler::flush() 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.939 INFO             PET0 ESMCI_PIO_Handler.C:1539 ESMCI::PIO_Handler::flush() calling sync
+20220311 061629.939 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.939 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        49571380 kB
+20220311 061629.939 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49335088 kB
+20220311 061629.939 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086528 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	  498512 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	  498512 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	   36548 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	   32272 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     740 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0557925 %
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3424256 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         18890752 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   944 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                       3088400 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             335856 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   127248 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        21979152 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         22315008 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         21988480 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0175304 seconds
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        49571380 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49335088 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086528 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	  498512 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	  498512 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	   36660 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	   32272 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     740 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0559635 %
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3424256 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         18890752 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                  1152 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                       3089008 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             335248 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   125760 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        21979760 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         22315008 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         21989088 Byte
+20220311 061629.940 INFO             PET0 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0180107 seconds
+20220311 061629.940 INFO             PET0 ESMCI_PIO_Handler.C:1584 ESMCI::PIO_Handler::close() 
+20220311 061629.940 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.940 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.941 INFO             PET0 ESMCI_IO.C:493 ESMCI::IO::write() close returned 0
+20220311 061629.941 INFO             PET0 ESMCI_IO.C:200 ESMCI::IO::destroy() 
+20220311 061629.941 INFO             PET0 ESMCI_IO.C:73 ESMCI::IO::destruct() 
+20220311 061629.941 INFO             PET0 ESMCI_IO_Handler.C:277 ESMCI::IO_Handler::destroy() 
+20220311 061629.941 INFO             PET0 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220311 061629.941 INFO             PET0 ESMCI_PIO_Handler.C:1807 ESMCI::PIO_IODescHandler::~PIO_I calling PIOc_freedecomp
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        49586500 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49350208 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13070140 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9523 %
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	  498512 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	  481608 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	   20272 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	   15368 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     708 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0309463 %
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3424256 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   992 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       3075712 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                             348544 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   126880 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:         4656768 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):          5005312 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):          4666096 Byte
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0191234 seconds
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        49586500 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49350208 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13070140 kB
+20220311 061629.941 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9523 %
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	  498512 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	  481608 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	   20276 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	   15368 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     708 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0309524 %
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3424256 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                  2016 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       3073040 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                             351216 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   126880 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:         4654096 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):          5005312 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):          4663424 Byte
+20220311 061629.942 INFO             PET0 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0194552 seconds
+20220311 061629.942 INFO             PET0 ESMCI_IO_Handler.C:279 ESMCI::IO_Handler::destroy() after finalize, localrc = 0
+20220311 061629.942 INFO             PET0 ESMCI_IO.C:150 ESMCI::IO::create() 
+20220311 061629.942 INFO             PET0 ESMCI_IO.C:1027 ESMCI::IO::addArray() 
+20220311 061629.942 INFO             PET0 ESMCI_IO.C:460 ESMCI::IO::write() 
+20220311 061629.942 INFO             PET0 ESMCI_IO.C:805 ESMCI::IO::open() 
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:180 ESMCI::PIO_Handler::initialize() 
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:195 ESMCI::PIO_Handler::initialize() Before PIOc_Init_Intracomm, num_iotasks = 1
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:198 ESMCI::PIO_Handler::initialize() After PIOc_Init_Intracomm, instance = 65536
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:214 ESMCI::PIO_Handler::initialize() After PIOc_Set_IOSystem_Error_Handling
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:217 ESMCI::PIO_Handler::initialize() push_back
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:307 ESMCI::PIO_Handler::initializeVM After initialize, rc = 0
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:309 ESMCI::PIO_Handler::initializeVM Looking for active instance, size = 1
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:311 ESMCI::PIO_Handler::initializeVM Fetched PIO system descriptor, 0x10000
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1220 ESMCI::PIO_Handler::open() 
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.942 INFO             PET0 ESMCI_IO_Handler.C:479 ESMCI::IO_Handler::fileExists() File, "commMatrix.nc" exists
+20220311 061629.942 INFO             PET0 ESMCI_PIO_Handler.C:1329 ESMCI::PIO_Handler::open()  calling PIOc_openfile with mode = 1, file = "commMatrix.nc"
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:1336 ESMCI::PIO_Handler::open() , called PIOc_openfile on commMatrix.nc
+20220311 061629.945 INFO             PET0 ESMCI_IO.C:468 ESMCI::IO::write() open returned 0
+20220311 061629.945 INFO             PET0 ESMCI_IO.C:537 ESMCI::IO::write() 
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:772 ESMCI::PIO_Handler::arrayWrite() 
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:1640 ESMCI::PIO_Handler::getIODesc() 
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:1643 ESMCI::PIO_Handler::getIODesc() calling constructPioDecomp
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:1896 ESMCI::PIO_IODescHandler::constr 
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:1913 ESMCI::PIO_IODescHandler::constr localDeCount = 1
+20220311 061629.945 INFO             PET0 ESMCI_PIO_Handler.C:2038 ESMCI::PIO_IODescHandler::constr , IODesc shape = [ 001, 001 ], calling pio_initdecomp
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:2053 ESMCI::PIO_IODescHandler::constr after call to PIOc_initdecomp_dof
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1646 ESMCI::PIO_Handler::getIODesc() constructPioDecomp call complete, localrc = 0
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:2168 ESMCI::PIO_IODescHandler::getDim 
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:2173 ESMCI::PIO_IODescHandler::getDim getDims: found handler, nioDims = 2, ioDims = 0x24edb20, narrDims = 2
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1673 ESMCI::PIO_Handler::getIODesc() getDims complete, calling getIOType
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:2230 ESMCI::PIO_IODescHandler::getIOT 
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:804 ESMCI::PIO_Handler::arrayWrite() baseAddress = 0x0x24e9e60
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:810 ESMCI::PIO_Handler::arrayWrite() arrlen = 1
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:820 ESMCI::PIO_Handler::arrayWrite() varname = "sendTotalSize_src-dst"
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:827 ESMCI::PIO_Handler::arrayWrite() Entering NetCDF define mode (redef)
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:841 ESMCI::PIO_Handler::arrayWrite() Calling PIOc_inq
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:850 ESMCI::PIO_Handler::arrayWrite() Looking for variable in file
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:862 ESMCI::PIO_Handler::arrayWrite() Checking time dimension
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:869 ESMCI::PIO_Handler::arrayWrite() inq_dimid  = 0
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:870 ESMCI::PIO_Handler::arrayWrite() hasTimeDim = 0
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:871 ESMCI::PIO_Handler::arrayWrite() unlim = -1
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:912 ESMCI::PIO_Handler::arrayWrite() ready to check var compat., timeFrame = -1
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:992 ESMCI::PIO_Handler::arrayWrite() Going into NetCDF define mode (redef)
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1037 ESMCI::PIO_Handler::arrayWrite() Defining dimension 0
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1037 ESMCI::PIO_Handler::arrayWrite() Defining dimension 1
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1046 ESMCI::PIO_Handler::arrayWrite() finished defining space dims, timeFrame = -1
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1069 ESMCI::PIO_Handler::arrayWrite() varExists = 0
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1071 ESMCI::PIO_Handler::arrayWrite() niodims = 2
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1072 ESMCI::PIO_Handler::arrayWrite() basepiotype = 4
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1095 ESMCI::PIO_Handler::arrayWrite() NOT calling setframe, timeFrame = -1
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1125 ESMCI::PIO_Handler::arrayWrite() calling enddef, status = 0x7ffdd821658c
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1134 ESMCI::PIO_Handler::arrayWrite() calling write_darray, pio type = 4, address = 0x24e9e60
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1151 ESMCI::PIO_Handler::arrayWrite() cleanup and return
+20220311 061629.946 INFO             PET0 ESMCI_IO.C:484 ESMCI::IO::write() write returned 0
+20220311 061629.946 INFO             PET0 ESMCI_IO.C:929 ESMCI::IO::close() 
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1536 ESMCI::PIO_Handler::flush() 
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.946 INFO             PET0 ESMCI_PIO_Handler.C:1539 ESMCI::PIO_Handler::flush() calling sync
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        49579444 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49343152 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	  498512 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	   28628 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0437022 %
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  1040 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      20390896 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             326672 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   117968 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        21971952 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         21981280 Byte
+20220311 061629.946 INFO             PET0 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0241354 seconds
+20220311 061629.946 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        49579444 kB
+20220311 061629.946 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49343152 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	  498512 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	   28636 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0437144 %
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   320 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      20391488 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             326080 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   117488 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        21972544 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         21981872 Byte
+20220311 061629.947 INFO             PET0 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0244962 seconds
+20220311 061629.947 INFO             PET0 ESMCI_PIO_Handler.C:1584 ESMCI::PIO_Handler::close() 
+20220311 061629.947 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.947 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.947 INFO             PET0 ESMCI_IO.C:493 ESMCI::IO::write() close returned 0
+20220311 061629.947 INFO             PET0 ESMCI_IO.C:200 ESMCI::IO::destroy() 
+20220311 061629.947 INFO             PET0 ESMCI_IO.C:73 ESMCI::IO::destruct() 
+20220311 061629.947 INFO             PET0 ESMCI_IO_Handler.C:277 ESMCI::IO_Handler::destroy() 
+20220311 061629.947 INFO             PET0 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220311 061629.947 INFO             PET0 ESMCI_PIO_Handler.C:1807 ESMCI::PIO_IODescHandler::~PIO_I calling PIOc_freedecomp
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        49579444 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49343152 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	  498512 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	   28636 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0437144 %
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   992 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       3075776 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                           17641792 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   117488 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:         4656832 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):          4666176 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0249467 seconds
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        49579444 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49343152 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	  498512 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	   28636 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0437144 %
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   944 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       3073120 Byte
+20220311 061629.947 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                           17644448 Byte
+20220311 061629.948 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   118448 Byte
+20220311 061629.948 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:         4654176 Byte
+20220311 061629.948 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.948 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):          4663504 Byte
+20220311 061629.948 INFO             PET0 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0252671 seconds
+20220311 061629.948 INFO             PET0 ESMCI_IO_Handler.C:279 ESMCI::IO_Handler::destroy() after finalize, localrc = 0
+20220311 061629.948 INFO             PET0 ESMCI_IO.C:150 ESMCI::IO::create() 
+20220311 061629.948 INFO             PET0 ESMCI_IO.C:1027 ESMCI::IO::addArray() 
+20220311 061629.948 INFO             PET0 ESMCI_IO.C:460 ESMCI::IO::write() 
+20220311 061629.948 INFO             PET0 ESMCI_IO.C:805 ESMCI::IO::open() 
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:180 ESMCI::PIO_Handler::initialize() 
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:195 ESMCI::PIO_Handler::initialize() Before PIOc_Init_Intracomm, num_iotasks = 1
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:198 ESMCI::PIO_Handler::initialize() After PIOc_Init_Intracomm, instance = 65536
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:214 ESMCI::PIO_Handler::initialize() After PIOc_Set_IOSystem_Error_Handling
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:217 ESMCI::PIO_Handler::initialize() push_back
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:307 ESMCI::PIO_Handler::initializeVM After initialize, rc = 0
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:309 ESMCI::PIO_Handler::initializeVM Looking for active instance, size = 1
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:311 ESMCI::PIO_Handler::initializeVM Fetched PIO system descriptor, 0x10000
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1220 ESMCI::PIO_Handler::open() 
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.948 INFO             PET0 ESMCI_IO_Handler.C:479 ESMCI::IO_Handler::fileExists() File, "commMatrix.nc" exists
+20220311 061629.948 INFO             PET0 ESMCI_PIO_Handler.C:1329 ESMCI::PIO_Handler::open()  calling PIOc_openfile with mode = 1, file = "commMatrix.nc"
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1336 ESMCI::PIO_Handler::open() , called PIOc_openfile on commMatrix.nc
+20220311 061629.949 INFO             PET0 ESMCI_IO.C:468 ESMCI::IO::write() open returned 0
+20220311 061629.949 INFO             PET0 ESMCI_IO.C:537 ESMCI::IO::write() 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:772 ESMCI::PIO_Handler::arrayWrite() 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1640 ESMCI::PIO_Handler::getIODesc() 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1643 ESMCI::PIO_Handler::getIODesc() calling constructPioDecomp
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1896 ESMCI::PIO_IODescHandler::constr 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1913 ESMCI::PIO_IODescHandler::constr localDeCount = 1
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:2038 ESMCI::PIO_IODescHandler::constr , IODesc shape = [ 001, 001 ], calling pio_initdecomp
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:2053 ESMCI::PIO_IODescHandler::constr after call to PIOc_initdecomp_dof
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1646 ESMCI::PIO_Handler::getIODesc() constructPioDecomp call complete, localrc = 0
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:2168 ESMCI::PIO_IODescHandler::getDim 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:2173 ESMCI::PIO_IODescHandler::getDim getDims: found handler, nioDims = 2, ioDims = 0x36d8e00, narrDims = 2
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1673 ESMCI::PIO_Handler::getIODesc() getDims complete, calling getIOType
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:2230 ESMCI::PIO_IODescHandler::getIOT 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:804 ESMCI::PIO_Handler::arrayWrite() baseAddress = 0x0x24f0760
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:810 ESMCI::PIO_Handler::arrayWrite() arrlen = 1
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:820 ESMCI::PIO_Handler::arrayWrite() varname = "recvMsgCount_dst-src"
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:827 ESMCI::PIO_Handler::arrayWrite() Entering NetCDF define mode (redef)
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:841 ESMCI::PIO_Handler::arrayWrite() Calling PIOc_inq
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:850 ESMCI::PIO_Handler::arrayWrite() Looking for variable in file
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:862 ESMCI::PIO_Handler::arrayWrite() Checking time dimension
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:869 ESMCI::PIO_Handler::arrayWrite() inq_dimid  = 0
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:870 ESMCI::PIO_Handler::arrayWrite() hasTimeDim = 0
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:871 ESMCI::PIO_Handler::arrayWrite() unlim = -1
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:912 ESMCI::PIO_Handler::arrayWrite() ready to check var compat., timeFrame = -1
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:992 ESMCI::PIO_Handler::arrayWrite() Going into NetCDF define mode (redef)
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1037 ESMCI::PIO_Handler::arrayWrite() Defining dimension 0
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1037 ESMCI::PIO_Handler::arrayWrite() Defining dimension 1
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1046 ESMCI::PIO_Handler::arrayWrite() finished defining space dims, timeFrame = -1
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1069 ESMCI::PIO_Handler::arrayWrite() varExists = 0
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1071 ESMCI::PIO_Handler::arrayWrite() niodims = 2
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1072 ESMCI::PIO_Handler::arrayWrite() basepiotype = 4
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1095 ESMCI::PIO_Handler::arrayWrite() NOT calling setframe, timeFrame = -1
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1125 ESMCI::PIO_Handler::arrayWrite() calling enddef, status = 0x7ffdd821658c
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1134 ESMCI::PIO_Handler::arrayWrite() calling write_darray, pio type = 4, address = 0x24f0760
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1151 ESMCI::PIO_Handler::arrayWrite() cleanup and return
+20220311 061629.949 INFO             PET0 ESMCI_IO.C:484 ESMCI::IO::write() write returned 0
+20220311 061629.949 INFO             PET0 ESMCI_IO.C:929 ESMCI::IO::close() 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1536 ESMCI::PIO_Handler::flush() 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.949 INFO             PET0 ESMCI_PIO_Handler.C:1539 ESMCI::PIO_Handler::flush() calling sync
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        49578940 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49342648 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	  506684 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.949 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	   29004 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0442762 %
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   432 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      20391520 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             326048 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   117888 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        21972576 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         21981904 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0273961 seconds
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        49578940 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49342648 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	  506684 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	   29004 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0442762 %
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   320 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      20392128 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             325440 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   117248 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        21973184 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         21982512 Byte
+20220311 061629.950 INFO             PET0 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0277529 seconds
+20220311 061629.950 INFO             PET0 ESMCI_PIO_Handler.C:1584 ESMCI::PIO_Handler::close() 
+20220311 061629.950 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.950 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.950 INFO             PET0 ESMCI_IO.C:493 ESMCI::IO::write() close returned 0
+20220311 061629.950 INFO             PET0 ESMCI_IO.C:200 ESMCI::IO::destroy() 
+20220311 061629.950 INFO             PET0 ESMCI_IO.C:73 ESMCI::IO::destruct() 
+20220311 061629.950 INFO             PET0 ESMCI_IO_Handler.C:277 ESMCI::IO_Handler::destroy() 
+20220311 061629.950 INFO             PET0 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220311 061629.950 INFO             PET0 ESMCI_PIO_Handler.C:1807 ESMCI::PIO_IODescHandler::~PIO_I calling PIOc_freedecomp
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        49578940 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49342648 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	  506684 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	   29004 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0442762 %
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  1024 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       3075728 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                           17641840 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   117248 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:         4656784 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):          4666128 Byte
+20220311 061629.950 INFO             PET0 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0282026 seconds
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        49578940 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49342648 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	  506684 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	   29004 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0442762 %
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   704 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       3073072 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                           17644496 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   121056 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:         4654128 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):          4663456 Byte
+20220311 061629.951 INFO             PET0 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0285195 seconds
+20220311 061629.951 INFO             PET0 ESMCI_IO_Handler.C:279 ESMCI::IO_Handler::destroy() after finalize, localrc = 0
+20220311 061629.951 INFO             PET0 ESMCI_IO.C:150 ESMCI::IO::create() 
+20220311 061629.951 INFO             PET0 ESMCI_IO.C:1027 ESMCI::IO::addArray() 
+20220311 061629.951 INFO             PET0 ESMCI_IO.C:460 ESMCI::IO::write() 
+20220311 061629.951 INFO             PET0 ESMCI_IO.C:805 ESMCI::IO::open() 
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:180 ESMCI::PIO_Handler::initialize() 
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:195 ESMCI::PIO_Handler::initialize() Before PIOc_Init_Intracomm, num_iotasks = 1
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:198 ESMCI::PIO_Handler::initialize() After PIOc_Init_Intracomm, instance = 65536
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:214 ESMCI::PIO_Handler::initialize() After PIOc_Set_IOSystem_Error_Handling
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:217 ESMCI::PIO_Handler::initialize() push_back
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:307 ESMCI::PIO_Handler::initializeVM After initialize, rc = 0
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:309 ESMCI::PIO_Handler::initializeVM Looking for active instance, size = 1
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:311 ESMCI::PIO_Handler::initializeVM Fetched PIO system descriptor, 0x10000
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1220 ESMCI::PIO_Handler::open() 
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1492 ESMCI::PIO_Handler::isOpen() pioFileDesc is NULL
+20220311 061629.951 INFO             PET0 ESMCI_IO_Handler.C:479 ESMCI::IO_Handler::fileExists() File, "commMatrix.nc" exists
+20220311 061629.951 INFO             PET0 ESMCI_PIO_Handler.C:1329 ESMCI::PIO_Handler::open()  calling PIOc_openfile with mode = 1, file = "commMatrix.nc"
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1336 ESMCI::PIO_Handler::open() , called PIOc_openfile on commMatrix.nc
+20220311 061629.952 INFO             PET0 ESMCI_IO.C:468 ESMCI::IO::write() open returned 0
+20220311 061629.952 INFO             PET0 ESMCI_IO.C:537 ESMCI::IO::write() 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:772 ESMCI::PIO_Handler::arrayWrite() 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1640 ESMCI::PIO_Handler::getIODesc() 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1643 ESMCI::PIO_Handler::getIODesc() calling constructPioDecomp
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1896 ESMCI::PIO_IODescHandler::constr 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1913 ESMCI::PIO_IODescHandler::constr localDeCount = 1
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:2038 ESMCI::PIO_IODescHandler::constr , IODesc shape = [ 001, 001 ], calling pio_initdecomp
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:2053 ESMCI::PIO_IODescHandler::constr after call to PIOc_initdecomp_dof
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1646 ESMCI::PIO_Handler::getIODesc() constructPioDecomp call complete, localrc = 0
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:2168 ESMCI::PIO_IODescHandler::getDim 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:2173 ESMCI::PIO_IODescHandler::getDim getDims: found handler, nioDims = 2, ioDims = 0x36d9020, narrDims = 2
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1673 ESMCI::PIO_Handler::getIODesc() getDims complete, calling getIOType
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:2230 ESMCI::PIO_IODescHandler::getIOT 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:804 ESMCI::PIO_Handler::arrayWrite() baseAddress = 0x0x24f2210
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:810 ESMCI::PIO_Handler::arrayWrite() arrlen = 1
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:820 ESMCI::PIO_Handler::arrayWrite() varname = "recvTotalSize_dst-src"
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:827 ESMCI::PIO_Handler::arrayWrite() Entering NetCDF define mode (redef)
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:841 ESMCI::PIO_Handler::arrayWrite() Calling PIOc_inq
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:850 ESMCI::PIO_Handler::arrayWrite() Looking for variable in file
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:862 ESMCI::PIO_Handler::arrayWrite() Checking time dimension
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:869 ESMCI::PIO_Handler::arrayWrite() inq_dimid  = 0
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:870 ESMCI::PIO_Handler::arrayWrite() hasTimeDim = 0
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:871 ESMCI::PIO_Handler::arrayWrite() unlim = -1
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:912 ESMCI::PIO_Handler::arrayWrite() ready to check var compat., timeFrame = -1
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:992 ESMCI::PIO_Handler::arrayWrite() Going into NetCDF define mode (redef)
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1037 ESMCI::PIO_Handler::arrayWrite() Defining dimension 0
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1037 ESMCI::PIO_Handler::arrayWrite() Defining dimension 1
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1046 ESMCI::PIO_Handler::arrayWrite() finished defining space dims, timeFrame = -1
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1069 ESMCI::PIO_Handler::arrayWrite() varExists = 0
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1071 ESMCI::PIO_Handler::arrayWrite() niodims = 2
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1072 ESMCI::PIO_Handler::arrayWrite() basepiotype = 4
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1095 ESMCI::PIO_Handler::arrayWrite() NOT calling setframe, timeFrame = -1
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1125 ESMCI::PIO_Handler::arrayWrite() calling enddef, status = 0x7ffdd821658c
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1134 ESMCI::PIO_Handler::arrayWrite() calling write_darray, pio type = 4, address = 0x24f2210
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1151 ESMCI::PIO_Handler::arrayWrite() cleanup and return
+20220311 061629.952 INFO             PET0 ESMCI_IO.C:484 ESMCI::IO::write() write returned 0
+20220311 061629.952 INFO             PET0 ESMCI_IO.C:929 ESMCI::IO::close() 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1536 ESMCI::PIO_Handler::flush() 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.952 INFO             PET0 ESMCI_PIO_Handler.C:1539 ESMCI::PIO_Handler::flush() calling sync
+20220311 061629.952 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.952 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        49578940 kB
+20220311 061629.952 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49342648 kB
+20220311 061629.952 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.952 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	  506684 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	   29004 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0442762 %
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   432 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      20392176 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             325392 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   117008 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        21973232 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         21982560 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0304597 seconds
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        49578940 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49342648 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	  506684 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	   29004 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0442762 %
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   320 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      20392800 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             324768 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   116368 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        21973856 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         21983184 Byte
+20220311 061629.953 INFO             PET0 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0308183 seconds
+20220311 061629.953 INFO             PET0 ESMCI_PIO_Handler.C:1584 ESMCI::PIO_Handler::close() 
+20220311 061629.953 INFO             PET0 ESMCI_PIO_Handler.C:1490 ESMCI::PIO_Handler::isOpen() 
+20220311 061629.953 INFO             PET0 ESMCI_PIO_Handler.C:1495 ESMCI::PIO_Handler::isOpen() File is open
+20220311 061629.953 INFO             PET0 ESMCI_IO.C:493 ESMCI::IO::write() close returned 0
+20220311 061629.953 INFO             PET0 ESMCI_IO.C:200 ESMCI::IO::destroy() 
+20220311 061629.953 INFO             PET0 ESMCI_IO.C:73 ESMCI::IO::destruct() 
+20220311 061629.953 INFO             PET0 ESMCI_IO_Handler.C:277 ESMCI::IO_Handler::destroy() 
+20220311 061629.953 INFO             PET0 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220311 061629.953 INFO             PET0 ESMCI_PIO_Handler.C:1807 ESMCI::PIO_IODescHandler::~PIO_I calling PIOc_freedecomp
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        49578940 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49342648 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	  506684 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	   29004 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0442762 %
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   992 Byte
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       3075744 Byte
+20220311 061629.953 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                           17641824 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   116368 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:         4656800 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):          4666128 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0312677 seconds
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       65507008 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        49578940 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   49342648 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13086512 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 19.9773 %
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	  506684 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	  498496 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	       0 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	   64492 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	   29004 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	   32256 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     200 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	   48676 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     728 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0442762 %
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                20717568 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:          1581056 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   944 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       3073072 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                           17644496 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   119344 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:         4654128 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         22298624 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):          4663456 Byte
+20220311 061629.954 INFO             PET0 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0315884 seconds
+20220311 061629.954 INFO             PET0 ESMCI_IO_Handler.C:279 ESMCI::IO_Handler::destroy() after finalize, localrc = 0
+20220311 061629.954 INFO             PET0 PASS Execute ESMC_RouteHandlePrint(), ESMC_FieldGridRegridCsrvUTest.C, line 526
+20220311 061629.954 INFO             PET0 PASS Release an ESMC_RouteHandle via ESMC_FieldRegridRelease(), ESMC_FieldGridRegridCsrvUTest.C, line 534
+20220311 061629.954 INFO             PET0 PASS Execute ESMC_FieldRegridGetArea() - source, ESMC_FieldGridRegridCsrvUTest.C, line 584
+20220311 061629.955 INFO             PET0 PASS Execute ESMC_FieldRegridGetArea() - destination, ESMC_FieldGridRegridCsrvUTest.C, line 606
+20220311 061629.955 INFO             PET0 PASS Regridding Validation, ESMC_FieldGridRegridCsrvUTest.C, line 671
+20220311 061629.955 INFO             PET0 PASS Destroy ESMC_Field object, ESMC_FieldGridRegridCsrvUTest.C, line 685
+20220311 061629.955 INFO             PET0 PASS Destroy ESMC_Field object, ESMC_FieldGridRegridCsrvUTest.C, line 693
+20220311 061629.955 INFO             PET0 PASS Destroy ESMC_Grid object, ESMC_FieldGridRegridCsrvUTest.C, line 701
+20220311 061629.955 INFO             PET0 PASS Destroy ESMC_Mesh object, ESMC_FieldGridRegridCsrvUTest.C, line 709
+20220311 061629.955 INFO             PET0 Ending Test, file ESMC_FieldGridRegridCsrvUTest.C, line 714
+20220311 061629.955 INFO             PET0 Finalizing ESMF
+20220311 061629.955 INFO             PET0 ESMCI_IO_Handler.C:331 ESMCI::IO_Handler::finalize() 
+20220311 061629.955 INFO             PET0 ESMCI_PIO_Handler.C:361 ESMCI::PIO_Handler::finalize() 
+20220311 061629.955 INFO             PET0 ESMCI_IO_Handler.C:333 ESMCI::IO_Handler::finalize() after finalize, localrc = 0
+20220311 061629.955 INFO             PET0 ESMCI_IO_Handler.C:356 ESMCI::IO_Handler::finalize() before return, localrc = 0
