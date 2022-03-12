@@ -1,8 +1,8 @@
 
 ===================================================================
 Build for = intel_2020.2_mvapich2_O_jedwards_pio_update2, mpi version 2.3 on jet esmf_os: Linux
-Build time = 03:59:43
-git hash = v8.3.0b09-94-gba2d53f
+Build time = 03:51:01
+git hash = v8.3.0b09-96-g559b459
 
 unit test results   	Build did not complete successfully
 system test results 	Build did not complete successfully
@@ -19,10 +19,12 @@ Currently Loaded Modules:
 
  
 
+/bin/sh: line 0: [: -ge: unary operator expected
+/bin/sh: line 0: [: -ge: unary operator expected
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
-v8.3.0b09-94-gba2d53fd60
+v8.3.0b09-96-g559b459836
 --------------------------------------------------------------
 On branch jedwards/pio_update2
 Your branch is up to date with 'origin/jedwards/pio_update2'.
@@ -31,15 +33,14 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_2020.2_mvapich2_O.bat
-	build-intel_2020.2_mvapich2_O.bat_687415.e
-	build-intel_2020.2_mvapich2_O.bat_687415.o
+	build-intel_2020.2_mvapich2_O.bat_731737.e
+	build-intel_2020.2_mvapich2_O.bat_731737.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
-	src/Infrastructure/IO/PIO/Build/
 	test-intel_2020.2_mvapich2_O.bat
-	test-intel_2020.2_mvapich2_O.bat_687426.e
-	test-intel_2020.2_mvapich2_O.bat_687426.o
+	test-intel_2020.2_mvapich2_O.bat_731738.e
+	test-intel_2020.2_mvapich2_O.bat_731738.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -60,23 +61,80 @@ cmake version 2.8.12.2
 --------------------------------------------------------------
 Fortran Compiler version:
 mpifort for MVAPICH2 version 2.3
-Intel(R) Fortran Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 19.1.2.254 Build 20200623
-Copyright (C) 1985-2020 Intel Corporation.  All rights reserved.
 
+Error: A license for Comp-FL is not available now (-15,570,115).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
+**  1.  /misc/apps/intel/compilers_and_libraries_2020.2.254/linux/bin/intel64/../../Licenses
+**  2.  /home/Mark.Potts/Licenses
+**  3.  /home/Mark.Potts/intel/licenses
+**  4.  /opt/intel/licenses/USE_SERVER.lic
+**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
+**  6.  /misc/apps/intel/compilers_and_libraries_2020.2.254/linux/bin/intel64/*.lic
+
+Please refer http://software.intel.com/sites/support/ for more information..
+
+ifort: error #10052: could not checkout FLEXlm license
 
 --------------------------------------------------------------
 C++ Compiler version:
 mpicxx for MVAPICH2 version 2.3
-Intel(R) C++ Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 19.1.2.254 Build 20200623
-Copyright (C) 1985-2020 Intel Corporation.  All rights reserved.
 
+Error: A license for Comp-CL is not available now (-15,570,115).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
+**  1.  /misc/apps/intel/compilers_and_libraries_2020.2.254/linux/bin/intel64/../../Licenses
+**  2.  /home/Mark.Potts/Licenses
+**  3.  /home/Mark.Potts/intel/licenses
+**  4.  /opt/intel/licenses/USE_SERVER.lic
+**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
+**  6.  /misc/apps/intel/compilers_and_libraries_2020.2.254/linux/bin/intel64/*.lic
+
+Please refer http://software.intel.com/sites/support/ for more information..
+
+icpc: error #10052: could not checkout FLEXlm license
 
 --------------------------------------------------------------
 C Compiler version:
 mpicc for MVAPICH2 version 2.3
-Intel(R) C Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 19.1.2.254 Build 20200623
-Copyright (C) 1985-2020 Intel Corporation.  All rights reserved.
 
+Error: A license for Comp-CL is not available now (-15,570,115).
+
+A connection to the license server could not be made.  You should
+make sure that your license daemon process is running: both an
+lmgrd process and an INTEL process should be running
+if your license limits you to a specified number of licenses in use
+at a time.  Also, check to see if the wrong port@host or the wrong
+license file is being used, or if the port or hostname in the license
+file has changed.
+
+License file(s) used were (in this order):
+**  1.  /misc/apps/intel/compilers_and_libraries_2020.2.254/linux/bin/intel64/../../Licenses
+**  2.  /home/Mark.Potts/Licenses
+**  3.  /home/Mark.Potts/intel/licenses
+**  4.  /opt/intel/licenses/USE_SERVER.lic
+**  5.  /Users/Shared/Library/Application Support/Intel/Licenses
+**  6.  /misc/apps/intel/compilers_and_libraries_2020.2.254/linux/bin/intel64/*.lic
+
+Please refer http://software.intel.com/sites/support/ for more information..
+
+icc: error #10052: could not checkout FLEXlm license
 
 --------------------------------------------------------------
 Preprocessor version:
@@ -185,16 +243,16 @@ Location of the C linker:          /apps/mvapich2/2.3-intel/bin/mpicc
 
 Fortran compiler flags:
 ESMF_F90COMPILER: mpif90
-ESMF_F90COMPILEOPTS: -I/apps/mvapich2/2.3-intel/include -O -fPIC -debug minimal -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
+ESMF_F90COMPILEOPTS: -I/apps/mvapich2/2.3-intel/include -O -fPIC -debug minimal -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -openmp
 ESMF_F90COMPILEPATHS: -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/mod/modO/Linux.intel.64.mvapich2.default -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/src/include -I/apps/netcdf/4.7.0/intel/18.0.5.274/include -I/apps/netcdf/4.7.0/intel/18.0.5.274/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-94-gba2d53fd60' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: 
 ESMF_F90COMPILEFIXCPP: 
 ESMF_F90COMPILEFIXNOCPP: 
 
 Fortran linker flags:
-ESMF_F90LINKOPTS:   -m64 -mcmodel=small -pthread -threads -Wl,--no-as-needed  -qopenmp
+ESMF_F90LINKOPTS:   -m64 -mcmodel=small -pthread -threads -Wl,--no-as-needed  -openmp
 ESMF_F90LINKPATHS: -L/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mvapich2.default -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/hdf5/1.10.5/intel/18.0.5.274/lib -L/apps/szip/2.1/lib 
 ESMF_F90LINKRPATHS: -Wl,-rpath,/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mvapich2.default -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/hdf5/1.10.5/intel/18.0.5.274/lib -Wl,-rpath,/apps/szip/2.1/lib 
 ESMF_F90LINKLIBS:  -cxxlib -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf -lpioc
@@ -202,22 +260,22 @@ ESMF_F90ESMFLINKLIBS: -lesmf  -cxxlib -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lne
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: mpicxx
-ESMF_CXXCOMPILEOPTS: -I/apps/mvapich2/2.3-intel/include -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp
+ESMF_CXXCOMPILEOPTS: -I/apps/mvapich2/2.3-intel/include -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp
 ESMF_CXXCOMPILEPATHS:  -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/src/include  -I/apps/netcdf/4.7.0/intel/18.0.5.274/include -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-94-gba2d53fd60' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2 -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2 -D__SDIR__='' -DESMF_CXXSTD=11
 
 C++ linker flags:
-ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
-ESMF_CXXLINKPATHS: -L/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mvapich2.default -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/hdf5/1.10.5/intel/18.0.5.274/lib -L/apps/szip/2.1/lib -L/misc/apps/intel/compilers_and_libraries_2020.2.254/linux/compiler/lib/intel64_lin/
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mvapich2.default -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/hdf5/1.10.5/intel/18.0.5.274/lib -Wl,-rpath,/apps/szip/2.1/lib  -Wl,-rpath,/misc/apps/intel/compilers_and_libraries_2020.2.254/linux/compiler/lib/intel64_lin/
-ESMF_CXXLINKLIBS:  -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf -lpioc
-ESMF_CXXESMFLINKLIBS: -lesmf  -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf -lpioc
+ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -openmp
+ESMF_CXXLINKPATHS: -L/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mvapich2.default -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/hdf5/1.10.5/intel/18.0.5.274/lib -L/apps/szip/2.1/lib -L
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mvapich2.default -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/hdf5/1.10.5/intel/18.0.5.274/lib -Wl,-rpath,/apps/szip/2.1/lib  -Wl,-rpath,
+ESMF_CXXLINKLIBS:   -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf -lpioc
+ESMF_CXXESMFLINKLIBS: -lesmf   -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf -lpioc
 
 C compiler flags:
 ESMF_CCOMPILER: mpicc
 ESMF_CCOMPILEOPTS:  -O -DNDEBUG -fPIC -debug minimal
 ESMF_CCOMPILEPATHS:  -I/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-94-gba2d53fd60' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2 -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_jedwards_pio_update2 -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -230,7 +288,7 @@ Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
 ESMF_SL_SUFFIX:       so
 ESMF_SL_LIBLINKER:    mpicxx
-ESMF_SL_LIBOPTS:       -pthread -shared  -qopenmp
+ESMF_SL_LIBOPTS:       -pthread -shared  -openmp
 ESMF_SL_LIBLIBS:      
 
 ESMF Tracing linker options:
@@ -240,8 +298,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Fri Mar 11 03:59:17 GMT 2022 on x98
-Machine characteristics: Linux x98 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sat Mar 12 03:51:01 GMT 2022 on x343
+Machine characteristics: Linux x343 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
