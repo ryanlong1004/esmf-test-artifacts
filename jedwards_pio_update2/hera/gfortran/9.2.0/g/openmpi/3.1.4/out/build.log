@@ -1,4 +1,4 @@
-Sat Mar 12 06:07:41 UTC 2022
+Sun Mar 13 06:12:56 UTC 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -11,8 +11,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-gfortran_9.2.0_openmpi_g.bat
-	build-gfortran_9.2.0_openmpi_g.bat_29441897.e
-	build-gfortran_9.2.0_openmpi_g.bat_29441897.o
+	build-gfortran_9.2.0_openmpi_g.bat_29478391.e
+	build-gfortran_9.2.0_openmpi_g.bat_29478391.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -222,15 +222,15 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Sat Mar 12 06:04:15 UTC 2022 on h5c54
-Machine characteristics: Linux h5c54 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sun Mar 13 06:09:34 UTC 2022 on h34m27
+Machine characteristics: Linux h34m27 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2'
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/lib/libg/Linux.gfortran.64.openmpi.default for library
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include for include files
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.openmpi.default for *.mod files
-Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default for build-gfortran_9.2.0_openmpi_g.bat_29441897.o files
+Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default for build-gfortran_9.2.0_openmpi_g.bat_29478391.o files
 cd /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 ;\
 make ACTION=tree_include tree
 make[2]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2'
@@ -1268,6 +1268,16 @@ mpifort -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument 
 mpifort -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.openmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/apps/spack/linux-centos7-x86_64/gcc-9.2.0/netcdf-fortran-4.5.2-nbyhestkjlc2k7g5fmpepvrs5vrrxifc/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90 -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_TypeKindGet.o
 mpifort -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.openmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/apps/spack/linux-centos7-x86_64/gcc-9.2.0/netcdf-fortran-4.5.2-nbyhestkjlc2k7g5fmpepvrs5vrrxifc/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_InitMacros.F90 -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_InitMacros.o
 mpifort -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.openmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/apps/spack/linux-centos7-x86_64/gcc-9.2.0/netcdf-fortran-4.5.2-nbyhestkjlc2k7g5fmpepvrs5vrrxifc/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_StaggerLocType.F90 -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_StaggerLocType.o
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:252:5:
+
+  252 |  if (var==var) continue ! dummy check to quiet down compiler warnings
+      |     1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:226:5:
+
+  226 |  if (var==var) continue ! dummy check to quiet down compiler warnings
+      |     1
+Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:423:5:
 
   423 |  if (var==var) continue ! dummy check to quiet down compiler warnings
@@ -1288,16 +1298,6 @@ Warning: Pointer at (1) in pointer assignment might outlive the pointer target [
   112 |     udt_ptr2 => udt
       |    1
 Warning: Pointer at (1) in pointer assignment might outlive the pointer target [-Wtarget-lifetime]
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:252:5:
-
-  252 |  if (var==var) continue ! dummy check to quiet down compiler warnings
-      |     1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_TypeKindGet.F90:226:5:
-
-  226 |  if (var==var) continue ! dummy check to quiet down compiler warnings
-      |     1
-Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
 mpifort -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.openmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/apps/spack/linux-centos7-x86_64/gcc-9.2.0/netcdf-fortran-4.5.2-nbyhestkjlc2k7g5fmpepvrs5vrrxifc/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90 -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_UtilCubedSphere.o
 mpifort -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.openmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/apps/spack/linux-centos7-x86_64/gcc-9.2.0/netcdf-fortran-4.5.2-nbyhestkjlc2k7g5fmpepvrs5vrrxifc/include  -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_AttPackType.F90 -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMF_AttPackType.o
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90:1158:11:
@@ -1500,14 +1500,14 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include  -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 -D__SDIR__='"src/Infrastructure/VM/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/ESMCI_VMKernel.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_VMKernel.o
 In file included from /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:28,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/ESMCI_VM.C:40:
 /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
 In file included from /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:28,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/ESMCI_VM.C:40:
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
 /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -4087,18 +4087,6 @@ In file included from /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-i
 /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:121:46: warning: cast between incompatible function types from 'void (*)(void*, void*, int*, ompi_datatype_t**, void (*)(void*, void*, int*, ompi_datatype_t**))' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
   121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
       |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/mpicxx.h:277,
-                 from /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/mpi.h:2693,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMC_VM.h:38,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMC.h:36,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:35:
-/apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function 'virtual void MPI::Op::Init(void (*)(const void*, void*, int, const MPI::Datatype&), bool)':
-/apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:121:46: warning: cast between incompatible function types from 'void (*)(void*, void*, int*, ompi_datatype_t**, void (*)(void*, void*, int*, ompi_datatype_t**))' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
-  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
-      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~
-/apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:123:59: warning: cast between incompatible function types from 'void (*)(const void*, void*, int, const MPI::Datatype&)' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
-  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
-      |                                                           ^~~~
 /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:123:59: warning: cast between incompatible function types from 'void (*)(const void*, void*, int, const MPI::Datatype&)' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
   123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
       |                                                           ^~~~
@@ -4107,6 +4095,18 @@ In file included from /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-i
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMC_VM.h:38,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMC.h:36,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Base/src/ESMCI_Info.C:25:
+/apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function 'virtual void MPI::Op::Init(void (*)(const void*, void*, int, const MPI::Datatype&), bool)':
+/apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:121:46: warning: cast between incompatible function types from 'void (*)(void*, void*, int*, ompi_datatype_t**, void (*)(void*, void*, int*, ompi_datatype_t**))' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
+  121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:123:59: warning: cast between incompatible function types from 'void (*)(const void*, void*, int, const MPI::Datatype&)' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
+  123 |     ompi_op_set_cxx_callback(mpi_op, (MPI_User_function*) func);
+      |                                                           ^~~~
+In file included from /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/mpicxx.h:277,
+                 from /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/mpi.h:2693,
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMC_VM.h:38,
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMC.h:36,
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:35:
 /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function 'virtual void MPI::Op::Init(void (*)(const void*, void*, int, const MPI::Datatype&), bool)':
 /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:121:46: warning: cast between incompatible function types from 'void (*)(void*, void*, int*, ompi_datatype_t**, void (*)(void*, void*, int*, ompi_datatype_t**))' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
   121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
@@ -4328,6 +4328,10 @@ mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLE
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include  -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 -D__SDIR__='"src/Infrastructure/TimeMgr/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_Calendar.o
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include  -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 -D__SDIR__='"src/Infrastructure/TimeMgr/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_Alarm.o
 mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include  -I/apps/netcdf/4.7.2/gnu/gcc-9.2.0/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-96-g559b459836"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2 -D__SDIR__='"src/Infrastructure/TimeMgr/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/obj/objg/Linux.gfortran.64.openmpi.default/ESMCI_Clock.o
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  433 |       if (strlen(this->name) < nameLen) {
+      |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:433:15: warning: implicitly-declared 'ESMCI::Alarm& ESMCI::Alarm::operator=(const ESMCI::Alarm&)' is deprecated [-Wdeprecated-copy]
   433 |       *this = saveAlarm;
@@ -4340,6 +4344,10 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:491:30: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
   491 |       if (strlen(this->name) < nameLen) {
       |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::print(const char*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
+ 1759 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
+      |                ~^~~~~~~~~~~~~~~~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::print(const char*) const':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1675:17: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
  1675 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
@@ -4408,10 +4416,6 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1446:52: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
  1446 |         sprintf(timeString, "%s%02d", timeString, s);
       |                                                    ^
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
-  433 |       if (strlen(this->name) < nameLen) {
-      |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C: In member function 'int ESMCI::TimeInterval::getString(char*, const char*) const':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3142:75: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
  3142 |         sprintf(timeString, "%s%.9fS", timeString, (s + fractionalSeconds));
@@ -4432,10 +4436,28 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:3094:7: note: because 'ESMCI::Calendar' has user-provided 'ESMCI::Calendar::Calendar(const ESMCI::Calendar&)'
  3094 |       Calendar::Calendar(
       |       ^~~~~~~~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::print(const char*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
- 1759 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
-      |                ~^~~~~~~~~~~~~~~~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:37: warning: '%s' directive writing up to 255 bytes into a region of size 245 [-Wformat-overflow=]
+  442 |         sprintf(logMsg, "clock name %s, "
+      |                                     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:16: note: 'sprintf' output between 57 and 312 bytes into a destination of size 256
+  442 |         sprintf(logMsg, "clock name %s, "
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+  443 |                 "length >= given character array; truncated.", this->name);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:40: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+  668 |             sprintf(logMsg, "For clock %s, "
+      |                                        ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:20: note: 'sprintf' output between 98 and 373 bytes into a destination of size 256
+  668 |             sprintf(logMsg, "For clock %s, "
+      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+  669 |                     "trying to report %dth ringing alarm, but given "
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  670 |                     "ringingAlarmList array can only hold %d.",
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  671 |                     this->name, j+1, sizeofRingingAlarmList);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:500:41: warning: '%s' directive writing up to 255 bytes into a region of size 241 [-Wformat-overflow=]
   500 |         sprintf(logMsg, "For alarm name %s, "
@@ -4461,6 +4483,30 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:873:14: note: 'sprintf' output between 41 and 296 bytes into a destination of size 256
   873 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
       |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:40: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+ 1164 |             sprintf(logMsg, "For clock %s, "
+      |                                        ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:20: note: 'sprintf' output between 93 and 368 bytes into a destination of size 256
+ 1164 |             sprintf(logMsg, "For clock %s, "
+      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+ 1165 |                     "trying to return %dth requested alarm, but given "
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1166 |                     "alarmList array can only hold %d.",
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1167 |                     this->name, j+1, sizeofAlarmList);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:38: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+ 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
+      |                                      ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:27: note: using the range [-2147483648, 2147483647] for directive argument
+ 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:18: note: 'sprintf' output between 39 and 304 bytes into a destination of size 256
+ 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
+      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1140 |                   this->name, alarmlistflag);
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1025:22: warning: '%s' directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
  1025 |               "Alarm %s: can only specify one type of ring duration, not both.",
@@ -4506,137 +4552,6 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1613:14: note: 'sprintf' output between 26 and 281 bytes into a destination of size 256
  1613 |       sprintf(logMsg, "Alarm %s: invalid ringTime.", name);
       |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::enable()':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:586:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  586 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::disable()':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:624:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  624 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::isEnabled(int*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:660:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  660 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::ringerOff()':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:747:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  747 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::isRinging(int*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:817:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  817 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::wasPrevRinging(int*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:934:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  934 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::setToSticky()':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:971:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  971 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::isSticky(int*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1068:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1068 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::operator==(const ESMCI::Alarm&) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1458:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1458 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::operator!=(const ESMCI::Alarm&) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1492:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1492 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::writeRestart() const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1564:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1564 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::print(const char*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1658:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1658 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:483:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  483 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::ringerOn()':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:699:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  699 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:861:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  861 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1012:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1012 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::checkRingTime(int*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1104:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1104 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::validate(const char*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1604:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1604 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  344 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:44: warning: '%s' directive writing up to 255 bytes into a region of size 238 [-Wformat-overflow=]
-  904 |         sprintf(logMsg, "For calendar name %s, "
-      |                                            ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:16: note: 'sprintf' output between 64 and 319 bytes into a destination of size 256
-  904 |         sprintf(logMsg, "For calendar name %s, "
-      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  905 |                 "length >= given character array; truncated.", this->name);
-      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:37: warning: '%s' directive writing up to 255 bytes into a region of size 245 [-Wformat-overflow=]
-  442 |         sprintf(logMsg, "clock name %s, "
-      |                                     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:16: note: 'sprintf' output between 57 and 312 bytes into a destination of size 256
-  442 |         sprintf(logMsg, "clock name %s, "
-      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-  443 |                 "length >= given character array; truncated.", this->name);
-      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:40: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
-  668 |             sprintf(logMsg, "For clock %s, "
-      |                                        ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:20: note: 'sprintf' output between 98 and 373 bytes into a destination of size 256
-  668 |             sprintf(logMsg, "For clock %s, "
-      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
-  669 |                     "trying to report %dth ringing alarm, but given "
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  670 |                     "ringingAlarmList array can only hold %d.",
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  671 |                     this->name, j+1, sizeofRingingAlarmList);
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:40: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
- 1164 |             sprintf(logMsg, "For clock %s, "
-      |                                        ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:20: note: 'sprintf' output between 93 and 368 bytes into a destination of size 256
- 1164 |             sprintf(logMsg, "For clock %s, "
-      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
- 1165 |                     "trying to return %dth requested alarm, but given "
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1166 |                     "alarmList array can only hold %d.",
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1167 |                     this->name, j+1, sizeofAlarmList);
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:38: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
- 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
-      |                                      ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:27: note: using the range [-2147483648, 2147483647] for directive argument
- 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
-      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:18: note: 'sprintf' output between 39 and 304 bytes into a destination of size 256
- 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
-      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1140 |                   this->name, alarmlistflag);
-      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::addAlarm(ESMCI::Alarm*)':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2032:34: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
  2032 |       sprintf(logMsg, "For clock %s, alarm list is full (%d alarms), "
@@ -4671,22 +4586,6 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2104:14: note: 'sprintf' output between 33 and 288 bytes into a destination of size 256
  2104 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
       |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::convertToDate(ESMCI::BaseTime*, ESMC_I4*, ESMC_I8*, int*, int*, ESMC_I4*, ESMC_I8*, ESMC_R8*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1382:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1382 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::isLeapYear(ESMC_I8, int*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2503:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 2503 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::convertToTime(ESMC_I8, int, int, ESMC_I8, ESMC_R8, ESMCI::BaseTime*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1004:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1004 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'ESMCI::Time ESMCI::Calendar::increment(const ESMCI::Time*, const ESMCI::TimeInterval&) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2013:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 2013 |     if (this == ESMC_NULL_POINTER || time == ESMC_NULL_POINTER) {
-      |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'bool ESMCI::Clock::isStopTime(int*) const':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:707:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
   707 |     if (this == ESMC_NULL_POINTER) {
@@ -4703,10 +4602,6 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:829:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
   829 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'ESMCI::Time ESMCI::Calendar::decrement(const ESMCI::Time*, const ESMCI::TimeInterval&) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2260:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 2260 |     if (this == ESMC_NULL_POINTER || time == ESMC_NULL_POINTER) {
-      |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'bool ESMCI::Clock::isDone(int*) const':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:865:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
   865 |     if (this == ESMC_NULL_POINTER) {
@@ -4715,17 +4610,9 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:931:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
   931 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::operator==(const ESMCI::Calendar&) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2552:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 2552 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getNextTime(ESMCI::Time*, ESMCI::TimeInterval*)':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:968:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
   968 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::operator==(const ESMC_CalKind_Flag&) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2602:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 2602 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'bool ESMCI::Clock::operator==(const ESMCI::Clock&) const':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1427:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
@@ -4735,13 +4622,166 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1461:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
  1461 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::operator!=(const ESMCI::Calendar&) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2635:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 2635 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::writeRestart() const':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1532:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
  1532 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::print(const char*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1742:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1742 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:425:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  425 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::enable()':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:586:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  586 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::disable()':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:624:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  624 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:570:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  570 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::isEnabled(int*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:660:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  660 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::ringerOff()':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:747:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  747 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarm(int, char*, ESMCI::Alarm**)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1012:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1012 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::isRinging(int*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:817:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  817 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::wasPrevRinging(int*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:934:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  934 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::setToSticky()':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:971:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  971 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::isSticky(int*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1068:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1068 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1083:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1083 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::operator==(const ESMCI::Alarm&) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1458:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1458 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::operator!=(const ESMCI::Alarm&) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1492:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1492 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::writeRestart() const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1564:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1564 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::print(const char*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1658:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1658 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::validate(const char*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1570:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1570 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::syncToRealTime()':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1318:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1318 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:483:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  483 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::ringerOn()':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:699:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  699 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:861:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  861 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::set(int, const char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, ESMCI::Time*, ESMC_I8*, ESMC_Direction*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:298:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  298 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1012:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1012 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::addAlarm(ESMCI::Alarm*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2016:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 2016 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::removeAlarm(ESMCI::Alarm*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2096:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 2096 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::checkRingTime(int*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1104:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1104 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::validate(const char*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1604:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1604 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+  344 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:44: warning: '%s' directive writing up to 255 bytes into a region of size 238 [-Wformat-overflow=]
+  904 |         sprintf(logMsg, "For calendar name %s, "
+      |                                            ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:16: note: 'sprintf' output between 64 and 319 bytes into a destination of size 256
+  904 |         sprintf(logMsg, "For calendar name %s, "
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  905 |                 "length >= given character array; truncated.", this->name);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::convertToDate(ESMCI::BaseTime*, ESMC_I4*, ESMC_I8*, int*, int*, ESMC_I4*, ESMC_I8*, ESMC_R8*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1382:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1382 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::isLeapYear(ESMC_I8, int*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2503:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 2503 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::convertToTime(ESMC_I8, int, int, ESMC_I8, ESMC_R8, ESMCI::BaseTime*) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1004:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 1004 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'ESMCI::Time ESMCI::Calendar::increment(const ESMCI::Time*, const ESMCI::TimeInterval&) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2013:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 2013 |     if (this == ESMC_NULL_POINTER || time == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'ESMCI::Time ESMCI::Calendar::decrement(const ESMCI::Time*, const ESMCI::TimeInterval&) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2260:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 2260 |     if (this == ESMC_NULL_POINTER || time == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::operator==(const ESMCI::Calendar&) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2552:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 2552 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::operator==(const ESMC_CalKind_Flag&) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2602:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 2602 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::operator!=(const ESMCI::Calendar&) const':
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2635:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
+ 2635 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'bool ESMCI::Calendar::operator!=(const ESMC_CalKind_Flag&) const':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2685:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
@@ -4755,61 +4795,21 @@ In file included from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_open
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2789:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
  2789 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::print(const char*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1742:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1742 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::print(const char*, const ESMCI::Time*) const':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2884:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
  2884 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:425:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  425 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:570:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  570 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarm(int, char*, ESMCI::Alarm**)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1012:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1012 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::set(int, const char*, ESMC_CalKind_Flag)':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:594:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
   594 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1083:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1083 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::set(int, const char*, int*, int, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:729:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
   729 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::validate(const char*) const':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1570:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1570 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::syncToRealTime()':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1318:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 1318 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)':
 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:870:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
   870 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::set(int, const char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, ESMCI::Time*, ESMC_I8*, ESMC_Direction*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:298:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
-  298 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::addAlarm(ESMCI::Alarm*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2016:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 2016 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::removeAlarm(ESMCI::Alarm*)':
-/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2096:5: warning: nonnull argument 'this' compared to NULL [-Wnonnull-compare]
- 2096 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 make[8]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.openmpi.default'
 make[7]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.openmpi.default'
@@ -5279,7 +5279,7 @@ In file included from /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-i
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMCI_VM.h:41,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMCI_Base.h:27,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h:39,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:23:
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMC_RHandle.C:31:
 /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function 'virtual void MPI::Op::Init(void (*)(const void*, void*, int, const MPI::Datatype&), bool)':
 /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:121:46: warning: cast between incompatible function types from 'void (*)(void*, void*, int*, ompi_datatype_t**, void (*)(void*, void*, int*, ompi_datatype_t**))' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
   121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
@@ -5293,7 +5293,7 @@ In file included from /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-i
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMCI_VM.h:41,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/include/ESMCI_Base.h:27,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h:39,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMC_RHandle.C:31:
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:23:
 /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h: In member function 'virtual void MPI::Op::Init(void (*)(const void*, void*, int, const MPI::Datatype&), bool)':
 /apps/spack/linux-centos7-x86_64/gcc-9.2.0/openmpi-3.1.4-iacsi5v5fw547qcbmmkof4dj5z366pxc/include/openmpi/ompi/mpi/cxx/op_inln.h:121:46: warning: cast between incompatible function types from 'void (*)(void*, void*, int*, ompi_datatype_t**, void (*)(void*, void*, int*, ompi_datatype_t**))' to 'void (*)(void*, void*, int*, ompi_datatype_t**)' [-Wcast-function-type]
   121 |     (void)MPI_Op_create((MPI_User_function*) ompi_mpi_cxx_op_intercept,
