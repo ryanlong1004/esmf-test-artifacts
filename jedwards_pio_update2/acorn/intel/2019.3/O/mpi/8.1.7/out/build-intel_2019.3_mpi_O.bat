@@ -1,4 +1,4 @@
-Tue 08 Mar 2022 01:43:26 AM UTC
+Sun 13 Mar 03:30:24 UTC 2022
 #!/bin/sh -l
 #PBS -N build-intel_2019.3_mpi_O.bat
 #PBS -l walltime=1:00:00
@@ -12,7 +12,7 @@ cd /lfs/h1/emc/ptmp/Mark.Potts/intel_2019.3_mpi_O_jedwards_pio_update2
 
 module unload PrgEnv-cray PrgEnv-gnu
 
-module load PrgEnv-intel cray-pals craype
+module load PrgEnv-intel cray-pals craype cmake
 module load intel/19.1.3.304 cray-mpich/8.1.7 netcdf/4.7.4
 module load hdf5/1.10.6 
 module list >& module-build.log
