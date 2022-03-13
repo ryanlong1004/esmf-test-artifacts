@@ -1,0 +1,1121 @@
+build time -- 2022-03-13 03:23:27
+20220313 050355.783 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 050355.786 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 050355.786 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 050355.786 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 050355.786 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET0 Running with ESMF Version   : v8.3.0b09
+20220313 050355.787 INFO             PET0 ESMF library build date/time: "Mar 13 2022" "03:21:04"
+20220313 050355.787 INFO             PET0 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220313 050355.787 INFO             PET0 ESMF_COMM                   : intelmpi
+20220313 050355.798 INFO             PET0 ESMF_MOAB                   : enabled
+20220313 050355.798 INFO             PET0 ESMF_LAPACK                 : enabled
+20220313 050355.798 INFO             PET0 ESMF_NETCDF                 : enabled
+20220313 050355.798 INFO             PET0 ESMF_PNETCDF                : disabled
+20220313 050355.798 INFO             PET0 ESMF_PIO                    : enabled
+20220313 050355.798 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220313 050355.827 INFO             PET0  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220313 050355.827 INFO             PET0  NUMBER_OF_PROCESSORS           6
+20220313 050355.871 INFO             PET0  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220313 050355.871 INFO             PET0  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220313 050355.924 INFO             PET0  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220313 050355.924 INFO             PET0  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220313 050355.927 INFO             PET0  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220313 050356.354 INFO             PET0  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 236
+20220313 050356.429 WARNING          PET0 ESMCI_PIO_Handler.C:1484 ESMCI::PIO_Handler::open()  Unable to create file: file3D_withhalo.nc, (PIO/NetCDF error = NetCDF: File exists && NC_NOCLOBBER)
+20220313 050356.456 ERROR            PET0 ESMCI_PIO_Handler.C:824 ESMCI::PIO_Handler::arrayWrite() Unable to read from file  - file not open
+20220313 050356.457 ERROR            PET0 ESMCI_IO.C:724 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET0 ESMCI_IO.C:942 ESMCI::IO::close() Unable to close file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET0 ESMCI_IO.C:482 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET0 ESMCI_Array.C:4093 ESMCI::Array::write() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.464 ERROR            PET0 ESMCI_Array_F.C:801 c_esmc_arraywrite() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.464 ERROR            PET0 ESMF_Array.F90:3994 ESMF_ArrayWrite Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.464 INFO             PET0  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 250
+20220313 050357.268 INFO             PET0  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220313 050357.697 INFO             PET0  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 279
+20220313 050357.697 INFO             PET0  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 293
+20220313 050357.702 INFO             PET0  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 304
+20220313 050357.706 INFO             PET0  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 314
+20220313 050358.096 INFO             PET0  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 335
+20220313 050358.096 INFO             PET0  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 358
+20220313 050358.455 INFO             PET0  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 385
+20220313 050359.199 INFO             PET0  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 399
+20220313 050359.199 INFO             PET0  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 421
+20220313 050359.199 INFO             PET0  PASS  Compare read in data to the existing binary data - 3D with halo, ESMF_ArrayIOUTest.F90, line 443
+20220313 050359.199 ERROR            PET0 ESMCI_Array.C:3914 ESMCI::Array::read() Invalid argument  - Array variable name not allowed in binary mode
+20220313 050359.199 ERROR            PET0 ESMCI_Array_F.C:831 c_esmc_arrayread() Invalid argument  - Internal subroutine call returned Error
+20220313 050359.199 ERROR            PET0 ESMF_ArrayHa.F90:723 ESMF_ArrayRead Invalid argument  - Internal subroutine call returned Error
+20220313 050359.199 INFO             PET0  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 461
+20220313 050359.543 INFO             PET0  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 473
+20220313 050359.543 INFO             PET0  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 484
+20220313 050359.543 INFO             PET0  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 491
+20220313 050359.544 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 498
+20220313 050359.545 INFO             PET0  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 516
+20220313 050359.545 INFO             PET0  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 524
+20220313 050359.545 INFO             PET0  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 538
+20220313 050359.546 INFO             PET0  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 548
+20220313 050359.936 INFO             PET0  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 578
+20220313 050400.335 INFO             PET0  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 600
+20220313 050400.335 INFO             PET0  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 620
+20220313 050400.335 INFO             PET0  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 637
+20220313 050400.335 INFO             PET0  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 647
+20220313 050400.759 INFO             PET0  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220313 050400.841 INFO             PET0  PASS  Compare read in data from a different distgrid, ESMF_ArrayIOUTest.F90, line 683
+20220313 050400.842 INFO             PET0  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 700
+20220313 050400.842 INFO             PET0  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 709
+20220313 050400.843 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 717
+20220313 050400.843 INFO             PET0  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 729
+20220313 050400.844 INFO             PET0  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 737
+20220313 050400.853 INFO             PET0  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 747
+20220313 050400.853 INFO             PET0  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 755
+20220313 050400.853 INFO             PET0  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 763
+20220313 050404.728 INFO             PET0  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 773
+20220313 050404.728 INFO             PET0  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 787
+20220313 050404.728 INFO             PET0  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 795
+20220313 050404.728 INFO             PET0  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 803
+20220313 050408.612 INFO             PET0  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 813
+20220313 050408.612 INFO             PET0  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 828
+20220313 050408.612 INFO             PET0  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 839
+20220313 050408.612 INFO             PET0  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 846
+20220313 050408.612 INFO             PET0  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 854
+20220313 050408.612 INFO             PET0  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 861
+20220313 050408.612 INFO             PET0  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 873
+20220313 050408.612 INFO             PET0  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 881
+20220313 050408.613 INFO             PET0  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 891
+20220313 050408.613 INFO             PET0  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 899
+20220313 050408.613 INFO             PET0  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 916
+20220313 050412.386 INFO             PET0  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 929
+20220313 050412.386 INFO             PET0  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 943
+20220313 050412.386 INFO             PET0  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 951
+20220313 050412.386 INFO             PET0  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 966
+20220313 050416.164 INFO             PET0  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 979
+20220313 050416.164 INFO             PET0  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 994
+20220313 050416.164 INFO             PET0  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1009
+20220313 050416.164 INFO             PET0  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 1016
+20220313 050416.164 INFO             PET0  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 1024
+20220313 050416.164 INFO             PET0  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1031
+20220313 050416.164 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1043
+20220313 050416.200 INFO             PET0  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1053
+20220313 050416.219 INFO             PET0  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1061
+20220313 050416.592 INFO             PET0  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1073
+20220313 050416.592 INFO             PET0  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1087
+20220313 050416.593 INFO             PET0  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1096
+20220313 050416.937 INFO             PET0  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1106
+20220313 050416.937 INFO             PET0  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1122
+20220313 050416.937 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1129
+20220313 050416.937 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1136
+20220313 050416.937 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1143
+20220313 050416.937 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1155
+20220313 050416.938 INFO             PET0  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1165
+20220313 050416.938 INFO             PET0  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1173
+20220313 050417.320 INFO             PET0  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1186
+20220313 050417.321 INFO             PET0  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1200
+20220313 050417.321 INFO             PET0  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1209
+20220313 050417.665 INFO             PET0  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1219
+20220313 050417.665 INFO             PET0  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1235
+20220313 050417.665 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1242
+20220313 050417.665 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1249
+20220313 050417.665 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1256
+20220313 050417.665 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1268
+20220313 050417.666 INFO             PET0  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1278
+20220313 050417.666 INFO             PET0  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1286
+20220313 050417.968 INFO             PET0  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1299
+20220313 050417.968 INFO             PET0  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1313
+20220313 050417.968 INFO             PET0  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1322
+20220313 050418.339 INFO             PET0  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1332
+20220313 050418.339 INFO             PET0  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1348
+20220313 050418.339 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1355
+20220313 050418.339 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1362
+20220313 050418.339 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1369
+20220313 050418.339 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1381
+20220313 050418.342 INFO             PET0  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1390
+20220313 050418.345 INFO             PET0  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1398
+20220313 050418.767 INFO             PET0  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1411
+20220313 050418.767 INFO             PET0  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1424
+20220313 050418.767 INFO             PET0  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1433
+20220313 050419.114 INFO             PET0  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1443
+20220313 050419.114 INFO             PET0  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1459
+20220313 050419.114 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1466
+20220313 050419.114 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1473
+20220313 050419.115 INFO             PET0  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1482
+20220313 050419.115 INFO             PET0  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1490
+20220313 050419.577 INFO             PET0  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1503
+20220313 050419.577 INFO             PET0  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1516
+20220313 050419.577 INFO             PET0  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1525
+20220313 050419.915 INFO             PET0  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1535
+20220313 050419.915 INFO             PET0  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1551
+20220313 050419.915 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1558
+20220313 050419.915 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1565
+20220313 050419.915 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1572
+20220313 050419.915 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1584
+20220313 050419.916 INFO             PET0  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1593
+20220313 050419.916 INFO             PET0  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1601
+20220313 050420.273 INFO             PET0  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1614
+20220313 050420.273 INFO             PET0  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1627
+20220313 050420.273 INFO             PET0  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1636
+20220313 050420.634 INFO             PET0  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1646
+20220313 050420.634 INFO             PET0  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1662
+20220313 050420.634 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1669
+20220313 050420.634 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1676
+20220313 050420.634 INFO             PET0  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1685
+20220313 050420.634 INFO             PET0  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1693
+20220313 050421.046 INFO             PET0  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1706
+20220313 050421.046 INFO             PET0  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1719
+20220313 050421.046 INFO             PET0  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1728
+20220313 050421.401 INFO             PET0  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1738
+20220313 050421.401 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1766
+20220313 050421.401 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1773
+20220313 050421.401 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1780
+20220313 050421.401 INFO             PET0  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1792
+20220313 050421.439 INFO             PET0  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1801
+20220313 050421.444 INFO             PET0  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1812
+20220313 050421.445 INFO             PET0  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1820
+20220313 050421.445 INFO             PET0  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1827
+20220313 050421.447 INFO             PET0  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1841
+20220313 050421.450 INFO             PET0  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1853
+20220313 050421.450 INFO             PET0  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1862
+20220313 050421.454 INFO             PET0  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1871
+20220313 050421.455 INFO             PET0  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1880
+20220313 050421.456 INFO             PET0  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1889
+20220313 050421.456 INFO             PET0  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1898
+20220313 050421.457 INFO             PET0  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1907
+20220313 050422.020 INFO             PET0  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1918
+20220313 050422.021 INFO             PET0  Ending Test, file ESMF_ArrayIOUTest.F90, line 1932
+20220313 050422.021 INFO             PET0 Finalizing ESMF
+20220313 050355.783 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 050355.786 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 050355.786 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 050355.786 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 050355.786 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET1 Running with ESMF Version   : v8.3.0b09
+20220313 050355.787 INFO             PET1 ESMF library build date/time: "Mar 13 2022" "03:21:04"
+20220313 050355.787 INFO             PET1 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220313 050355.787 INFO             PET1 ESMF_COMM                   : intelmpi
+20220313 050355.798 INFO             PET1 ESMF_MOAB                   : enabled
+20220313 050355.798 INFO             PET1 ESMF_LAPACK                 : enabled
+20220313 050355.798 INFO             PET1 ESMF_NETCDF                 : enabled
+20220313 050355.798 INFO             PET1 ESMF_PNETCDF                : disabled
+20220313 050355.798 INFO             PET1 ESMF_PIO                    : enabled
+20220313 050355.799 INFO             PET1 ESMF_YAMLCPP                : enabled
+20220313 050355.827 INFO             PET1  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220313 050355.827 INFO             PET1  NUMBER_OF_PROCESSORS           6
+20220313 050355.871 INFO             PET1  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220313 050355.871 INFO             PET1  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220313 050355.922 INFO             PET1  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220313 050355.923 INFO             PET1  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220313 050355.927 INFO             PET1  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220313 050356.354 INFO             PET1  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 236
+20220313 050356.435 WARNING          PET1 ESMCI_PIO_Handler.C:1484 ESMCI::PIO_Handler::open()  Unable to create file: file3D_withhalo.nc, (PIO/NetCDF error = NetCDF: File exists && NC_NOCLOBBER)
+20220313 050356.456 ERROR            PET1 ESMCI_PIO_Handler.C:824 ESMCI::PIO_Handler::arrayWrite() Unable to read from file  - file not open
+20220313 050356.457 ERROR            PET1 ESMCI_IO.C:724 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET1 ESMCI_IO.C:942 ESMCI::IO::close() Unable to close file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET1 ESMCI_IO.C:482 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET1 ESMCI_Array.C:4093 ESMCI::Array::write() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET1 ESMCI_Array_F.C:801 c_esmc_arraywrite() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET1 ESMF_Array.F90:3994 ESMF_ArrayWrite Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.466 INFO             PET1  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 250
+20220313 050357.268 INFO             PET1  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220313 050357.697 INFO             PET1  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 279
+20220313 050357.697 INFO             PET1  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 293
+20220313 050357.699 INFO             PET1  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 304
+20220313 050357.703 INFO             PET1  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 314
+20220313 050358.097 INFO             PET1  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 335
+20220313 050358.097 INFO             PET1  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 358
+20220313 050358.464 INFO             PET1  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 385
+20220313 050359.199 INFO             PET1  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 399
+20220313 050359.199 INFO             PET1  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 421
+20220313 050359.199 INFO             PET1  PASS  Compare read in data to the existing binary data - 3D with halo, ESMF_ArrayIOUTest.F90, line 443
+20220313 050359.199 ERROR            PET1 ESMCI_Array.C:3914 ESMCI::Array::read() Invalid argument  - Array variable name not allowed in binary mode
+20220313 050359.199 ERROR            PET1 ESMCI_Array_F.C:831 c_esmc_arrayread() Invalid argument  - Internal subroutine call returned Error
+20220313 050359.199 ERROR            PET1 ESMF_ArrayHa.F90:723 ESMF_ArrayRead Invalid argument  - Internal subroutine call returned Error
+20220313 050359.199 INFO             PET1  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 461
+20220313 050359.543 INFO             PET1  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 473
+20220313 050359.543 INFO             PET1  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 484
+20220313 050359.543 INFO             PET1  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 491
+20220313 050359.545 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 498
+20220313 050359.545 INFO             PET1  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 516
+20220313 050359.545 INFO             PET1  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 524
+20220313 050359.545 INFO             PET1  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 538
+20220313 050359.546 INFO             PET1  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 548
+20220313 050359.936 INFO             PET1  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 578
+20220313 050400.353 INFO             PET1  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 600
+20220313 050400.353 INFO             PET1  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 620
+20220313 050400.353 INFO             PET1  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 637
+20220313 050400.353 INFO             PET1  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 647
+20220313 050400.759 INFO             PET1  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220313 050400.842 INFO             PET1  PASS  Compare read in data from a different distgrid, ESMF_ArrayIOUTest.F90, line 683
+20220313 050400.842 INFO             PET1  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 700
+20220313 050400.842 INFO             PET1  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 709
+20220313 050400.842 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 717
+20220313 050400.843 INFO             PET1  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 729
+20220313 050400.843 INFO             PET1  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 737
+20220313 050400.852 INFO             PET1  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 747
+20220313 050400.852 INFO             PET1  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 755
+20220313 050400.852 INFO             PET1  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 763
+20220313 050404.728 INFO             PET1  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 773
+20220313 050404.738 INFO             PET1  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 787
+20220313 050404.738 INFO             PET1  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 795
+20220313 050404.738 INFO             PET1  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 803
+20220313 050408.613 INFO             PET1  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 813
+20220313 050408.613 INFO             PET1  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 828
+20220313 050408.613 INFO             PET1  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 839
+20220313 050408.613 INFO             PET1  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 846
+20220313 050408.613 INFO             PET1  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 854
+20220313 050408.613 INFO             PET1  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 861
+20220313 050408.613 INFO             PET1  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 873
+20220313 050408.613 INFO             PET1  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 881
+20220313 050408.614 INFO             PET1  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 891
+20220313 050408.614 INFO             PET1  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 899
+20220313 050408.614 INFO             PET1  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 916
+20220313 050412.395 INFO             PET1  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 929
+20220313 050412.395 INFO             PET1  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 943
+20220313 050412.395 INFO             PET1  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 951
+20220313 050412.395 INFO             PET1  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 966
+20220313 050416.165 INFO             PET1  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 979
+20220313 050416.165 INFO             PET1  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 994
+20220313 050416.165 INFO             PET1  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1009
+20220313 050416.166 INFO             PET1  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 1016
+20220313 050416.166 INFO             PET1  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 1024
+20220313 050416.166 INFO             PET1  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1031
+20220313 050416.166 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1043
+20220313 050416.200 INFO             PET1  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1053
+20220313 050416.237 INFO             PET1  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1061
+20220313 050416.592 INFO             PET1  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1073
+20220313 050416.592 INFO             PET1  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1087
+20220313 050416.593 INFO             PET1  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1096
+20220313 050416.941 INFO             PET1  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1106
+20220313 050416.941 INFO             PET1  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1122
+20220313 050416.941 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1129
+20220313 050416.941 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1136
+20220313 050416.941 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1143
+20220313 050416.941 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1155
+20220313 050416.941 INFO             PET1  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1165
+20220313 050416.942 INFO             PET1  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1173
+20220313 050417.321 INFO             PET1  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1186
+20220313 050417.321 INFO             PET1  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1200
+20220313 050417.321 INFO             PET1  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1209
+20220313 050417.674 INFO             PET1  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1219
+20220313 050417.674 INFO             PET1  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1235
+20220313 050417.674 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1242
+20220313 050417.674 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1249
+20220313 050417.674 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1256
+20220313 050417.674 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1268
+20220313 050417.675 INFO             PET1  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1278
+20220313 050417.675 INFO             PET1  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1286
+20220313 050417.968 INFO             PET1  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1299
+20220313 050417.969 INFO             PET1  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1313
+20220313 050417.969 INFO             PET1  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1322
+20220313 050418.339 INFO             PET1  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1332
+20220313 050418.339 INFO             PET1  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1348
+20220313 050418.339 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1355
+20220313 050418.340 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1362
+20220313 050418.340 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1369
+20220313 050418.340 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1381
+20220313 050418.342 INFO             PET1  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1390
+20220313 050418.346 INFO             PET1  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1398
+20220313 050418.785 INFO             PET1  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1411
+20220313 050418.785 INFO             PET1  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1424
+20220313 050418.785 INFO             PET1  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1433
+20220313 050419.132 INFO             PET1  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1443
+20220313 050419.132 INFO             PET1  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1459
+20220313 050419.132 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1466
+20220313 050419.132 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1473
+20220313 050419.132 INFO             PET1  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1482
+20220313 050419.133 INFO             PET1  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1490
+20220313 050419.577 INFO             PET1  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1503
+20220313 050419.577 INFO             PET1  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1516
+20220313 050419.577 INFO             PET1  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1525
+20220313 050419.934 INFO             PET1  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1535
+20220313 050419.934 INFO             PET1  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1551
+20220313 050419.934 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1558
+20220313 050419.934 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1565
+20220313 050419.934 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1572
+20220313 050419.934 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1584
+20220313 050419.935 INFO             PET1  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1593
+20220313 050419.935 INFO             PET1  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1601
+20220313 050420.291 INFO             PET1  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1614
+20220313 050420.291 INFO             PET1  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1627
+20220313 050420.291 INFO             PET1  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1636
+20220313 050420.643 INFO             PET1  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1646
+20220313 050420.643 INFO             PET1  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1662
+20220313 050420.643 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1669
+20220313 050420.643 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1676
+20220313 050420.643 INFO             PET1  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1685
+20220313 050420.643 INFO             PET1  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1693
+20220313 050421.046 INFO             PET1  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1706
+20220313 050421.050 INFO             PET1  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1719
+20220313 050421.051 INFO             PET1  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1728
+20220313 050421.401 INFO             PET1  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1738
+20220313 050421.401 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1766
+20220313 050421.401 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1773
+20220313 050421.401 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1780
+20220313 050421.401 INFO             PET1  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1792
+20220313 050421.439 INFO             PET1  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1801
+20220313 050421.445 INFO             PET1  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1812
+20220313 050421.448 INFO             PET1  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1820
+20220313 050421.448 INFO             PET1  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1827
+20220313 050421.449 INFO             PET1  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1841
+20220313 050421.452 INFO             PET1  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1853
+20220313 050421.452 INFO             PET1  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1862
+20220313 050421.455 INFO             PET1  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1871
+20220313 050421.455 INFO             PET1  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1880
+20220313 050421.456 INFO             PET1  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1889
+20220313 050421.456 INFO             PET1  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1898
+20220313 050421.463 INFO             PET1  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1907
+20220313 050422.020 INFO             PET1  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1918
+20220313 050422.029 INFO             PET1  Ending Test, file ESMF_ArrayIOUTest.F90, line 1932
+20220313 050422.029 INFO             PET1 Finalizing ESMF
+20220313 050355.783 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 050355.786 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 050355.786 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 050355.786 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 050355.786 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET2 Running with ESMF Version   : v8.3.0b09
+20220313 050355.787 INFO             PET2 ESMF library build date/time: "Mar 13 2022" "03:21:04"
+20220313 050355.787 INFO             PET2 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220313 050355.787 INFO             PET2 ESMF_COMM                   : intelmpi
+20220313 050355.798 INFO             PET2 ESMF_MOAB                   : enabled
+20220313 050355.798 INFO             PET2 ESMF_LAPACK                 : enabled
+20220313 050355.798 INFO             PET2 ESMF_NETCDF                 : enabled
+20220313 050355.798 INFO             PET2 ESMF_PNETCDF                : disabled
+20220313 050355.798 INFO             PET2 ESMF_PIO                    : enabled
+20220313 050355.799 INFO             PET2 ESMF_YAMLCPP                : enabled
+20220313 050355.827 INFO             PET2  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220313 050355.827 INFO             PET2  NUMBER_OF_PROCESSORS           6
+20220313 050355.872 INFO             PET2  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220313 050355.872 INFO             PET2  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220313 050355.923 INFO             PET2  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220313 050355.924 INFO             PET2  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220313 050355.926 INFO             PET2  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220313 050356.371 INFO             PET2  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 236
+20220313 050356.446 WARNING          PET2 ESMCI_PIO_Handler.C:1484 ESMCI::PIO_Handler::open()  Unable to create file: file3D_withhalo.nc, (PIO/NetCDF error = NetCDF: File exists && NC_NOCLOBBER)
+20220313 050356.456 ERROR            PET2 ESMCI_PIO_Handler.C:824 ESMCI::PIO_Handler::arrayWrite() Unable to read from file  - file not open
+20220313 050356.457 ERROR            PET2 ESMCI_IO.C:724 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET2 ESMCI_IO.C:942 ESMCI::IO::close() Unable to close file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET2 ESMCI_IO.C:482 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET2 ESMCI_Array.C:4093 ESMCI::Array::write() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.473 ERROR            PET2 ESMCI_Array_F.C:801 c_esmc_arraywrite() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.473 ERROR            PET2 ESMF_Array.F90:3994 ESMF_ArrayWrite Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.473 INFO             PET2  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 250
+20220313 050357.280 INFO             PET2  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220313 050357.698 INFO             PET2  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 279
+20220313 050357.698 INFO             PET2  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 293
+20220313 050357.704 INFO             PET2  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 304
+20220313 050357.711 INFO             PET2  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 314
+20220313 050358.109 INFO             PET2  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 335
+20220313 050358.109 INFO             PET2  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 358
+20220313 050358.464 INFO             PET2  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 385
+20220313 050359.207 INFO             PET2  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 399
+20220313 050359.207 INFO             PET2  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 421
+20220313 050359.207 INFO             PET2  PASS  Compare read in data to the existing binary data - 3D with halo, ESMF_ArrayIOUTest.F90, line 443
+20220313 050359.207 ERROR            PET2 ESMCI_Array.C:3914 ESMCI::Array::read() Invalid argument  - Array variable name not allowed in binary mode
+20220313 050359.207 ERROR            PET2 ESMCI_Array_F.C:831 c_esmc_arrayread() Invalid argument  - Internal subroutine call returned Error
+20220313 050359.207 ERROR            PET2 ESMF_ArrayHa.F90:723 ESMF_ArrayRead Invalid argument  - Internal subroutine call returned Error
+20220313 050359.207 INFO             PET2  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 461
+20220313 050359.543 INFO             PET2  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 473
+20220313 050359.543 INFO             PET2  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 484
+20220313 050359.543 INFO             PET2  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 491
+20220313 050359.546 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 498
+20220313 050359.546 INFO             PET2  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 516
+20220313 050359.546 INFO             PET2  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 524
+20220313 050359.546 INFO             PET2  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 538
+20220313 050359.547 INFO             PET2  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 548
+20220313 050359.945 INFO             PET2  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 578
+20220313 050400.353 INFO             PET2  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 600
+20220313 050400.353 INFO             PET2  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 620
+20220313 050400.353 INFO             PET2  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 637
+20220313 050400.353 INFO             PET2  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 647
+20220313 050400.759 INFO             PET2  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220313 050400.862 INFO             PET2  PASS  Compare read in data from a different distgrid, ESMF_ArrayIOUTest.F90, line 683
+20220313 050400.862 INFO             PET2  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 700
+20220313 050400.862 INFO             PET2  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 709
+20220313 050400.862 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 717
+20220313 050400.862 INFO             PET2  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 729
+20220313 050400.862 INFO             PET2  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 737
+20220313 050400.862 INFO             PET2  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 747
+20220313 050400.863 INFO             PET2  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 755
+20220313 050400.863 INFO             PET2  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 763
+20220313 050404.746 INFO             PET2  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 773
+20220313 050404.746 INFO             PET2  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 787
+20220313 050404.746 INFO             PET2  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 795
+20220313 050404.746 INFO             PET2  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 803
+20220313 050408.637 INFO             PET2  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 813
+20220313 050408.637 INFO             PET2  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 828
+20220313 050408.637 INFO             PET2  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 839
+20220313 050408.637 INFO             PET2  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 846
+20220313 050408.637 INFO             PET2  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 854
+20220313 050408.637 INFO             PET2  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 861
+20220313 050408.638 INFO             PET2  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 873
+20220313 050408.638 INFO             PET2  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 881
+20220313 050408.638 INFO             PET2  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 891
+20220313 050408.638 INFO             PET2  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 899
+20220313 050408.638 ERROR            PET2 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220313 050408.638 ERROR            PET2 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220313 050408.638 INFO             PET2  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 916
+20220313 050412.395 INFO             PET2  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 929
+20220313 050412.395 INFO             PET2  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 943
+20220313 050412.395 INFO             PET2  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 951
+20220313 050412.395 ERROR            PET2 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220313 050412.395 ERROR            PET2 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220313 050412.395 INFO             PET2  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 966
+20220313 050416.164 INFO             PET2  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 979
+20220313 050416.165 INFO             PET2  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 994
+20220313 050416.165 INFO             PET2  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1009
+20220313 050416.165 INFO             PET2  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 1016
+20220313 050416.165 INFO             PET2  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 1024
+20220313 050416.165 INFO             PET2  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1031
+20220313 050416.165 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1043
+20220313 050416.200 INFO             PET2  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1053
+20220313 050416.228 INFO             PET2  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1061
+20220313 050416.601 INFO             PET2  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1073
+20220313 050416.610 INFO             PET2  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1087
+20220313 050416.610 INFO             PET2  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1096
+20220313 050416.949 INFO             PET2  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1106
+20220313 050416.949 INFO             PET2  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1122
+20220313 050416.949 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1129
+20220313 050416.949 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1136
+20220313 050416.949 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1143
+20220313 050416.949 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1155
+20220313 050416.949 INFO             PET2  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1165
+20220313 050416.950 INFO             PET2  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1173
+20220313 050417.338 INFO             PET2  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1186
+20220313 050417.338 INFO             PET2  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1200
+20220313 050417.338 INFO             PET2  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1209
+20220313 050417.683 INFO             PET2  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1219
+20220313 050417.683 INFO             PET2  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1235
+20220313 050417.683 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1242
+20220313 050417.683 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1249
+20220313 050417.683 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1256
+20220313 050417.683 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1268
+20220313 050417.684 INFO             PET2  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1278
+20220313 050417.684 INFO             PET2  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1286
+20220313 050417.977 INFO             PET2  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1299
+20220313 050417.977 INFO             PET2  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1313
+20220313 050417.977 INFO             PET2  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1322
+20220313 050418.340 INFO             PET2  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1332
+20220313 050418.340 INFO             PET2  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1348
+20220313 050418.341 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1355
+20220313 050418.341 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1362
+20220313 050418.341 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1369
+20220313 050418.341 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1381
+20220313 050418.342 INFO             PET2  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1390
+20220313 050418.369 INFO             PET2  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1398
+20220313 050418.785 INFO             PET2  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1411
+20220313 050418.794 INFO             PET2  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1424
+20220313 050418.794 INFO             PET2  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1433
+20220313 050419.141 INFO             PET2  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1443
+20220313 050419.141 INFO             PET2  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1459
+20220313 050419.141 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1466
+20220313 050419.141 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1473
+20220313 050419.141 INFO             PET2  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1482
+20220313 050419.141 INFO             PET2  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1490
+20220313 050419.595 INFO             PET2  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1503
+20220313 050419.604 INFO             PET2  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1516
+20220313 050419.604 INFO             PET2  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1525
+20220313 050419.924 INFO             PET2  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1535
+20220313 050419.924 INFO             PET2  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1551
+20220313 050419.924 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1558
+20220313 050419.924 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1565
+20220313 050419.924 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1572
+20220313 050419.924 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1584
+20220313 050419.925 INFO             PET2  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1593
+20220313 050419.925 INFO             PET2  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1601
+20220313 050420.291 INFO             PET2  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1614
+20220313 050420.291 INFO             PET2  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1627
+20220313 050420.291 INFO             PET2  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1636
+20220313 050420.643 INFO             PET2  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1646
+20220313 050420.643 INFO             PET2  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1662
+20220313 050420.643 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1669
+20220313 050420.643 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1676
+20220313 050420.643 INFO             PET2  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1685
+20220313 050420.643 INFO             PET2  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1693
+20220313 050421.066 INFO             PET2  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1706
+20220313 050421.067 INFO             PET2  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1719
+20220313 050421.067 INFO             PET2  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1728
+20220313 050421.401 INFO             PET2  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1738
+20220313 050421.402 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1766
+20220313 050421.402 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1773
+20220313 050421.402 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1780
+20220313 050421.402 INFO             PET2  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1792
+20220313 050421.440 INFO             PET2  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1801
+20220313 050421.448 INFO             PET2  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1812
+20220313 050421.451 INFO             PET2  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1820
+20220313 050421.452 INFO             PET2  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1827
+20220313 050421.453 INFO             PET2  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1841
+20220313 050421.454 INFO             PET2  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1853
+20220313 050421.455 INFO             PET2  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1862
+20220313 050421.455 INFO             PET2  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1871
+20220313 050421.456 INFO             PET2  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1880
+20220313 050421.467 INFO             PET2  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1889
+20220313 050421.467 INFO             PET2  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1898
+20220313 050421.468 INFO             PET2  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1907
+20220313 050422.020 INFO             PET2  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1918
+20220313 050422.029 INFO             PET2  Ending Test, file ESMF_ArrayIOUTest.F90, line 1932
+20220313 050422.029 INFO             PET2 Finalizing ESMF
+20220313 050355.783 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 050355.786 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 050355.786 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 050355.786 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 050355.786 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET3 Running with ESMF Version   : v8.3.0b09
+20220313 050355.787 INFO             PET3 ESMF library build date/time: "Mar 13 2022" "03:21:04"
+20220313 050355.787 INFO             PET3 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220313 050355.787 INFO             PET3 ESMF_COMM                   : intelmpi
+20220313 050355.798 INFO             PET3 ESMF_MOAB                   : enabled
+20220313 050355.798 INFO             PET3 ESMF_LAPACK                 : enabled
+20220313 050355.798 INFO             PET3 ESMF_NETCDF                 : enabled
+20220313 050355.798 INFO             PET3 ESMF_PNETCDF                : disabled
+20220313 050355.798 INFO             PET3 ESMF_PIO                    : enabled
+20220313 050355.799 INFO             PET3 ESMF_YAMLCPP                : enabled
+20220313 050355.827 INFO             PET3  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220313 050355.827 INFO             PET3  NUMBER_OF_PROCESSORS           6
+20220313 050355.871 INFO             PET3  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220313 050355.871 INFO             PET3  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220313 050355.922 INFO             PET3  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220313 050355.922 INFO             PET3  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220313 050355.927 INFO             PET3  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220313 050356.363 INFO             PET3  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 236
+20220313 050356.429 WARNING          PET3 ESMCI_PIO_Handler.C:1484 ESMCI::PIO_Handler::open()  Unable to create file: file3D_withhalo.nc, (PIO/NetCDF error = NetCDF: File exists && NC_NOCLOBBER)
+20220313 050356.456 ERROR            PET3 ESMCI_PIO_Handler.C:824 ESMCI::PIO_Handler::arrayWrite() Unable to read from file  - file not open
+20220313 050356.456 ERROR            PET3 ESMCI_IO.C:724 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.456 ERROR            PET3 ESMCI_IO.C:942 ESMCI::IO::close() Unable to close file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET3 ESMCI_IO.C:482 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET3 ESMCI_Array.C:4093 ESMCI::Array::write() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET3 ESMCI_Array_F.C:801 c_esmc_arraywrite() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET3 ESMF_Array.F90:3994 ESMF_ArrayWrite Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.458 INFO             PET3  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 250
+20220313 050357.294 INFO             PET3  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220313 050357.701 INFO             PET3  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 279
+20220313 050357.701 INFO             PET3  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 293
+20220313 050357.708 INFO             PET3  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 304
+20220313 050357.711 INFO             PET3  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 314
+20220313 050358.117 INFO             PET3  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 335
+20220313 050358.117 INFO             PET3  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 358
+20220313 050358.473 INFO             PET3  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 385
+20220313 050359.225 INFO             PET3  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 399
+20220313 050359.225 INFO             PET3  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 421
+20220313 050359.225 INFO             PET3  PASS  Compare read in data to the existing binary data - 3D with halo, ESMF_ArrayIOUTest.F90, line 443
+20220313 050359.225 ERROR            PET3 ESMCI_Array.C:3914 ESMCI::Array::read() Invalid argument  - Array variable name not allowed in binary mode
+20220313 050359.225 ERROR            PET3 ESMCI_Array_F.C:831 c_esmc_arrayread() Invalid argument  - Internal subroutine call returned Error
+20220313 050359.225 ERROR            PET3 ESMF_ArrayHa.F90:723 ESMF_ArrayRead Invalid argument  - Internal subroutine call returned Error
+20220313 050359.225 INFO             PET3  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 461
+20220313 050359.543 INFO             PET3  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 473
+20220313 050359.544 INFO             PET3  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 484
+20220313 050359.544 INFO             PET3  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 491
+20220313 050359.546 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 498
+20220313 050359.546 INFO             PET3  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 516
+20220313 050359.546 INFO             PET3  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 524
+20220313 050359.546 INFO             PET3  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 538
+20220313 050359.547 INFO             PET3  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 548
+20220313 050359.954 INFO             PET3  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 578
+20220313 050400.335 INFO             PET3  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 600
+20220313 050400.335 INFO             PET3  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 620
+20220313 050400.335 INFO             PET3  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 637
+20220313 050400.335 INFO             PET3  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 647
+20220313 050400.759 INFO             PET3  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220313 050400.861 INFO             PET3  PASS  Compare read in data from a different distgrid, ESMF_ArrayIOUTest.F90, line 683
+20220313 050400.861 INFO             PET3  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 700
+20220313 050400.861 INFO             PET3  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 709
+20220313 050400.861 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 717
+20220313 050400.861 INFO             PET3  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 729
+20220313 050400.861 INFO             PET3  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 737
+20220313 050400.861 INFO             PET3  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 747
+20220313 050400.862 INFO             PET3  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 755
+20220313 050400.862 INFO             PET3  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 763
+20220313 050404.728 INFO             PET3  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 773
+20220313 050404.729 INFO             PET3  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 787
+20220313 050404.729 INFO             PET3  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 795
+20220313 050404.729 INFO             PET3  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 803
+20220313 050408.621 INFO             PET3  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 813
+20220313 050408.621 INFO             PET3  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 828
+20220313 050408.621 INFO             PET3  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 839
+20220313 050408.621 INFO             PET3  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 846
+20220313 050408.621 INFO             PET3  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 854
+20220313 050408.621 INFO             PET3  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 861
+20220313 050408.622 INFO             PET3  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 873
+20220313 050408.622 INFO             PET3  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 881
+20220313 050408.622 INFO             PET3  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 891
+20220313 050408.622 INFO             PET3  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 899
+20220313 050408.622 ERROR            PET3 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220313 050408.622 ERROR            PET3 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220313 050408.622 INFO             PET3  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 916
+20220313 050412.386 INFO             PET3  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 929
+20220313 050412.386 INFO             PET3  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 943
+20220313 050412.386 INFO             PET3  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 951
+20220313 050412.386 ERROR            PET3 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220313 050412.386 ERROR            PET3 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220313 050412.386 INFO             PET3  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 966
+20220313 050416.164 INFO             PET3  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 979
+20220313 050416.164 INFO             PET3  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 994
+20220313 050416.164 INFO             PET3  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1009
+20220313 050416.164 INFO             PET3  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 1016
+20220313 050416.164 INFO             PET3  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 1024
+20220313 050416.164 INFO             PET3  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1031
+20220313 050416.165 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1043
+20220313 050416.200 INFO             PET3  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1053
+20220313 050416.219 INFO             PET3  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1061
+20220313 050416.601 INFO             PET3  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1073
+20220313 050416.601 INFO             PET3  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1087
+20220313 050416.601 INFO             PET3  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1096
+20220313 050416.937 INFO             PET3  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1106
+20220313 050416.937 INFO             PET3  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1122
+20220313 050416.937 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1129
+20220313 050416.937 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1136
+20220313 050416.937 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1143
+20220313 050416.937 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1155
+20220313 050416.938 INFO             PET3  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1165
+20220313 050416.938 INFO             PET3  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1173
+20220313 050417.320 INFO             PET3  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1186
+20220313 050417.333 INFO             PET3  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1200
+20220313 050417.333 INFO             PET3  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1209
+20220313 050417.665 INFO             PET3  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1219
+20220313 050417.665 INFO             PET3  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1235
+20220313 050417.665 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1242
+20220313 050417.665 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1249
+20220313 050417.665 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1256
+20220313 050417.665 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1268
+20220313 050417.666 INFO             PET3  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1278
+20220313 050417.666 INFO             PET3  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1286
+20220313 050417.968 INFO             PET3  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1299
+20220313 050417.977 INFO             PET3  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1313
+20220313 050417.977 INFO             PET3  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1322
+20220313 050418.339 INFO             PET3  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1332
+20220313 050418.339 INFO             PET3  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1348
+20220313 050418.339 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1355
+20220313 050418.339 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1362
+20220313 050418.340 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1369
+20220313 050418.340 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1381
+20220313 050418.342 INFO             PET3  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1390
+20220313 050418.345 INFO             PET3  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1398
+20220313 050418.767 INFO             PET3  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1411
+20220313 050418.767 INFO             PET3  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1424
+20220313 050418.767 INFO             PET3  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1433
+20220313 050419.123 INFO             PET3  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1443
+20220313 050419.123 INFO             PET3  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1459
+20220313 050419.123 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1466
+20220313 050419.123 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1473
+20220313 050419.123 INFO             PET3  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1482
+20220313 050419.124 INFO             PET3  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1490
+20220313 050419.595 INFO             PET3  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1503
+20220313 050419.595 INFO             PET3  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1516
+20220313 050419.595 INFO             PET3  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1525
+20220313 050419.915 INFO             PET3  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1535
+20220313 050419.915 INFO             PET3  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1551
+20220313 050419.915 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1558
+20220313 050419.915 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1565
+20220313 050419.915 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1572
+20220313 050419.915 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1584
+20220313 050419.916 INFO             PET3  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1593
+20220313 050419.916 INFO             PET3  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1601
+20220313 050420.282 INFO             PET3  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1614
+20220313 050420.282 INFO             PET3  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1627
+20220313 050420.282 INFO             PET3  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1636
+20220313 050420.634 INFO             PET3  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1646
+20220313 050420.634 INFO             PET3  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1662
+20220313 050420.634 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1669
+20220313 050420.634 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1676
+20220313 050420.634 INFO             PET3  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1685
+20220313 050420.634 INFO             PET3  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1693
+20220313 050421.046 INFO             PET3  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1706
+20220313 050421.047 INFO             PET3  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1719
+20220313 050421.047 INFO             PET3  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1728
+20220313 050421.401 INFO             PET3  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1738
+20220313 050421.401 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1766
+20220313 050421.401 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1773
+20220313 050421.402 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1780
+20220313 050421.402 INFO             PET3  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1792
+20220313 050421.439 INFO             PET3  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1801
+20220313 050421.445 INFO             PET3  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1812
+20220313 050421.446 INFO             PET3  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1820
+20220313 050421.447 INFO             PET3  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1827
+20220313 050421.450 INFO             PET3  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1841
+20220313 050421.451 INFO             PET3  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1853
+20220313 050421.452 INFO             PET3  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1862
+20220313 050421.454 INFO             PET3  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1871
+20220313 050421.455 INFO             PET3  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1880
+20220313 050421.456 INFO             PET3  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1889
+20220313 050421.456 INFO             PET3  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1898
+20220313 050421.457 INFO             PET3  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1907
+20220313 050422.020 INFO             PET3  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1918
+20220313 050422.038 INFO             PET3  Ending Test, file ESMF_ArrayIOUTest.F90, line 1932
+20220313 050422.038 INFO             PET3 Finalizing ESMF
+20220313 050355.783 INFO             PET4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET4 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 050355.786 INFO             PET4 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 050355.786 INFO             PET4 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 050355.786 INFO             PET4 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 050355.786 INFO             PET4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET4 Running with ESMF Version   : v8.3.0b09
+20220313 050355.787 INFO             PET4 ESMF library build date/time: "Mar 13 2022" "03:21:04"
+20220313 050355.787 INFO             PET4 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220313 050355.787 INFO             PET4 ESMF_COMM                   : intelmpi
+20220313 050355.798 INFO             PET4 ESMF_MOAB                   : enabled
+20220313 050355.798 INFO             PET4 ESMF_LAPACK                 : enabled
+20220313 050355.798 INFO             PET4 ESMF_NETCDF                 : enabled
+20220313 050355.798 INFO             PET4 ESMF_PNETCDF                : disabled
+20220313 050355.798 INFO             PET4 ESMF_PIO                    : enabled
+20220313 050355.799 INFO             PET4 ESMF_YAMLCPP                : enabled
+20220313 050355.827 INFO             PET4  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220313 050355.828 INFO             PET4  NUMBER_OF_PROCESSORS           6
+20220313 050355.871 INFO             PET4  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220313 050355.872 INFO             PET4  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220313 050355.923 INFO             PET4  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220313 050355.923 INFO             PET4  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220313 050355.927 INFO             PET4  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220313 050356.362 INFO             PET4  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 236
+20220313 050356.437 WARNING          PET4 ESMCI_PIO_Handler.C:1484 ESMCI::PIO_Handler::open()  Unable to create file: file3D_withhalo.nc, (PIO/NetCDF error = NetCDF: File exists && NC_NOCLOBBER)
+20220313 050356.456 ERROR            PET4 ESMCI_PIO_Handler.C:824 ESMCI::PIO_Handler::arrayWrite() Unable to read from file  - file not open
+20220313 050356.456 ERROR            PET4 ESMCI_IO.C:724 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.456 ERROR            PET4 ESMCI_IO.C:942 ESMCI::IO::close() Unable to close file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET4 ESMCI_IO.C:482 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET4 ESMCI_Array.C:4093 ESMCI::Array::write() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET4 ESMCI_Array_F.C:801 c_esmc_arraywrite() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET4 ESMF_Array.F90:3994 ESMF_ArrayWrite Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.457 INFO             PET4  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 250
+20220313 050357.271 INFO             PET4  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220313 050357.720 INFO             PET4  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 279
+20220313 050357.720 INFO             PET4  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 293
+20220313 050357.731 INFO             PET4  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 304
+20220313 050357.733 INFO             PET4  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 314
+20220313 050358.112 INFO             PET4  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 335
+20220313 050358.113 INFO             PET4  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 358
+20220313 050358.473 INFO             PET4  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 385
+20220313 050359.215 INFO             PET4  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 399
+20220313 050359.215 INFO             PET4  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 421
+20220313 050359.224 INFO             PET4  PASS  Compare read in data to the existing binary data - 3D with halo, ESMF_ArrayIOUTest.F90, line 443
+20220313 050359.224 ERROR            PET4 ESMCI_Array.C:3914 ESMCI::Array::read() Invalid argument  - Array variable name not allowed in binary mode
+20220313 050359.224 ERROR            PET4 ESMCI_Array_F.C:831 c_esmc_arrayread() Invalid argument  - Internal subroutine call returned Error
+20220313 050359.224 ERROR            PET4 ESMF_ArrayHa.F90:723 ESMF_ArrayRead Invalid argument  - Internal subroutine call returned Error
+20220313 050359.224 INFO             PET4  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 461
+20220313 050359.544 INFO             PET4  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 473
+20220313 050359.544 INFO             PET4  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 484
+20220313 050359.544 INFO             PET4  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 491
+20220313 050359.547 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 498
+20220313 050359.547 INFO             PET4  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 516
+20220313 050359.547 INFO             PET4  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 524
+20220313 050359.565 INFO             PET4  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 538
+20220313 050359.565 INFO             PET4  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 548
+20220313 050359.954 INFO             PET4  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 578
+20220313 050400.344 INFO             PET4  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 600
+20220313 050400.344 INFO             PET4  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 620
+20220313 050400.344 INFO             PET4  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 637
+20220313 050400.344 INFO             PET4  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 647
+20220313 050400.759 INFO             PET4  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220313 050400.840 INFO             PET4  PASS  Compare read in data from a different distgrid, ESMF_ArrayIOUTest.F90, line 683
+20220313 050400.841 INFO             PET4  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 700
+20220313 050400.841 INFO             PET4  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 709
+20220313 050400.841 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 717
+20220313 050400.842 INFO             PET4  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 729
+20220313 050400.842 INFO             PET4  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 737
+20220313 050400.843 INFO             PET4  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 747
+20220313 050400.843 INFO             PET4  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 755
+20220313 050400.844 INFO             PET4  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 763
+20220313 050404.737 INFO             PET4  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 773
+20220313 050404.737 INFO             PET4  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 787
+20220313 050404.737 INFO             PET4  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 795
+20220313 050404.737 INFO             PET4  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 803
+20220313 050408.621 INFO             PET4  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 813
+20220313 050408.621 INFO             PET4  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 828
+20220313 050408.621 INFO             PET4  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 839
+20220313 050408.621 INFO             PET4  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 846
+20220313 050408.621 INFO             PET4  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 854
+20220313 050408.621 INFO             PET4  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 861
+20220313 050408.621 INFO             PET4  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 873
+20220313 050408.622 INFO             PET4  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 881
+20220313 050408.622 INFO             PET4  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 891
+20220313 050408.622 INFO             PET4  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 899
+20220313 050408.622 ERROR            PET4 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220313 050408.622 ERROR            PET4 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220313 050408.622 INFO             PET4  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 916
+20220313 050412.404 INFO             PET4  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 929
+20220313 050412.404 INFO             PET4  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 943
+20220313 050412.404 INFO             PET4  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 951
+20220313 050412.404 ERROR            PET4 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220313 050412.404 ERROR            PET4 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220313 050412.404 INFO             PET4  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 966
+20220313 050416.165 INFO             PET4  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 979
+20220313 050416.165 INFO             PET4  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 994
+20220313 050416.165 INFO             PET4  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1009
+20220313 050416.166 INFO             PET4  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 1016
+20220313 050416.166 INFO             PET4  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 1024
+20220313 050416.166 INFO             PET4  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1031
+20220313 050416.166 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1043
+20220313 050416.200 INFO             PET4  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1053
+20220313 050416.237 INFO             PET4  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1061
+20220313 050416.601 INFO             PET4  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1073
+20220313 050416.601 INFO             PET4  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1087
+20220313 050416.602 INFO             PET4  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1096
+20220313 050416.957 INFO             PET4  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1106
+20220313 050416.957 INFO             PET4  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1122
+20220313 050416.957 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1129
+20220313 050416.957 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1136
+20220313 050416.957 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1143
+20220313 050416.957 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1155
+20220313 050416.957 INFO             PET4  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1165
+20220313 050416.957 INFO             PET4  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1173
+20220313 050417.329 INFO             PET4  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1186
+20220313 050417.329 INFO             PET4  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1200
+20220313 050417.329 INFO             PET4  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1209
+20220313 050417.674 INFO             PET4  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1219
+20220313 050417.674 INFO             PET4  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1235
+20220313 050417.674 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1242
+20220313 050417.674 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1249
+20220313 050417.674 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1256
+20220313 050417.674 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1268
+20220313 050417.674 INFO             PET4  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1278
+20220313 050417.675 INFO             PET4  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1286
+20220313 050417.986 INFO             PET4  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1299
+20220313 050417.986 INFO             PET4  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1313
+20220313 050417.986 INFO             PET4  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1322
+20220313 050418.340 INFO             PET4  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1332
+20220313 050418.340 INFO             PET4  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1348
+20220313 050418.340 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1355
+20220313 050418.340 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1362
+20220313 050418.340 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1369
+20220313 050418.340 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1381
+20220313 050418.342 INFO             PET4  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1390
+20220313 050418.352 INFO             PET4  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1398
+20220313 050418.776 INFO             PET4  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1411
+20220313 050418.776 INFO             PET4  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1424
+20220313 050418.776 INFO             PET4  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1433
+20220313 050419.123 INFO             PET4  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1443
+20220313 050419.123 INFO             PET4  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1459
+20220313 050419.123 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1466
+20220313 050419.123 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1473
+20220313 050419.123 INFO             PET4  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1482
+20220313 050419.123 INFO             PET4  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1490
+20220313 050419.586 INFO             PET4  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1503
+20220313 050419.586 INFO             PET4  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1516
+20220313 050419.586 INFO             PET4  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1525
+20220313 050419.933 INFO             PET4  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1535
+20220313 050419.933 INFO             PET4  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1551
+20220313 050419.933 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1558
+20220313 050419.933 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1565
+20220313 050419.933 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1572
+20220313 050419.933 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1584
+20220313 050419.934 INFO             PET4  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1593
+20220313 050419.934 INFO             PET4  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1601
+20220313 050420.282 INFO             PET4  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1614
+20220313 050420.282 INFO             PET4  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1627
+20220313 050420.282 INFO             PET4  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1636
+20220313 050420.652 INFO             PET4  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1646
+20220313 050420.652 INFO             PET4  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1662
+20220313 050420.652 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1669
+20220313 050420.652 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1676
+20220313 050420.652 INFO             PET4  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1685
+20220313 050420.657 INFO             PET4  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1693
+20220313 050421.053 INFO             PET4  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1706
+20220313 050421.053 INFO             PET4  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1719
+20220313 050421.053 INFO             PET4  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1728
+20220313 050421.402 INFO             PET4  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1738
+20220313 050421.402 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1766
+20220313 050421.402 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1773
+20220313 050421.402 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1780
+20220313 050421.402 INFO             PET4  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1792
+20220313 050421.440 INFO             PET4  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1801
+20220313 050421.451 INFO             PET4  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1812
+20220313 050421.453 INFO             PET4  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1820
+20220313 050421.453 INFO             PET4  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1827
+20220313 050421.455 INFO             PET4  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1841
+20220313 050421.456 INFO             PET4  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1853
+20220313 050421.457 INFO             PET4  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1862
+20220313 050421.468 INFO             PET4  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1871
+20220313 050421.476 INFO             PET4  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1880
+20220313 050421.476 INFO             PET4  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1889
+20220313 050421.476 INFO             PET4  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1898
+20220313 050421.476 INFO             PET4  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1907
+20220313 050422.020 INFO             PET4  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1918
+20220313 050422.046 INFO             PET4  Ending Test, file ESMF_ArrayIOUTest.F90, line 1932
+20220313 050422.046 INFO             PET4 Finalizing ESMF
+20220313 050355.783 INFO             PET5 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET5 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 050355.786 INFO             PET5 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 050355.786 INFO             PET5 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 050355.786 INFO             PET5 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 050355.786 INFO             PET5 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 050355.786 INFO             PET5 Running with ESMF Version   : v8.3.0b09
+20220313 050355.787 INFO             PET5 ESMF library build date/time: "Mar 13 2022" "03:21:04"
+20220313 050355.787 INFO             PET5 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220313 050355.787 INFO             PET5 ESMF_COMM                   : intelmpi
+20220313 050355.798 INFO             PET5 ESMF_MOAB                   : enabled
+20220313 050355.798 INFO             PET5 ESMF_LAPACK                 : enabled
+20220313 050355.798 INFO             PET5 ESMF_NETCDF                 : enabled
+20220313 050355.798 INFO             PET5 ESMF_PNETCDF                : disabled
+20220313 050355.798 INFO             PET5 ESMF_PIO                    : enabled
+20220313 050355.798 INFO             PET5 ESMF_YAMLCPP                : enabled
+20220313 050355.828 INFO             PET5  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220313 050355.828 INFO             PET5  NUMBER_OF_PROCESSORS           6
+20220313 050355.872 INFO             PET5  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220313 050355.872 INFO             PET5  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220313 050355.923 INFO             PET5  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220313 050355.923 INFO             PET5  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220313 050355.945 INFO             PET5  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220313 050356.372 INFO             PET5  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 236
+20220313 050356.444 WARNING          PET5 ESMCI_PIO_Handler.C:1484 ESMCI::PIO_Handler::open()  Unable to create file: file3D_withhalo.nc, (PIO/NetCDF error = NetCDF: File exists && NC_NOCLOBBER)
+20220313 050356.456 ERROR            PET5 ESMCI_PIO_Handler.C:824 ESMCI::PIO_Handler::arrayWrite() Unable to read from file  - file not open
+20220313 050356.457 ERROR            PET5 ESMCI_IO.C:724 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET5 ESMCI_IO.C:942 ESMCI::IO::close() Unable to close file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET5 ESMCI_IO.C:482 ESMCI::IO::write() Unable to read from file  - Internal subroutine call returned Error
+20220313 050356.457 ERROR            PET5 ESMCI_Array.C:4093 ESMCI::Array::write() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.475 ERROR            PET5 ESMCI_Array_F.C:801 c_esmc_arraywrite() Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.475 ERROR            PET5 ESMF_Array.F90:3994 ESMF_ArrayWrite Unable to write to file  - Internal subroutine call returned Error
+20220313 050356.475 INFO             PET5  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 250
+20220313 050357.277 INFO             PET5  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220313 050357.707 INFO             PET5  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 279
+20220313 050357.710 INFO             PET5  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 293
+20220313 050357.720 INFO             PET5  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 304
+20220313 050357.730 INFO             PET5  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 314
+20220313 050358.095 INFO             PET5  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 335
+20220313 050358.096 INFO             PET5  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 358
+20220313 050358.455 INFO             PET5  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 385
+20220313 050359.209 INFO             PET5  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 399
+20220313 050359.209 INFO             PET5  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 421
+20220313 050359.209 INFO             PET5  PASS  Compare read in data to the existing binary data - 3D with halo, ESMF_ArrayIOUTest.F90, line 443
+20220313 050359.209 ERROR            PET5 ESMCI_Array.C:3914 ESMCI::Array::read() Invalid argument  - Array variable name not allowed in binary mode
+20220313 050359.209 ERROR            PET5 ESMCI_Array_F.C:831 c_esmc_arrayread() Invalid argument  - Internal subroutine call returned Error
+20220313 050359.209 ERROR            PET5 ESMF_ArrayHa.F90:723 ESMF_ArrayRead Invalid argument  - Internal subroutine call returned Error
+20220313 050359.209 INFO             PET5  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 461
+20220313 050359.544 INFO             PET5  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 473
+20220313 050359.544 INFO             PET5  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 484
+20220313 050359.544 INFO             PET5  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 491
+20220313 050359.547 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 498
+20220313 050359.547 INFO             PET5  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 516
+20220313 050359.547 INFO             PET5  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 524
+20220313 050359.565 INFO             PET5  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 538
+20220313 050359.565 INFO             PET5  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 548
+20220313 050359.945 INFO             PET5  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 578
+20220313 050400.335 INFO             PET5  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 600
+20220313 050400.344 INFO             PET5  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 620
+20220313 050400.344 INFO             PET5  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 637
+20220313 050400.344 INFO             PET5  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 647
+20220313 050400.759 INFO             PET5  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220313 050400.840 INFO             PET5  PASS  Compare read in data from a different distgrid, ESMF_ArrayIOUTest.F90, line 683
+20220313 050400.840 INFO             PET5  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 700
+20220313 050400.840 INFO             PET5  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 709
+20220313 050400.840 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 717
+20220313 050400.841 INFO             PET5  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 729
+20220313 050400.841 INFO             PET5  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 737
+20220313 050400.843 INFO             PET5  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 747
+20220313 050400.844 INFO             PET5  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 755
+20220313 050400.844 INFO             PET5  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 763
+20220313 050404.747 INFO             PET5  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 773
+20220313 050404.747 INFO             PET5  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 787
+20220313 050404.747 INFO             PET5  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 795
+20220313 050404.747 INFO             PET5  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 803
+20220313 050408.612 INFO             PET5  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 813
+20220313 050408.612 INFO             PET5  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 828
+20220313 050408.612 INFO             PET5  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 839
+20220313 050408.612 INFO             PET5  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 846
+20220313 050408.612 INFO             PET5  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 854
+20220313 050408.612 INFO             PET5  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 861
+20220313 050408.612 INFO             PET5  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 873
+20220313 050408.613 INFO             PET5  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 881
+20220313 050408.613 INFO             PET5  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 891
+20220313 050408.613 INFO             PET5  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 899
+20220313 050408.613 ERROR            PET5 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220313 050408.617 ERROR            PET5 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220313 050408.618 INFO             PET5  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 916
+20220313 050412.398 INFO             PET5  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 929
+20220313 050412.398 INFO             PET5  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 943
+20220313 050412.398 INFO             PET5  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 951
+20220313 050412.398 ERROR            PET5 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220313 050412.398 ERROR            PET5 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220313 050412.398 INFO             PET5  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 966
+20220313 050416.164 INFO             PET5  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 979
+20220313 050416.165 INFO             PET5  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 994
+20220313 050416.165 INFO             PET5  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1009
+20220313 050416.165 INFO             PET5  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 1016
+20220313 050416.165 INFO             PET5  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 1024
+20220313 050416.165 INFO             PET5  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1031
+20220313 050416.165 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1043
+20220313 050416.200 INFO             PET5  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1053
+20220313 050416.228 INFO             PET5  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1061
+20220313 050416.610 INFO             PET5  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1073
+20220313 050416.610 INFO             PET5  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1087
+20220313 050416.610 INFO             PET5  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1096
+20220313 050416.961 INFO             PET5  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1106
+20220313 050416.961 INFO             PET5  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1122
+20220313 050416.961 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1129
+20220313 050416.961 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1136
+20220313 050416.961 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1143
+20220313 050416.961 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1155
+20220313 050416.962 INFO             PET5  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1165
+20220313 050416.962 INFO             PET5  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1173
+20220313 050417.342 INFO             PET5  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1186
+20220313 050417.342 INFO             PET5  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1200
+20220313 050417.342 INFO             PET5  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1209
+20220313 050417.683 INFO             PET5  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1219
+20220313 050417.683 INFO             PET5  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1235
+20220313 050417.683 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1242
+20220313 050417.683 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1249
+20220313 050417.683 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1256
+20220313 050417.683 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1268
+20220313 050417.683 INFO             PET5  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1278
+20220313 050417.684 INFO             PET5  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1286
+20220313 050417.986 INFO             PET5  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1299
+20220313 050417.986 INFO             PET5  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1313
+20220313 050417.986 INFO             PET5  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1322
+20220313 050418.340 INFO             PET5  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1332
+20220313 050418.340 INFO             PET5  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1348
+20220313 050418.340 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1355
+20220313 050418.341 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1362
+20220313 050418.341 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1369
+20220313 050418.341 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1381
+20220313 050418.342 INFO             PET5  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1390
+20220313 050418.365 INFO             PET5  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1398
+20220313 050418.776 INFO             PET5  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1411
+20220313 050418.776 INFO             PET5  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1424
+20220313 050418.776 INFO             PET5  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1433
+20220313 050419.114 INFO             PET5  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1443
+20220313 050419.114 INFO             PET5  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1459
+20220313 050419.114 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1466
+20220313 050419.114 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1473
+20220313 050419.114 INFO             PET5  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1482
+20220313 050419.114 INFO             PET5  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1490
+20220313 050419.586 INFO             PET5  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1503
+20220313 050419.586 INFO             PET5  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1516
+20220313 050419.586 INFO             PET5  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1525
+20220313 050419.925 INFO             PET5  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1535
+20220313 050419.925 INFO             PET5  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1551
+20220313 050419.925 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1558
+20220313 050419.925 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1565
+20220313 050419.925 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1572
+20220313 050419.925 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1584
+20220313 050419.925 INFO             PET5  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1593
+20220313 050419.926 INFO             PET5  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1601
+20220313 050420.273 INFO             PET5  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1614
+20220313 050420.273 INFO             PET5  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1627
+20220313 050420.273 INFO             PET5  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1636
+20220313 050420.650 INFO             PET5  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1646
+20220313 050420.650 INFO             PET5  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1662
+20220313 050420.650 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1669
+20220313 050420.650 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1676
+20220313 050420.650 INFO             PET5  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1685
+20220313 050420.650 INFO             PET5  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1693
+20220313 050421.062 INFO             PET5  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1706
+20220313 050421.063 INFO             PET5  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1719
+20220313 050421.063 INFO             PET5  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1728
+20220313 050421.402 INFO             PET5  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1738
+20220313 050421.402 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1766
+20220313 050421.402 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1773
+20220313 050421.402 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1780
+20220313 050421.402 INFO             PET5  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1792
+20220313 050421.440 INFO             PET5  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1801
+20220313 050421.453 INFO             PET5  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1812
+20220313 050421.453 INFO             PET5  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1820
+20220313 050421.453 INFO             PET5  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1827
+20220313 050421.454 INFO             PET5  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1841
+20220313 050421.455 INFO             PET5  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1853
+20220313 050421.455 INFO             PET5  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1862
+20220313 050421.457 INFO             PET5  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1871
+20220313 050421.457 INFO             PET5  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1880
+20220313 050421.472 INFO             PET5  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1889
+20220313 050421.472 INFO             PET5  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1898
+20220313 050421.472 INFO             PET5  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1907
+20220313 050422.020 INFO             PET5  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1918
+20220313 050422.021 INFO             PET5  Ending Test, file ESMF_ArrayIOUTest.F90, line 1932
+20220313 050422.021 INFO             PET5 Finalizing ESMF
