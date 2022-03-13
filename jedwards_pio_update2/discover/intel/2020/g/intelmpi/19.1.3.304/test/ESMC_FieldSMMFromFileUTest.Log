@@ -1,0 +1,1537 @@
+build time -- 2022-03-13 01:18:47.579298
+20220313 013600.873 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 013600.873 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 013600.873 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 013600.873 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 013600.873 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 013600.873 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 013600.873 INFO             PET0 Running with ESMF Version   : v8.3.0b09-96-g559b459836
+20220313 013600.873 INFO             PET0 ESMF library build date/time: "Mar 13 2022" "01:16:11"
+20220313 013600.873 INFO             PET0 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2
+20220313 013600.873 INFO             PET0 ESMF_COMM                   : intelmpi
+20220313 013600.873 INFO             PET0 ESMF_MOAB                   : enabled
+20220313 013600.873 INFO             PET0 ESMF_LAPACK                 : enabled
+20220313 013600.873 INFO             PET0 ESMF_NETCDF                 : enabled
+20220313 013600.873 INFO             PET0 ESMF_PNETCDF                : disabled
+20220313 013600.873 INFO             PET0 ESMF_PIO                    : enabled
+20220313 013600.873 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220313 013600.873 INFO             PET0 Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41
+20220313 013600.874 INFO             PET0 Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41NUMBER_OF_PROCESSORS 4
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123788632 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123419960 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3853452 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3853452 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  179720 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  179720 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  271448 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     864 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.136779 %
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3362816 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         88629248 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   144 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                       3144480 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             218336 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                    86096 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        91773728 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         91992064 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         91783088 Byte
+20220313 013600.901 INFO             PET0 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:               0.041286 seconds
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786212 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123417540 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3853452 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3853452 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  181904 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  271448 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.902 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.138441 %
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3362816 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         88629248 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   352 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                       3143280 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             219536 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                    86096 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        91772528 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         91992064 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         91781888 Byte
+20220313 013600.903 INFO             PET0 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0426233 seconds
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3853452 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3850884 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  179852 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  268880 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     864 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.136879 %
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3362816 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   704 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       3130192 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                             232624 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                    96592 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        89129808 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89362432 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         89139168 Byte
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0433724 seconds
+20220313 013600.903 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3853452 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3850884 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  179856 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  268880 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     864 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.136883 %
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3362816 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   432 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       3125808 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                             237008 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                    99216 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        89125424 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89362432 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         89134784 Byte
+20220313 013600.904 INFO             PET0 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0438871 seconds
+20220313 013600.905 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.905 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.905 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.905 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.905 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3853476 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3853476 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  181036 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  271472 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.137781 %
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                 6017024 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   544 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                       5766112 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             250912 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   117552 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        91765728 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         92016640 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         91775088 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0458215 seconds
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3853476 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3853476 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  181056 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  271472 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.137796 %
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                 6017024 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   480 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                       5765136 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             251888 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   117552 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        91764752 Byte
+20220313 013600.906 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         92016640 Byte
+20220313 013600.907 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         91774112 Byte
+20220313 013600.907 INFO             PET0 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0464526 seconds
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3853476 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3853476 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  181056 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  271472 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.137796 %
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                 6017024 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   624 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       3130144 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                            2886880 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   117552 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        89129760 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         92016640 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         89139136 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:               0.046989 seconds
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3853476 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3853476 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  181056 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  271472 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.137796 %
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                 6017024 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   352 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       3125808 Byte
+20220313 013600.907 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                            2891216 Byte
+20220313 013600.908 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                  2753424 Byte
+20220313 013600.908 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        89125424 Byte
+20220313 013600.908 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         92016640 Byte
+20220313 013600.908 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         89134784 Byte
+20220313 013600.908 INFO             PET0 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0475155 seconds
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3854496 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3853476 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  181500 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  271472 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.138134 %
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                 6017024 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   784 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                       5766576 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             250448 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   117104 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        91766192 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         92016640 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         91775552 Byte
+20220313 013600.909 INFO             PET0 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0491992 seconds
+20220313 013600.909 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.909 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3854496 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3853476 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  181504 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  271472 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.138137 %
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                 6017024 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   352 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                       5765600 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             251424 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   117104 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        91765216 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         92016640 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         91774576 Byte
+20220313 013600.910 INFO             PET0 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0498509 seconds
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3854496 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3853476 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  181504 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  271472 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.138137 %
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                 6017024 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   624 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       3130160 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                            2886864 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   117104 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        89129776 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         92016640 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         89139152 Byte
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0503839 seconds
+20220313 013600.910 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3854496 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3853476 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  181904 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  181504 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  271472 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.138137 %
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                 6017024 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   432 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       3125824 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                            2891200 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                  2753424 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        89125440 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         92016640 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         89134800 Byte
+20220313 013600.911 INFO             PET0 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0508936 seconds
+20220313 013600.911 INFO             PET0 PASS ESMC_FieldRegridStoreFile test, ESMC_FieldSMMFromFileUTest.C, line 199
+20220313 013600.917 INFO             PET0 PASS ESMC_FieldSMMStore from File test, ESMC_FieldSMMFromFileUTest.C, line 229
+20220313 013600.917 INFO             PET0 PASS ESMC_FieldSMMStore From File validation, ESMC_FieldSMMFromFileUTest.C, line 257
+20220313 013600.917 INFO             PET0 PASS ESMC_FieldRegridRelease, ESMC_FieldSMMFromFileUTest.C, line 271
+20220313 013600.917 INFO             PET0 Ending Test, file ESMC_FieldSMMFromFileUTest.C, line 289
+20220313 013600.917 INFO             PET0 Finalizing ESMF
+20220313 013600.872 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 013600.872 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 013600.872 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 013600.872 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 013600.872 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 013600.872 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 013600.872 INFO             PET1 Running with ESMF Version   : v8.3.0b09-96-g559b459836
+20220313 013600.872 INFO             PET1 ESMF library build date/time: "Mar 13 2022" "01:16:11"
+20220313 013600.872 INFO             PET1 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2
+20220313 013600.872 INFO             PET1 ESMF_COMM                   : intelmpi
+20220313 013600.873 INFO             PET1 ESMF_MOAB                   : enabled
+20220313 013600.873 INFO             PET1 ESMF_LAPACK                 : enabled
+20220313 013600.873 INFO             PET1 ESMF_NETCDF                 : enabled
+20220313 013600.873 INFO             PET1 ESMF_PNETCDF                : disabled
+20220313 013600.873 INFO             PET1 ESMF_PIO                    : enabled
+20220313 013600.873 INFO             PET1 ESMF_YAMLCPP                : enabled
+20220313 013600.873 INFO             PET1 Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41
+20220313 013600.873 INFO             PET1 Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41NUMBER_OF_PROCESSORS 4
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123788632 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123419960 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  173588 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  173588 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132112 %
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2416 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                       2776688 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             627088 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88776304 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         88785664 Byte
+20220313 013600.901 INFO             PET1 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:               0.042175 seconds
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786212 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123417540 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  173644 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  173644 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.902 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132155 %
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   608 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                       2775424 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             628352 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88775040 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         88784400 Byte
+20220313 013600.903 INFO             PET1 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0435058 seconds
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  173648 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  173648 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132158 %
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   720 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       2773792 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                             629984 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88773408 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         88782768 Byte
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0442477 seconds
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.903 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  173652 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  173652 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132161 %
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   720 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       2771552 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                             632224 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88771168 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         88780528 Byte
+20220313 013600.904 INFO             PET1 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0447636 seconds
+20220313 013600.905 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.905 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.905 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.905 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.905 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.905 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  173832 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  173832 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132298 %
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2448 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                       2776592 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             627184 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88776208 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         88785568 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0467114 seconds
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  173836 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  173836 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132301 %
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   624 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                       2775584 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             628192 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88775200 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         88784560 Byte
+20220313 013600.906 INFO             PET1 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:               0.047339 seconds
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  173836 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  173836 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132301 %
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   944 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       2773808 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                             629968 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88773424 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         88782784 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0478795 seconds
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  173836 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  173836 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132301 %
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   848 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       2771568 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                             632208 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.907 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88771184 Byte
+20220313 013600.908 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.908 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         88780544 Byte
+20220313 013600.908 INFO             PET1 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0483907 seconds
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  174048 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  174048 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132462 %
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2432 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                       2776752 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total free space:                             627024 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88776368 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         88785728 Byte
+20220313 013600.909 INFO             PET1 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0500944 seconds
+20220313 013600.909 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.909 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  174048 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  174048 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132462 %
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   608 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                       2775728 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total free space:                             628048 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88775344 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         88784704 Byte
+20220313 013600.910 INFO             PET1 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0507364 seconds
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  174048 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  174048 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132462 %
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   848 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                       2773808 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                             629968 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88773424 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         88782784 Byte
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0512762 seconds
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.910 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850460 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3848876 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  174048 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  174048 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  266872 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     824 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      28 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.132462 %
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                 3403776 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         85999616 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   848 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                       2771568 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                             632208 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   451232 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        88771184 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89403392 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         88780544 Byte
+20220313 013600.911 INFO             PET1 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0517698 seconds
+20220313 013600.911 INFO             PET1 PASS ESMC_FieldRegridStoreFile test, ESMC_FieldSMMFromFileUTest.C, line 199
+20220313 013600.917 INFO             PET1 PASS ESMC_FieldSMMStore from File test, ESMC_FieldSMMFromFileUTest.C, line 229
+20220313 013600.917 INFO             PET1 PASS ESMC_FieldSMMStore From File validation, ESMC_FieldSMMFromFileUTest.C, line 257
+20220313 013600.918 INFO             PET1 PASS ESMC_FieldRegridRelease, ESMC_FieldSMMFromFileUTest.C, line 271
+20220313 013600.918 INFO             PET1 Ending Test, file ESMC_FieldSMMFromFileUTest.C, line 289
+20220313 013600.918 INFO             PET1 Finalizing ESMF
+20220313 013600.873 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 013600.873 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 013600.873 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 013600.873 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 013600.873 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 013600.873 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 013600.873 INFO             PET2 Running with ESMF Version   : v8.3.0b09-96-g559b459836
+20220313 013600.873 INFO             PET2 ESMF library build date/time: "Mar 13 2022" "01:16:11"
+20220313 013600.873 INFO             PET2 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2
+20220313 013600.873 INFO             PET2 ESMF_COMM                   : intelmpi
+20220313 013600.874 INFO             PET2 ESMF_MOAB                   : enabled
+20220313 013600.874 INFO             PET2 ESMF_LAPACK                 : enabled
+20220313 013600.874 INFO             PET2 ESMF_NETCDF                 : enabled
+20220313 013600.874 INFO             PET2 ESMF_PNETCDF                : disabled
+20220313 013600.874 INFO             PET2 ESMF_PIO                    : enabled
+20220313 013600.874 INFO             PET2 ESMF_YAMLCPP                : enabled
+20220313 013600.874 INFO             PET2 Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41
+20220313 013600.874 INFO             PET2 Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41NUMBER_OF_PROCESSORS 4
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123788632 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123419960 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  176356 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  176356 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134219 %
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2400 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      23748368 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total free space:                            2719984 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86675216 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         86684576 Byte
+20220313 013600.901 INFO             PET2 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:               0.038049 seconds
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786212 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123417540 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  176416 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  176416 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.902 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134264 %
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   480 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      23747104 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total free space:                            2721248 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86673952 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         86683312 Byte
+20220313 013600.903 INFO             PET2 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0393701 seconds
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  176420 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  176420 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134267 %
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   576 Byte
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                      23745488 Byte
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                            2722864 Byte
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.903 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86672336 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         86681696 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0401258 seconds
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  176424 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  176424 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134271 %
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   592 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                      23743232 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                            2725120 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86670080 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         86679440 Byte
+20220313 013600.904 INFO             PET2 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0407696 seconds
+20220313 013600.905 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.905 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.905 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.905 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.905 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  176460 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  176460 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134298 %
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2528 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      23748256 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total free space:                            2720096 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86675104 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         86684464 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:               0.042531 seconds
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  176464 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  176464 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134301 %
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   608 Byte
+20220313 013600.906 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      23747248 Byte
+20220313 013600.907 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total free space:                            2721104 Byte
+20220313 013600.907 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.907 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86674096 Byte
+20220313 013600.907 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.907 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         86683456 Byte
+20220313 013600.907 INFO             PET2 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0431891 seconds
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  176464 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  176464 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134301 %
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   832 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                      23745472 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                            2722880 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86672320 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         86681680 Byte
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0438021 seconds
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.907 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  176464 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  176464 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134301 %
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   720 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                      23743232 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                            2725120 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86670080 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         86679440 Byte
+20220313 013600.908 INFO             PET2 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0444431 seconds
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  176800 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  176800 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134557 %
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2448 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      23748416 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total free space:                            2719936 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86675264 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         86684624 Byte
+20220313 013600.909 INFO             PET2 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0459354 seconds
+20220313 013600.909 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.909 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  176800 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  176800 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134557 %
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   608 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      23747408 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total free space:                            2720944 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86674256 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         86683616 Byte
+20220313 013600.910 INFO             PET2 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0465746 seconds
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  176800 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  176800 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134557 %
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   704 Byte
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                      23745488 Byte
+20220313 013600.910 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                            2722864 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86672336 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         86681712 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0471813 seconds
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3850484 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3826340 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   82140 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  176800 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  176800 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  244336 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     848 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.134557 %
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                26468352 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         62926848 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   736 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                      23743232 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                            2725120 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   452944 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        86670080 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         89395200 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         86679456 Byte
+20220313 013600.911 INFO             PET2 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0477819 seconds
+20220313 013600.911 INFO             PET2 PASS ESMC_FieldRegridStoreFile test, ESMC_FieldSMMFromFileUTest.C, line 199
+20220313 013600.917 INFO             PET2 PASS ESMC_FieldSMMStore from File test, ESMC_FieldSMMFromFileUTest.C, line 229
+20220313 013600.917 INFO             PET2 PASS ESMC_FieldSMMStore From File validation, ESMC_FieldSMMFromFileUTest.C, line 257
+20220313 013600.917 INFO             PET2 PASS ESMC_FieldRegridRelease, ESMC_FieldSMMFromFileUTest.C, line 271
+20220313 013600.917 INFO             PET2 Ending Test, file ESMC_FieldSMMFromFileUTest.C, line 289
+20220313 013600.917 INFO             PET2 Finalizing ESMF
+20220313 013600.873 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 013600.873 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220313 013600.873 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220313 013600.873 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220313 013600.873 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220313 013600.873 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220313 013600.873 INFO             PET3 Running with ESMF Version   : v8.3.0b09-96-g559b459836
+20220313 013600.873 INFO             PET3 ESMF library build date/time: "Mar 13 2022" "01:16:11"
+20220313 013600.873 INFO             PET3 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_g_jedwards_pio_update2
+20220313 013600.873 INFO             PET3 ESMF_COMM                   : intelmpi
+20220313 013600.874 INFO             PET3 ESMF_MOAB                   : enabled
+20220313 013600.874 INFO             PET3 ESMF_LAPACK                 : enabled
+20220313 013600.874 INFO             PET3 ESMF_NETCDF                 : enabled
+20220313 013600.874 INFO             PET3 ESMF_PNETCDF                : disabled
+20220313 013600.874 INFO             PET3 ESMF_PIO                    : enabled
+20220313 013600.874 INFO             PET3 ESMF_YAMLCPP                : enabled
+20220313 013600.874 INFO             PET3 Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41
+20220313 013600.874 INFO             PET3 Beginning Test, file ESMC_FieldSMMFromFileUTest.C, line 41NUMBER_OF_PROCESSORS 4
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123788632 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123419960 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  163064 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  163064 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124103 %
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2416 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      23747008 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total free space:                            2709056 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74086848 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         74096208 Byte
+20220313 013600.901 INFO             PET3 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0425876 seconds
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786212 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123417540 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  163124 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  163124 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.902 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124148 %
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   608 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      23745744 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total free space:                            2710320 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74085584 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         74094944 Byte
+20220313 013600.903 INFO             PET3 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0438928 seconds
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  163128 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  163128 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124151 %
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   704 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                      23744128 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                            2711936 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74083968 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         74093328 Byte
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0446545 seconds
+20220313 013600.903 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  163132 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  163132 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124154 %
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   720 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                      23741888 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                            2714176 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74081728 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         74091088 Byte
+20220313 013600.904 INFO             PET3 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0451867 seconds
+20220313 013600.905 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.905 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.905 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.905 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.905 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.905 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  163352 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  163352 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124322 %
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2512 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      23746912 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total free space:                            2709152 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74086752 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         74096112 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0470695 seconds
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  163356 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  163356 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124325 %
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   608 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      23745904 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total free space:                            2710160 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74085744 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.906 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         74095104 Byte
+20220313 013600.907 INFO             PET3 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:              0.0477224 seconds
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  163356 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  163356 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124325 %
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   704 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                      23744144 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                            2711920 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74083984 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         74093344 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:               0.048247 seconds
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123787424 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418752 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  163356 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  163356 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124325 %
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   592 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                      23741904 Byte
+20220313 013600.907 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                            2714160 Byte
+20220313 013600.908 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.908 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74081744 Byte
+20220313 013600.908 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.908 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         74091104 Byte
+20220313 013600.908 INFO             PET3 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0487896 seconds
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmHWM:	  163520 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSS:	  163520 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.12445 %
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Space in freed fastbin blocks:                  2576 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total allocated space:                      23747040 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total free space:                            2709024 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74086880 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         74096240 Byte
+20220313 013600.909 INFO             PET3 PIOc_sync Enter - MemInfo: Wall-clock time since execution start:              0.0504632 seconds
+20220313 013600.909 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.909 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmHWM:	  163524 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSS:	  163524 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124453 %
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   608 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total allocated space:                      23746032 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total free space:                            2710032 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74085872 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         74095232 Byte
+20220313 013600.910 INFO             PET3 PIOc_sync Exit - MemInfo: Wall-clock time since execution start:                0.05111 seconds
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmHWM:	  163524 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSS:	  163524 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124453 %
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Space in freed fastbin blocks:                   704 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total allocated space:                      23744128 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total free space:                            2711936 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74083968 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: [malloc] Total space used (mmap + non-mmap):         74093328 Byte
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Enter - MemInfo: Wall-clock time since execution start:              0.0516516 seconds
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131394444 kB
+20220313 013600.910 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemFree:        123786956 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   123418284 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	Committed_AS:    4302792 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 3.27471 %
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPeak:	 3852244 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSize:	 3816084 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPin:	   71900 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmHWM:	  163524 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSS:	  163524 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmData:	  234080 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmStk:	     512 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmExe:	     520 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmLib:	  156408 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPTE:	     800 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmPMD:	      32 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [/proc/self/status]	VmRSSPercent: 0.124453 %
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Non-mmapped space allocated:                26456064 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Space allocated in mmapped regions:         50339840 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Space in freed fastbin blocks:                   592 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total allocated space:                      23741888 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total free space:                            2714176 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Top-most, releasable space:                   453600 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space in use, mmap + non-mmap:        74081728 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space held (mmap + non-mmap):         76795904 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: [malloc] Total space used (mmap + non-mmap):         74091088 Byte
+20220313 013600.911 INFO             PET3 PIOc_freedecomp Exit - MemInfo: Wall-clock time since execution start:              0.0521464 seconds
+20220313 013600.911 INFO             PET3 PASS ESMC_FieldRegridStoreFile test, ESMC_FieldSMMFromFileUTest.C, line 199
+20220313 013600.917 INFO             PET3 PASS ESMC_FieldSMMStore from File test, ESMC_FieldSMMFromFileUTest.C, line 229
+20220313 013600.917 INFO             PET3 PASS ESMC_FieldSMMStore From File validation, ESMC_FieldSMMFromFileUTest.C, line 257
+20220313 013600.917 INFO             PET3 PASS ESMC_FieldRegridRelease, ESMC_FieldSMMFromFileUTest.C, line 271
+20220313 013600.917 INFO             PET3 Ending Test, file ESMC_FieldSMMFromFileUTest.C, line 289
+20220313 013600.917 INFO             PET3 Finalizing ESMF
