@@ -1,4 +1,4 @@
-Tue 08 Mar 2022 02:00:45 AM UTC
+Sun 13 Mar 03:32:11 UTC 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_10.3.0_mpich3_g.bat
 #PBS -l walltime=1:00:00
@@ -11,7 +11,7 @@ cd /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2
 
 module unload PrgEnv-cray PrgEnv-intel
 
-module load PrgEnv-gnu cray-pals craype
+module load PrgEnv-gnu cray-pals craype cmake
 module load gcc/10.3.0 cray-mpich/8.1.7 netcdf
 module load hdf5 
 module list >& module-test.log

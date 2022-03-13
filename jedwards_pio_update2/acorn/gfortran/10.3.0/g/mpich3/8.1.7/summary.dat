@@ -1,23 +1,23 @@
 
 ===================================================================
 Build for = gfortran_10.3.0_mpich3_g_jedwards_pio_update2, mpi version 8.1.7 on acorn esmf_os: Linux
-Build time = 02:00:45
-git hash = v8.3.0b08-93-g7b74714
+Build time = 2022-03-13 03:31:55
+git hash = v8.3.0b09-96-g559b459
 
-unit test results   	unit tests did not complete
-system test results 	system tests did not complete
-example test results 	No examples ran
-nuopc test results 	PASS 0 	FAIL 50
+unit test results   	-1 -1
+system test results 	-1 -1
+example test results 	-1 -1
+nuopc test results 	PASS -1 	FAIL -1
 
 
 ===================================================================
 
 
 Currently Loaded Modules:
-  1) craype-x86-rome     (H)   5) PrgEnv-gnu/8.1.0   9) cray-mpich/8.1.7
-  2) libfabric/1.11.0.0.       6) cray-pals/1.1.3   10) netcdf/4.7.4
-  3) craype-network-ofi  (H)   7) craype/2.7.13     11) hdf5/1.10.6
-  4) envvar/1.0                8) gcc/10.3.0
+  1) craype-x86-rome     (H)   5) PrgEnv-gnu/8.1.0   9) gcc/10.3.0
+  2) libfabric/1.11.0.0.       6) cray-pals/1.1.3   10) cray-mpich/8.1.7
+  3) craype-network-ofi  (H)   7) craype/2.7.13     11) netcdf/4.7.4
+  4) envvar/1.0                8) cmake/3.20.2      12) hdf5/1.10.6
 
   Where:
    H:  Hidden Module
@@ -27,7 +27,7 @@ Currently Loaded Modules:
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
-v8.3.0b08-93-g7b747143aa
+v8.3.0b09-96-g559b459836
 --------------------------------------------------------------
 On branch jedwards/pio_update2
 Your branch is up to date with 'origin/jedwards/pio_update2'.
@@ -40,15 +40,17 @@ Changes not staged for commit:
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	build-gfortran_10.3.0_mpich3_g.bat
-	build-gfortran_10.3.0_mpich3_g.bat.e82338
-	build-gfortran_10.3.0_mpich3_g.bat.o82338
+	build-gfortran_10.3.0_mpich3_g.bat.e83388
+	build-gfortran_10.3.0_mpich3_g.bat.o83388
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
 	runpython.sh
+	src/Infrastructure/IO/PIO/Build/
+	src/Infrastructure/IO/PIO/Install/
 	test-gfortran_10.3.0_mpich3_g.bat
-	test-gfortran_10.3.0_mpich3_g.bat.e82339
-	test-gfortran_10.3.0_mpich3_g.bat.o82339
+	test-gfortran_10.3.0_mpich3_g.bat.e83389
+	test-gfortran_10.3.0_mpich3_g.bat.o83389
 
 no changes added to commit (use "git add" and/or "git commit -a")
 --------------------------------------------------------------
@@ -64,7 +66,9 @@ There is NO WARRANTY, to the extent permitted by law.
 
 --------------------------------------------------------------
 CMake version:
-/bin/sh: cmake: command not found
+cmake version 3.20.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 --------------------------------------------------------------
 Fortran Compiler version:
@@ -188,7 +192,7 @@ ESMF_BENCHMARK_THRESHOLD_MSEC: 500
  
 --------------------------------------------------------------
  * Other relevant environment variables *
-PATH:    /apps/prod/hdf5-parallel/1.10.6/gcc/10.2.0/cray-mpich/8.1.4/bin:/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/bin:/opt/cray/pe/mpich/8.1.7/ofi/gnu/9.1/bin:/opt/cray/pe/gcc/10.3.0/bin:/opt/cray/pe/craype/2.7.13/bin:/opt/cray/pe/pals/1.1.3/bin:/opt/cray/libfabric/1.11.0.0./bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/u/Mark.Potts/.local/bin:/u/Mark.Potts/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
+PATH:    /apps/prod/hdf5-parallel/1.10.6/gcc/10.2.0/cray-mpich/8.1.4/bin:/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/bin:/opt/cray/pe/mpich/8.1.7/ofi/gnu/9.1/bin:/opt/cray/pe/gcc/10.3.0/bin:/apps/spack/cmake/3.20.2/intel/19.1.3.304/utnbptm3hrf7gppztidueu4jogfgemut/bin:/opt/cray/pe/craype/2.7.13/bin:/opt/cray/pe/pals/1.1.3/bin:/opt/cray/libfabric/1.11.0.0./bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/u/Mark.Potts/.local/bin:/u/Mark.Potts/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
 LD_LIBRARY_PATH: /apps/prod/hdf5-parallel/1.10.6/gcc/10.2.0/cray-mpich/8.1.4/lib:/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/lib:/opt/cray/pe/gcc/10.3.0/snos/lib64:/opt/cray/libfabric/1.11.0.0./lib64
  
 --------------------------------------------------------------
@@ -205,7 +209,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: ftn
 ESMF_F90COMPILEOPTS: -fallow-argument-mismatch -fallow-invalid-boz -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp
 ESMF_F90COMPILEPATHS: -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2/mod/modg/Linux.gfortran.64.mpich3.default -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2/src/include -I/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/include -I/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b08-93-g7b747143aa' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -ffree-form
 ESMF_F90COMPILEFIXCPP: -cpp -ffixed-form
@@ -222,7 +226,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: CC
 ESMF_CXXCOMPILEOPTS: -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp
 ESMF_CXXCOMPILEPATHS:  -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2/src/include  -I/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/include -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b08-93-g7b747143aa' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2 -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2 -D__SDIR__='' -DESMF_CXXSTD=11
 
 C++ linker flags:
 ESMF_CXXLINKOPTS: -fPIC -lnetcdff -lnetcdff   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp
@@ -235,7 +239,7 @@ C compiler flags:
 ESMF_CCOMPILER: mpicc
 ESMF_CCOMPILEOPTS:  -g -fPIC
 ESMF_CCOMPILEPATHS:  -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b08-93-g7b747143aa' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2 -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpich3_g_jedwards_pio_update2 -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -258,8 +262,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Tue 08 Mar 2022 01:58:58 AM UTC on nid001003
-Machine characteristics: Linux nid001003 5.3.18-150300.59.49-default #1 SMP Mon Feb 7 14:40:20 UTC 2022 (77d9d02) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sun 13 Mar 03:31:59 UTC 2022 on nid001012
+Machine characteristics: Linux nid001012 5.3.18-150300.59.49-default #1 SMP Mon Feb 7 14:40:20 UTC 2022 (77d9d02) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
