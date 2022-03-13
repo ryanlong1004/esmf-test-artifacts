@@ -1,0 +1,51 @@
+build time -- 2022-03-13 03:37:08
++ export ESMF_NETCDF=nc-config
++ ESMF_NETCDF=nc-config
++ export ESMF_OS=Linux
++ ESMF_OS=Linux
++ export ESMF_CXXCOMPILER=CC
++ ESMF_CXXCOMPILER=CC
++ export ESMF_F90COMPILER=ftn
++ ESMF_F90COMPILER=ftn
++ export ESMF_CXXLINKER=CC
++ ESMF_CXXLINKER=CC
++ export ESMF_F90LINKER=ftn
++ ESMF_F90LINKER=ftn
++ export ESMF_MPIRUN=mpirun.unicos
++ ESMF_MPIRUN=mpirun.unicos
++ export ESMF_CXXCOMPILECPPFLAGS=-fPIC
++ ESMF_CXXCOMPILECPPFLAGS=-fPIC
++ export 'ESMF_CXXLINKOPTS=-fPIC -lnetcdff -lnetcdff'
++ ESMF_CXXLINKOPTS='-fPIC -lnetcdff -lnetcdff'
++ export ESMF_NETCDF=nc-config
++ ESMF_NETCDF=nc-config
++ sed -i 's/^aprun/mpiexec/' scripts/mpirun.unicos
+sed: can't read scripts/mpirun.unicos: No such file or directory
++ sed -i s/lmpi++/lfmpich/ build_config/Linux.intel.default/build_rules.mk
+sed: can't read build_config/Linux.intel.default/build_rules.mk: No such file or directory
++ export ESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/intel_2019.3_mpi_O_develop
++ ESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/intel_2019.3_mpi_O_develop
++ export ESMF_COMPILER=intel
++ ESMF_COMPILER=intel
++ export ESMF_COMM=mpi
++ ESMF_COMM=mpi
++ export ESMF_BOPT=O
++ ESMF_BOPT=O
++ export ESMF_TESTEXHAUSTIVE=ON
++ ESMF_TESTEXHAUSTIVE=ON
++ export ESMF_TESTWITHTHREADS=ON
++ ESMF_TESTWITHTHREADS=ON
++ python3 setup.py test_examples_dryrun
+running test_examples_dryrun
+Retrieving http://data.earthsystemmodeling.org/download/data/aggregAtlanticESTOFS.nc...
+
+Error opening http://data.earthsystemmodeling.org/download/data/aggregAtlanticESTOFS.nc
+error: Error downloading 'aggregAtlanticESTOFS.nc'
++ python3 setup.py test_regrid_from_file_dryrun
+running test_regrid_from_file_dryrun
+Retrieving http://data.earthsystemmodeling.org/download/data/ll2.5deg_grid.nc...
+
+Error opening http://data.earthsystemmodeling.org/download/data/ll2.5deg_grid.nc
+RESULT: FAIL - regrid_from_file_dryrun error
+
+
