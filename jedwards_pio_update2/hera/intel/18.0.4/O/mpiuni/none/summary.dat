@@ -1,27 +1,34 @@
 
 ===================================================================
 Build for = intel_18.0.4_mpiuni_O_jedwards_pio_update2, mpi version None on hera esmf_os: Linux
-Build time = 2022-03-14 06:09:40
-git hash = v8.3.0b09-96-g559b459
+Build time = 22:31:17
+git hash = v8.3.0b09-99-g1c5bae8
 
-unit test results   	PASS 12121	FAIL 0
-system test results 	PASS 8 	FAIL 0
-example test results 	PASS 43 	FAIL 0
-nuopc test results 	PASS 0 	FAIL 50
+unit test results   	Build did not complete successfully
+system test results 	Build did not complete successfully
+example test results 	Build did not complete successfully
+nuopc test results 	PASS Build did not complete successfully 	FAIL Build did not complete successfully
 
 
 ===================================================================
 
 
 Currently Loaded Modules:
-  1) intelpython/2022.1.2   2) intel/18.0.5.274   3) netcdf/4.7.0
+  1) intelpython/2022.1.2
 
  
 
+/bin/sh: line 0: [: -ge: unary operator expected
+/bin/sh: line 0: [: -ge: unary operator expected
+make: nc-config: Command not found
+make: nc-config: Command not found
+make: nc-config: Command not found
+make: nc-config: Command not found
+make: nc-config: Command not found
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
-v8.3.0b09-96-g559b459836
+v8.3.0b09-99-g1c5bae8308
 --------------------------------------------------------------
 On branch jedwards/pio_update2
 Your branch is up to date with 'origin/jedwards/pio_update2'.
@@ -30,14 +37,16 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_18.0.4_mpiuni_O.bat
-	build-intel_18.0.4_mpiuni_O.bat_29518991.e
-	build-intel_18.0.4_mpiuni_O.bat_29518991.o
+	build-intel_18.0.4_mpiuni_O.bat_29548673.e
+	build-intel_18.0.4_mpiuni_O.bat_29548673.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
 	test-intel_18.0.4_mpiuni_O.bat
-	test-intel_18.0.4_mpiuni_O.bat_29518992.e
-	test-intel_18.0.4_mpiuni_O.bat_29518992.o
+	test-intel_18.0.4_mpiuni_O.bat_29547780.e
+	test-intel_18.0.4_mpiuni_O.bat_29547780.o
+	test-intel_18.0.4_mpiuni_O.bat_29548674.e
+	test-intel_18.0.4_mpiuni_O.bat_29548674.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -57,21 +66,15 @@ cmake version 2.8.12.2
 
 --------------------------------------------------------------
 Fortran Compiler version:
-Intel(R) Fortran Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 18.0.5.274 Build 20180823
-Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
-
+/bin/sh: ifort: command not found
 
 --------------------------------------------------------------
 C++ Compiler version:
-Intel(R) C++ Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 18.0.5.274 Build 20180823
-Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
-
+/bin/sh: icpc: command not found
 
 --------------------------------------------------------------
 C Compiler version:
-Intel(R) C Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 18.0.5.274 Build 20180823
-Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
-
+/bin/sh: icc: command not found
 
 --------------------------------------------------------------
 Preprocessor version:
@@ -81,8 +84,10 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 --------------------------------------------------------------
-NetCDF library version: netCDF 4.7.0
-NetCDF Fortran version: netCDF-Fortran 4.4.5
+/bin/sh: nc-config: command not found
+NetCDF library version: 
+/bin/sh: nf-config: command not found
+NetCDF Fortran version: 
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -134,13 +139,6 @@ ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
 ESMF_NETCDF:             nc-config
-ESMF_NETCDF_INCLUDE:     /apps/netcdf/4.7.0/intel/18.0.5.274/include
-ESMF_NETCDF_LIBS:        -lnetcdf
-ESMF_NETCDF_LIBPATH:     /apps/netcdf/4.7.0/intel/18.0.5.274/lib
-ESMF_NFCONFIG:           nf-config
-ESMF_NETCDFF_INCLUDE:    /apps/netcdf/4.7.0/intel/18.0.5.274/include
-ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
-ESMF_NETCDFF_LIBPATH:    /apps/netcdf/4.7.0/intel/18.0.5.274/lib /apps/netcdf/4.7.0/intel/18.0.5.274/lib /apps/hdf5/1.10.5/intel/18.0.5.274/lib /apps/szip/2.1/lib
 ESMF_YAMLCPP:            internal
  
 --------------------------------------------------------------
@@ -160,54 +158,60 @@ ESMF_BENCHMARK_THRESHOLD_MSEC: 500
  
 --------------------------------------------------------------
  * Other relevant environment variables *
-PATH:    /apps/netcdf/4.7.0/intel/18.0.5.274/bin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin
-LD_LIBRARY_PATH: /apps/netcdf/4.7.0/intel/18.0.5.274/lib:/apps/oneapi/intelpython/latest/lib/libfabric::/apps/slurm/default/lib:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/compiler/lib/intel64:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/ipp/lib/intel64:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/compiler/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/mkl/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/tbb/lib/intel64/gcc4.7:/apps/intel/parallel_studio_xe_2018.4.057/debugger_2018/libipt/intel64/lib:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/daal/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+PATH:    /apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:~/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin
+LD_LIBRARY_PATH: /apps/oneapi/intelpython/latest/lib/libfabric::/apps/slurm/default/lib:/apps/slurm/default/lib
  
 --------------------------------------------------------------
  * Compilers, Linkers, Flags, and Libraries *
 Location of the preprocessor:      /usr/bin/gcc
-Location of the Fortran compiler:  /apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64/ifort
-Location of the Fortran linker:    /apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64/ifort
-Location of the C++ compiler:      /apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64/icpc
-Location of the C++ linker:        /apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64/icpc
-Location of the C compiler:        /apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64/icc
-Location of the C linker:          /apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64/icc
+which: no ifort in (/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:~/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the Fortran compiler: 
+which: no ifort in (/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:~/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the Fortran linker:   
+which: no icpc in (/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:~/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the C++ compiler:     
+which: no icpc in (/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:~/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the C++ linker:       
+which: no icc in (/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:~/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the C compiler:       
+which: no icc in (/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:~/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the C linker:         
 
 Fortran compiler flags:
 ESMF_F90COMPILER: ifort
-ESMF_F90COMPILEOPTS: -O -fPIC -debug minimal -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
-ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/mod/modO/Linux.intel.64.mpiuni.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/include -I/apps/netcdf/4.7.0/intel/18.0.5.274/include -I/apps/netcdf/4.7.0/intel/18.0.5.274/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2 -DESMF_MPIUNI
+ESMF_F90COMPILEOPTS: -O -fPIC -debug minimal -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -openmp
+ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/mod/modO/Linux.intel.64.mpiuni.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/include 
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-99-g1c5bae8308' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2 -DESMF_MPIUNI
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: 
 ESMF_F90COMPILEFIXCPP: 
 ESMF_F90COMPILEFIXNOCPP: 
 
 Fortran linker flags:
-ESMF_F90LINKOPTS:   -m64 -mcmodel=small -pthread -threads -Wl,--no-as-needed  -qopenmp
-ESMF_F90LINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mpiuni.default -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/hdf5/1.10.5/intel/18.0.5.274/lib -L/apps/szip/2.1/lib 
-ESMF_F90LINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mpiuni.default -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/hdf5/1.10.5/intel/18.0.5.274/lib -Wl,-rpath,/apps/szip/2.1/lib
-ESMF_F90LINKLIBS:  -cxxlib -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
-ESMF_F90ESMFLINKLIBS: -lesmf  -cxxlib -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90LINKOPTS:   -m64 -mcmodel=small -pthread -threads -Wl,--no-as-needed  -openmp
+ESMF_F90LINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mpiuni.default  
+ESMF_F90LINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mpiuni.default 
+ESMF_F90LINKLIBS:  -cxxlib -lrt -ldl
+ESMF_F90ESMFLINKLIBS: -lesmf  -cxxlib -lrt -ldl
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: icpc
-ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp
-ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/include  -I/apps/netcdf/4.7.0/intel/18.0.5.274/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2 -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
+ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp
+ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-99-g1c5bae8308' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2 -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
 
 C++ linker flags:
-ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
-ESMF_CXXLINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mpiuni.default -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/hdf5/1.10.5/intel/18.0.5.274/lib -L/apps/szip/2.1/lib -L/apps/intel/compilers_and_libraries_2018.5.274/linux/compiler/lib/intel64_lin/
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mpiuni.default -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/hdf5/1.10.5/intel/18.0.5.274/lib -Wl,-rpath,/apps/szip/2.1/lib -Wl,-rpath,/apps/intel/compilers_and_libraries_2018.5.274/linux/compiler/lib/intel64_lin/
-ESMF_CXXLINKLIBS:  -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
-ESMF_CXXESMFLINKLIBS: -lesmf  -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -openmp
+ESMF_CXXLINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mpiuni.default  -L
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/lib/libO/Linux.intel.64.mpiuni.default  -Wl,-rpath,
+ESMF_CXXLINKLIBS:   -lrt -ldl
+ESMF_CXXESMFLINKLIBS: -lesmf   -lrt -ldl
 
 C compiler flags:
 ESMF_CCOMPILER: icc
 ESMF_CCOMPILEOPTS:  -O -DNDEBUG -fPIC -debug minimal
 ESMF_CCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-96-g559b459836' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2 -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-99-g1c5bae8308' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_jedwards_pio_update2 -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -220,7 +224,7 @@ Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
 ESMF_SL_SUFFIX:       so
 ESMF_SL_LIBLINKER:    icpc
-ESMF_SL_LIBOPTS:       -pthread -shared  -qopenmp
+ESMF_SL_LIBOPTS:       -pthread -shared  -openmp
 ESMF_SL_LIBLIBS:      
 
 ESMF Tracing linker options:
@@ -230,8 +234,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Mon Mar 14 06:09:56 UTC 2022 on h20c03
-Machine characteristics: Linux h20c03 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Mon Mar 14 22:31:14 UTC 2022 on h25c06
+Machine characteristics: Linux h25c06 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
