@@ -1,4 +1,4 @@
-Sun Mar 13 05:59:51 UTC 2022
+Mon Mar 14 06:01:49 UTC 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
@@ -11,8 +11,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-gfortran_9.2.0_openmpi_O.bat
-	build-gfortran_9.2.0_openmpi_O.bat_29477649.e
-	build-gfortran_9.2.0_openmpi_O.bat_29477649.o
+	build-gfortran_9.2.0_openmpi_O.bat_29519045.e
+	build-gfortran_9.2.0_openmpi_O.bat_29519045.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -222,15 +222,15 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Sun Mar 13 05:55:55 UTC 2022 on h24c08
-Machine characteristics: Linux h24c08 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Mon Mar 14 05:58:01 UTC 2022 on h32m13
+Machine characteristics: Linux h32m13 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2'
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/lib/libO/Linux.gfortran.64.openmpi.default for library
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include for include files
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/mod/modO/Linux.gfortran.64.openmpi.default for *.mod files
-Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/obj/objO/Linux.gfortran.64.openmpi.default for build-gfortran_9.2.0_openmpi_O.bat_29477649.o files
+Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/obj/objO/Linux.gfortran.64.openmpi.default for build-gfortran_9.2.0_openmpi_O.bat_29519045.o files
 cd /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2 ;\
 make ACTION=tree_include tree
 make[2]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2'
@@ -1428,6 +1428,13 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -m
 In file included from /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_VMKernel.h:28,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
+/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+   32 | #warning \
+      |  ^~~~~~~
+In file included from /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_VMKernel.h:28,
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_VM.h:41,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_Base.h:27,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_Comp.h:32,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
@@ -1442,13 +1449,6 @@ In file included from /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdec
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_Comp.h:32,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C:13:
-/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
-   32 | #warning \
-      |  ^~~~~~~
-In file included from /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/strstream:50,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_VMKernel.h:28,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
 /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1907,7 +1907,7 @@ In file included from /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdec
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_VM.h:41,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_Base.h:27,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h:39,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMC_RHandle.C:31:
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:23:
 /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1916,7 +1916,7 @@ In file included from /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdec
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_VM.h:41,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/include/ESMCI_Base.h:27,
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h:39,
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:23:
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_O_jedwards_pio_update2/src/Infrastructure/Route/interface/ESMC_RHandle.C:31:
 /apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/include/c++/9.2.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
