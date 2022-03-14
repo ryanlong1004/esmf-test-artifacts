@@ -1,0 +1,1241 @@
+build time -- 2022-03-14 22:14:12
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+MPI startup(): Warning: I_MPI_PMI_LIBRARY will be ignored since the hydra process manager was found
+Reading control file...
+Retrieving regrid_from_file data...
+Retrieving http://data.earthsystemmodeling.org/download/data/ll2.5deg_grid.nc...
+
+Error opening http://data.earthsystemmodeling.org/download/data/ll2.5deg_grid.nc
+Running 1 of 11 regrid_from_file test cases...
+
+Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 2 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 3 of 11 regrid_from_file test cases...
+
+Regrid ll1deg_grid.nc to ll2.5deg_grid.nc as conserve with --dst_type SCRIP itrp_mean_err=0.001000, itrp_max_err=0.001000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid ll1deg_grid.nc to ll2.5deg_grid.nc as conserve with --dst_type SCRIP itrp_mean_err=0.001000, itrp_max_err=0.001000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 4 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to T42_grid.nc as neareststod with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid T42_grid.nc to T42_grid.nc as neareststod with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 5 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to T42_grid.nc as nearestdtos with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+Reading control file...
+Running 1 of 11 regrid_from_file test cases...
+
+Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 2 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 3 of 11 regrid_from_file test cases...
+
+Regrid ll1deg_grid.nc to ll2.5deg_grid.nc as conserve with --dst_type SCRIP itrp_mean_err=0.001000, itrp_max_err=0.001000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid ll1deg_grid.nc to ll2.5deg_grid.nc as conserve with --dst_type SCRIP itrp_mean_err=0.001000, itrp_max_err=0.001000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 4 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to T42_grid.nc as neareststod with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid T42_grid.nc to T42_grid.nc as neareststod with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 5 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to T42_grid.nc as nearestdtos with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+Reading control file...
+Running 1 of 11 regrid_from_file test cases...
+
+Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 2 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 3 of 11 regrid_from_file test cases...
+
+Regrid ll1deg_grid.nc to ll2.5deg_grid.nc as conserve with --dst_type SCRIP itrp_mean_err=0.001000, itrp_max_err=0.001000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid ll1deg_grid.nc to ll2.5deg_grid.nc as conserve with --dst_type SCRIP itrp_mean_err=0.001000, itrp_max_err=0.001000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 4 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to T42_grid.nc as neareststod with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid T42_grid.nc to T42_grid.nc as neareststod with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 5 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to T42_grid.nc as nearestdtos with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+Reading control file...
+Running 1 of 11 regrid_from_file test cases...
+
+Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid ll2.5deg_grid.nc to T42_grid.nc as bilinear with -p none itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 2 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid T42_grid.nc to ll2.5deg_grid.nc as patch with -p none -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 3 of 11 regrid_from_file test cases...
+
+Regrid ll1deg_grid.nc to ll2.5deg_grid.nc as conserve with --dst_type SCRIP itrp_mean_err=0.001000, itrp_max_err=0.001000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid ll1deg_grid.nc to ll2.5deg_grid.nc as conserve with --dst_type SCRIP itrp_mean_err=0.001000, itrp_max_err=0.001000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 4 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to T42_grid.nc as neareststod with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid T42_grid.nc to T42_grid.nc as neareststod with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 5 of 11 regrid_from_file test cases...
+
+Regrid T42_grid.nc to T42_grid.nc as nearestdtos with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid T42_grid.nc to T42_grid.nc as nearestdtos with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 6 of 11 regrid_from_file test cases...
+
+Regrid wr50a_090614.nc to wr50a_090614.nc as neareststod with --src_regional --dst_regional itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid wr50a_090614.nc to wr50a_090614.nc as neareststod with --src_regional --dst_regional itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 7 of 11 regrid_from_file test cases...
+
+Regrid mpas_uniform_10242.nc to mpas_uniform_10242.nc as neareststod with --src_type ESMF --dst_type ESMF itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid mpas_uniform_10242.nc to mpas_uniform_10242.nc as neareststod with --src_type ESMF --dst_type ESMF itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 8 of 11 regrid_from_file test cases...
+
+Regrid mpas_uniform_10242_dual.nc to ne60np4_pentagons_100408.nc as conserve with --src_type ESMF itrp_mean_err=0.010000, itrp_max_err=0.100000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid mpas_uniform_10242_dual.nc to ne60np4_pentagons_100408.nc as conserve with --src_type ESMF itrp_mean_err=0.010000, itrp_max_err=0.100000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 9 of 11 regrid_from_file test cases...
+
+Regrid GRIDSPEC_ACCESS1.nc to SCRIP_1x1.nc as bilinear with -p none -i --src_type GRIDSPEC --src_missingvalue so itrp_mean_err=0.000010, itrp_max_err=0.000100, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid T42_grid.nc to T42_grid.nc as nearestdtos with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 6 of 11 regrid_from_file test cases...
+
+Regrid wr50a_090614.nc to wr50a_090614.nc as neareststod with --src_regional --dst_regional itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid wr50a_090614.nc to wr50a_090614.nc as neareststod with --src_regional --dst_regional itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 7 of 11 regrid_from_file test cases...
+
+Regrid mpas_uniform_10242.nc to mpas_uniform_10242.nc as neareststod with --src_type ESMF --dst_type ESMF itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid mpas_uniform_10242.nc to mpas_uniform_10242.nc as neareststod with --src_type ESMF --dst_type ESMF itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 8 of 11 regrid_from_file test cases...
+
+Regrid mpas_uniform_10242_dual.nc to ne60np4_pentagons_100408.nc as conserve with --src_type ESMF itrp_mean_err=0.010000, itrp_max_err=0.100000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid mpas_uniform_10242_dual.nc to ne60np4_pentagons_100408.nc as conserve with --src_type ESMF itrp_mean_err=0.010000, itrp_max_err=0.100000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 9 of 11 regrid_from_file test cases...
+
+Regrid GRIDSPEC_ACCESS1.nc to SCRIP_1x1.nc as bilinear with -p none -i --src_type GRIDSPEC --src_missingvalue so itrp_mean_err=0.000010, itrp_max_err=0.000100, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid T42_grid.nc to T42_grid.nc as nearestdtos with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 6 of 11 regrid_from_file test cases...
+
+Regrid wr50a_090614.nc to wr50a_090614.nc as neareststod with --src_regional --dst_regional itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid wr50a_090614.nc to wr50a_090614.nc as neareststod with --src_regional --dst_regional itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 7 of 11 regrid_from_file test cases...
+
+Regrid mpas_uniform_10242.nc to mpas_uniform_10242.nc as neareststod with --src_type ESMF --dst_type ESMF itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid mpas_uniform_10242.nc to mpas_uniform_10242.nc as neareststod with --src_type ESMF --dst_type ESMF itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 8 of 11 regrid_from_file test cases...
+
+Regrid mpas_uniform_10242_dual.nc to ne60np4_pentagons_100408.nc as conserve with --src_type ESMF itrp_mean_err=0.010000, itrp_max_err=0.100000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid mpas_uniform_10242_dual.nc to ne60np4_pentagons_100408.nc as conserve with --src_type ESMF itrp_mean_err=0.010000, itrp_max_err=0.100000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 9 of 11 regrid_from_file test cases...
+
+Regrid GRIDSPEC_ACCESS1.nc to SCRIP_1x1.nc as bilinear with -p none -i --src_type GRIDSPEC --src_missingvalue so itrp_mean_err=0.000010, itrp_max_err=0.000100, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid T42_grid.nc to T42_grid.nc as nearestdtos with -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 6 of 11 regrid_from_file test cases...
+
+Regrid wr50a_090614.nc to wr50a_090614.nc as neareststod with --src_regional --dst_regional itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 44, in create_grid_or_mesh_from_file
+    if nc_is_mesh(filename, filetype):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 33, in nc_is_mesh
+    grid_rank, dims = ESMF.ESMP_ScripInq(filename)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid wr50a_090614.nc to wr50a_090614.nc as neareststod with --src_regional --dst_regional itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 7 of 11 regrid_from_file test cases...
+
+Regrid mpas_uniform_10242.nc to mpas_uniform_10242.nc as neareststod with --src_type ESMF --dst_type ESMF itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid mpas_uniform_10242.nc to mpas_uniform_10242.nc as neareststod with --src_type ESMF --dst_type ESMF itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 8 of 11 regrid_from_file test cases...
+
+Regrid mpas_uniform_10242_dual.nc to ne60np4_pentagons_100408.nc as conserve with --src_type ESMF itrp_mean_err=0.010000, itrp_max_err=0.100000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid mpas_uniform_10242_dual.nc to ne60np4_pentagons_100408.nc as conserve with --src_type ESMF itrp_mean_err=0.010000, itrp_max_err=0.100000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 9 of 11 regrid_from_file test cases...
+
+Regrid GRIDSPEC_ACCESS1.nc to SCRIP_1x1.nc as bilinear with -p none -i --src_type GRIDSPEC --src_missingvalue so itrp_mean_err=0.000010, itrp_max_err=0.000100, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 53, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Grid(filename=filename, filetype=filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/grid.py", line 347, in __init__
+    self._struct = ESMP_GridCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid GRIDSPEC_ACCESS1.nc to SCRIP_1x1.nc as bilinear with -p none -i --src_type GRIDSPEC --src_missingvalue so itrp_mean_err=0.000010, itrp_max_err=0.000100, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 10 of 11 regrid_from_file test cases...
+
+Regrid FVCOM_grid2d.nc to ll1deg_grid.nc as conserve with --src_type UGRID -r --src_meshname fvcom_mesh -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid FVCOM_grid2d.nc to ll1deg_grid.nc as conserve with --src_type UGRID -r --src_meshname fvcom_mesh -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 11 of 11 regrid_from_file test cases...
+
+Regrid ne4np4-esmf.nc to ne4np4-esmf.nc as bilinear with --src_type ESMFMESH --dst_type ESMFMESH -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 0 - Regrid ne4np4-esmf.nc to ne4np4-esmf.nc as bilinear with --src_type ESMFMESH --dst_type ESMFMESH -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 53, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Grid(filename=filename, filetype=filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/grid.py", line 347, in __init__
+    self._struct = ESMP_GridCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid GRIDSPEC_ACCESS1.nc to SCRIP_1x1.nc as bilinear with -p none -i --src_type GRIDSPEC --src_missingvalue so itrp_mean_err=0.000010, itrp_max_err=0.000100, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 10 of 11 regrid_from_file test cases...
+
+Regrid FVCOM_grid2d.nc to ll1deg_grid.nc as conserve with --src_type UGRID -r --src_meshname fvcom_mesh -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid FVCOM_grid2d.nc to ll1deg_grid.nc as conserve with --src_type UGRID -r --src_meshname fvcom_mesh -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 11 of 11 regrid_from_file test cases...
+
+Regrid ne4np4-esmf.nc to ne4np4-esmf.nc as bilinear with --src_type ESMFMESH --dst_type ESMFMESH -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 1 - Regrid ne4np4-esmf.nc to ne4np4-esmf.nc as bilinear with --src_type ESMFMESH --dst_type ESMFMESH -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 53, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Grid(filename=filename, filetype=filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/grid.py", line 347, in __init__
+    self._struct = ESMP_GridCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid GRIDSPEC_ACCESS1.nc to SCRIP_1x1.nc as bilinear with -p none -i --src_type GRIDSPEC --src_missingvalue so itrp_mean_err=0.000010, itrp_max_err=0.000100, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 10 of 11 regrid_from_file test cases...
+
+Regrid FVCOM_grid2d.nc to ll1deg_grid.nc as conserve with --src_type UGRID -r --src_meshname fvcom_mesh -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid FVCOM_grid2d.nc to ll1deg_grid.nc as conserve with --src_type UGRID -r --src_meshname fvcom_mesh -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 11 of 11 regrid_from_file test cases...
+
+Regrid ne4np4-esmf.nc to ne4np4-esmf.nc as bilinear with --src_type ESMFMESH --dst_type ESMFMESH -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 2 - Regrid ne4np4-esmf.nc to ne4np4-esmf.nc as bilinear with --src_type ESMFMESH --dst_type ESMFMESH -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 53, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Grid(filename=filename, filetype=filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/grid.py", line 347, in __init__
+    self._struct = ESMP_GridCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid GRIDSPEC_ACCESS1.nc to SCRIP_1x1.nc as bilinear with -p none -i --src_type GRIDSPEC --src_missingvalue so itrp_mean_err=0.000010, itrp_max_err=0.000100, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 10 of 11 regrid_from_file test cases...
+
+Regrid FVCOM_grid2d.nc to ll1deg_grid.nc as conserve with --src_type UGRID -r --src_meshname fvcom_mesh -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid FVCOM_grid2d.nc to ll1deg_grid.nc as conserve with --src_type UGRID -r --src_meshname fvcom_mesh -i itrp_mean_err=0.001000, itrp_max_err=0.010000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
+Running 11 of 11 regrid_from_file test cases...
+
+Regrid ne4np4-esmf.nc to ne4np4-esmf.nc as bilinear with --src_type ESMFMESH --dst_type ESMFMESH -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - START
+
+Regridding ERROR:
+
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check_driver.py", line 62, in <module>
+    correct = regrid_check(src_fname_full, dst_fname_full, regrid_method,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 217, in regrid_check
+    srcgrid, src_is_mesh, src_mask = create_grid_or_mesh_from_file(src_fname, src_type,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/test/regrid_from_file/regrid_check.py", line 45, in create_grid_or_mesh_from_file
+    grid_or_mesh = ESMF.Mesh(filename=filename,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 81, in new_func
+    return func(*args, **kwargs)
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/api/mesh.py", line 198, in __init__
+    self._struct = ESMP_MeshCreateFromFile(filename, filetype,
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/src/ESMF/util/decorators.py", line 95, in new_func
+    raise NetCDFMissing("This function requires ESMF to have been built with NetCDF.")
+ESMF.util.exceptions.NetCDFMissing: This function requires ESMF to have been built with NetCDF.
+
+***NOTE*** The log files must be deleted in this test case, they are printed below for future reference
+
+
+PET: 3 - Regrid ne4np4-esmf.nc to ne4np4-esmf.nc as bilinear with --src_type ESMFMESH --dst_type ESMFMESH -i itrp_mean_err=0.000000, itrp_max_err=0.000000, and csrv_err=0.000000 - FINISH
+
+RESULT: FAIL
+
+
