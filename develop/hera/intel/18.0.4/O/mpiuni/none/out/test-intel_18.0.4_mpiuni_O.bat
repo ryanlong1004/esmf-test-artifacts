@@ -1,4 +1,4 @@
-Mon Mar 14 22:21:23 UTC 2022
+Mon Mar 14 22:32:03 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-intel_18.0.4_mpiuni_O.bat_%j.o
@@ -10,7 +10,7 @@ Mon Mar 14 22:21:23 UTC 2022
 #SBATCH --ntasks-per-node=40
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
-module load intel/18.0.5.274  netcdf/4.7.0
+module load intel/18.0.5.274  netcdf-hdf5parallel/4.7.4
 module list >& module-test.log
 
 set -x
