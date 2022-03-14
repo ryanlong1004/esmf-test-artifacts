@@ -4,10 +4,10 @@ Build for = intel_18.0.4_intelmpi_O_develop, mpi version 2018.4.274 on hera esmf
 Build time = 2022-03-14 22:45:30
 git hash = v8.3.0b09-1-g1bcf580
 
-unit test results   	-1 -1
-system test results 	-1 -1
-example test results 	-1 -1
-nuopc test results 	PASS -1 	FAIL -1
+unit test results   	PASS 13685	FAIL 0
+system test results 	PASS 49 	FAIL 0
+example test results 	PASS 80 	FAIL 0
+nuopc test results 	PASS 50 	FAIL 0
 
 
 ===================================================================
@@ -31,6 +31,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_18.0.4_intelmpi_O.bat
+	build-intel_18.0.4_intelmpi_O.bat_29548568.e
+	build-intel_18.0.4_intelmpi_O.bat_29548568.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -38,6 +40,8 @@ Untracked files:
 	test-intel_18.0.4_intelmpi_O.bat
 	test-intel_18.0.4_intelmpi_O.bat_29547671.e
 	test-intel_18.0.4_intelmpi_O.bat_29547671.o
+	test-intel_18.0.4_intelmpi_O.bat_29548569.e
+	test-intel_18.0.4_intelmpi_O.bat_29548569.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -75,8 +79,8 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 --------------------------------------------------------------
-NetCDF library version: netCDF 4.7.0
-NetCDF Fortran version: netCDF-Fortran 4.4.5
+NetCDF library version: netCDF 4.7.4
+NetCDF Fortran version: netCDF-Fortran 4.5.3
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -129,13 +133,13 @@ ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
 ESMF_NETCDF:             nc-config
-ESMF_NETCDF_INCLUDE:     /apps/netcdf/4.7.0/intel/18.0.5.274/include
+ESMF_NETCDF_INCLUDE:     /apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include
 ESMF_NETCDF_LIBS:        -lnetcdf
-ESMF_NETCDF_LIBPATH:     /apps/netcdf/4.7.0/intel/18.0.5.274/lib
+ESMF_NETCDF_LIBPATH:     /apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/lib
 ESMF_NFCONFIG:           nf-config
-ESMF_NETCDFF_INCLUDE:    /apps/netcdf/4.7.0/intel/18.0.5.274/include
-ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
-ESMF_NETCDFF_LIBPATH:    /apps/netcdf/4.7.0/intel/18.0.5.274/lib /apps/netcdf/4.7.0/intel/18.0.5.274/lib /apps/hdf5/1.10.5/intel/18.0.5.274/lib /apps/szip/2.1/lib
+ESMF_NETCDFF_INCLUDE:    /apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-fortran-4.5.3-pab53krtf4bxawz53fkztkdeci3yxgwe/include
+ESMF_NETCDFF_LIBS:       -lnetcdff
+ESMF_NETCDFF_LIBPATH:    /apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-fortran-4.5.3-pab53krtf4bxawz53fkztkdeci3yxgwe/lib
 ESMF_PIO:                internal
 ESMF_YAMLCPP:            internal
  
@@ -156,8 +160,8 @@ ESMF_BENCHMARK_THRESHOLD_MSEC: 500
  
 --------------------------------------------------------------
  * Other relevant environment variables *
-PATH:    /apps/netcdf/4.7.0/intel/18.0.5.274/bin:/apps/intel/compilers_and_libraries_2018/linux/mpi/intel64/bin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin
-LD_LIBRARY_PATH: /apps/netcdf/4.7.0/intel/18.0.5.274/lib:/apps/intel/compilers_and_libraries_2018/linux/mpi/intel64/lib:/apps/oneapi/intelpython/latest/lib/libfabric::/apps/slurm/default/lib:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/compiler/lib/intel64:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/ipp/lib/intel64:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/compiler/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/mkl/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/tbb/lib/intel64/gcc4.7:/apps/intel/parallel_studio_xe_2018.4.057/debugger_2018/libipt/intel64/lib:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/daal/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+PATH:    /apps/netcdf/4.7.4/intel/18.0.5/bin:/apps/intel/compilers_and_libraries_2018/linux/mpi/intel64/bin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/bin/intel64:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin
+LD_LIBRARY_PATH: /apps/netcdf/4.7.4/intel/18.0.5/lib:/apps/intel/compilers_and_libraries_2018/linux/mpi/intel64/lib:/apps/oneapi/intelpython/latest/lib/libfabric::/apps/slurm/default/lib:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/compiler/lib/intel64:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/ipp/lib/intel64:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/compiler/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/mkl/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/tbb/lib/intel64/gcc4.7:/apps/intel/parallel_studio_xe_2018.4.057/debugger_2018/libipt/intel64/lib:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/daal/lib/intel64_lin:/apps/intel/parallel_studio_xe_2018.4.057/compilers_and_libraries_2018/linux/daal/../tbb/lib/intel64_lin/gcc4.4
  
 --------------------------------------------------------------
  * Compilers, Linkers, Flags, and Libraries *
@@ -170,7 +174,7 @@ Location of the C++ linker:        /apps/intel/compilers_and_libraries_2018/linu
 Fortran compiler flags:
 ESMF_F90COMPILER: mpiifort
 ESMF_F90COMPILEOPTS: -O -fPIC -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
-ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/mod/modO/Linux.intel.64.intelmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/src/include -I/apps/netcdf/4.7.0/intel/18.0.5.274/include -I/apps/netcdf/4.7.0/intel/18.0.5.274/include
+ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/mod/modO/Linux.intel.64.intelmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/src/include -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-fortran-4.5.3-pab53krtf4bxawz53fkztkdeci3yxgwe/include
 ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-1-g1bcf58054d' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: 
@@ -179,23 +183,23 @@ ESMF_F90COMPILEFIXNOCPP:
 
 Fortran linker flags:
 ESMF_F90LINKOPTS:   -m64 -mcmodel=small -pthread -threads -Wl,--no-as-needed  -qopenmp
-ESMF_F90LINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/hdf5/1.10.5/intel/18.0.5.274/lib -L/apps/szip/2.1/lib 
-ESMF_F90LINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/hdf5/1.10.5/intel/18.0.5.274/lib -Wl,-rpath,/apps/szip/2.1/lib
-ESMF_F90LINKLIBS:  -cxxlib -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
-ESMF_F90ESMFLINKLIBS: -lesmf  -cxxlib -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90LINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default -L/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/lib -L/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-fortran-4.5.3-pab53krtf4bxawz53fkztkdeci3yxgwe/lib 
+ESMF_F90LINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default -Wl,-rpath,/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/lib -Wl,-rpath,/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-fortran-4.5.3-pab53krtf4bxawz53fkztkdeci3yxgwe/lib
+ESMF_F90LINKLIBS:  -cxxlib -lrt -ldl -lnetcdf -lnetcdff
+ESMF_F90ESMFLINKLIBS: -lesmf  -cxxlib -lrt -ldl -lnetcdf -lnetcdff
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: mpiicpc
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fPIC -m64 -mcmodel=small -pthread  -qopenmp
-ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/src/include  -I/apps/netcdf/4.7.0/intel/18.0.5.274/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/src/prologue/yaml-cpp/include
 ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-1-g1bcf58054d' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop -D__SDIR__='' -DESMF_CXXSTD=11
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
-ESMF_CXXLINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/netcdf/4.7.0/intel/18.0.5.274/lib -L/apps/hdf5/1.10.5/intel/18.0.5.274/lib -L/apps/szip/2.1/lib -L/apps/intel/compilers_and_libraries_2018.5.274/linux/compiler/lib/intel64_lin/
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/netcdf/4.7.0/intel/18.0.5.274/lib -Wl,-rpath,/apps/hdf5/1.10.5/intel/18.0.5.274/lib -Wl,-rpath,/apps/szip/2.1/lib -Wl,-rpath,/apps/intel/compilers_and_libraries_2018.5.274/linux/compiler/lib/intel64_lin/
-ESMF_CXXLINKLIBS:  -ldl -lrt -lpthread -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
-ESMF_CXXESMFLINKLIBS: -lesmf  -ldl -lrt -lpthread -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXLINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default -L/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/lib -L/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-fortran-4.5.3-pab53krtf4bxawz53fkztkdeci3yxgwe/lib -L/apps/intel/compilers_and_libraries_2018.5.274/linux/compiler/lib/intel64_lin/
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default -Wl,-rpath,/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/lib -Wl,-rpath,/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-fortran-4.5.3-pab53krtf4bxawz53fkztkdeci3yxgwe/lib -Wl,-rpath,/apps/intel/compilers_and_libraries_2018.5.274/linux/compiler/lib/intel64_lin/
+ESMF_CXXLINKLIBS:  -ldl -lrt -lpthread -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff
+ESMF_CXXESMFLINKLIBS: -lesmf  -ldl -lrt -lpthread -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -211,8 +215,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Mon Mar 14 22:25:24 UTC 2022 on h3c43
-Machine characteristics: Linux h3c43 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Mon Mar 14 22:45:59 UTC 2022 on h11c32
+Machine characteristics: Linux h11c32 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
