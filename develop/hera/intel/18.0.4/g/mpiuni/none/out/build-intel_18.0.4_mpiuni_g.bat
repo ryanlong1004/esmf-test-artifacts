@@ -1,4 +1,4 @@
-Mon Mar 14 23:14:03 UTC 2022
+Tue Mar 15 08:36:24 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-intel_18.0.4_mpiuni_g.bat_%j.o
@@ -10,7 +10,7 @@ Mon Mar 14 23:14:03 UTC 2022
 #SBATCH --ntasks-per-node=40
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
-module load intel/18.0.5.274  netcdf/4.7.0
+module load intel/18.0.5.274  netcdf-hdf5parallel/4.7.4
 module list >& module-build.log
 
 set -x
