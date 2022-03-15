@@ -1,4 +1,4 @@
-Mon Mar 14 22:45:27 UTC 2022
+Tue Mar 15 08:39:17 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-intel_18.0.4_intelmpi_g.bat_%j.o
@@ -11,7 +11,7 @@ Mon Mar 14 22:45:27 UTC 2022
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
 export ESMF_MPIRUN=mpirun.srun
-module load intel/18.0.5.274 impi/2018.4.274 netcdf/4.7.0
+module load intel/18.0.5.274 impi/2018.4.274 netcdf-hdf5parallel/4.7.4
 module list >& module-build.log
 
 set -x
