@@ -1,4 +1,4 @@
-Mon 14 Mar 01:44:25 UTC 2022
+Tue 15 Mar 01:33:25 UTC 2022
 #!/bin/sh -l
 #PBS -N build-intel_2019.3_mpi_g.bat
 #PBS -l walltime=1:00:00
@@ -20,11 +20,6 @@ module list >& module-build.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_OS=Linux
-export ESMF_CXXCOMPILER=CC
-export ESMF_F90COMPILER=ftn
-export ESMF_CXXLINKER=CC
-export ESMF_F90LINKER=ftn
 export ESMF_MPIRUN=mpirun.unicos
 export ESMF_CXXCOMPILECPPFLAGS=-fPIC
 export ESMF_CXXLINKOPTS="-fPIC -lnetcdff -lnetcdff"
