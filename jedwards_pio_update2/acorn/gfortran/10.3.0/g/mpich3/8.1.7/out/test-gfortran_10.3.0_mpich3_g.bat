@@ -1,4 +1,4 @@
-Mon 14 Mar 02:21:20 UTC 2022
+Tue 15 Mar 01:24:20 UTC 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_10.3.0_mpich3_g.bat
 #PBS -l walltime=1:00:00
@@ -19,11 +19,6 @@ module list >& module-test.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_OS=Linux
-export ESMF_CXXCOMPILER=CC
-export ESMF_F90COMPILER=ftn
-export ESMF_CXXLINKER=CC
-export ESMF_F90LINKER=ftn
 export ESMF_MPIRUN=mpirun.unicos
 export ESMF_F90COMPILEOPTS="-fallow-argument-mismatch -fallow-invalid-boz"
 export ESMF_NFCONFIG=nf-config
