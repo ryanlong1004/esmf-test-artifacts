@@ -1,4 +1,4 @@
-Tue Mar 15 12:09:04 UTC 2022
+Thu Mar 17 04:02:59 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-pgi_18.1_intelmpi_O.bat_%j.o
@@ -10,6 +10,8 @@ Tue Mar 15 12:09:04 UTC 2022
 #SBATCH --ntasks-per-node=40
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
+
+module load cmake
 export ESMF_MPIRUN=mpirun.srun
 module load pgi/18.10 impi/2018.0.4 
 
