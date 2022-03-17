@@ -1,4 +1,4 @@
-Tue Mar 15 10:24:02 UTC 2022
+Thu Mar 17 02:45:23 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-gfortran_9.2.0_mpiuni_O.bat_%j.o
@@ -10,7 +10,9 @@ Tue Mar 15 10:24:02 UTC 2022
 #SBATCH --ntasks-per-node=40
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
-module load gnu/9.2.0  netcdf/4.7.2
+
+module load cmake
+module load gnu/9.2.0  netcdf-hdf5parallel/4.7.4
 module load hdf5/1.10.5 
 module list >& module-test.log
 
