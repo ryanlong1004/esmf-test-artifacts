@@ -1,4 +1,4 @@
-Tue Mar 15 10:28:52 UTC 2022
+Thu Mar 17 02:51:39 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-gfortran_9.2.0b_intelmpi_O.bat_%j.o
@@ -10,6 +10,8 @@ Tue Mar 15 10:28:52 UTC 2022
 #SBATCH --ntasks-per-node=40
 #SBATCH --exclusive
 export JOBID=$SLURM_JOBID
+
+module load cmake
 export ESMF_MPIRUN=mpirun.srun
 module load gnu/9.2.0 impi/2020 
 
