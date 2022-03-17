@@ -1,8 +1,8 @@
-Thu Mar 17 02:46:20 UTC 2022
+Thu Mar 17 02:45:25 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
-#SBATCH -o test-gfortran_9.2.0_openmpi_g.bat_%j.o
-#SBATCH -e test-gfortran_9.2.0_openmpi_g.bat_%j.e
+#SBATCH -o test-gfortran_9.2.0_mpiuni_g.bat_%j.o
+#SBATCH -e test-gfortran_9.2.0_mpiuni_g.bat_%j.e
 #SBATCH --time=2:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
@@ -12,8 +12,7 @@ Thu Mar 17 02:46:20 UTC 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
-export ESMF_MPIRUN=mpirun.srun
-module load gnu/9.2.0 openmpi/3.1.4 netcdf-hdf5parallel/4.7.4
+module load gnu/9.2.0  netcdf-hdf5parallel/4.7.4
 module load hdf5/1.10.5 
 module list >& module-test.log
 
@@ -26,9 +25,9 @@ export ESMF_NETCDF_LIBPATH=$NETCDF/lib
 export ESMF_NETCDF_LIBS="-lnetcdff -lnetcdf -lhdf5_hl -lhdf5 $HDF5ExtraLibs"
 export ESMF_NETCDF=nc-config
 tar xvfz ~/pytest-input.tar.gz
-export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop
+export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_mpiuni_g_develop
 export ESMF_COMPILER=gfortran
-export ESMF_COMM=openmpi
+export ESMF_COMM=mpiuni
 export ESMF_BOPT='g'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
@@ -40,12 +39,3 @@ chmod +x runpython.sh
 cd nuopc-app-prototypes
 ./testProtos.sh 2>&1| tee ../nuopc_$JOBID.log 
 
-
-cd ../src/addon/ESMPy
-
-export PATH=$PATH:$HOME/.local/bin
-python3 setup.py build 2>&1 | tee python_build.log
-ssh hfe10 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/runpython.sh 2>&1 | tee python_build.log
-python3 setup.py test 2>&1 | tee python_test.log
-python3 setup.py test_examples 2>&1 | tee python_examples.log
-python3 setup.py test_regrid_from_file 2>&1 | tee python_regrid.log
