@@ -1,0 +1,29 @@
+build time -- 2022-03-18 04:09:38
+Warning: Process to core binding is enabled and OMP_NUM_THREADS is set to non-zero (1) value
+If your program has OpenMP sections, this can cause over-subscription of cores and consequently poor performance
+To avoid this, please re-run your application after setting MV2_ENABLE_AFFINITY=0
+Use MV2_USE_THREAD_WARNING=0 to suppress this message
+           1 -           1           2 -           3           2 -
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+           2 -           1           3 -           3           3 -
+  0.0000000E+00   2.250000      0.0000000E+00
+           3 -           1           4 -           3           4 -
+  0.0000000E+00  0.0000000E+00   3.100000    
+           0 -           1           1 -           3           1 -
+  0.0000000E+00  0.0000000E+00   1.300000    
+  PASS  Example ESMF_FieldSMMEx, ESMF_FieldSMMEx.F90, line 419
+  PASS  Example ESMF_FieldSMMEx, ESMF_FieldSMMEx.F90, line 419
+  PASS  Example ESMF_FieldSMMEx, ESMF_FieldSMMEx.F90, line 419
+  PASS  Example ESMF_FieldSMMEx, ESMF_FieldSMMEx.F90, line 419
+Error in system call pthread_mutex_destroy: Device or resource busy
+    src/mpi/init/initthread.c:241
+Error in system call pthread_mutex_destroy: Device or resource busy
+    src/mpi/init/initthread.c:241
+Error in system call pthread_mutex_destroy: Device or resource busy
+    src/mpi/init/initthread.c:241
+ PASS: ESMF_FieldSMMEx.F90
+ PASS: ESMF_FieldSMMEx.F90
+ PASS: ESMF_FieldSMMEx.F90
+Error in system call pthread_mutex_destroy: Device or resource busy
+    src/mpi/init/initthread.c:241
+ PASS: ESMF_FieldSMMEx.F90
