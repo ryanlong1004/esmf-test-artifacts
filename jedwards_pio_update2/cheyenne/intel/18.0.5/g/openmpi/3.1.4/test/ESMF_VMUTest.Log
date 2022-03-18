@@ -1,0 +1,989 @@
+build time -- 2022-03-18 10:28:18.675236
+20220318 105728.619 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220318 105728.619 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220318 105728.619 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220318 105728.619 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220318 105728.619 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220318 105728.619 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220318 105728.619 INFO             PET0 Running with ESMF Version   : v8.3.0b09-102-gabaf3ef548
+20220318 105728.619 INFO             PET0 ESMF library build date/time: "Mar 18 2022" "10:21:10"
+20220318 105728.619 INFO             PET0 ESMF library build location : /glade/scratch/rlong/esmf-testing/intel_18.0.5_openmpi_g_jedwards_pio_update2
+20220318 105728.619 INFO             PET0 ESMF_COMM                   : openmpi
+20220318 105728.619 INFO             PET0 ESMF_MOAB                   : enabled
+20220318 105728.619 INFO             PET0 ESMF_LAPACK                 : enabled
+20220318 105728.619 INFO             PET0 ESMF_NETCDF                 : enabled
+20220318 105728.619 INFO             PET0 ESMF_PNETCDF                : disabled
+20220318 105728.619 INFO             PET0 ESMF_PIO                    : enabled
+20220318 105728.619 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220318 105728.620 INFO             PET0  Beginning Test, file ESMF_VMUTest.F90, line 1118
+20220318 105728.620 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20220318 105728.620 ERROR            PET0 ESMF_VM.F90:5313 ESMF_VMGetDefault() Object being used before creation  - Bad Object
+20220318 105728.620 INFO             PET0  PASS  VM Get before initialization Test, ESMF_VMUTest.F90, line 1127
+20220318 105728.620 ERROR            PET0 ESMF_VM.F90:8990 ESMF_VMValidate() Object being used before creation  - Bad Object
+20220318 105728.620 INFO             PET0  PASS  VM validate Test before valid VM, ESMF_VMUTest.F90, line 1134
+20220318 105728.620 INFO             PET0  PASS  VM Get Global Test, ESMF_VMUTest.F90, line 1141
+20220318 105728.620 INFO             PET0  PASS  VM Get Test, ESMF_VMUTest.F90, line 1149
+20220318 105728.621 INFO             PET0  petCount=           4  ssiCount=           1
+20220318 105728.621 INFO             PET0  ssiMinPetCount=           4  ssiMaxPetCount=           4
+20220318 105728.621 INFO             PET0  PASS  VM print Test, ESMF_VMUTest.F90, line 1167
+20220318 105728.621 INFO             PET0  PASS  VM validate Test, ESMF_VMUTest.F90, line 1174
+20220318 105728.621 INFO             PET0  PASS  VM Get Test, ESMF_VMUTest.F90, line 1183
+20220318 105728.621 INFO             PET0  PASS  VM Get Current  Test, ESMF_VMUTest.F90, line 74
+20220318 105728.621 INFO             PET0  PASS  Test_VM Get Test, ESMF_VMUTest.F90, line 82
+20220318 105728.621 INFO             PET0  ssiMap=           0           0           0           0
+20220318 105728.621 INFO             PET0  esmfComm=openmpi  len(esmfComm)=           7
+20220318 105728.621 INFO             PET0  PASS  Test bounds of ssiMap, ESMF_VMUTest.F90, line 97
+20220318 105728.621 INFO             PET0  PASS  Verify the VM is correct Test, ESMF_VMUTest.F90, line 104
+20220318 105728.621 INFO             PET0  PASS  VM equality before assignment Test, ESMF_VMUTest.F90, line 117
+20220318 105728.621 INFO             PET0  PASS  VM assignment and equality Test, ESMF_VMUTest.F90, line 126
+20220318 105728.621 INFO             PET0  PASS  VM equality Test, ESMF_VMUTest.F90, line 134
+20220318 105728.621 INFO             PET0  PASS  VM non-equality after destroy Test, ESMF_VMUTest.F90, line 142
+20220318 105733.621 INFO             PET0  PASS  VM Time 5 Second Delay Test, ESMF_VMUTest.F90, line 159
+20220318 105733.621 INFO             PET0  PASS  Verify delay was 5 or 6 Seconds Test, ESMF_VMUTest.F90, line 174
+20220318 105733.624 INFO             PET0  PASS  VM Time Prec. Test, ESMF_VMUTest.F90, line 181
+20220318 105733.624 INFO             PET0  PASS  VM Time Prec. Value Test, ESMF_VMUTest.F90, line 188
+20220318 105733.624 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_SUM Test: integer, ESMF_VMUTest.F90, line 217
+20220318 105733.624 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_SUM Test: integer, ESMF_VMUTest.F90, line 235
+20220318 105733.624 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 252
+20220318 105733.624 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 272
+20220318 105733.624 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 291
+20220318 105733.624 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 312
+20220318 105733.624 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 578
+20220318 105733.624 INFO             PET0  PASS  Verify All Full Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 590
+20220318 105733.624 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 600
+20220318 105733.624 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 613
+20220318 105733.624 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 623
+20220318 105733.624 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 636
+20220318 105733.624 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 790
+20220318 105733.624 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 805
+20220318 105733.624 INFO             PET0  PASS  VM All Reduce scalar ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 817
+20220318 105733.624 INFO             PET0  PASS  Verify All Reduce scalar ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 823
+20220318 105733.625 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 834
+20220318 105733.625 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 847
+20220318 105733.625 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 857
+20220318 105733.625 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 870
+20220318 105733.625 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_MINTest: integer, ESMF_VMUTest.F90, line 343
+20220318 105733.625 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: integer, ESMF_VMUTest.F90, line 361
+20220318 105733.625 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 374
+20220318 105733.625 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 394
+20220318 105733.625 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 409
+20220318 105733.625 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 430
+20220318 105733.625 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 654
+20220318 105733.625 INFO             PET0  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 662
+20220318 105733.625 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 674
+20220318 105733.625 INFO             PET0  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 682
+20220318 105733.625 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 694
+20220318 105733.625 INFO             PET0  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 702
+20220318 105733.625 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 884
+20220318 105733.625 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 897
+20220318 105733.626 INFO             PET0  PASS  VM All Reduce scalar ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 909
+20220318 105733.626 INFO             PET0  PASS  Verify All Reduce scalar ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 915
+20220318 105733.626 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 926
+20220318 105733.626 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 939
+20220318 105733.626 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 950
+20220318 105733.626 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 963
+20220318 105733.626 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_MAXTest: integer, ESMF_VMUTest.F90, line 464
+20220318 105733.626 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: integer, ESMF_VMUTest.F90, line 482
+20220318 105733.626 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 499
+20220318 105733.626 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 519
+20220318 105733.626 INFO             PET0  PASS  VM Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 538
+20220318 105733.626 INFO             PET0  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 559
+20220318 105733.626 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 723
+20220318 105733.626 INFO             PET0  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 731
+20220318 105733.626 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R8, ESMF_VMUTest.F90, line 744
+20220318 105733.626 INFO             PET0  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 752
+20220318 105733.626 INFO             PET0  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R4, ESMF_VMUTest.F90, line 765
+20220318 105733.626 INFO             PET0  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 773
+20220318 105733.626 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 978
+20220318 105733.627 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 991
+20220318 105733.627 INFO             PET0  PASS  VM All Reduce scalar ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 1003
+20220318 105733.627 INFO             PET0  PASS  Verify All Reduce scalar ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 1009
+20220318 105733.627 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 1020
+20220318 105733.627 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 1033
+20220318 105733.627 INFO             PET0  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 1044
+20220318 105733.627 INFO             PET0  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 1057
+20220318 105733.627 INFO             PET0  PASS  VMId Create vmid1 Test, ESMF_VMUTest.F90, line 1280
+20220318 105733.627 INFO             PET0  PASS  VMId Create vmid2 Test, ESMF_VMUTest.F90, line 1288
+20220318 105733.627 INFO             PET0  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1295
+20220318 105733.627 INFO             PET0  PASS  VMId Set test values Test, ESMF_VMUTest.F90, line 1302
+20220318 105733.627 INFO             PET0  PASS  VMId print test values Test, ESMF_VMUTest.F90, line 1309
+20220318 105733.627 INFO             PET0  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1316
+20220318 105733.627 INFO             PET0  PASS  VMId Set test values Test, ESMF_VMUTest.F90, line 1323
+20220318 105733.627 INFO             PET0  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1330
+20220318 105733.627 INFO             PET0  PASS  VMId Get test values Test, ESMF_VMUTest.F90, line 1337
+20220318 105733.627 INFO             PET0  PASS  VMId id_value Test, ESMF_VMUTest.F90, line 1343
+20220318 105733.627 INFO             PET0  PASS  VMId key_value Test, ESMF_VMUTest.F90, line 1349
+20220318 105733.627 INFO             PET0  PASS  VMId destroy #1 Test, ESMF_VMUTest.F90, line 1356
+20220318 105733.627 INFO             PET0  PASS  VMId destroy #2 Test, ESMF_VMUTest.F90, line 1363
+20220318 105733.630 INFO             PET0  PASS  Create a Grid object, ESMF_VMUTest.F90, line 1379
+20220318 105733.630 INFO             PET0  PASS  Access Base of Grid, ESMF_VMUTest.F90, line 1391
+20220318 105733.630 INFO             PET0  PASS  Create temporary VMId, ESMF_VMUTest.F90, line 1403
+20220318 105733.630 INFO             PET0  PASS  Destroy VMId, ESMF_VMUTest.F90, line 1415
+20220318 105733.630 INFO             PET0  PASS  Access Base ID and VMId, ESMF_VMUTest.F90, line 1426
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/self/status]	VmPeak:	  624300 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/self/status]	VmSize:	  624300 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/self/status]	VmHWM:	   78784 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/self/status]	VmRSS:	   78784 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/self/status]	VmData:	   47252 kB
+20220318 105733.630 INFO             PET0  - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.631 INFO             PET0  - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.631 INFO             PET0  - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.631 INFO             PET0  - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.631 INFO             PET0  - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220318 105733.631 INFO             PET0  - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.631 INFO             PET0  - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598812 %
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Non-mmapped space allocated:                 5197824 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Space in freed fastbin blocks:                  1728 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Total allocated space:                       5005408 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Total free space:                             192416 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Top-most, releasable space:                    44320 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32297056 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Total space held (mmap + non-mmap):         32489472 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: [malloc] Total space used (mmap + non-mmap):         32306416 Byte
+20220318 105733.631 INFO             PET0  - MemInfo: Wall-clock time since execution start:                5.01441 seconds
+20220318 105733.631 INFO             PET0  PASS  Write VMLogMemInfo into the default log w/o prefix, ESMF_VMUTest.F90, line 1437
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmPeak:	  624300 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmSize:	  624300 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmHWM:	   78840 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmRSS:	   78840 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmData:	   47252 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0599237 %
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Non-mmapped space allocated:                 5197824 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Space in freed fastbin blocks:                  1248 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Total allocated space:                       5005472 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Total free space:                             192352 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Top-most, releasable space:                    45264 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32297120 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Total space held (mmap + non-mmap):         32489472 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: [malloc] Total space used (mmap + non-mmap):         32306480 Byte
+20220318 105733.631 INFO             PET0 TestPrefix - MemInfo: Wall-clock time since execution start:                5.01502 seconds
+20220318 105733.631 INFO             PET0  PASS  Write VMLogMemInfo into the default log w/ prefix, ESMF_VMUTest.F90, line 1447
+20220318 105733.633 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.633 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152288 kB
+20220318 105733.633 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768484 kB
+20220318 105733.633 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.633 INFO             PET0  - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmPeak:	  624300 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmSize:	  624300 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmHWM:	   78860 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmRSS:	   78860 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmData:	   47252 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.634 INFO             PET0  - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0599389 %
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Non-mmapped space allocated:                 5197824 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Space in freed fastbin blocks:                   976 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Total allocated space:                       5015216 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Total free space:                             182608 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Top-most, releasable space:                    35552 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32306864 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Total space held (mmap + non-mmap):         32489472 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: [malloc] Total space used (mmap + non-mmap):         32316224 Byte
+20220318 105733.634 INFO             PET0  - MemInfo: Wall-clock time since execution start:                5.01746 seconds
+20220318 105733.634 INFO             PET0  PASS  Write VMLogMemInfo into custom log w/o prefix, ESMF_VMUTest.F90, line 1461
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152288 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768484 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmPeak:	  624300 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmSize:	  624300 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmHWM:	   78868 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmRSS:	   78868 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmData:	   47252 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [/proc/self/status]	VmRSSPercent: 0.059945 %
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Non-mmapped space allocated:                 5197824 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Space in freed fastbin blocks:                  1248 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Total allocated space:                       5015264 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Total free space:                             182560 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Top-most, releasable space:                    34480 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32306912 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Total space held (mmap + non-mmap):         32489472 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: [malloc] Total space used (mmap + non-mmap):         32316272 Byte
+20220318 105733.634 INFO             PET0 TestPrefix - MemInfo: Wall-clock time since execution start:                5.01805 seconds
+20220318 105733.635 INFO             PET0  PASS  Write VMLogMemInfo into custom log w/ prefix, ESMF_VMUTest.F90, line 1471
+20220318 105733.635 INFO             PET0  Ending Test, file ESMF_VMUTest.F90, line 1477
+20220318 105733.635 INFO             PET0 Finalizing ESMF
+20220318 105728.619 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220318 105728.619 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220318 105728.619 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220318 105728.619 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220318 105728.619 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220318 105728.619 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220318 105728.619 INFO             PET1 Running with ESMF Version   : v8.3.0b09-102-gabaf3ef548
+20220318 105728.619 INFO             PET1 ESMF library build date/time: "Mar 18 2022" "10:21:10"
+20220318 105728.619 INFO             PET1 ESMF library build location : /glade/scratch/rlong/esmf-testing/intel_18.0.5_openmpi_g_jedwards_pio_update2
+20220318 105728.619 INFO             PET1 ESMF_COMM                   : openmpi
+20220318 105728.620 INFO             PET1 ESMF_MOAB                   : enabled
+20220318 105728.620 INFO             PET1 ESMF_LAPACK                 : enabled
+20220318 105728.620 INFO             PET1 ESMF_NETCDF                 : enabled
+20220318 105728.620 INFO             PET1 ESMF_PNETCDF                : disabled
+20220318 105728.620 INFO             PET1 ESMF_PIO                    : enabled
+20220318 105728.620 INFO             PET1 ESMF_YAMLCPP                : enabled
+20220318 105728.620 INFO             PET1  Beginning Test, file ESMF_VMUTest.F90, line 1118
+20220318 105728.620 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20220318 105728.620 ERROR            PET1 ESMF_VM.F90:5313 ESMF_VMGetDefault() Object being used before creation  - Bad Object
+20220318 105728.620 INFO             PET1  PASS  VM Get before initialization Test, ESMF_VMUTest.F90, line 1127
+20220318 105728.620 ERROR            PET1 ESMF_VM.F90:8990 ESMF_VMValidate() Object being used before creation  - Bad Object
+20220318 105728.620 INFO             PET1  PASS  VM validate Test before valid VM, ESMF_VMUTest.F90, line 1134
+20220318 105728.620 INFO             PET1  PASS  VM Get Global Test, ESMF_VMUTest.F90, line 1141
+20220318 105728.621 INFO             PET1  PASS  VM Get Test, ESMF_VMUTest.F90, line 1149
+20220318 105728.621 INFO             PET1  petCount=           4  ssiCount=           1
+20220318 105728.621 INFO             PET1  ssiMinPetCount=           4  ssiMaxPetCount=           4
+20220318 105728.621 INFO             PET1  PASS  VM print Test, ESMF_VMUTest.F90, line 1167
+20220318 105728.621 INFO             PET1  PASS  VM validate Test, ESMF_VMUTest.F90, line 1174
+20220318 105728.621 INFO             PET1  PASS  VM Get Test, ESMF_VMUTest.F90, line 1183
+20220318 105728.621 INFO             PET1  PASS  VM Get Current  Test, ESMF_VMUTest.F90, line 74
+20220318 105728.621 INFO             PET1  PASS  Test_VM Get Test, ESMF_VMUTest.F90, line 82
+20220318 105728.621 INFO             PET1  ssiMap=           0           0           0           0
+20220318 105728.621 INFO             PET1  esmfComm=openmpi  len(esmfComm)=           7
+20220318 105728.621 INFO             PET1  PASS  Test bounds of ssiMap, ESMF_VMUTest.F90, line 97
+20220318 105728.621 INFO             PET1  PASS  Verify the VM is correct Test, ESMF_VMUTest.F90, line 104
+20220318 105728.621 INFO             PET1  PASS  VM equality before assignment Test, ESMF_VMUTest.F90, line 117
+20220318 105728.621 INFO             PET1  PASS  VM assignment and equality Test, ESMF_VMUTest.F90, line 126
+20220318 105728.621 INFO             PET1  PASS  VM equality Test, ESMF_VMUTest.F90, line 134
+20220318 105728.621 INFO             PET1  PASS  VM non-equality after destroy Test, ESMF_VMUTest.F90, line 142
+20220318 105733.621 INFO             PET1  PASS  VM Time 5 Second Delay Test, ESMF_VMUTest.F90, line 159
+20220318 105733.621 INFO             PET1  PASS  Verify delay was 5 or 6 Seconds Test, ESMF_VMUTest.F90, line 174
+20220318 105733.623 INFO             PET1  PASS  VM Time Prec. Test, ESMF_VMUTest.F90, line 181
+20220318 105733.623 INFO             PET1  PASS  VM Time Prec. Value Test, ESMF_VMUTest.F90, line 188
+20220318 105733.623 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_SUM Test: integer, ESMF_VMUTest.F90, line 217
+20220318 105733.623 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_SUM Test: integer, ESMF_VMUTest.F90, line 235
+20220318 105733.623 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 252
+20220318 105733.623 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 272
+20220318 105733.623 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 291
+20220318 105733.623 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 312
+20220318 105733.624 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 578
+20220318 105733.624 INFO             PET1  PASS  Verify All Full Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 590
+20220318 105733.624 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 600
+20220318 105733.624 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 613
+20220318 105733.624 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 623
+20220318 105733.624 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 636
+20220318 105733.624 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 790
+20220318 105733.624 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 805
+20220318 105733.624 INFO             PET1  PASS  VM All Reduce scalar ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 817
+20220318 105733.625 INFO             PET1  PASS  Verify All Reduce scalar ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 823
+20220318 105733.625 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 834
+20220318 105733.625 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 847
+20220318 105733.625 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 857
+20220318 105733.625 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 870
+20220318 105733.625 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_MINTest: integer, ESMF_VMUTest.F90, line 343
+20220318 105733.625 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: integer, ESMF_VMUTest.F90, line 361
+20220318 105733.625 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 374
+20220318 105733.625 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 394
+20220318 105733.625 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 409
+20220318 105733.625 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 430
+20220318 105733.625 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 654
+20220318 105733.625 INFO             PET1  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 662
+20220318 105733.625 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 674
+20220318 105733.625 INFO             PET1  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 682
+20220318 105733.625 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 694
+20220318 105733.625 INFO             PET1  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 702
+20220318 105733.625 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 884
+20220318 105733.625 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 897
+20220318 105733.626 INFO             PET1  PASS  VM All Reduce scalar ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 909
+20220318 105733.626 INFO             PET1  PASS  Verify All Reduce scalar ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 915
+20220318 105733.626 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 926
+20220318 105733.626 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 939
+20220318 105733.626 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 950
+20220318 105733.626 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 963
+20220318 105733.626 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_MAXTest: integer, ESMF_VMUTest.F90, line 464
+20220318 105733.626 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: integer, ESMF_VMUTest.F90, line 482
+20220318 105733.626 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 499
+20220318 105733.626 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 519
+20220318 105733.626 INFO             PET1  PASS  VM Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 538
+20220318 105733.626 INFO             PET1  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 559
+20220318 105733.626 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 723
+20220318 105733.626 INFO             PET1  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 731
+20220318 105733.626 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R8, ESMF_VMUTest.F90, line 744
+20220318 105733.626 INFO             PET1  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 752
+20220318 105733.626 INFO             PET1  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R4, ESMF_VMUTest.F90, line 765
+20220318 105733.626 INFO             PET1  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 773
+20220318 105733.626 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 978
+20220318 105733.627 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 991
+20220318 105733.627 INFO             PET1  PASS  VM All Reduce scalar ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 1003
+20220318 105733.627 INFO             PET1  PASS  Verify All Reduce scalar ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 1009
+20220318 105733.627 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 1020
+20220318 105733.627 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 1033
+20220318 105733.627 INFO             PET1  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 1044
+20220318 105733.627 INFO             PET1  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 1057
+20220318 105733.627 INFO             PET1  PASS  VMId Create vmid1 Test, ESMF_VMUTest.F90, line 1280
+20220318 105733.627 INFO             PET1  PASS  VMId Create vmid2 Test, ESMF_VMUTest.F90, line 1288
+20220318 105733.627 INFO             PET1  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1295
+20220318 105733.627 INFO             PET1  PASS  VMId Set test values Test, ESMF_VMUTest.F90, line 1302
+20220318 105733.627 INFO             PET1  PASS  VMId print test values Test, ESMF_VMUTest.F90, line 1309
+20220318 105733.627 INFO             PET1  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1316
+20220318 105733.627 INFO             PET1  PASS  VMId Set test values Test, ESMF_VMUTest.F90, line 1323
+20220318 105733.627 INFO             PET1  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1330
+20220318 105733.627 INFO             PET1  PASS  VMId Get test values Test, ESMF_VMUTest.F90, line 1337
+20220318 105733.627 INFO             PET1  PASS  VMId id_value Test, ESMF_VMUTest.F90, line 1343
+20220318 105733.627 INFO             PET1  PASS  VMId key_value Test, ESMF_VMUTest.F90, line 1349
+20220318 105733.627 INFO             PET1  PASS  VMId destroy #1 Test, ESMF_VMUTest.F90, line 1356
+20220318 105733.627 INFO             PET1  PASS  VMId destroy #2 Test, ESMF_VMUTest.F90, line 1363
+20220318 105733.630 INFO             PET1  PASS  Create a Grid object, ESMF_VMUTest.F90, line 1379
+20220318 105733.630 INFO             PET1  PASS  Access Base of Grid, ESMF_VMUTest.F90, line 1391
+20220318 105733.630 INFO             PET1  PASS  Create temporary VMId, ESMF_VMUTest.F90, line 1403
+20220318 105733.630 INFO             PET1  PASS  Destroy VMId, ESMF_VMUTest.F90, line 1415
+20220318 105733.630 INFO             PET1  PASS  Access Base ID and VMId, ESMF_VMUTest.F90, line 1426
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/self/status]	VmHWM:	   78644 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/self/status]	VmRSS:	   78644 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.630 INFO             PET1  - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.631 INFO             PET1  - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.631 INFO             PET1  - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.631 INFO             PET1  - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.631 INFO             PET1  - MemInfo: [/proc/self/status]	VmPMD:	      16 kB
+20220318 105733.631 INFO             PET1  - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.631 INFO             PET1  - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0597747 %
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Space in freed fastbin blocks:                   976 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Total allocated space:                       4947280 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Total free space:                             246448 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Top-most, releasable space:                    99456 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32238928 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: [malloc] Total space used (mmap + non-mmap):         32248288 Byte
+20220318 105733.631 INFO             PET1  - MemInfo: Wall-clock time since execution start:                 5.0144 seconds
+20220318 105733.631 INFO             PET1  PASS  Write VMLogMemInfo into the default log w/o prefix, ESMF_VMUTest.F90, line 1437
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmHWM:	   78700 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmRSS:	   78700 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmPMD:	      16 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598173 %
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Space in freed fastbin blocks:                   992 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Total allocated space:                       4947328 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Total free space:                             246400 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Top-most, releasable space:                    99456 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32238976 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: [malloc] Total space used (mmap + non-mmap):         32248336 Byte
+20220318 105733.631 INFO             PET1 TestPrefix - MemInfo: Wall-clock time since execution start:                5.01504 seconds
+20220318 105733.632 INFO             PET1  PASS  Write VMLogMemInfo into the default log w/ prefix, ESMF_VMUTest.F90, line 1447
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152288 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768484 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmHWM:	   78720 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmRSS:	   78720 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmPMD:	      16 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.634 INFO             PET1  - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598325 %
+20220318 105733.634 INFO             PET1  - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.634 INFO             PET1  - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.634 INFO             PET1  - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.635 INFO             PET1  - MemInfo: [malloc] Space in freed fastbin blocks:                  1088 Byte
+20220318 105733.635 INFO             PET1  - MemInfo: [malloc] Total allocated space:                       4957088 Byte
+20220318 105733.635 INFO             PET1  - MemInfo: [malloc] Total free space:                             236640 Byte
+20220318 105733.635 INFO             PET1  - MemInfo: [malloc] Top-most, releasable space:                    89216 Byte
+20220318 105733.635 INFO             PET1  - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32248736 Byte
+20220318 105733.635 INFO             PET1  - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.635 INFO             PET1  - MemInfo: [malloc] Total space used (mmap + non-mmap):         32258096 Byte
+20220318 105733.635 INFO             PET1  - MemInfo: Wall-clock time since execution start:                5.01822 seconds
+20220318 105733.635 INFO             PET1  PASS  Write VMLogMemInfo into custom log w/o prefix, ESMF_VMUTest.F90, line 1461
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152288 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768484 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmHWM:	   78728 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmRSS:	   78728 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmPMD:	      16 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598386 %
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Space in freed fastbin blocks:                  1088 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Total allocated space:                       4957136 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Total free space:                             236592 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Top-most, releasable space:                    89104 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32248784 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: [malloc] Total space used (mmap + non-mmap):         32258144 Byte
+20220318 105733.635 INFO             PET1 TestPrefix - MemInfo: Wall-clock time since execution start:                5.01881 seconds
+20220318 105733.635 INFO             PET1  PASS  Write VMLogMemInfo into custom log w/ prefix, ESMF_VMUTest.F90, line 1471
+20220318 105733.635 INFO             PET1  Ending Test, file ESMF_VMUTest.F90, line 1477
+20220318 105733.635 INFO             PET1 Finalizing ESMF
+20220318 105728.620 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220318 105728.620 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220318 105728.620 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220318 105728.620 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220318 105728.620 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220318 105728.620 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220318 105728.620 INFO             PET2 Running with ESMF Version   : v8.3.0b09-102-gabaf3ef548
+20220318 105728.620 INFO             PET2 ESMF library build date/time: "Mar 18 2022" "10:21:10"
+20220318 105728.620 INFO             PET2 ESMF library build location : /glade/scratch/rlong/esmf-testing/intel_18.0.5_openmpi_g_jedwards_pio_update2
+20220318 105728.620 INFO             PET2 ESMF_COMM                   : openmpi
+20220318 105728.620 INFO             PET2 ESMF_MOAB                   : enabled
+20220318 105728.620 INFO             PET2 ESMF_LAPACK                 : enabled
+20220318 105728.620 INFO             PET2 ESMF_NETCDF                 : enabled
+20220318 105728.620 INFO             PET2 ESMF_PNETCDF                : disabled
+20220318 105728.620 INFO             PET2 ESMF_PIO                    : enabled
+20220318 105728.620 INFO             PET2 ESMF_YAMLCPP                : enabled
+20220318 105728.620 INFO             PET2  Beginning Test, file ESMF_VMUTest.F90, line 1118
+20220318 105728.620 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20220318 105728.620 ERROR            PET2 ESMF_VM.F90:5313 ESMF_VMGetDefault() Object being used before creation  - Bad Object
+20220318 105728.620 INFO             PET2  PASS  VM Get before initialization Test, ESMF_VMUTest.F90, line 1127
+20220318 105728.620 ERROR            PET2 ESMF_VM.F90:8990 ESMF_VMValidate() Object being used before creation  - Bad Object
+20220318 105728.620 INFO             PET2  PASS  VM validate Test before valid VM, ESMF_VMUTest.F90, line 1134
+20220318 105728.620 INFO             PET2  PASS  VM Get Global Test, ESMF_VMUTest.F90, line 1141
+20220318 105728.620 INFO             PET2  PASS  VM Get Test, ESMF_VMUTest.F90, line 1149
+20220318 105728.620 INFO             PET2  petCount=           4  ssiCount=           1
+20220318 105728.621 INFO             PET2  ssiMinPetCount=           4  ssiMaxPetCount=           4
+20220318 105728.621 INFO             PET2  PASS  VM print Test, ESMF_VMUTest.F90, line 1167
+20220318 105728.621 INFO             PET2  PASS  VM validate Test, ESMF_VMUTest.F90, line 1174
+20220318 105728.621 INFO             PET2  PASS  VM Get Test, ESMF_VMUTest.F90, line 1183
+20220318 105728.621 INFO             PET2  PASS  VM Get Current  Test, ESMF_VMUTest.F90, line 74
+20220318 105728.621 INFO             PET2  PASS  Test_VM Get Test, ESMF_VMUTest.F90, line 82
+20220318 105728.621 INFO             PET2  ssiMap=           0           0           0           0
+20220318 105728.621 INFO             PET2  esmfComm=openmpi  len(esmfComm)=           7
+20220318 105728.621 INFO             PET2  PASS  Test bounds of ssiMap, ESMF_VMUTest.F90, line 97
+20220318 105728.621 INFO             PET2  PASS  Verify the VM is correct Test, ESMF_VMUTest.F90, line 104
+20220318 105728.621 INFO             PET2  PASS  VM equality before assignment Test, ESMF_VMUTest.F90, line 117
+20220318 105728.621 INFO             PET2  PASS  VM assignment and equality Test, ESMF_VMUTest.F90, line 126
+20220318 105728.621 INFO             PET2  PASS  VM equality Test, ESMF_VMUTest.F90, line 134
+20220318 105728.621 INFO             PET2  PASS  VM non-equality after destroy Test, ESMF_VMUTest.F90, line 142
+20220318 105733.621 INFO             PET2  PASS  VM Time 5 Second Delay Test, ESMF_VMUTest.F90, line 159
+20220318 105733.621 INFO             PET2  PASS  Verify delay was 5 or 6 Seconds Test, ESMF_VMUTest.F90, line 174
+20220318 105733.623 INFO             PET2  PASS  VM Time Prec. Test, ESMF_VMUTest.F90, line 181
+20220318 105733.623 INFO             PET2  PASS  VM Time Prec. Value Test, ESMF_VMUTest.F90, line 188
+20220318 105733.623 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_SUM Test: integer, ESMF_VMUTest.F90, line 217
+20220318 105733.623 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_SUM Test: integer, ESMF_VMUTest.F90, line 235
+20220318 105733.623 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 252
+20220318 105733.623 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 272
+20220318 105733.623 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 291
+20220318 105733.623 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 312
+20220318 105733.624 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 578
+20220318 105733.624 INFO             PET2  PASS  Verify All Full Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 590
+20220318 105733.624 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 600
+20220318 105733.624 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 613
+20220318 105733.624 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 623
+20220318 105733.624 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 636
+20220318 105733.624 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 790
+20220318 105733.624 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 805
+20220318 105733.624 INFO             PET2  PASS  VM All Reduce scalar ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 817
+20220318 105733.624 INFO             PET2  PASS  Verify All Reduce scalar ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 823
+20220318 105733.625 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 834
+20220318 105733.625 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 847
+20220318 105733.625 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 857
+20220318 105733.625 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 870
+20220318 105733.625 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_MINTest: integer, ESMF_VMUTest.F90, line 343
+20220318 105733.625 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: integer, ESMF_VMUTest.F90, line 361
+20220318 105733.625 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 374
+20220318 105733.625 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 394
+20220318 105733.625 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 409
+20220318 105733.625 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 430
+20220318 105733.625 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 654
+20220318 105733.625 INFO             PET2  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 662
+20220318 105733.625 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 674
+20220318 105733.625 INFO             PET2  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 682
+20220318 105733.625 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 694
+20220318 105733.625 INFO             PET2  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 702
+20220318 105733.625 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 884
+20220318 105733.625 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 897
+20220318 105733.626 INFO             PET2  PASS  VM All Reduce scalar ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 909
+20220318 105733.626 INFO             PET2  PASS  Verify All Reduce scalar ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 915
+20220318 105733.626 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 926
+20220318 105733.626 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 939
+20220318 105733.626 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 950
+20220318 105733.626 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 963
+20220318 105733.626 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_MAXTest: integer, ESMF_VMUTest.F90, line 464
+20220318 105733.626 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: integer, ESMF_VMUTest.F90, line 482
+20220318 105733.626 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 499
+20220318 105733.626 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 519
+20220318 105733.626 INFO             PET2  PASS  VM Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 538
+20220318 105733.626 INFO             PET2  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 559
+20220318 105733.626 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 723
+20220318 105733.626 INFO             PET2  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 731
+20220318 105733.626 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R8, ESMF_VMUTest.F90, line 744
+20220318 105733.626 INFO             PET2  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 752
+20220318 105733.626 INFO             PET2  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R4, ESMF_VMUTest.F90, line 765
+20220318 105733.626 INFO             PET2  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 773
+20220318 105733.626 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 978
+20220318 105733.626 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 991
+20220318 105733.627 INFO             PET2  PASS  VM All Reduce scalar ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 1003
+20220318 105733.627 INFO             PET2  PASS  Verify All Reduce scalar ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 1009
+20220318 105733.627 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 1020
+20220318 105733.627 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 1033
+20220318 105733.627 INFO             PET2  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 1044
+20220318 105733.627 INFO             PET2  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 1057
+20220318 105733.627 INFO             PET2  PASS  VMId Create vmid1 Test, ESMF_VMUTest.F90, line 1280
+20220318 105733.627 INFO             PET2  PASS  VMId Create vmid2 Test, ESMF_VMUTest.F90, line 1288
+20220318 105733.627 INFO             PET2  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1295
+20220318 105733.627 INFO             PET2  PASS  VMId Set test values Test, ESMF_VMUTest.F90, line 1302
+20220318 105733.627 INFO             PET2  PASS  VMId print test values Test, ESMF_VMUTest.F90, line 1309
+20220318 105733.627 INFO             PET2  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1316
+20220318 105733.627 INFO             PET2  PASS  VMId Set test values Test, ESMF_VMUTest.F90, line 1323
+20220318 105733.627 INFO             PET2  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1330
+20220318 105733.627 INFO             PET2  PASS  VMId Get test values Test, ESMF_VMUTest.F90, line 1337
+20220318 105733.627 INFO             PET2  PASS  VMId id_value Test, ESMF_VMUTest.F90, line 1343
+20220318 105733.627 INFO             PET2  PASS  VMId key_value Test, ESMF_VMUTest.F90, line 1349
+20220318 105733.627 INFO             PET2  PASS  VMId destroy #1 Test, ESMF_VMUTest.F90, line 1356
+20220318 105733.627 INFO             PET2  PASS  VMId destroy #2 Test, ESMF_VMUTest.F90, line 1363
+20220318 105733.630 INFO             PET2  PASS  Create a Grid object, ESMF_VMUTest.F90, line 1379
+20220318 105733.630 INFO             PET2  PASS  Access Base of Grid, ESMF_VMUTest.F90, line 1391
+20220318 105733.630 INFO             PET2  PASS  Create temporary VMId, ESMF_VMUTest.F90, line 1403
+20220318 105733.630 INFO             PET2  PASS  Destroy VMId, ESMF_VMUTest.F90, line 1415
+20220318 105733.630 INFO             PET2  PASS  Access Base ID and VMId, ESMF_VMUTest.F90, line 1426
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/self/status]	VmHWM:	   78668 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/self/status]	VmRSS:	   78668 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.630 INFO             PET2  - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.631 INFO             PET2  - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.631 INFO             PET2  - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.631 INFO             PET2  - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220318 105733.631 INFO             PET2  - MemInfo: [/proc/self/status]	VmPMD:	      16 kB
+20220318 105733.631 INFO             PET2  - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.631 INFO             PET2  - MemInfo: [/proc/self/status]	VmRSSPercent: 0.059793 %
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Space in freed fastbin blocks:                   976 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Total allocated space:                       4947408 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Total free space:                             246320 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Top-most, releasable space:                    99312 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32239056 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: [malloc] Total space used (mmap + non-mmap):         32248416 Byte
+20220318 105733.631 INFO             PET2  - MemInfo: Wall-clock time since execution start:                5.01441 seconds
+20220318 105733.631 INFO             PET2  PASS  Write VMLogMemInfo into the default log w/o prefix, ESMF_VMUTest.F90, line 1437
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmHWM:	   78724 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmRSS:	   78724 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmPMD:	      16 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598356 %
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Space in freed fastbin blocks:                   992 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Total allocated space:                       4947456 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Total free space:                             246272 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Top-most, releasable space:                    99312 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32239104 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: [malloc] Total space used (mmap + non-mmap):         32248464 Byte
+20220318 105733.631 INFO             PET2 TestPrefix - MemInfo: Wall-clock time since execution start:                5.01501 seconds
+20220318 105733.631 INFO             PET2  PASS  Write VMLogMemInfo into the default log w/ prefix, ESMF_VMUTest.F90, line 1447
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmHWM:	   78744 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmRSS:	   78744 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmPMD:	      16 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.632 INFO             PET2  - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598508 %
+20220318 105733.632 INFO             PET2  - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.632 INFO             PET2  - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.632 INFO             PET2  - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.632 INFO             PET2  - MemInfo: [malloc] Space in freed fastbin blocks:                  1088 Byte
+20220318 105733.632 INFO             PET2  - MemInfo: [malloc] Total allocated space:                       4957216 Byte
+20220318 105733.632 INFO             PET2  - MemInfo: [malloc] Total free space:                             236512 Byte
+20220318 105733.632 INFO             PET2  - MemInfo: [malloc] Top-most, releasable space:                    89072 Byte
+20220318 105733.632 INFO             PET2  - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32248864 Byte
+20220318 105733.633 INFO             PET2  - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.633 INFO             PET2  - MemInfo: [malloc] Total space used (mmap + non-mmap):         32258224 Byte
+20220318 105733.633 INFO             PET2  - MemInfo: Wall-clock time since execution start:                5.01613 seconds
+20220318 105733.633 INFO             PET2  PASS  Write VMLogMemInfo into custom log w/o prefix, ESMF_VMUTest.F90, line 1461
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmHWM:	   78752 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmRSS:	   78752 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmPTE:	     872 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmPMD:	      16 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598568 %
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Space in freed fastbin blocks:                  1088 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Total allocated space:                       4957264 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Total free space:                             236464 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Top-most, releasable space:                    88960 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32248912 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: [malloc] Total space used (mmap + non-mmap):         32258272 Byte
+20220318 105733.633 INFO             PET2 TestPrefix - MemInfo: Wall-clock time since execution start:                 5.0167 seconds
+20220318 105733.633 INFO             PET2  PASS  Write VMLogMemInfo into custom log w/ prefix, ESMF_VMUTest.F90, line 1471
+20220318 105733.633 INFO             PET2  Ending Test, file ESMF_VMUTest.F90, line 1477
+20220318 105733.633 INFO             PET2 Finalizing ESMF
+20220318 105728.619 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220318 105728.620 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220318 105728.620 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220318 105728.620 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220318 105728.620 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220318 105728.620 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220318 105728.620 INFO             PET3 Running with ESMF Version   : v8.3.0b09-102-gabaf3ef548
+20220318 105728.620 INFO             PET3 ESMF library build date/time: "Mar 18 2022" "10:21:10"
+20220318 105728.620 INFO             PET3 ESMF library build location : /glade/scratch/rlong/esmf-testing/intel_18.0.5_openmpi_g_jedwards_pio_update2
+20220318 105728.620 INFO             PET3 ESMF_COMM                   : openmpi
+20220318 105728.620 INFO             PET3 ESMF_MOAB                   : enabled
+20220318 105728.620 INFO             PET3 ESMF_LAPACK                 : enabled
+20220318 105728.620 INFO             PET3 ESMF_NETCDF                 : enabled
+20220318 105728.620 INFO             PET3 ESMF_PNETCDF                : disabled
+20220318 105728.620 INFO             PET3 ESMF_PIO                    : enabled
+20220318 105728.620 INFO             PET3 ESMF_YAMLCPP                : enabled
+20220318 105728.620 INFO             PET3  Beginning Test, file ESMF_VMUTest.F90, line 1118
+20220318 105728.620 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20220318 105728.620 ERROR            PET3 ESMF_VM.F90:5313 ESMF_VMGetDefault() Object being used before creation  - Bad Object
+20220318 105728.620 INFO             PET3  PASS  VM Get before initialization Test, ESMF_VMUTest.F90, line 1127
+20220318 105728.620 ERROR            PET3 ESMF_VM.F90:8990 ESMF_VMValidate() Object being used before creation  - Bad Object
+20220318 105728.620 INFO             PET3  PASS  VM validate Test before valid VM, ESMF_VMUTest.F90, line 1134
+20220318 105728.620 INFO             PET3  PASS  VM Get Global Test, ESMF_VMUTest.F90, line 1141
+20220318 105728.620 INFO             PET3  PASS  VM Get Test, ESMF_VMUTest.F90, line 1149
+20220318 105728.621 INFO             PET3  petCount=           4  ssiCount=           1
+20220318 105728.621 INFO             PET3  ssiMinPetCount=           4  ssiMaxPetCount=           4
+20220318 105728.621 INFO             PET3  PASS  VM print Test, ESMF_VMUTest.F90, line 1167
+20220318 105728.621 INFO             PET3  PASS  VM validate Test, ESMF_VMUTest.F90, line 1174
+20220318 105728.621 INFO             PET3  PASS  VM Get Test, ESMF_VMUTest.F90, line 1183
+20220318 105728.621 INFO             PET3  PASS  VM Get Current  Test, ESMF_VMUTest.F90, line 74
+20220318 105728.621 INFO             PET3  PASS  Test_VM Get Test, ESMF_VMUTest.F90, line 82
+20220318 105728.621 INFO             PET3  ssiMap=           0           0           0           0
+20220318 105728.621 INFO             PET3  esmfComm=openmpi  len(esmfComm)=           7
+20220318 105728.621 INFO             PET3  PASS  Test bounds of ssiMap, ESMF_VMUTest.F90, line 97
+20220318 105728.621 INFO             PET3  PASS  Verify the VM is correct Test, ESMF_VMUTest.F90, line 104
+20220318 105728.621 INFO             PET3  PASS  VM equality before assignment Test, ESMF_VMUTest.F90, line 117
+20220318 105728.621 INFO             PET3  PASS  VM assignment and equality Test, ESMF_VMUTest.F90, line 126
+20220318 105728.621 INFO             PET3  PASS  VM equality Test, ESMF_VMUTest.F90, line 134
+20220318 105728.621 INFO             PET3  PASS  VM non-equality after destroy Test, ESMF_VMUTest.F90, line 142
+20220318 105733.621 INFO             PET3  PASS  VM Time 5 Second Delay Test, ESMF_VMUTest.F90, line 159
+20220318 105733.621 INFO             PET3  PASS  Verify delay was 5 or 6 Seconds Test, ESMF_VMUTest.F90, line 174
+20220318 105733.624 INFO             PET3  PASS  VM Time Prec. Test, ESMF_VMUTest.F90, line 181
+20220318 105733.624 INFO             PET3  PASS  VM Time Prec. Value Test, ESMF_VMUTest.F90, line 188
+20220318 105733.624 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_SUM Test: integer, ESMF_VMUTest.F90, line 217
+20220318 105733.624 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_SUM Test: integer, ESMF_VMUTest.F90, line 235
+20220318 105733.624 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 252
+20220318 105733.624 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 272
+20220318 105733.624 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 291
+20220318 105733.624 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 312
+20220318 105733.624 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 578
+20220318 105733.624 INFO             PET3  PASS  Verify All Full Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 590
+20220318 105733.624 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 600
+20220318 105733.624 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 613
+20220318 105733.624 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_SUM Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 623
+20220318 105733.624 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_SUM Results Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 636
+20220318 105733.624 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 790
+20220318 105733.624 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 805
+20220318 105733.624 INFO             PET3  PASS  VM All Reduce scalar ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 817
+20220318 105733.624 INFO             PET3  PASS  Verify All Reduce scalar ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 823
+20220318 105733.625 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 834
+20220318 105733.625 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 847
+20220318 105733.625 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_SUM Test, ESMF_VMUTest.F90, line 857
+20220318 105733.625 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_SUM Results Test, ESMF_VMUTest.F90, line 870
+20220318 105733.625 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_MINTest: integer, ESMF_VMUTest.F90, line 343
+20220318 105733.625 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: integer, ESMF_VMUTest.F90, line 361
+20220318 105733.625 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 374
+20220318 105733.625 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 394
+20220318 105733.625 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 409
+20220318 105733.625 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_MINResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 430
+20220318 105733.625 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 654
+20220318 105733.625 INFO             PET3  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 662
+20220318 105733.625 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 674
+20220318 105733.625 INFO             PET3  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 682
+20220318 105733.625 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 694
+20220318 105733.625 INFO             PET3  PASS  Verify All Full Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 702
+20220318 105733.625 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 884
+20220318 105733.625 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 897
+20220318 105733.626 INFO             PET3  PASS  VM All Reduce scalar ESMF_REDUCE_MINTest, ESMF_VMUTest.F90, line 909
+20220318 105733.626 INFO             PET3  PASS  Verify All Reduce scalar ESMF_REDUCE_MINResults Test, ESMF_VMUTest.F90, line 915
+20220318 105733.626 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 926
+20220318 105733.626 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 939
+20220318 105733.626 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_MINTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 950
+20220318 105733.626 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_MINResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 963
+20220318 105733.626 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_MAXTest: integer, ESMF_VMUTest.F90, line 464
+20220318 105733.626 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: integer, ESMF_VMUTest.F90, line 482
+20220318 105733.626 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 499
+20220318 105733.626 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 519
+20220318 105733.626 INFO             PET3  PASS  VM Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 538
+20220318 105733.626 INFO             PET3  PASS  Verify Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 559
+20220318 105733.626 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 723
+20220318 105733.626 INFO             PET3  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 731
+20220318 105733.626 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R8, ESMF_VMUTest.F90, line 744
+20220318 105733.626 INFO             PET3  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R8, ESMF_VMUTest.F90, line 752
+20220318 105733.626 INFO             PET3  PASS  VM All Full Reduce ESMF_REDUCE_MAXTest:ESMF_KIND_R4, ESMF_VMUTest.F90, line 765
+20220318 105733.626 INFO             PET3  PASS  Verify All Full Reduce ESMF_REDUCE_MAXResults Test:ESMF_KIND_R4, ESMF_VMUTest.F90, line 773
+20220318 105733.626 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 978
+20220318 105733.627 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 991
+20220318 105733.627 INFO             PET3  PASS  VM All Reduce scalar ESMF_REDUCE_MAXTest, ESMF_VMUTest.F90, line 1003
+20220318 105733.627 INFO             PET3  PASS  Verify All Reduce scalar ESMF_REDUCE_MAXResults Test, ESMF_VMUTest.F90, line 1009
+20220318 105733.627 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R8, ESMF_VMUTest.F90, line 1020
+20220318 105733.627 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R8, ESMF_VMUTest.F90, line 1033
+20220318 105733.627 INFO             PET3  PASS  VM All Reduce ESMF_REDUCE_MAXTest: ESMF_KIND_R4, ESMF_VMUTest.F90, line 1044
+20220318 105733.627 INFO             PET3  PASS  Verify All Reduce ESMF_REDUCE_MAXResults Test: ESMF_KIND_R4, ESMF_VMUTest.F90, line 1057
+20220318 105733.627 INFO             PET3  PASS  VMId Create vmid1 Test, ESMF_VMUTest.F90, line 1280
+20220318 105733.627 INFO             PET3  PASS  VMId Create vmid2 Test, ESMF_VMUTest.F90, line 1288
+20220318 105733.627 INFO             PET3  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1295
+20220318 105733.627 INFO             PET3  PASS  VMId Set test values Test, ESMF_VMUTest.F90, line 1302
+20220318 105733.627 INFO             PET3  PASS  VMId print test values Test, ESMF_VMUTest.F90, line 1309
+20220318 105733.627 INFO             PET3  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1316
+20220318 105733.627 INFO             PET3  PASS  VMId Set test values Test, ESMF_VMUTest.F90, line 1323
+20220318 105733.627 INFO             PET3  PASS  VMId Compare Test, ESMF_VMUTest.F90, line 1330
+20220318 105733.627 INFO             PET3  PASS  VMId Get test values Test, ESMF_VMUTest.F90, line 1337
+20220318 105733.627 INFO             PET3  PASS  VMId id_value Test, ESMF_VMUTest.F90, line 1343
+20220318 105733.627 INFO             PET3  PASS  VMId key_value Test, ESMF_VMUTest.F90, line 1349
+20220318 105733.627 INFO             PET3  PASS  VMId destroy #1 Test, ESMF_VMUTest.F90, line 1356
+20220318 105733.627 INFO             PET3  PASS  VMId destroy #2 Test, ESMF_VMUTest.F90, line 1363
+20220318 105733.630 INFO             PET3  PASS  Create a Grid object, ESMF_VMUTest.F90, line 1379
+20220318 105733.630 INFO             PET3  PASS  Access Base of Grid, ESMF_VMUTest.F90, line 1391
+20220318 105733.630 INFO             PET3  PASS  Create temporary VMId, ESMF_VMUTest.F90, line 1403
+20220318 105733.630 INFO             PET3  PASS  Destroy VMId, ESMF_VMUTest.F90, line 1415
+20220318 105733.630 INFO             PET3  PASS  Access Base ID and VMId, ESMF_VMUTest.F90, line 1426
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/self/status]	VmHWM:	   78668 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/self/status]	VmRSS:	   78668 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.630 INFO             PET3  - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.631 INFO             PET3  - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.631 INFO             PET3  - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.631 INFO             PET3  - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.631 INFO             PET3  - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220318 105733.631 INFO             PET3  - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.631 INFO             PET3  - MemInfo: [/proc/self/status]	VmRSSPercent: 0.059793 %
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Space in freed fastbin blocks:                   976 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Total allocated space:                       4947712 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Total free space:                             246016 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Top-most, releasable space:                    99008 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32239360 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: [malloc] Total space used (mmap + non-mmap):         32248720 Byte
+20220318 105733.631 INFO             PET3  - MemInfo: Wall-clock time since execution start:                 5.0144 seconds
+20220318 105733.631 INFO             PET3  PASS  Write VMLogMemInfo into the default log w/o prefix, ESMF_VMUTest.F90, line 1437
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmHWM:	   78724 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmRSS:	   78724 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598356 %
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Space in freed fastbin blocks:                   992 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Total allocated space:                       4947760 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Total free space:                             245968 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Top-most, releasable space:                    99008 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32239408 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: [malloc] Total space used (mmap + non-mmap):         32248768 Byte
+20220318 105733.631 INFO             PET3 TestPrefix - MemInfo: Wall-clock time since execution start:                5.01499 seconds
+20220318 105733.631 INFO             PET3  PASS  Write VMLogMemInfo into the default log w/ prefix, ESMF_VMUTest.F90, line 1447
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmHWM:	   78744 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmRSS:	   78744 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.633 INFO             PET3  - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598508 %
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Space in freed fastbin blocks:                  1088 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Total allocated space:                       4957520 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Total free space:                             236208 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Top-most, releasable space:                    88768 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32249168 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: [malloc] Total space used (mmap + non-mmap):         32258528 Byte
+20220318 105733.633 INFO             PET3  - MemInfo: Wall-clock time since execution start:                5.01677 seconds
+20220318 105733.633 INFO             PET3  PASS  Write VMLogMemInfo into custom log w/o prefix, ESMF_VMUTest.F90, line 1461
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemTotal:       131567260 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemFree:        114152792 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	MemAvailable:   113768988 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	Committed_AS:   13346872 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/meminfo - SSI]	CommittedPercent: 10.1445 %
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmPeak:	  624296 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmSize:	  624296 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmLck:	       0 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmPin:	   39928 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmHWM:	   78752 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmRSS:	   78752 kB
+20220318 105733.633 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmData:	   47248 kB
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmStk:	     148 kB
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmExe:	    1760 kB
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmLib:	  139544 kB
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmPTE:	     868 kB
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmPMD:	      12 kB
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmSwap:	       0 kB
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [/proc/self/status]	VmRSSPercent: 0.0598568 %
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Non-mmapped space allocated:                 5193728 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Space allocated in mmapped regions:         27291648 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Maximum total allocated space:                     0 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Space in freed fastbin blocks:                  1088 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Total allocated space:                       4957568 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Total free space:                             236160 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Top-most, releasable space:                    88656 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Total space in use, mmap + non-mmap:        32249216 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Total space held (mmap + non-mmap):         32485376 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: [malloc] Total space used (mmap + non-mmap):         32258576 Byte
+20220318 105733.634 INFO             PET3 TestPrefix - MemInfo: Wall-clock time since execution start:                5.01734 seconds
+20220318 105733.634 INFO             PET3  PASS  Write VMLogMemInfo into custom log w/ prefix, ESMF_VMUTest.F90, line 1471
+20220318 105733.634 INFO             PET3  Ending Test, file ESMF_VMUTest.F90, line 1477
+20220318 105733.634 INFO             PET3 Finalizing ESMF
