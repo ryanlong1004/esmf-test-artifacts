@@ -1,0 +1,341 @@
+build time -- 2022-03-21 02:38:28
+20220321 040411.408 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220321 040411.409 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220321 040411.409 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220321 040411.409 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220321 040411.409 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220321 040411.409 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220321 040411.409 INFO             PET0 Running with ESMF Version   : v8.3.0b09-4-g424b2f2
+20220321 040411.409 INFO             PET0 ESMF library build date/time: "Mar 21 2022" "02:36:50"
+20220321 040411.409 INFO             PET0 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220321 040411.409 INFO             PET0 ESMF_COMM                   : intelmpi
+20220321 040411.412 INFO             PET0 ESMF_MOAB                   : enabled
+20220321 040411.412 INFO             PET0 ESMF_LAPACK                 : enabled
+20220321 040411.412 INFO             PET0 ESMF_NETCDF                 : enabled
+20220321 040411.412 INFO             PET0 ESMF_PNETCDF                : disabled
+20220321 040411.412 INFO             PET0 ESMF_PIO                    : enabled
+20220321 040411.412 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220321 040411.424 INFO             PET0  Beginning Test, file ESMF_GridCoordUTest.F90, line 81
+20220321 040411.424 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20220321 040411.431 INFO             PET0  PASS  Test Grid Coord isPresent, ESMF_GridCoordUTest.F90, line 150
+20220321 040411.432 INFO             PET0  PASS  Test get staggerEdgeLWidth, staggerEdgeUWidth, staggerAlign, and staggerLBound, ESMF_GridCoordUTest.F90, line 192
+20220321 040411.436 INFO             PET0  PASS  Test ESMF_GridMatch() on Grids with the same coordinates, ESMF_GridCoordUTest.F90, line 292
+20220321 040411.439 INFO             PET0  PASS  Test ESMF_GridMatch() on Grids with different coordinates, ESMF_GridCoordUTest.F90, line 393
+20220321 040411.440 INFO             PET0  PASS  Set/Get Coordinates from Array, ESMF_GridCoordUTest.F90, line 449
+20220321 040411.449 INFO             PET0  PASS  Test Coordinate Storage by Creating a C-Grid, ESMF_GridCoordUTest.F90, line 585
+20220321 040411.450 ERROR            PET0 ESMCI_Grid.C:3740 ESMCI::Grid::setCoordArray() Arguments are incompatible  - - Array and Grid Coord dimension mapping mismatch
+20220321 040411.450 ERROR            PET0 ESMCI_Grid_F.C:1091 c_esmc_gridsetfromarray() Arguments are incompatible  - Internal subroutine call returned Error
+20220321 040411.450 ERROR            PET0 ESMF_Grid.F90:25269 ESMF_GridSetCoordFromArray Arguments are incompatible  - Internal subroutine call returned Error
+20220321 040411.451 INFO             PET0  PASS  Set/Get Coordinates from Array check distgridToArrayMap matching, ESMF_GridCoordUTest.F90, line 654
+20220321 040411.455 INFO             PET0  PASS  Get fortran pointer from coordinate array, ESMF_GridCoordUTest.F90, line 705
+20220321 040411.456 INFO             PET0  PASS  Test ESMF_StaggerLocSet, ESMF_GridCoordUTest.F90, line 764
+20220321 040411.456 INFO             PET0  PASS  Test StaggerLoc .eq. and .ne., ESMF_GridCoordUTest.F90, line 782
+20220321 040411.456 INFO             PET0  PASS  Test ESMF_StaggerLocGet(), ESMF_GridCoordUTest.F90, line 820
+20220321 040411.456 INFO             PET0  PASS  Test StaggerLocString, ESMF_GridCoordUTest.F90, line 839
+20220321 040411.458 INFO             PET0  PASS  Test 2D GridAddCoord, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 887
+20220321 040411.464 INFO             PET0  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 922
+20220321 040411.465 INFO             PET0  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default EDGE1 bounds are as expected, ESMF_GridCoordUTest.F90, line 958
+20220321 040411.466 INFO             PET0  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default EDGE2 bounds are as expected, ESMF_GridCoordUTest.F90, line 994
+20220321 040411.467 INFO             PET0  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1035
+20220321 040411.470 INFO             PET0  PASS  Test 2D GridAddCoord with staggerWidths, by allocating coordinates for every stagger with different widths, ESMF_GridCoordUTest.F90, line 1089
+20220321 040411.471 INFO             PET0  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1125
+20220321 040411.474 INFO             PET0  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set EDGE1 bounds are as expected, ESMF_GridCoordUTest.F90, line 1162
+20220321 040411.477 INFO             PET0  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set EDGE2 bounds are as expected, ESMF_GridCoordUTest.F90, line 1199
+20220321 040411.479 INFO             PET0  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1240
+20220321 040411.482 INFO             PET0  PASS  Test 2D coordDep, by flipping coord2 and allocating CENTER and CORNER staggers, ESMF_GridCoordUTest.F90, line 1282
+20220321 040411.484 INFO             PET0  PASS  Test 2D CoordDep, by making sure set CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1320
+20220321 040411.486 INFO             PET0  PASS  Test 2D CoordDep, by making sure default CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1360
+20220321 040411.491 INFO             PET0  PASS  Test 2D plus 1 GridAddCoord, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 1424
+20220321 040411.495 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CENTER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1470
+20220321 040411.498 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1518
+20220321 040411.502 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1564
+20220321 040411.505 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1610
+20220321 040411.510 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CENTER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1657
+20220321 040411.513 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1705
+20220321 040411.516 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1751
+20220321 040411.519 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1802
+20220321 040411.524 INFO             PET0  PASS  Test 2D plus 1 GridAddCoord with non-default stagger widths, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 1871
+20220321 040411.527 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CENTER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1920
+20220321 040411.532 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set EDGE1_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1973
+20220321 040411.536 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set EDGE2_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 2023
+20220321 040411.537 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CORNER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 2071
+20220321 040411.542 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CENTER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2120
+20220321 040411.545 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2170
+20220321 040411.548 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2221
+20220321 040411.552 INFO             PET0  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2277
+20220321 040411.555 INFO             PET0  PASS  Test 2D plus 1 GridAddCoord with non-default stagger widths and non-defaults coordDep, ESMF_GridCoordUTest.F90, line 2338
+20220321 040411.558 INFO             PET0  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2391
+20220321 040411.562 INFO             PET0  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2443
+20220321 040411.565 INFO             PET0  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2499
+20220321 040411.566 INFO             PET0  PASS  Test 2D plus 1 GridAddCoord with DELOCAL Index, ESMF_GridCoordUTest.F90, line 2550
+20220321 040411.569 INFO             PET0  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_DELOCAL, ESMF_GridCoordUTest.F90, line 2603
+20220321 040411.572 INFO             PET0  PASS  Test 2D plus 1 GridAddCoord with ESMF_INDEX_USER, ESMF_GridCoordUTest.F90, line 2656
+20220321 040411.575 INFO             PET0  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_USER and allocated coords, ESMF_GridCoordUTest.F90, line 2704
+20220321 040411.576 INFO             PET0  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_USER and un-allocated coords, ESMF_GridCoordUTest.F90, line 2755
+20220321 040411.579 INFO             PET0  PASS  Test ESMF_GridGet getting bounds from grid, ESMF_GridCoordUTest.F90, line 2825
+20220321 040411.583 INFO             PET0  PASS  Test ESMF_GridGetCoord getting coordinate from an index location in grid, ESMF_GridCoordUTest.F90, line 2958
+20220321 040411.585 INFO             PET0  PASS  Test ESMF_GridGet getting computationalEdgeWidths and bounds from grid, ESMF_GridCoordUTest.F90, line 3012
+20220321 040411.588 INFO             PET0  PASS  Test 2D Grid Bounds with Factorized Coordinate Arrays, ESMF_GridCoordUTest.F90, line 3079
+20220321 040411.593 INFO             PET0  PASS  Test 3D Grid Bounds with 2D plus 1 Factorized Coordinate Arrays, ESMF_GridCoordUTest.F90, line 3160
+20220321 040411.596 INFO             PET0  PASS  Test 2D plus 1 GridCreateNoPeriDimReg Bounds, ESMF_GridCoordUTest.F90, line 3217
+20220321 040411.600 INFO             PET0  PASS  Test 2D plus 1 GridCreateNoPeriDimReg Bounds with even cell division, ESMF_GridCoordUTest.F90, line 3272
+20220321 040411.603 INFO             PET0  PASS  Test 2D plus 1 EmptyCompleteReg Bounds with even cell division, ESMF_GridCoordUTest.F90, line 3333
+20220321 040411.606 INFO             PET0  PASS  Test 2D plus 1 GridCreateArray, ESMF_GridCoordUTest.F90, line 3415
+20220321 040411.610 INFO             PET0  PASS  Test 3D GridAddCoord, by allocating coordinates and then getting fortran pointer, ESMF_GridCoordUTest.F90, line 3450
+20220321 040411.610 INFO             PET0  Ending Test, file ESMF_GridCoordUTest.F90, line 3466
+20220321 040411.610 INFO             PET0 Finalizing ESMF
+20220321 040411.408 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220321 040411.409 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220321 040411.409 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220321 040411.409 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220321 040411.409 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220321 040411.409 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220321 040411.409 INFO             PET1 Running with ESMF Version   : v8.3.0b09-4-g424b2f2
+20220321 040411.409 INFO             PET1 ESMF library build date/time: "Mar 21 2022" "02:36:50"
+20220321 040411.409 INFO             PET1 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220321 040411.409 INFO             PET1 ESMF_COMM                   : intelmpi
+20220321 040411.424 INFO             PET1 ESMF_MOAB                   : enabled
+20220321 040411.424 INFO             PET1 ESMF_LAPACK                 : enabled
+20220321 040411.424 INFO             PET1 ESMF_NETCDF                 : enabled
+20220321 040411.424 INFO             PET1 ESMF_PNETCDF                : disabled
+20220321 040411.424 INFO             PET1 ESMF_PIO                    : enabled
+20220321 040411.424 INFO             PET1 ESMF_YAMLCPP                : enabled
+20220321 040411.424 INFO             PET1  Beginning Test, file ESMF_GridCoordUTest.F90, line 81
+20220321 040411.424 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20220321 040411.431 INFO             PET1  PASS  Test Grid Coord isPresent, ESMF_GridCoordUTest.F90, line 150
+20220321 040411.432 INFO             PET1  PASS  Test get staggerEdgeLWidth, staggerEdgeUWidth, staggerAlign, and staggerLBound, ESMF_GridCoordUTest.F90, line 192
+20220321 040411.436 INFO             PET1  PASS  Test ESMF_GridMatch() on Grids with the same coordinates, ESMF_GridCoordUTest.F90, line 292
+20220321 040411.439 INFO             PET1  PASS  Test ESMF_GridMatch() on Grids with different coordinates, ESMF_GridCoordUTest.F90, line 393
+20220321 040411.440 INFO             PET1  PASS  Set/Get Coordinates from Array, ESMF_GridCoordUTest.F90, line 449
+20220321 040411.450 INFO             PET1  PASS  Test Coordinate Storage by Creating a C-Grid, ESMF_GridCoordUTest.F90, line 585
+20220321 040411.450 ERROR            PET1 ESMCI_Grid.C:3740 ESMCI::Grid::setCoordArray() Arguments are incompatible  - - Array and Grid Coord dimension mapping mismatch
+20220321 040411.450 ERROR            PET1 ESMCI_Grid_F.C:1091 c_esmc_gridsetfromarray() Arguments are incompatible  - Internal subroutine call returned Error
+20220321 040411.450 ERROR            PET1 ESMF_Grid.F90:25269 ESMF_GridSetCoordFromArray Arguments are incompatible  - Internal subroutine call returned Error
+20220321 040411.451 INFO             PET1  PASS  Set/Get Coordinates from Array check distgridToArrayMap matching, ESMF_GridCoordUTest.F90, line 654
+20220321 040411.452 INFO             PET1  PASS  Get fortran pointer from coordinate array, ESMF_GridCoordUTest.F90, line 705
+20220321 040411.456 INFO             PET1  PASS  Test ESMF_StaggerLocSet, ESMF_GridCoordUTest.F90, line 764
+20220321 040411.457 INFO             PET1  PASS  Test StaggerLoc .eq. and .ne., ESMF_GridCoordUTest.F90, line 782
+20220321 040411.457 INFO             PET1  PASS  Test ESMF_StaggerLocGet(), ESMF_GridCoordUTest.F90, line 820
+20220321 040411.457 INFO             PET1  PASS  Test StaggerLocString, ESMF_GridCoordUTest.F90, line 839
+20220321 040411.458 INFO             PET1  PASS  Test 2D GridAddCoord, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 887
+20220321 040411.459 INFO             PET1  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 922
+20220321 040411.465 INFO             PET1  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default EDGE1 bounds are as expected, ESMF_GridCoordUTest.F90, line 958
+20220321 040411.466 INFO             PET1  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default EDGE2 bounds are as expected, ESMF_GridCoordUTest.F90, line 994
+20220321 040411.467 INFO             PET1  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1035
+20220321 040411.469 INFO             PET1  PASS  Test 2D GridAddCoord with staggerWidths, by allocating coordinates for every stagger with different widths, ESMF_GridCoordUTest.F90, line 1089
+20220321 040411.471 INFO             PET1  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1125
+20220321 040411.472 INFO             PET1  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set EDGE1 bounds are as expected, ESMF_GridCoordUTest.F90, line 1162
+20220321 040411.473 INFO             PET1  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set EDGE2 bounds are as expected, ESMF_GridCoordUTest.F90, line 1199
+20220321 040411.474 INFO             PET1  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1240
+20220321 040411.480 INFO             PET1  PASS  Test 2D coordDep, by flipping coord2 and allocating CENTER and CORNER staggers, ESMF_GridCoordUTest.F90, line 1282
+20220321 040411.484 INFO             PET1  PASS  Test 2D CoordDep, by making sure set CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1320
+20220321 040411.485 INFO             PET1  PASS  Test 2D CoordDep, by making sure default CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1360
+20220321 040411.490 INFO             PET1  PASS  Test 2D plus 1 GridAddCoord, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 1424
+20220321 040411.494 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CENTER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1470
+20220321 040411.498 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1518
+20220321 040411.501 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1564
+20220321 040411.505 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1610
+20220321 040411.506 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CENTER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1657
+20220321 040411.511 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1705
+20220321 040411.515 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1751
+20220321 040411.518 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1802
+20220321 040411.524 INFO             PET1  PASS  Test 2D plus 1 GridAddCoord with non-default stagger widths, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 1871
+20220321 040411.528 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CENTER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1920
+20220321 040411.531 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set EDGE1_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1973
+20220321 040411.534 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set EDGE2_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 2023
+20220321 040411.538 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CORNER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 2071
+20220321 040411.542 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CENTER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2120
+20220321 040411.544 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2170
+20220321 040411.547 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2221
+20220321 040411.551 INFO             PET1  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2277
+20220321 040411.554 INFO             PET1  PASS  Test 2D plus 1 GridAddCoord with non-default stagger widths and non-defaults coordDep, ESMF_GridCoordUTest.F90, line 2338
+20220321 040411.557 INFO             PET1  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2391
+20220321 040411.561 INFO             PET1  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2443
+20220321 040411.566 INFO             PET1  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2499
+20220321 040411.567 INFO             PET1  PASS  Test 2D plus 1 GridAddCoord with DELOCAL Index, ESMF_GridCoordUTest.F90, line 2550
+20220321 040411.570 INFO             PET1  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_DELOCAL, ESMF_GridCoordUTest.F90, line 2603
+20220321 040411.573 INFO             PET1  PASS  Test 2D plus 1 GridAddCoord with ESMF_INDEX_USER, ESMF_GridCoordUTest.F90, line 2656
+20220321 040411.574 INFO             PET1  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_USER and allocated coords, ESMF_GridCoordUTest.F90, line 2704
+20220321 040411.576 INFO             PET1  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_USER and un-allocated coords, ESMF_GridCoordUTest.F90, line 2755
+20220321 040411.578 INFO             PET1  PASS  Test ESMF_GridGet getting bounds from grid, ESMF_GridCoordUTest.F90, line 2825
+20220321 040411.583 INFO             PET1  PASS  Test ESMF_GridGetCoord getting coordinate from an index location in grid, ESMF_GridCoordUTest.F90, line 2958
+20220321 040411.584 INFO             PET1  PASS  Test ESMF_GridGet getting computationalEdgeWidths and bounds from grid, ESMF_GridCoordUTest.F90, line 3012
+20220321 040411.589 INFO             PET1  PASS  Test 2D Grid Bounds with Factorized Coordinate Arrays, ESMF_GridCoordUTest.F90, line 3079
+20220321 040411.594 INFO             PET1  PASS  Test 3D Grid Bounds with 2D plus 1 Factorized Coordinate Arrays, ESMF_GridCoordUTest.F90, line 3160
+20220321 040411.597 INFO             PET1  PASS  Test 2D plus 1 GridCreateNoPeriDimReg Bounds, ESMF_GridCoordUTest.F90, line 3217
+20220321 040411.601 INFO             PET1  PASS  Test 2D plus 1 GridCreateNoPeriDimReg Bounds with even cell division, ESMF_GridCoordUTest.F90, line 3272
+20220321 040411.602 INFO             PET1  PASS  Test 2D plus 1 EmptyCompleteReg Bounds with even cell division, ESMF_GridCoordUTest.F90, line 3333
+20220321 040411.607 INFO             PET1  PASS  Test 2D plus 1 GridCreateArray, ESMF_GridCoordUTest.F90, line 3415
+20220321 040411.608 INFO             PET1  PASS  Test 3D GridAddCoord, by allocating coordinates and then getting fortran pointer, ESMF_GridCoordUTest.F90, line 3450
+20220321 040411.608 INFO             PET1  Ending Test, file ESMF_GridCoordUTest.F90, line 3466
+20220321 040411.608 INFO             PET1 Finalizing ESMF
+20220321 040411.408 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220321 040411.409 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220321 040411.409 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220321 040411.409 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220321 040411.409 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220321 040411.409 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220321 040411.409 INFO             PET2 Running with ESMF Version   : v8.3.0b09-4-g424b2f2
+20220321 040411.409 INFO             PET2 ESMF library build date/time: "Mar 21 2022" "02:36:50"
+20220321 040411.409 INFO             PET2 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220321 040411.409 INFO             PET2 ESMF_COMM                   : intelmpi
+20220321 040411.412 INFO             PET2 ESMF_MOAB                   : enabled
+20220321 040411.412 INFO             PET2 ESMF_LAPACK                 : enabled
+20220321 040411.412 INFO             PET2 ESMF_NETCDF                 : enabled
+20220321 040411.412 INFO             PET2 ESMF_PNETCDF                : disabled
+20220321 040411.412 INFO             PET2 ESMF_PIO                    : enabled
+20220321 040411.412 INFO             PET2 ESMF_YAMLCPP                : enabled
+20220321 040411.425 INFO             PET2  Beginning Test, file ESMF_GridCoordUTest.F90, line 81
+20220321 040411.425 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20220321 040411.443 INFO             PET2  PASS  Test Grid Coord isPresent, ESMF_GridCoordUTest.F90, line 150
+20220321 040411.444 INFO             PET2  PASS  Test get staggerEdgeLWidth, staggerEdgeUWidth, staggerAlign, and staggerLBound, ESMF_GridCoordUTest.F90, line 192
+20220321 040411.452 INFO             PET2  PASS  Test ESMF_GridMatch() on Grids with the same coordinates, ESMF_GridCoordUTest.F90, line 292
+20220321 040411.459 INFO             PET2  PASS  Test ESMF_GridMatch() on Grids with different coordinates, ESMF_GridCoordUTest.F90, line 393
+20220321 040411.460 INFO             PET2  PASS  Set/Get Coordinates from Array, ESMF_GridCoordUTest.F90, line 449
+20220321 040411.469 INFO             PET2  PASS  Test Coordinate Storage by Creating a C-Grid, ESMF_GridCoordUTest.F90, line 585
+20220321 040411.470 ERROR            PET2 ESMCI_Grid.C:3740 ESMCI::Grid::setCoordArray() Arguments are incompatible  - - Array and Grid Coord dimension mapping mismatch
+20220321 040411.470 ERROR            PET2 ESMCI_Grid_F.C:1091 c_esmc_gridsetfromarray() Arguments are incompatible  - Internal subroutine call returned Error
+20220321 040411.470 ERROR            PET2 ESMF_Grid.F90:25269 ESMF_GridSetCoordFromArray Arguments are incompatible  - Internal subroutine call returned Error
+20220321 040411.472 INFO             PET2  PASS  Set/Get Coordinates from Array check distgridToArrayMap matching, ESMF_GridCoordUTest.F90, line 654
+20220321 040411.473 INFO             PET2  PASS  Get fortran pointer from coordinate array, ESMF_GridCoordUTest.F90, line 705
+20220321 040411.475 INFO             PET2  PASS  Test ESMF_StaggerLocSet, ESMF_GridCoordUTest.F90, line 764
+20220321 040411.476 INFO             PET2  PASS  Test StaggerLoc .eq. and .ne., ESMF_GridCoordUTest.F90, line 782
+20220321 040411.476 INFO             PET2  PASS  Test ESMF_StaggerLocGet(), ESMF_GridCoordUTest.F90, line 820
+20220321 040411.476 INFO             PET2  PASS  Test StaggerLocString, ESMF_GridCoordUTest.F90, line 839
+20220321 040411.478 INFO             PET2  PASS  Test 2D GridAddCoord, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 887
+20220321 040411.480 INFO             PET2  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 922
+20220321 040411.481 INFO             PET2  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default EDGE1 bounds are as expected, ESMF_GridCoordUTest.F90, line 958
+20220321 040411.485 INFO             PET2  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default EDGE2 bounds are as expected, ESMF_GridCoordUTest.F90, line 994
+20220321 040411.489 INFO             PET2  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1035
+20220321 040411.490 INFO             PET2  PASS  Test 2D GridAddCoord with staggerWidths, by allocating coordinates for every stagger with different widths, ESMF_GridCoordUTest.F90, line 1089
+20220321 040411.493 INFO             PET2  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1125
+20220321 040411.494 INFO             PET2  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set EDGE1 bounds are as expected, ESMF_GridCoordUTest.F90, line 1162
+20220321 040411.497 INFO             PET2  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set EDGE2 bounds are as expected, ESMF_GridCoordUTest.F90, line 1199
+20220321 040411.500 INFO             PET2  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1240
+20220321 040411.501 INFO             PET2  PASS  Test 2D coordDep, by flipping coord2 and allocating CENTER and CORNER staggers, ESMF_GridCoordUTest.F90, line 1282
+20220321 040411.504 INFO             PET2  PASS  Test 2D CoordDep, by making sure set CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1320
+20220321 040411.506 INFO             PET2  PASS  Test 2D CoordDep, by making sure default CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1360
+20220321 040411.511 INFO             PET2  PASS  Test 2D plus 1 GridAddCoord, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 1424
+20220321 040411.515 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CENTER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1470
+20220321 040411.518 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1518
+20220321 040411.522 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1564
+20220321 040411.526 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1610
+20220321 040411.529 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CENTER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1657
+20220321 040411.531 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1705
+20220321 040411.534 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1751
+20220321 040411.539 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1802
+20220321 040411.544 INFO             PET2  PASS  Test 2D plus 1 GridAddCoord with non-default stagger widths, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 1871
+20220321 040411.547 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CENTER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1920
+20220321 040411.550 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set EDGE1_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1973
+20220321 040411.554 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set EDGE2_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 2023
+20220321 040411.557 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CORNER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 2071
+20220321 040411.560 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CENTER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2120
+20220321 040411.563 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2170
+20220321 040411.568 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2221
+20220321 040411.570 INFO             PET2  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2277
+20220321 040411.574 INFO             PET2  PASS  Test 2D plus 1 GridAddCoord with non-default stagger widths and non-defaults coordDep, ESMF_GridCoordUTest.F90, line 2338
+20220321 040411.577 INFO             PET2  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2391
+20220321 040411.581 INFO             PET2  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2443
+20220321 040411.584 INFO             PET2  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2499
+20220321 040411.586 INFO             PET2  PASS  Test 2D plus 1 GridAddCoord with DELOCAL Index, ESMF_GridCoordUTest.F90, line 2550
+20220321 040411.591 INFO             PET2  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_DELOCAL, ESMF_GridCoordUTest.F90, line 2603
+20220321 040411.592 INFO             PET2  PASS  Test 2D plus 1 GridAddCoord with ESMF_INDEX_USER, ESMF_GridCoordUTest.F90, line 2656
+20220321 040411.595 INFO             PET2  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_USER and allocated coords, ESMF_GridCoordUTest.F90, line 2704
+20220321 040411.595 INFO             PET2  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_USER and un-allocated coords, ESMF_GridCoordUTest.F90, line 2755
+20220321 040411.598 INFO             PET2  PASS  Test ESMF_GridGet getting bounds from grid, ESMF_GridCoordUTest.F90, line 2825
+20220321 040411.602 INFO             PET2  PASS  Test ESMF_GridGetCoord getting coordinate from an index location in grid, ESMF_GridCoordUTest.F90, line 2958
+20220321 040411.605 INFO             PET2  PASS  Test ESMF_GridGet getting computationalEdgeWidths and bounds from grid, ESMF_GridCoordUTest.F90, line 3012
+20220321 040411.608 INFO             PET2  PASS  Test 2D Grid Bounds with Factorized Coordinate Arrays, ESMF_GridCoordUTest.F90, line 3079
+20220321 040411.623 INFO             PET2  PASS  Test 3D Grid Bounds with 2D plus 1 Factorized Coordinate Arrays, ESMF_GridCoordUTest.F90, line 3160
+20220321 040411.624 INFO             PET2  PASS  Test 2D plus 1 GridCreateNoPeriDimReg Bounds, ESMF_GridCoordUTest.F90, line 3217
+20220321 040411.626 INFO             PET2  PASS  Test 2D plus 1 GridCreateNoPeriDimReg Bounds with even cell division, ESMF_GridCoordUTest.F90, line 3272
+20220321 040411.627 INFO             PET2  PASS  Test 2D plus 1 EmptyCompleteReg Bounds with even cell division, ESMF_GridCoordUTest.F90, line 3333
+20220321 040411.629 INFO             PET2  PASS  Test 2D plus 1 GridCreateArray, ESMF_GridCoordUTest.F90, line 3415
+20220321 040411.630 INFO             PET2  PASS  Test 3D GridAddCoord, by allocating coordinates and then getting fortran pointer, ESMF_GridCoordUTest.F90, line 3450
+20220321 040411.630 INFO             PET2  Ending Test, file ESMF_GridCoordUTest.F90, line 3466
+20220321 040411.630 INFO             PET2 Finalizing ESMF
+20220321 040411.408 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220321 040411.409 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220321 040411.409 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220321 040411.409 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220321 040411.409 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220321 040411.409 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220321 040411.409 INFO             PET3 Running with ESMF Version   : v8.3.0b09-4-g424b2f2
+20220321 040411.409 INFO             PET3 ESMF library build date/time: "Mar 21 2022" "02:36:50"
+20220321 040411.409 INFO             PET3 ESMF library build location : /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g_develop
+20220321 040411.409 INFO             PET3 ESMF_COMM                   : intelmpi
+20220321 040411.412 INFO             PET3 ESMF_MOAB                   : enabled
+20220321 040411.412 INFO             PET3 ESMF_LAPACK                 : enabled
+20220321 040411.412 INFO             PET3 ESMF_NETCDF                 : enabled
+20220321 040411.412 INFO             PET3 ESMF_PNETCDF                : disabled
+20220321 040411.412 INFO             PET3 ESMF_PIO                    : enabled
+20220321 040411.412 INFO             PET3 ESMF_YAMLCPP                : enabled
+20220321 040411.425 INFO             PET3  Beginning Test, file ESMF_GridCoordUTest.F90, line 81
+20220321 040411.425 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20220321 040411.445 INFO             PET3  PASS  Test Grid Coord isPresent, ESMF_GridCoordUTest.F90, line 150
+20220321 040411.446 INFO             PET3  PASS  Test get staggerEdgeLWidth, staggerEdgeUWidth, staggerAlign, and staggerLBound, ESMF_GridCoordUTest.F90, line 192
+20220321 040411.453 INFO             PET3  PASS  Test ESMF_GridMatch() on Grids with the same coordinates, ESMF_GridCoordUTest.F90, line 292
+20220321 040411.460 INFO             PET3  PASS  Test ESMF_GridMatch() on Grids with different coordinates, ESMF_GridCoordUTest.F90, line 393
+20220321 040411.461 INFO             PET3  PASS  Set/Get Coordinates from Array, ESMF_GridCoordUTest.F90, line 449
+20220321 040411.470 INFO             PET3  PASS  Test Coordinate Storage by Creating a C-Grid, ESMF_GridCoordUTest.F90, line 585
+20220321 040411.471 ERROR            PET3 ESMCI_Grid.C:3740 ESMCI::Grid::setCoordArray() Arguments are incompatible  - - Array and Grid Coord dimension mapping mismatch
+20220321 040411.471 ERROR            PET3 ESMCI_Grid_F.C:1091 c_esmc_gridsetfromarray() Arguments are incompatible  - Internal subroutine call returned Error
+20220321 040411.471 ERROR            PET3 ESMF_Grid.F90:25269 ESMF_GridSetCoordFromArray Arguments are incompatible  - Internal subroutine call returned Error
+20220321 040411.475 INFO             PET3  PASS  Set/Get Coordinates from Array check distgridToArrayMap matching, ESMF_GridCoordUTest.F90, line 654
+20220321 040411.476 INFO             PET3  PASS  Get fortran pointer from coordinate array, ESMF_GridCoordUTest.F90, line 705
+20220321 040411.478 INFO             PET3  PASS  Test ESMF_StaggerLocSet, ESMF_GridCoordUTest.F90, line 764
+20220321 040411.478 INFO             PET3  PASS  Test StaggerLoc .eq. and .ne., ESMF_GridCoordUTest.F90, line 782
+20220321 040411.478 INFO             PET3  PASS  Test ESMF_StaggerLocGet(), ESMF_GridCoordUTest.F90, line 820
+20220321 040411.478 INFO             PET3  PASS  Test StaggerLocString, ESMF_GridCoordUTest.F90, line 839
+20220321 040411.479 INFO             PET3  PASS  Test 2D GridAddCoord, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 887
+20220321 040411.481 INFO             PET3  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 922
+20220321 040411.482 INFO             PET3  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default EDGE1 bounds are as expected, ESMF_GridCoordUTest.F90, line 958
+20220321 040411.488 INFO             PET3  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default EDGE2 bounds are as expected, ESMF_GridCoordUTest.F90, line 994
+20220321 040411.489 INFO             PET3  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure default CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1035
+20220321 040411.492 INFO             PET3  PASS  Test 2D GridAddCoord with staggerWidths, by allocating coordinates for every stagger with different widths, ESMF_GridCoordUTest.F90, line 1089
+20220321 040411.493 INFO             PET3  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1125
+20220321 040411.496 INFO             PET3  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set EDGE1 bounds are as expected, ESMF_GridCoordUTest.F90, line 1162
+20220321 040411.497 INFO             PET3  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set EDGE2 bounds are as expected, ESMF_GridCoordUTest.F90, line 1199
+20220321 040411.500 INFO             PET3  PASS  Test 2D CoordAlloc and GridGetCoord, by making sure set CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1240
+20220321 040411.503 INFO             PET3  PASS  Test 2D coordDep, by flipping coord2 and allocating CENTER and CORNER staggers, ESMF_GridCoordUTest.F90, line 1282
+20220321 040411.504 INFO             PET3  PASS  Test 2D CoordDep, by making sure set CENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1320
+20220321 040411.507 INFO             PET3  PASS  Test 2D CoordDep, by making sure default CORNER bounds are as expected, ESMF_GridCoordUTest.F90, line 1360
+20220321 040411.513 INFO             PET3  PASS  Test 2D plus 1 GridAddCoord, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 1424
+20220321 040411.516 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CENTER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1470
+20220321 040411.521 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1518
+20220321 040411.523 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1564
+20220321 040411.526 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1610
+20220321 040411.529 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CENTER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1657
+20220321 040411.533 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1705
+20220321 040411.536 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1751
+20220321 040411.539 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 1802
+20220321 040411.546 INFO             PET3  PASS  Test 2D plus 1 GridAddCoord with non-default stagger widths, by allocating coordinates for every stagger, ESMF_GridCoordUTest.F90, line 1871
+20220321 040411.549 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CENTER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1920
+20220321 040411.553 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set EDGE1_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 1973
+20220321 040411.556 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set EDGE2_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 2023
+20220321 040411.559 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CORNER_VCENTER bounds are as expected, ESMF_GridCoordUTest.F90, line 2071
+20220321 040411.562 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure user set CENTER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2120
+20220321 040411.564 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2170
+20220321 040411.568 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2221
+20220321 040411.571 INFO             PET3  PASS  Test 2D PLUS 1 CoordAlloc and GridGetCoord, by making sure default CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2277
+20220321 040411.575 INFO             PET3  PASS  Test 2D plus 1 GridAddCoord with non-default stagger widths and non-defaults coordDep, ESMF_GridCoordUTest.F90, line 2338
+20220321 040411.580 INFO             PET3  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure EDGE1_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2391
+20220321 040411.582 INFO             PET3  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure EDGE2_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2443
+20220321 040411.586 INFO             PET3  PASS  Test 2D PLUS 1 GridGetCoord with non-default coordDep, by making sure CORNER_VFACE bounds are as expected, ESMF_GridCoordUTest.F90, line 2499
+20220321 040411.587 INFO             PET3  PASS  Test 2D plus 1 GridAddCoord with DELOCAL Index, ESMF_GridCoordUTest.F90, line 2550
+20220321 040411.591 INFO             PET3  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_DELOCAL, ESMF_GridCoordUTest.F90, line 2603
+20220321 040411.592 INFO             PET3  PASS  Test 2D plus 1 GridAddCoord with ESMF_INDEX_USER, ESMF_GridCoordUTest.F90, line 2656
+20220321 040411.595 INFO             PET3  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_USER and allocated coords, ESMF_GridCoordUTest.F90, line 2704
+20220321 040411.596 INFO             PET3  PASS  Test 2D PLUS 1 GridGetCoord with ESMF_INDEX_USER and un-allocated coords, ESMF_GridCoordUTest.F90, line 2755
+20220321 040411.598 INFO             PET3  PASS  Test ESMF_GridGet getting bounds from grid, ESMF_GridCoordUTest.F90, line 2825
+20220321 040411.604 INFO             PET3  PASS  Test ESMF_GridGetCoord getting coordinate from an index location in grid, ESMF_GridCoordUTest.F90, line 2958
+20220321 040411.605 INFO             PET3  PASS  Test ESMF_GridGet getting computationalEdgeWidths and bounds from grid, ESMF_GridCoordUTest.F90, line 3012
+20220321 040411.621 INFO             PET3  PASS  Test 2D Grid Bounds with Factorized Coordinate Arrays, ESMF_GridCoordUTest.F90, line 3079
+20220321 040411.623 INFO             PET3  PASS  Test 3D Grid Bounds with 2D plus 1 Factorized Coordinate Arrays, ESMF_GridCoordUTest.F90, line 3160
+20220321 040411.625 INFO             PET3  PASS  Test 2D plus 1 GridCreateNoPeriDimReg Bounds, ESMF_GridCoordUTest.F90, line 3217
+20220321 040411.626 INFO             PET3  PASS  Test 2D plus 1 GridCreateNoPeriDimReg Bounds with even cell division, ESMF_GridCoordUTest.F90, line 3272
+20220321 040411.628 INFO             PET3  PASS  Test 2D plus 1 EmptyCompleteReg Bounds with even cell division, ESMF_GridCoordUTest.F90, line 3333
+20220321 040411.629 INFO             PET3  PASS  Test 2D plus 1 GridCreateArray, ESMF_GridCoordUTest.F90, line 3415
+20220321 040411.630 INFO             PET3  PASS  Test 3D GridAddCoord, by allocating coordinates and then getting fortran pointer, ESMF_GridCoordUTest.F90, line 3450
+20220321 040411.630 INFO             PET3  Ending Test, file ESMF_GridCoordUTest.F90, line 3466
+20220321 040411.630 INFO             PET3 Finalizing ESMF
