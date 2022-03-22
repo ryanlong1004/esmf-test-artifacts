@@ -1,9 +1,9 @@
-Tue Mar 22 05:54:35 UTC 2022
+Tue Mar 22 05:53:47 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
-#SBATCH -o test-intel_18.0.4_mpiuni_O.bat_%j.o
-#SBATCH -e test-intel_18.0.4_mpiuni_O.bat_%j.e
-#SBATCH --time=1:00:00
+#SBATCH -o test-gfortran_9.2.0_mpiuni_O.bat_%j.o
+#SBATCH -e test-gfortran_9.2.0_mpiuni_O.bat_%j.e
+#SBATCH --time=2:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
@@ -12,15 +12,21 @@ Tue Mar 22 05:54:35 UTC 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
-module load intel/18.0.5.274  netcdf-hdf5parallel/4.7.4
+module load gnu/9.2.0  netcdf-hdf5parallel/4.7.4
+module load hdf5/1.10.5 
 module list >& module-test.log
 
 set -x
 export ESMF_NETCDF=nc-config
 
+export ESMF_NETCDF=split
+export ESMF_NETCDF_INCLUDE=$NETCDF/include
+export ESMF_NETCDF_LIBPATH=$NETCDF/lib
+export ESMF_NETCDF_LIBS="-lnetcdff -lnetcdf -lhdf5_hl -lhdf5 $HDF5ExtraLibs"
+export ESMF_NETCDF=nc-config
 tar xvfz ~/pytest-input.tar.gz
-export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_O_develop
-export ESMF_COMPILER=intel
+export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_mpiuni_O_develop
+export ESMF_COMPILER=gfortran
 export ESMF_COMM=mpiuni
 export ESMF_BOPT='O'
 export ESMF_TESTEXHAUSTIVE='ON'
