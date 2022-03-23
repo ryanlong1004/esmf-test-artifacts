@@ -1,4 +1,4 @@
-Tue Mar 22 03:06:22 CDT 2022
+Wed Mar 23 02:34:42 CDT 2022
 #!/bin/sh -l
 #SBATCH --account=da-cpu
 #SBATCH -o build-gfortran_8.3.0_openmpi_O.bat_%j.o
@@ -13,6 +13,7 @@ export JOBID=$SLURM_JOBID
 
 module load intelpython3 cmake
 export ESMF_MPIRUN=mpirun.srun
+export ESMPY_MPIRUN=mpirun.srun
 module load gcc/8.3.0 openmpi/4.0.2 netcdf/4.7.4
 module list >& module-build.log
 
