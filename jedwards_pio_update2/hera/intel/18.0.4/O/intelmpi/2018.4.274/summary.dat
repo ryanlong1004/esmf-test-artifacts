@@ -1,13 +1,13 @@
 
 ===================================================================
 Build for = intel_18.0.4_intelmpi_O_jedwards_pio_update2, mpi version 2018.4.274 on hera esmf_os: Linux
-Build time = 2022-03-22 06:01:47
-git hash = v8.3.0b09-102-gabaf3ef
+Build time = 2022-03-23 06:19:05
+git hash = v8.3.0b09-103-gbb860f2
 
-unit test results   	PASS 13647	FAIL 0
-system test results 	PASS 49 	FAIL 0
-example test results 	PASS 80 	FAIL 0
-nuopc test results 	PASS 50 	FAIL 0
+unit test results   	-1 -1
+system test results 	-1 -1
+example test results 	-1 -1
+nuopc test results 	PASS -1 	FAIL -1
 
 
 ===================================================================
@@ -22,7 +22,7 @@ Currently Loaded Modules:
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
-v8.3.0b09-102-gabaf3ef548
+v8.3.0b09-103-gbb860f29f6
 --------------------------------------------------------------
 On branch jedwards/pio_update2
 Your branch is up to date with 'origin/jedwards/pio_update2'.
@@ -31,8 +31,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_18.0.4_intelmpi_O.bat
-	build-intel_18.0.4_intelmpi_O.bat_29785334.e
-	build-intel_18.0.4_intelmpi_O.bat_29785334.o
+	build-intel_18.0.4_intelmpi_O.bat_29808157.e
+	build-intel_18.0.4_intelmpi_O.bat_29808157.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -40,8 +40,8 @@ Untracked files:
 	src/Infrastructure/IO/PIO/Build/
 	src/Infrastructure/IO/PIO/Install/
 	test-intel_18.0.4_intelmpi_O.bat
-	test-intel_18.0.4_intelmpi_O.bat_29785335.e
-	test-intel_18.0.4_intelmpi_O.bat_29785335.o
+	test-intel_18.0.4_intelmpi_O.bat_29808158.e
+	test-intel_18.0.4_intelmpi_O.bat_29808158.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -192,7 +192,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: mpiifort
 ESMF_F90COMPILEOPTS: -O -fPIC -debug minimal -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
 ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2/mod/modO/Linux.intel.64.intelmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2/src/include -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-fortran-4.5.3-pab53krtf4bxawz53fkztkdeci3yxgwe/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-102-gabaf3ef548' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-103-gbb860f29f6' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: 
 ESMF_F90COMPILEFIXCPP: 
@@ -209,7 +209,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: mpiicpc
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp
 ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-102-gabaf3ef548' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2 -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-103-gbb860f29f6' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2 -D__SDIR__='' -DESMF_CXXSTD=11
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
@@ -222,7 +222,7 @@ C compiler flags:
 ESMF_CCOMPILER: mpiicc
 ESMF_CCOMPILEOPTS:  -O -DNDEBUG -fPIC -debug minimal
 ESMF_CCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-102-gabaf3ef548' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2 -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-103-gbb860f29f6' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2 -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -245,8 +245,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Tue Mar 22 06:02:42 UTC 2022 on h17c21
-Machine characteristics: Linux h17c21 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Mar 23 06:19:25 UTC 2022 on h35m29
+Machine characteristics: Linux h35m29 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
