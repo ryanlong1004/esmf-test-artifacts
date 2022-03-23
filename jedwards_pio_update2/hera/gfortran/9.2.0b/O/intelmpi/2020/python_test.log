@@ -1,0 +1,24 @@
+build time -- 2022-03-23 17:46:09
+running test
+Error in system call pthread_mutex_destroy: Device or resource busy
+    ../../src/mpi/init/init_thread_cs.c:60
+Abort(1091087) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init_thread: Other MPI error, error stack:
+MPIR_Init_thread(136): 
+MPID_Init(939).......: 
+MPIR_pmi_init(112)...: 
+(unknown)(): Other MPI error
+Attempting to use an MPI routine before initializing MPICH
+Traceback (most recent call last):
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/setup.py", line 244, in <module>
+    setup(name="ESMPy",
+  File "/apps/oneapi/intelpython/latest/lib/python3.9/distutils/core.py", line 148, in setup
+    dist.run_commands()
+  File "/apps/oneapi/intelpython/latest/lib/python3.9/distutils/dist.py", line 966, in run_commands
+    self.run_command(cmd)
+  File "/apps/oneapi/intelpython/latest/lib/python3.9/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_jedwards_pio_update2/src/addon/ESMPy/setup.py", line 49, in run
+    subprocess.check_call(cmd)
+  File "/apps/oneapi/intelpython/latest/lib/python3.9/subprocess.py", line 373, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['nosetests', '-vs', '--with-xunit', '-a', '!slow,!parallel', 'src/ESMF']' returned non-zero exit status 1.
