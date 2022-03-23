@@ -1,4 +1,4 @@
-Fri Mar 18 12:07:24 MDT 2022
+Wed Mar 23 14:04:42 MDT 2022
 #!/bin/sh -l
 #PBS -N build-intel_18.0.5_mpiuni_O.bat
 #PBS -l walltime=1:00:00
@@ -9,7 +9,10 @@ Fri Mar 18 12:07:24 MDT 2022
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
 cd /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_jedwards_pio_update2
-module load intel/18.0.5 none netcdf/4.6.3
+
+module load python
+export ESMF_MPIRUN=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_jedwards_pio_update2/src/Infrastructure/stubs/mpiuni/mpirun
+module load intel/18.0.5  netcdf/4.6.3
 module list >& module-build.log
 
 set -x
