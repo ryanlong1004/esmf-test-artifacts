@@ -1,0 +1,77 @@
+build time -- 2022-03-23 21:50:21
+  Beginning Test, file ESMF_PointListUTest.F90, line 67
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_PointListUTest.F90, line 67
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_PointListUTest.F90, line 67
+  NUMBER_OF_PROCESSORS            4
+  Beginning Test, file ESMF_PointListUTest.F90, line 67
+  NUMBER_OF_PROCESSORS            4
+  PASS  Test creating a PointList from user inputs, ESMF_PointListUTest.F90, line 83
+  PASS  Test creating a PointList from user inputs, ESMF_PointListUTest.F90, line 83
+  PASS  Test creating a PointList from user inputs, ESMF_PointListUTest.F90, line 83
+  PASS  Test creating a PointList from user inputs, ESMF_PointListUTest.F90, line 83
+  PASS  Test creating a PointList from existing grid without masking, ESMF_PointListUTest.F90, line 98
+  PASS  Test creating a PointList from existing grid without masking, ESMF_PointListUTest.F90, line 98
+  PASS  Test creating a PointList from existing grid without masking, ESMF_PointListUTest.F90, line 98
+  PASS  Test creating a PointList from existing grid without masking, ESMF_PointListUTest.F90, line 98
+  PASS  Test creating a PointList from existing grid with masking, ESMF_PointListUTest.F90, line 114
+  PASS  Test creating a PointList from existing grid with masking, ESMF_PointListUTest.F90, line 114
+  PASS  Test creating a PointList from existing grid with masking, ESMF_PointListUTest.F90, line 114
+  PASS  Test creating a PointList from existing grid with masking, ESMF_PointListUTest.F90, line 114
+[h33m32:205852:0:205852] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h33m32:205853:0:205853] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h33m32:205854:0:205854] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h33m32:205855:0:205855] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid: 205854) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010a5b14 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012dc0d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1677
+ 3 0x00000000013c4107 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e5598c esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1387
+ 5 0x000000000041053f esmf_pointlistutest_test_pointlist_from_mesh_nodes_nomask()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90:1052
+ 6 0x0000000000403a54 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90:127
+ 7 0x0000000000403383 main()  ???:0
+ 8 0x0000000000022555 __libc_start_main()  ???:0
+ 9 0x0000000000403289 _start()  ???:0
+=================================
+==== backtrace (tid: 205852) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010a5b14 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012dc0d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1677
+ 3 0x00000000013c4107 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e5598c esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1387
+ 5 0x000000000041053f esmf_pointlistutest_test_pointlist_from_mesh_nodes_nomask()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90:1052
+ 6 0x0000000000403a54 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90:127
+ 7 0x0000000000403383 main()  ???:0
+ 8 0x0000000000022555 __libc_start_main()  ???:0
+ 9 0x0000000000403289 _start()  ???:0
+=================================
+==== backtrace (tid: 205855) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010a5b14 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012dc0d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1677
+ 3 0x00000000013c4107 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e5598c esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1387
+ 5 0x000000000041053f esmf_pointlistutest_test_pointlist_from_mesh_nodes_nomask()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90:1052
+ 6 0x0000000000403a54 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90:127
+ 7 0x0000000000403383 main()  ???:0
+ 8 0x0000000000022555 __libc_start_main()  ???:0
+ 9 0x0000000000403289 _start()  ???:0
+=================================
+==== backtrace (tid: 205853) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010a5b14 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012dc0d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1677
+ 3 0x00000000013c4107 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e5598c esmf_meshmod_esmf_meshcreate1part_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:1387
+ 5 0x000000000041053f esmf_pointlistutest_test_pointlist_from_mesh_nodes_nomask()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90:1052
+ 6 0x0000000000403a54 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90:127
+ 7 0x0000000000403383 main()  ???:0
+ 8 0x0000000000022555 __libc_start_main()  ???:0
+ 9 0x0000000000403289 _start()  ???:0
+=================================
+srun: error: h33m32: tasks 0,2-3: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=29824025.111
+slurmstepd: error: *** STEP 29824025.111 ON h33m32 CANCELLED AT 2022-03-23T22:27:07 ***
+srun: error: h33m32: task 1: Segmentation fault (core dumped)
