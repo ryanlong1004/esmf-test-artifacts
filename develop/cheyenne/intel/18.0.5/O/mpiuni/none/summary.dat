@@ -1,8 +1,8 @@
 
 ===================================================================
-Build for = intel_18.0.5_mpiuni_O_develop, mpi version none on cheyenne esmf_os: Linux
-Build time = 2022-03-18 10:17:49.092463
-git hash = v8.3.0b09-4-g424b2f2
+Build for = intel_18.0.5_mpiuni_O_develop, mpi version None on cheyenne esmf_os: Linux
+Build time = 2022-03-23 11:38:48.161825
+git hash = v8.3.0b09-6-gdac1bc5
 
 unit test results   	-1 -1
 system test results 	-1 -1
@@ -14,15 +14,15 @@ nuopc test results 	PASS -1 	FAIL -1
 
 
 Currently Loaded Modules:
-  1) ncarenv/1.3    3) ncarcompilers/0.5.0   5) netcdf/4.8.1
-  2) intel/19.1.1   4) mpt/2.22
+  1) ncarenv/1.3    3) intel/18.0.5          5) mpt/2.22
+  2) python/3.7.9   4) ncarcompilers/0.5.0   6) netcdf/4.6.3
 
  
 
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
-v8.3.0b09-4-g424b2f26e0
+v8.3.0b09-6-gdac1bc5728
 --------------------------------------------------------------
 On branch develop
 Your branch is up-to-date with 'origin/develop'.
@@ -30,8 +30,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_18.0.5_mpiuni_O.bat
-	build-intel_18.0.5_mpiuni_O.bat.e3336834
-	build-intel_18.0.5_mpiuni_O.bat.o3336834
+	build-intel_18.0.5_mpiuni_O.bat.e3411454
+	build-intel_18.0.5_mpiuni_O.bat.o3411454
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -51,19 +51,19 @@ There is NO WARRANTY, to the extent permitted by law.
 
 --------------------------------------------------------------
 Fortran Compiler version:
-Intel(R) Fortran Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 19.1.1.217 Build 20200306
-Copyright (C) 1985-2020 Intel Corporation.  All rights reserved.
+Intel(R) Fortran Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 18.0.5.274 Build 20180823
+Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
 ifort: warning #10315: specifying -lm before files may supersede the Intel(R) math library and affect performance
 
-ifort version 19.1.1.217
+ifort version 18.0.5
 
 --------------------------------------------------------------
 C++ Compiler version:
-Intel(R) C++ Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 19.1.1.217 Build 20200306
-Copyright (C) 1985-2020 Intel Corporation.  All rights reserved.
+Intel(R) C++ Intel(R) 64 Compiler for applications running on Intel(R) 64, Version 18.0.5.274 Build 20180823
+Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
 icpc: warning #10315: specifying -lm before files may supersede the Intel(R) math library and affect performance
 
-icpc version 19.1.1.217 (gcc version 4.8.0 compatibility)
+icpc version 18.0.5 (gcc version 4.8.0 compatibility)
 
 --------------------------------------------------------------
 Preprocessor version:
@@ -73,8 +73,8 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 --------------------------------------------------------------
-NetCDF library version: netCDF 4.8.1
-NetCDF Fortran version: netCDF-Fortran 4.5.3
+NetCDF library version: netCDF 4.6.3
+NetCDF Fortran version: netCDF-Fortran 4.4.4
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -126,13 +126,13 @@ ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
 ESMF_NETCDF:             nc-config
-ESMF_NETCDF_INCLUDE:     /glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/include
+ESMF_NETCDF_INCLUDE:     /glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include
 ESMF_NETCDF_LIBS:        -lnetcdf
-ESMF_NETCDF_LIBPATH:     /glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib
+ESMF_NETCDF_LIBPATH:     /glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib
 ESMF_NFCONFIG:           nf-config
-ESMF_NETCDFF_INCLUDE:    /glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/include
-ESMF_NETCDFF_LIBS:       -lnetcdff
-ESMF_NETCDFF_LIBPATH:    /glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib
+ESMF_NETCDFF_INCLUDE:    /glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include
+ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDFF_LIBPATH:    /glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib /glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5//lib
 ESMF_YAMLCPP:            internal
  
 --------------------------------------------------------------
@@ -152,22 +152,22 @@ ESMF_BENCHMARK_THRESHOLD_MSEC: 500
  
 --------------------------------------------------------------
  * Other relevant environment variables *
-PATH:    /glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/bin:/glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/19.1.1/mpi:/glade/u/apps/ch/opt/mpt/2.22/bin:/glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/19.1.1:/glade/u/apps/opt/intel/2020u1/vtune_amplifier/bin64:/glade/u/apps/opt/intel/2020u1/inspector/bin64:/glade/u/apps/opt/intel/2020u1/advisor/bin64:/glade/u/apps/opt/intel/2020u1/compilers_and_libraries/linux/bin/intel64:/glade/u/apps/opt/vncmgr:/glade/u/apps/opt/globus-utils:/glade/u/apps/ch/opt/usr/bin:/glade/u/apps/ch/opt/lmod/8.1.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/games:/opt/ibutils/bin:/glade/u/apps/opt/hpss/hpss-client.5.0.2.p5/bin:/glade/u/apps/ch/os/usr/bin:/glade/u/apps/ch/opt/hpe-cpe/1.4.1/bin:/glade/u/apps/ch/opt/hpe-cpe/21.09/bin:/opt/pbs/bin:/sbin:/bin
-LD_LIBRARY_PATH: /glade/u/apps/ch/opt/mpt_fmods/2.22/intel/19.1.1:/glade/u/apps/ch/opt/mpt/2.22/lib:/glade/u/apps/opt/intel/2020u1/compilers_and_libraries/linux/lib/intel64:/glade/u/apps/ch/os/usr/lib64:/glade/u/apps/ch/os/usr/lib:/glade/u/apps/ch/os/lib64:/glade/u/apps/ch/os/lib
+PATH:    /glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/bin:/glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/18.0.5/mpi:/glade/u/apps/ch/opt/mpt/2.22/bin:/glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/18.0.5:/glade/u/apps/opt/intel/2018u4/vtune_amplifier/bin64:/glade/u/apps/opt/intel/2018u4/inspector/bin64:/glade/u/apps/opt/intel/2018u4/advisor/bin64:/glade/u/apps/opt/intel/2018u4/compilers_and_libraries/linux/bin/intel64:/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/bin:/glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/19.1.1/mpi:/glade/u/apps/opt/vncmgr:/glade/u/apps/opt/globus-utils:/glade/u/apps/ch/opt/usr/bin:/glade/u/apps/ch/opt/lmod/8.1.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/games:/opt/ibutils/bin:/glade/u/apps/opt/hpss/hpss-client.5.0.2.p5/bin:/glade/u/apps/ch/os/usr/bin:/glade/u/apps/ch/opt/hpe-cpe/22.02/bin:/opt/pbs/bin:/sbin
+LD_LIBRARY_PATH: /glade/u/apps/ch/opt/mpt_fmods/2.22/intel/18.0.5:/glade/u/apps/ch/opt/mpt/2.22/lib:/glade/u/apps/opt/intel/2018u4/compilers_and_libraries/linux/lib/intel64:/glade/u/apps/ch/os/usr/lib64:/glade/u/apps/ch/os/usr/lib:/glade/u/apps/ch/os/lib64:/glade/u/apps/ch/os/lib
  
 --------------------------------------------------------------
  * Compilers, Linkers, Flags, and Libraries *
-Location of the preprocessor:      /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/19.1.1/gcc
-Location of the Fortran compiler:  /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/19.1.1/ifort
-Location of the Fortran linker:    /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/19.1.1/ifort
-Location of the C++ compiler:      /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/19.1.1/icpc
-Location of the C++ linker:        /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/19.1.1/icpc
+Location of the preprocessor:      /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/18.0.5/gcc
+Location of the Fortran compiler:  /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/18.0.5/ifort
+Location of the Fortran linker:    /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/18.0.5/ifort
+Location of the C++ compiler:      /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/18.0.5/icpc
+Location of the C++ linker:        /glade/u/apps/ch/opt/ncarcompilers/0.5.0/intel/18.0.5/icpc
 
 Fortran compiler flags:
 ESMF_F90COMPILER: ifort
 ESMF_F90COMPILEOPTS: -O -fPIC -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
-ESMF_F90COMPILEPATHS: -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/mod/modO/Linux.intel.64.mpiuni.default -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/include -I/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-4-g424b2f26e0' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop -DESMF_MPIUNI
+ESMF_F90COMPILEPATHS: -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/mod/modO/Linux.intel.64.mpiuni.default -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-6-gdac1bc5728' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop -DESMF_MPIUNI
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: 
 ESMF_F90COMPILEFIXCPP: 
@@ -175,23 +175,23 @@ ESMF_F90COMPILEFIXNOCPP:
 
 Fortran linker flags:
 ESMF_F90LINKOPTS:   -m64 -mcmodel=small -pthread -threads -Wl,--no-as-needed  -qopenmp
-ESMF_F90LINKPATHS: -L/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/lib/libO/Linux.intel.64.mpiuni.default -L/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib -L/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib 
-ESMF_F90LINKRPATHS: -Wl,-rpath,/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/lib/libO/Linux.intel.64.mpiuni.default -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib
-ESMF_F90LINKLIBS:  -cxxlib -lrt -ldl -lnetcdf -lnetcdff
-ESMF_F90ESMFLINKLIBS: -lesmf  -cxxlib -lrt -ldl -lnetcdf -lnetcdff
+ESMF_F90LINKPATHS: -L/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/lib/libO/Linux.intel.64.mpiuni.default -L/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib -L/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib -L/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5//lib 
+ESMF_F90LINKRPATHS: -Wl,-rpath,/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/lib/libO/Linux.intel.64.mpiuni.default -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5//lib
+ESMF_F90LINKLIBS:  -cxxlib -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90ESMFLINKLIBS: -lesmf  -cxxlib -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: icpc
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fPIC -m64 -mcmodel=small -pthread  -qopenmp
-ESMF_CXXCOMPILEPATHS:  -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-4-g424b2f26e0' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
+ESMF_CXXCOMPILEPATHS:  -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-6-gdac1bc5728' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
-ESMF_CXXLINKPATHS: -L/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/lib/libO/Linux.intel.64.mpiuni.default -L/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib -L/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib -L/glade/u/apps/opt/intel/2020u1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/lib/libO/Linux.intel.64.mpiuni.default -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.8.1/intel/19.1.1/lib -Wl,-rpath,/glade/u/apps/opt/intel/2020u1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/
-ESMF_CXXLINKLIBS:  -lsz -lz -limf -lm -ldl -lrt -ldl -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff
-ESMF_CXXESMFLINKLIBS: -lesmf  -lsz -lz -limf -lm -ldl -lrt -ldl -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff
+ESMF_CXXLINKPATHS: -L/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/lib/libO/Linux.intel.64.mpiuni.default -L/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib -L/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib -L/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5//lib -L/glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/compiler/lib/intel64_lin/
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_O_develop/lib/libO/Linux.intel.64.mpiuni.default -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/lib -Wl,-rpath,/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5//lib -Wl,-rpath,/glade/u/apps/opt/intel/2018u4/compilers_and_libraries_2018.5.274/linux/compiler/lib/intel64_lin/
+ESMF_CXXLINKLIBS:  -lsz -lz -limf -lm -ldl -lrt -ldl -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXESMFLINKLIBS: -lesmf  -lsz -lz -limf -lm -ldl -lrt -ldl -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -207,8 +207,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Fri Mar 18 10:18:04 MDT 2022 on r3i1n18
-Machine characteristics: Linux r3i1n18 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Mar 23 11:38:56 MDT 2022 on r1i5n8
+Machine characteristics: Linux r1i5n8 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
