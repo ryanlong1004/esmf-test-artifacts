@@ -1,8 +1,8 @@
-Thu Mar 24 23:36:45 UTC 2022
+Thu Mar 24 23:59:19 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
-#SBATCH -o build-gfortran_9.2.0b_intelmpi_O.bat_%j.o
-#SBATCH -e build-gfortran_9.2.0b_intelmpi_O.bat_%j.e
+#SBATCH -o build-intel_18.0.4_intelmpi_O.bat_%j.o
+#SBATCH -e build-intel_18.0.4_intelmpi_O.bat_%j.e
 #SBATCH --time=1:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
@@ -13,15 +13,15 @@ export JOBID=$SLURM_JOBID
 
 module load cmake
 export ESMF_MPIRUN=mpirun.srun
-module load gnu/9.2.0 impi/2020 
-
+module load intel/18.0.5.274 impi/2018.4.274 netcdf-hdf5parallel/4.7.4
 module list >& module-build.log
 
 set -x
+export ESMF_NETCDF=nc-config
 
 tar xvfz ~/pytest-input.tar.gz
-export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0b_intelmpi_O_develop
-export ESMF_COMPILER=gfortran
+export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop
+export ESMF_COMPILER=intel
 export ESMF_COMM=intelmpi
 export ESMF_BOPT='O'
 export ESMF_TESTEXHAUSTIVE='ON'
