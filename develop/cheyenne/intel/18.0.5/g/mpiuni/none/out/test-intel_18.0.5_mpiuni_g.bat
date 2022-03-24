@@ -1,4 +1,4 @@
-Fri Mar 18 12:14:26 MDT 2022
+Thu Mar 24 06:28:38 MDT 2022
 #!/bin/sh -l
 #PBS -N test-intel_18.0.5_mpiuni_g.bat
 #PBS -l walltime=3:00:00
@@ -8,7 +8,9 @@ Fri Mar 18 12:14:26 MDT 2022
 JOBID="`echo $PBS_JOBID | cut -d. -f1`"
 
 cd /glade/scratch/rlong/esmf-testing/intel_18.0.5_mpiuni_g_develop
-module load intel/18.0.5 none netcdf/4.6.3
+
+module load python
+module load intel/18.0.5  netcdf/4.6.3
 module list >& module-test.log
 
 set -x
