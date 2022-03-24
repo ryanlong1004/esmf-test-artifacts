@@ -1,0 +1,85 @@
+build time -- 2022-03-24 06:55:25
+Beginning Test, file ESMC_RouteHandleUTest.C, line 41
+Beginning Test, file ESMC_RouteHandleUTest.C, line 41NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_RouteHandleUTest.C, line 41
+Beginning Test, file ESMC_RouteHandleUTest.C, line 41NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_RouteHandleUTest.C, line 41
+Beginning Test, file ESMC_RouteHandleUTest.C, line 41NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_RouteHandleUTest.C, line 41
+Beginning Test, file ESMC_RouteHandleUTest.C, line 41NUMBER_OF_PROCESSORS 4
+[h24c56:177747:0:177747] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h24c56:177749:0:177749] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h24c56:177750:0:177750] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h24c56:177748:0:177748] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid: 177749) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010a5b14 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012dc0d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1677
+ 3 0x00000000013c4107 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e5e948 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2882
+ 5 0x0000000001d422b0 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001c4594b esmf_fieldregridmod_b_or_p_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:3228
+ 7 0x0000000001c40d2b esmf_fieldregridmod_getmeshwithnodesonfieldloc_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:1346
+ 8 0x0000000001c3e67a esmf_fieldregridmod_esmf_fieldregridstorenx_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:971
+ 9 0x0000000001c637d3 f_esmf_regridstore_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMF_Field_C.F90:1111
+10 0x0000000000f08826 ESMCI::Field::regridstore()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMCI_Field.C:1450
+11 0x000000000167234f ESMC_FieldRegridStore()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMC_Field.C:438
+12 0x0000000000401ccf main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Route/tests/ESMC_RouteHandleUTest.C:258
+13 0x0000000000022555 __libc_start_main()  ???:0
+14 0x00000000004010b9 _start()  ???:0
+=================================
+==== backtrace (tid: 177747) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010a5b14 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012dc0d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1677
+ 3 0x00000000013c4107 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e5e948 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2882
+ 5 0x0000000001d422b0 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001c4594b esmf_fieldregridmod_b_or_p_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:3228
+ 7 0x0000000001c40d2b esmf_fieldregridmod_getmeshwithnodesonfieldloc_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:1346
+ 8 0x0000000001c3e67a esmf_fieldregridmod_esmf_fieldregridstorenx_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:971
+ 9 0x0000000001c637d3 f_esmf_regridstore_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMF_Field_C.F90:1111
+10 0x0000000000f08826 ESMCI::Field::regridstore()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMCI_Field.C:1450
+11 0x000000000167234f ESMC_FieldRegridStore()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMC_Field.C:438
+12 0x0000000000401ccf main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Route/tests/ESMC_RouteHandleUTest.C:258
+13 0x0000000000022555 __libc_start_main()  ???:0
+14 0x00000000004010b9 _start()  ???:0
+=================================
+==== backtrace (tid: 177750) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010a5b14 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012dc0d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1677
+ 3 0x00000000013c4107 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e5e948 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2882
+ 5 0x0000000001d422b0 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001c4594b esmf_fieldregridmod_b_or_p_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:3228
+ 7 0x0000000001c40d2b esmf_fieldregridmod_getmeshwithnodesonfieldloc_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:1346
+ 8 0x0000000001c3e67a esmf_fieldregridmod_esmf_fieldregridstorenx_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:971
+ 9 0x0000000001c637d3 f_esmf_regridstore_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMF_Field_C.F90:1111
+10 0x0000000000f08826 ESMCI::Field::regridstore()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMCI_Field.C:1450
+11 0x000000000167234f ESMC_FieldRegridStore()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMC_Field.C:438
+12 0x0000000000401ccf main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Route/tests/ESMC_RouteHandleUTest.C:258
+13 0x0000000000022555 __libc_start_main()  ???:0
+14 0x00000000004010b9 _start()  ???:0
+=================================
+==== backtrace (tid: 177748) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010a5b14 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012dc0d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1677
+ 3 0x00000000013c4107 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e5e948 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2882
+ 5 0x0000000001d422b0 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001c4594b esmf_fieldregridmod_b_or_p_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:3228
+ 7 0x0000000001c40d2b esmf_fieldregridmod_getmeshwithnodesonfieldloc_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:1346
+ 8 0x0000000001c3e67a esmf_fieldregridmod_esmf_fieldregridstorenx_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:971
+ 9 0x0000000001c637d3 f_esmf_regridstore_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMF_Field_C.F90:1111
+10 0x0000000000f08826 ESMCI::Field::regridstore()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMCI_Field.C:1450
+11 0x000000000167234f ESMC_FieldRegridStore()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Field/interface/ESMC_Field.C:438
+12 0x0000000000401ccf main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_jedwards_pio_update2/src/Infrastructure/Route/tests/ESMC_RouteHandleUTest.C:258
+13 0x0000000000022555 __libc_start_main()  ???:0
+14 0x00000000004010b9 _start()  ???:0
+=================================
+srun: error: h24c56: tasks 0,2-3: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=29831711.64
+slurmstepd: error: *** STEP 29831711.64 ON h24c56 CANCELLED AT 2022-03-24T07:29:31 ***
+srun: error: h24c56: task 1: Segmentation fault (core dumped)
