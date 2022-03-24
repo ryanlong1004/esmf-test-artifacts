@@ -1,0 +1,39 @@
+build time -- 2022-03-24 06:36:55
+  Beginning Test, file ESMF_XGridMaskingUTest.F90, line 50
+  NUMBER_OF_PROCESSORS            2
+ Starting test2d_masking_single
+  Beginning Test, file ESMF_XGridMaskingUTest.F90, line 50
+  NUMBER_OF_PROCESSORS            2
+ Starting test2d_masking_single
+[h15c32:242324:0:242324] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h15c32:242325:0:242325] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid: 242324) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x0000000000678a73 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x0000000000834501 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0811c esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2882
+ 4 0x0000000000d61432 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 5 0x0000000000e7f546 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 6 0x0000000000402c60 esmf_xgridmaskingutest_test2d_masking_single()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/XGrid/tests/ESMF_XGridMaskingUTest.F90:126
+ 7 0x000000000040216a MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/XGrid/tests/ESMF_XGridMaskingUTest.F90:57
+ 8 0x0000000000402093 main()  ???:0
+ 9 0x0000000000022555 __libc_start_main()  ???:0
+10 0x0000000000401f99 _start()  ???:0
+=================================
+==== backtrace (tid: 242325) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x0000000000678a73 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x0000000000834501 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e0811c esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2882
+ 4 0x0000000000d61432 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 5 0x0000000000e7f546 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 6 0x0000000000402c60 esmf_xgridmaskingutest_test2d_masking_single()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/XGrid/tests/ESMF_XGridMaskingUTest.F90:126
+ 7 0x000000000040216a MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_jedwards_pio_update2/src/Infrastructure/XGrid/tests/ESMF_XGridMaskingUTest.F90:57
+ 8 0x0000000000402093 main()  ???:0
+ 9 0x0000000000022555 __libc_start_main()  ???:0
+10 0x0000000000401f99 _start()  ???:0
+=================================
+srun: error: h15c32: task 0: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=29831079.109
+slurmstepd: error: *** STEP 29831079.109 ON h15c32 CANCELLED AT 2022-03-24T07:20:20 ***
+srun: error: h15c32: task 1: Segmentation fault (core dumped)
