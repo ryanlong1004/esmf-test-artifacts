@@ -1,9 +1,9 @@
-Wed Mar 23 17:46:55 UTC 2022
+Fri Mar 25 22:05:17 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-intel_18.0.4_mpiuni_g.bat_%j.o
 #SBATCH -e build-intel_18.0.4_mpiuni_g.bat_%j.e
-#SBATCH --time=1:00:00
+#SBATCH --time=2:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
@@ -12,6 +12,7 @@ Wed Mar 23 17:46:55 UTC 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
+export ESMF_MPIRUN=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_jedwards_pio_update2/src/Infrastructure/stubs/mpiuni/mpirun
 module load intel/18.0.5.274  netcdf-hdf5parallel/4.7.4
 module list >& module-build.log
 
