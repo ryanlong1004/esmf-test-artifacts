@@ -1,4 +1,4 @@
-Thu Mar 24 23:59:54 UTC 2022
+Thu Mar 24 23:59:58 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-intel_18.0.4_intelmpi_O.bat_%j.o
@@ -20,7 +20,7 @@ set -x
 export ESMF_NETCDF=nc-config
 
 tar xvfz ~/pytest-input.tar.gz
-export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_develop
+export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2
 export ESMF_COMPILER=intel
 export ESMF_COMM=intelmpi
 export ESMF_BOPT='O'
