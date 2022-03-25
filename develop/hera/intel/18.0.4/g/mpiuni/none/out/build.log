@@ -1,4 +1,4 @@
-Wed Mar 23 17:44:40 UTC 2022
+Fri Mar 25 22:04:37 UTC 2022
 /bin/sh: line 0: [: -ge: unary operator expected
 /bin/sh: line 0: [: -ge: unary operator expected
 make: nc-config: Command not found
@@ -9,7 +9,7 @@ make: nc-config: Command not found
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
-v8.3.0b09-6-gdac1bc5728
+v8.3.0b10-105-ga5295e34ae
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -18,10 +18,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_18.0.4_mpiuni_g.bat
-	build-intel_18.0.4_mpiuni_g.bat_29819216.e
-	build-intel_18.0.4_mpiuni_g.bat_29819216.o
-	getres-build.sh
-	getres-test.sh
+	build-intel_18.0.4_mpiuni_g.bat_29870704.e
+	build-intel_18.0.4_mpiuni_g.bat_29870704.o
 	nuopc-app-prototypes/
 	test-intel_18.0.4_mpiuni_g.bat
 
@@ -38,12 +36,22 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 
 --------------------------------------------------------------
+CMake version:
+cmake version 3.20.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+
+--------------------------------------------------------------
 Fortran Compiler version:
 /bin/sh: ifort: command not found
 
 --------------------------------------------------------------
 C++ Compiler version:
 /bin/sh: icpc: command not found
+
+--------------------------------------------------------------
+C Compiler version:
+/bin/sh: icc: command not found
 
 --------------------------------------------------------------
 Preprocessor version:
@@ -64,6 +72,7 @@ ESMF_BOPT=g
 ESMF_COMM=mpiuni
 ESMF_COMPILER=intel
 ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop
+ESMF_MPIRUN=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni/mpirun
 ESMF_NETCDF=nc-config
 ESMF_TESTEXHAUSTIVE=ON
 ESMF_TESTWITHTHREADS=ON
@@ -141,12 +150,16 @@ which: no icpc in (/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/li
 Location of the C++ compiler:     
 which: no icpc in (/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
 Location of the C++ linker:       
+which: no icc in (/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the C compiler:       
+which: no icc in (/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the C linker:         
 
 Fortran compiler flags:
 ESMF_F90COMPILER: ifort
-ESMF_F90COMPILEOPTS: -g -traceback -check arg_temp_created,bounds,format,output_conversion,stack,uninit -fPIC -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -openmp
+ESMF_F90COMPILEOPTS: -g -traceback -check arg_temp_created,bounds,format,output_conversion,stack,uninit -fPIC -debug minimal -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -openmp
 ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/mod/modg/Linux.intel.64.mpiuni.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-6-gdac1bc5728' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop -DESMF_MPIUNI
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b10-105-ga5295e34ae' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop -DESMF_MPIUNI
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: 
 ESMF_F90COMPILEFIXCPP: 
@@ -161,9 +174,9 @@ ESMF_F90ESMFLINKLIBS: -lesmf  -cxxlib -lrt -ldl
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: icpc
-ESMF_CXXCOMPILEOPTS: -std=c++11 -g -traceback -Wcheck -fPIC -m64 -mcmodel=small -pthread  -openmp
+ESMF_CXXCOMPILEOPTS: -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp
 ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-6-gdac1bc5728' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b10-105-ga5295e34ae' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -openmp
@@ -171,6 +184,19 @@ ESMF_CXXLINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_
 ESMF_CXXLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/lib/libg/Linux.intel.64.mpiuni.default  -Wl,-rpath,
 ESMF_CXXLINKLIBS:   -lrt -ldl
 ESMF_CXXESMFLINKLIBS: -lesmf   -lrt -ldl
+
+C compiler flags:
+ESMF_CCOMPILER: icc
+ESMF_CCOMPILEOPTS:  -g -fPIC -debug minimal
+ESMF_CCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/include  
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b10-105-ga5295e34ae' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop -D__SDIR__=''
+
+C linker flags:
+ESMF_CLINKOPTS:  
+ESMF_CLINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/lib/libg/Linux.intel.64.mpiuni.default 
+ESMF_CLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/lib/libg/Linux.intel.64.mpiuni.default 
+ESMF_CLINKLIBS: 
+ESMF_CESMFLINKLIBS: -lesmf 
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -186,8 +212,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Mar 23 17:43:14 UTC 2022 on h35m32
-Machine characteristics: Linux h35m32 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Fri Mar 25 22:03:14 UTC 2022 on h1c08
+Machine characteristics: Linux h1c08 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 /bin/sh: line 0: [: -ge: unary operator expected
@@ -196,7 +222,7 @@ make[1]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/lib/libg/Linux.intel.64.mpiuni.default for library
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/include for include files
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/mod/modg/Linux.intel.64.mpiuni.default for *.mod files
-Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default for build-intel_18.0.4_mpiuni_g.bat_29819216.o files
+Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default for build-intel_18.0.4_mpiuni_g.bat_29870704.o files
 cd /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop ;\
 make ACTION=tree_include tree
 /bin/sh: line 0: [: -ge: unary operator expected
@@ -1720,7 +1746,7 @@ make[7]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4
 /bin/sh: line 0: [: -ge: unary operator expected
 /bin/sh: line 0: [: -ge: unary operator expected
 make[8]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/mod/modg/Linux.intel.64.mpiuni.default'
-icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -m64 -mcmodel=small -pthread  -openmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-6-gdac1bc5728"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/src/binary.cpp -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/binary.o
+icpc -c -std=c++11 -g -traceback -Wcheck -fPIC -debug minimal -m64 -mcmodel=small -pthread  -openmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b10-105-ga5295e34ae"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/src/prologue/yaml-cpp/src/binary.cpp -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/binary.o
 make[8]: icpc: Command not found
 make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/obj/objg/Linux.intel.64.mpiuni.default/binary.o] Error 127
 make[8]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_mpiuni_g_develop/mod/modg/Linux.intel.64.mpiuni.default'
