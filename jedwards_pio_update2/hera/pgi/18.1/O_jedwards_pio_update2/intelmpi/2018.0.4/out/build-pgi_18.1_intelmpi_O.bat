@@ -1,9 +1,9 @@
-Fri Mar 25 00:00:34 UTC 2022
+Fri Mar 25 00:26:30 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
-#SBATCH -o build-intel_18.0.4_intelmpi_O.bat_%j.o
-#SBATCH -e build-intel_18.0.4_intelmpi_O.bat_%j.e
-#SBATCH --time=1:00:00
+#SBATCH -o build-pgi_18.1_intelmpi_O.bat_%j.o
+#SBATCH -e build-pgi_18.1_intelmpi_O.bat_%j.e
+#SBATCH --time=2:00:00
 #SBATCH --partition=hera
 #SBATCH --qos=batch
 #SBATCH --nodes=1
@@ -13,15 +13,14 @@ export JOBID=$SLURM_JOBID
 
 module load cmake
 export ESMF_MPIRUN=mpirun.srun
-module load intel/18.0.5.274 impi/2018.4.274 netcdf-hdf5parallel/4.7.4
+module load pgi/18.10 impi/2018.0.4 
+
 module list >& module-build.log
 
 set -x
-export ESMF_NETCDF=nc-config
 
-tar xvfz ~/pytest-input.tar.gz
-export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_O_jedwards_pio_update2
-export ESMF_COMPILER=intel
+export ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_18.1_intelmpi_O_jedwards_pio_update2
+export ESMF_COMPILER=pgi
 export ESMF_COMM=intelmpi
 export ESMF_BOPT='O'
 export ESMF_TESTEXHAUSTIVE='ON'
