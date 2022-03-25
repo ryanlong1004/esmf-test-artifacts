@@ -1,4 +1,4 @@
-Wed Mar 23 17:37:55 UTC 2022
+Fri Mar 25 21:56:12 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-gfortran_9.2.0_mpiuni_O.bat_%j.o
@@ -12,6 +12,7 @@ Wed Mar 23 17:37:55 UTC 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
+export ESMF_MPIRUN=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_mpiuni_O_jedwards_pio_update2/src/Infrastructure/stubs/mpiuni/mpirun
 module load gnu/9.2.0  netcdf-hdf5parallel/4.7.4
 module load hdf5/1.10.5 
 module list >& module-build.log
