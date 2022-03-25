@@ -1,4 +1,4 @@
-Thu Mar 24 07:47:29 PDT 2022
+Fri Mar 25 02:47:06 PDT 2022
 #!/bin/sh -l
 #SBATCH --account=e3sm
 #SBATCH -o test-intel_19.0.3_mpi_g.bat_%j.o
@@ -21,7 +21,6 @@ export ESMF_NETCDF=nc-config
 export ESMF_NETCDF_LIBS="-lnetcdf"
 export ESMF_NETCDFF_LIBS="-lnetcdff"
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/cray/pe/hdf5/1.10.5.2/INTEL/19.0/lib/pkgconfig
-export ESMF_PNETCDF="pnetcdf-config"
 export ESMF_DIR=/global/cscratch1/sd/rsdunlap/esmf-testing/intel_19.0.3_mpi_g_jedwards_pio_update2
 export ESMF_COMPILER=intel
 export ESMF_COMM=mpi
