@@ -1,4 +1,4 @@
-Wed Mar 23 17:48:58 UTC 2022
+Fri Mar 25 22:08:15 UTC 2022
 make: mpicxx: Command not found
 make: mpif90: Command not found
 make: nc-config: Command not found
@@ -6,7 +6,7 @@ make: nc-config: Command not found
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0 beta snapshot
-v8.3.0b09-6-gdac1bc5728
+v8.3.0b10-105-ga5295e34ae
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -15,10 +15,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-gfortran_9.2.0_openmpi_g.bat
-	build-gfortran_9.2.0_openmpi_g.bat_29819327.e
-	build-gfortran_9.2.0_openmpi_g.bat_29819327.o
-	getres-build.sh
-	getres-test.sh
+	build-gfortran_9.2.0_openmpi_g.bat_29870780.e
+	build-gfortran_9.2.0_openmpi_g.bat_29870780.o
 	nuopc-app-prototypes/
 	runpython.sh
 	test-gfortran_9.2.0_openmpi_g.bat
@@ -36,12 +34,22 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 
 --------------------------------------------------------------
+CMake version:
+cmake version 3.20.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+
+--------------------------------------------------------------
 Fortran Compiler version:
 /bin/sh: mpif90: command not found
 
 --------------------------------------------------------------
 C++ Compiler version:
 /bin/sh: mpicxx: command not found
+
+--------------------------------------------------------------
+C Compiler version:
+/bin/sh: mpicc: command not found
 
 --------------------------------------------------------------
 Preprocessor version:
@@ -114,6 +122,7 @@ ESMF_NETCDF_INCLUDE:     /include
 ESMF_NETCDF_LIBS:        -lnetcdff -lnetcdf -lhdf5_hl -lhdf5 
 ESMF_NETCDF_LIBPATH:     /lib
 ESMF_PIO:                internal
+ESMF_PIO_LIBS:           -lpioc
 ESMF_YAMLCPP:            internal
  
 --------------------------------------------------------------
@@ -153,12 +162,16 @@ which: no mpicxx in (/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/
 Location of the C++ compiler:     
 which: no mpicxx in (/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
 Location of the C++ linker:       
+which: no mpicc in (/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the C compiler:       
+which: no mpicc in (/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin)
+Location of the C linker:         
 
 Fortran compiler flags:
 ESMF_F90COMPILER: mpif90
 ESMF_F90COMPILEOPTS: -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=all,no-pointer -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp
 ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/include -I/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-6-gdac1bc5728' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b10-105-ga5295e34ae' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -ffree-form
 ESMF_F90COMPILEFIXCPP: -cpp -ffixed-form
@@ -167,22 +180,35 @@ ESMF_F90COMPILEFIXNOCPP:
 Fortran linker flags:
 ESMF_F90LINKOPTS:    -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp
 ESMF_F90LINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default -L/lib -L
-ESMF_F90LINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default -Wl,-rpath,/lib -Wl,-rpath,
-ESMF_F90LINKLIBS:   -lrt -lstdc++ -ldl -lnetcdff -lnetcdf -lhdf5_hl -lhdf5 
-ESMF_F90ESMFLINKLIBS: -lesmf   -lrt -lstdc++ -ldl -lnetcdff -lnetcdf -lhdf5_hl -lhdf5 
+ESMF_F90LINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default -Wl,-rpath,/lib  -Wl,-rpath,
+ESMF_F90LINKLIBS:   -lrt -lstdc++ -ldl -lnetcdff -lnetcdf -lhdf5_hl -lhdf5  -lpioc
+ESMF_F90ESMFLINKLIBS: -lesmf   -lrt -lstdc++ -ldl -lnetcdff -lnetcdf -lhdf5_hl -lhdf5  -lpioc
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: mpicxx
 ESMF_CXXCOMPILEOPTS: -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp
 ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/include  -I/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b09-6-gdac1bc5728' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b10-105-ga5295e34ae' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp
 ESMF_CXXLINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default -L/lib -L
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default -Wl,-rpath,/lib -Wl,-rpath,
-ESMF_CXXLINKLIBS:  -lmpi_f77 -lrt -lgfortran -ldl -lnetcdff -lnetcdf -lhdf5_hl -lhdf5 
-ESMF_CXXESMFLINKLIBS: -lesmf  -lmpi_f77 -lrt -lgfortran -ldl -lnetcdff -lnetcdf -lhdf5_hl -lhdf5 
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default -Wl,-rpath,/lib  -Wl,-rpath,
+ESMF_CXXLINKLIBS:  -lrt -lgfortran -ldl -lnetcdff -lnetcdf -lhdf5_hl -lhdf5  -lpioc
+ESMF_CXXESMFLINKLIBS: -lesmf  -lrt -lgfortran -ldl -lnetcdff -lnetcdf -lhdf5_hl -lhdf5  -lpioc
+
+C compiler flags:
+ESMF_CCOMPILER: mpicc
+ESMF_CCOMPILEOPTS:  -g -fPIC
+ESMF_CCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/include  
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.3.0b10-105-ga5295e34ae' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop -D__SDIR__=''
+
+C linker flags:
+ESMF_CLINKOPTS:  
+ESMF_CLINKPATHS: -L/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default 
+ESMF_CLINKRPATHS: -Wl,-rpath,/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default 
+ESMF_CLINKLIBS: 
+ESMF_CESMFLINKLIBS: -lesmf 
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -198,8 +224,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Mar 23 17:47:32 UTC 2022 on h15c18
-Machine characteristics: Linux h15c18 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Fri Mar 25 22:06:51 UTC 2022 on h17c13
+Machine characteristics: Linux h17c13 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: mpicxx: Command not found
@@ -208,7 +234,7 @@ make[1]: mpif90: Command not found
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/lib/libg/Linux.gfortran.64.openmpi.default for library
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/include for include files
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default for *.mod files
-Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default for build-gfortran_9.2.0_openmpi_g.bat_29819327.o files
+Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default for build-gfortran_9.2.0_openmpi_g.bat_29870780.o files
 cd /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop ;\
 make ACTION=tree_include tree
 make[2]: mpicxx: Command not found
@@ -690,6 +716,8 @@ tree_include in: /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g
 make[6]: mpicxx: Command not found
 make[6]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Infrastructure/IO/PIO'
 make[6]: mpif90: Command not found
+makefile:40: warning: overriding recipe for target `tree_lib'
+/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/build/common.mk:2273: warning: ignoring old recipe for target `tree_lib'
 make[6]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Infrastructure/IO/PIO'
 tree_include in: /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Infrastructure/IO/src
 make[6]: mpicxx: Command not found
@@ -1737,7 +1765,7 @@ make[7]: mpif90: Command not found
 make[8]: mpicxx: Command not found
 make[8]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default'
 make[8]: mpif90: Command not found
-mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/include  -I/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b09-6-gdac1bc5728"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/src/binary.cpp -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/binary.o
+mpicxx -c -std=c++11 -g -Wall -Wextra -Wno-unused  -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/build_config/Linux.gfortran.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/include  -I/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.3.0b10-105-ga5295e34ae"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/src/prologue/yaml-cpp/src/binary.cpp -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/binary.o
 make[8]: mpicxx: Command not found
 make[8]: *** [/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/obj/objg/Linux.gfortran.64.openmpi.default/binary.o] Error 127
 make[8]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/gfortran_9.2.0_openmpi_g_develop/mod/modg/Linux.gfortran.64.openmpi.default'

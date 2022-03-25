@@ -1,4 +1,4 @@
-Wed Mar 23 17:49:58 UTC 2022
+Fri Mar 25 22:08:16 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-gfortran_9.2.0_openmpi_g.bat_%j.o
