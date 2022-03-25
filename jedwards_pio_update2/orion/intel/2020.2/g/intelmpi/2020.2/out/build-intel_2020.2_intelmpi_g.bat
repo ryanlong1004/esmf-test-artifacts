@@ -1,4 +1,4 @@
-Thu Mar 24 04:13:15 CDT 2022
+Fri Mar 25 02:33:57 CDT 2022
 #!/bin/sh -l
 #SBATCH --account=da-cpu
 #SBATCH -o build-intel_2020.2_intelmpi_g.bat_%j.o
@@ -13,7 +13,7 @@ export JOBID=$SLURM_JOBID
 
 module load intelpython3 cmake
 export ESMF_MPIRUN=mpirun.srun
-export ESMPY_MPIRUN=mpirun.srun
+export ESMPY_MPIRUN=srun
 module load intel/2020.2 impi/2020.2 netcdf/4.7.4
 module list >& module-build.log
 
