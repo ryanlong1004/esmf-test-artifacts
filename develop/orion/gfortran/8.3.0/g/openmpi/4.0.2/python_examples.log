@@ -1,0 +1,40 @@
+build time -- 2022-03-26 02:31:14
+running test_examples
+test_field_read (examples.exampletest.TestExamples) ... Abort with message unexpected record in file /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/src/Infrastructure/IO/PIO/ParallelIO/src/clib/pio_darray_int.c at line 1464
+Obtained 10 stack frames.
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(print_trace+0x32) [0x7f8fc88be76f]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(piodie+0x74) [0x7f8fc88be873]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(pioassert+0x39) [0x7f8fc88be8c3]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(pio_read_darray_nc_serial+0x1e7) [0x7f8fc88f4169]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(PIOc_read_darray+0x3de) [0x7f8fc88f1e31]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(_ZN5ESMCI11PIO_Handler9arrayReadEPNS_5ArrayEPKcPiS5_+0x710) [0x7f8fc749b062]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(_ZN5ESMCI2IO4readEPi+0x34c) [0x7f8fc7267248]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(_ZN5ESMCI2IO4readERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE15ESMC_IOFmt_FlagPi+0xd0) [0x7f8fc7266e52]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(c_esmc_ioread_+0x1ee) [0x7f8fc725d991]
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.gfortran.64.openmpi.default/libesmf_fullylinked.so(__esmf_iomod_MOD_esmf_ioread+0x11e) [0x7f8fc7fab977]
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode -1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/src/addon/ESMPy/setup.py", line 249, in <module>
+    setup(name="ESMPy",
+  File "/apps/intel-2022.1.2/intel-2022.1.2/intelpython/latest/lib/python3.9/distutils/core.py", line 148, in setup
+    dist.run_commands()
+  File "/apps/intel-2022.1.2/intel-2022.1.2/intelpython/latest/lib/python3.9/distutils/dist.py", line 966, in run_commands
+    self.run_command(cmd)
+  File "/apps/intel-2022.1.2/intel-2022.1.2/intelpython/latest/lib/python3.9/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/src/addon/ESMPy/setup.py", line 15, in wrapper
+    return func(self)
+  File "/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/src/addon/ESMPy/setup.py", line 171, in run
+    AbstractESMFNoseCommand.run(self)
+  File "/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g_develop/src/addon/ESMPy/setup.py", line 49, in run
+    subprocess.check_call(cmd)
+  File "/apps/intel-2022.1.2/intel-2022.1.2/intelpython/latest/lib/python3.9/subprocess.py", line 373, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['nosetests', '-vs', '--with-xunit', '-a', '!slow,!parallel', 'examples/exampletest.py']' returned non-zero exit status 255.
