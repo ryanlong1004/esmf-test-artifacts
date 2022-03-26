@@ -1,4 +1,4 @@
-Sat Mar 26 05:20:30 UTC 2022
+Sat Mar 26 06:07:30 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-intel_18.0.4_intelmpi_g.bat_%j.o
@@ -39,7 +39,7 @@ cd ../src/addon/ESMPy
 
 export PATH=$PATH:$HOME/.local/bin
 python3 setup.py build 2>&1 | tee python_build.log
-ssh hfe04 /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_g_develop/runpython.sh 2>&1 | tee python_build.log
+ssh hfe06 /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.4_intelmpi_g_develop/runpython.sh 2>&1 | tee python_build.log
 python3 setup.py test 2>&1 | tee python_test.log
 python3 setup.py test_examples 2>&1 | tee python_examples.log
 python3 setup.py test_regrid_from_file 2>&1 | tee python_regrid.log
