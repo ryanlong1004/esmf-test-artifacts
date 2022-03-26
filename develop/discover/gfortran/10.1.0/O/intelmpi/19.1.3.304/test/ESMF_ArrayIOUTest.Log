@@ -1,0 +1,1235 @@
+build time -- 2022-03-26 02:12:18.031267
+20220326 022406.513 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.513 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220326 022406.513 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220326 022406.513 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220326 022406.513 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220326 022406.513 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.513 INFO             PET0 Running with ESMF Version   : v8.3.0b10-105-ga5295e34ae
+20220326 022406.513 INFO             PET0 ESMF library build date/time: "Mar 26 2022" "02:11:03"
+20220326 022406.513 INFO             PET0 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_develop
+20220326 022406.513 INFO             PET0 ESMF_COMM                   : intelmpi
+20220326 022406.513 INFO             PET0 ESMF_MOAB                   : enabled
+20220326 022406.513 INFO             PET0 ESMF_LAPACK                 : enabled
+20220326 022406.513 INFO             PET0 ESMF_NETCDF                 : disabled
+20220326 022406.513 INFO             PET0 ESMF_PNETCDF                : disabled
+20220326 022406.513 INFO             PET0 ESMF_PIO                    : disabled
+20220326 022406.513 INFO             PET0 ESMF_YAMLCPP                : enabled
+20220326 022406.514 INFO             PET0  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220326 022406.514 INFO             PET0  NUMBER_OF_PROCESSORS           6
+20220326 022406.514 INFO             PET0  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220326 022406.514 INFO             PET0  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220326 022406.515 INFO             PET0  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220326 022406.515 INFO             PET0  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220326 022406.515 INFO             PET0  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220326 022406.515 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET0  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 239
+20220326 022406.515 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET0  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 253
+20220326 022406.515 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET0  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220326 022406.515 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET0  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 277
+20220326 022406.515 INFO             PET0  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 288
+20220326 022406.515 INFO             PET0  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 299
+20220326 022406.516 INFO             PET0  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 309
+20220326 022406.516 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET0  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 333
+20220326 022406.516 INFO             PET0  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 356
+20220326 022406.516 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET0  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 383
+20220326 022406.516 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET0  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 394
+20220326 022406.516 INFO             PET0  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 415
+20220326 022406.516 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET0  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 430
+20220326 022406.516 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET0  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 445
+20220326 022406.516 INFO             PET0  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 453
+20220326 022406.516 INFO             PET0  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 460
+20220326 022406.516 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 467
+20220326 022406.516 INFO             PET0  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 485
+20220326 022406.516 INFO             PET0  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 493
+20220326 022406.516 INFO             PET0  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 507
+20220326 022406.516 INFO             PET0  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 517
+20220326 022406.516 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET0  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 550
+20220326 022406.516 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET0  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 572
+20220326 022406.519 INFO             PET0  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 592
+20220326 022406.519 INFO             PET0  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 606
+20220326 022406.519 INFO             PET0  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 616
+20220326 022406.519 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET0  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 628
+20220326 022406.519 INFO             PET0  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220326 022406.519 INFO             PET0  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 669
+20220326 022406.519 INFO             PET0  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 678
+20220326 022406.519 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 686
+20220326 022406.519 INFO             PET0  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 698
+20220326 022406.519 INFO             PET0  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 706
+20220326 022406.519 INFO             PET0  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 716
+20220326 022406.519 INFO             PET0  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 724
+20220326 022406.519 INFO             PET0  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 732
+20220326 022406.519 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET0  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 745
+20220326 022406.519 INFO             PET0  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 756
+20220326 022406.519 INFO             PET0  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 764
+20220326 022406.519 INFO             PET0  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 772
+20220326 022406.519 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET0  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 785
+20220326 022406.519 INFO             PET0  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 797
+20220326 022406.519 INFO             PET0  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 808
+20220326 022406.519 INFO             PET0  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 815
+20220326 022406.519 INFO             PET0  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 823
+20220326 022406.519 INFO             PET0  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 830
+20220326 022406.519 INFO             PET0  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 842
+20220326 022406.519 INFO             PET0  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 850
+20220326 022406.519 INFO             PET0  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 860
+20220326 022406.520 INFO             PET0  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 868
+20220326 022406.520 INFO             PET0  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 885
+20220326 022406.520 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET0  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 901
+20220326 022406.520 INFO             PET0  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 912
+20220326 022406.520 INFO             PET0  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 920
+20220326 022406.520 INFO             PET0  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 935
+20220326 022406.520 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET0  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 951
+20220326 022406.520 INFO             PET0  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 963
+20220326 022406.520 INFO             PET0  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 978
+20220326 022406.520 INFO             PET0  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 985
+20220326 022406.520 INFO             PET0  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 993
+20220326 022406.520 INFO             PET0  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1000
+20220326 022406.520 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1012
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1022
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1030
+20220326 022406.520 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1045
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1056
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1065
+20220326 022406.520 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1078
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1091
+20220326 022406.520 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1098
+20220326 022406.520 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1105
+20220326 022406.520 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1112
+20220326 022406.520 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1124
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1134
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1142
+20220326 022406.520 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1158
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1169
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1178
+20220326 022406.520 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1191
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1204
+20220326 022406.520 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1211
+20220326 022406.520 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1218
+20220326 022406.520 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1225
+20220326 022406.520 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1237
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1247
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1255
+20220326 022406.520 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1271
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1282
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1291
+20220326 022406.520 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1304
+20220326 022406.520 INFO             PET0  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1317
+20220326 022406.520 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1324
+20220326 022406.520 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1331
+20220326 022406.520 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1338
+20220326 022406.520 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1350
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1359
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1367
+20220326 022406.521 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1383
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1393
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1402
+20220326 022406.521 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1415
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1428
+20220326 022406.521 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1435
+20220326 022406.521 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1442
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1451
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1459
+20220326 022406.521 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1475
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1485
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1494
+20220326 022406.521 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1507
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1520
+20220326 022406.521 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1527
+20220326 022406.521 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1534
+20220326 022406.521 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1541
+20220326 022406.521 INFO             PET0  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1553
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1562
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1570
+20220326 022406.521 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1586
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1596
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1605
+20220326 022406.521 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1618
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1631
+20220326 022406.521 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1638
+20220326 022406.521 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1645
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1654
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1662
+20220326 022406.521 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1678
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1688
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1697
+20220326 022406.521 ERROR            PET0 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.521 INFO             PET0  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1710
+20220326 022406.521 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1735
+20220326 022406.521 INFO             PET0  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1742
+20220326 022406.521 INFO             PET0  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1749
+20220326 022406.521 INFO             PET0  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1761
+20220326 022406.522 INFO             PET0  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1770
+20220326 022406.522 INFO             PET0  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1781
+20220326 022406.522 INFO             PET0  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1789
+20220326 022406.522 INFO             PET0  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1796
+20220326 022406.522 INFO             PET0  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1810
+20220326 022406.522 INFO             PET0  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1822
+20220326 022406.522 INFO             PET0  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1831
+20220326 022406.522 INFO             PET0  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1840
+20220326 022406.522 INFO             PET0  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1849
+20220326 022406.522 INFO             PET0  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1858
+20220326 022406.522 INFO             PET0  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1867
+20220326 022406.522 INFO             PET0  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1876
+20220326 022406.522 ERROR            PET0 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.522 INFO             PET0  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1890
+20220326 022406.522 INFO             PET0  Ending Test, file ESMF_ArrayIOUTest.F90, line 1901
+20220326 022406.522 INFO             PET0 Finalizing ESMF
+20220326 022406.513 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.513 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220326 022406.513 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220326 022406.513 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220326 022406.513 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220326 022406.513 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.513 INFO             PET1 Running with ESMF Version   : v8.3.0b10-105-ga5295e34ae
+20220326 022406.513 INFO             PET1 ESMF library build date/time: "Mar 26 2022" "02:11:03"
+20220326 022406.513 INFO             PET1 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_develop
+20220326 022406.513 INFO             PET1 ESMF_COMM                   : intelmpi
+20220326 022406.513 INFO             PET1 ESMF_MOAB                   : enabled
+20220326 022406.513 INFO             PET1 ESMF_LAPACK                 : enabled
+20220326 022406.513 INFO             PET1 ESMF_NETCDF                 : disabled
+20220326 022406.513 INFO             PET1 ESMF_PNETCDF                : disabled
+20220326 022406.513 INFO             PET1 ESMF_PIO                    : disabled
+20220326 022406.513 INFO             PET1 ESMF_YAMLCPP                : enabled
+20220326 022406.514 INFO             PET1  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220326 022406.514 INFO             PET1  NUMBER_OF_PROCESSORS           6
+20220326 022406.514 INFO             PET1  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220326 022406.514 INFO             PET1  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220326 022406.515 INFO             PET1  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220326 022406.515 INFO             PET1  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220326 022406.515 INFO             PET1  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220326 022406.515 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET1  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 239
+20220326 022406.515 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET1  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 253
+20220326 022406.515 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET1  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220326 022406.515 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET1  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 277
+20220326 022406.515 INFO             PET1  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 288
+20220326 022406.515 INFO             PET1  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 299
+20220326 022406.516 INFO             PET1  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 309
+20220326 022406.516 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET1  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 333
+20220326 022406.516 INFO             PET1  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 356
+20220326 022406.516 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET1  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 383
+20220326 022406.516 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET1  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 394
+20220326 022406.516 INFO             PET1  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 415
+20220326 022406.516 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET1  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 430
+20220326 022406.516 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET1  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 445
+20220326 022406.516 INFO             PET1  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 453
+20220326 022406.516 INFO             PET1  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 460
+20220326 022406.516 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 467
+20220326 022406.516 INFO             PET1  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 485
+20220326 022406.516 INFO             PET1  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 493
+20220326 022406.516 INFO             PET1  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 507
+20220326 022406.516 INFO             PET1  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 517
+20220326 022406.516 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET1  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 550
+20220326 022406.516 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET1  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 572
+20220326 022406.516 INFO             PET1  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 592
+20220326 022406.517 INFO             PET1  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 606
+20220326 022406.517 INFO             PET1  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 616
+20220326 022406.517 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET1  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 628
+20220326 022406.517 INFO             PET1  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220326 022406.517 INFO             PET1  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 669
+20220326 022406.517 INFO             PET1  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 678
+20220326 022406.517 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 686
+20220326 022406.517 INFO             PET1  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 698
+20220326 022406.517 INFO             PET1  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 706
+20220326 022406.517 INFO             PET1  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 716
+20220326 022406.517 INFO             PET1  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 724
+20220326 022406.517 INFO             PET1  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 732
+20220326 022406.517 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET1  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 745
+20220326 022406.517 INFO             PET1  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 756
+20220326 022406.517 INFO             PET1  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 764
+20220326 022406.517 INFO             PET1  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 772
+20220326 022406.517 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET1  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 785
+20220326 022406.517 INFO             PET1  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 797
+20220326 022406.517 INFO             PET1  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 808
+20220326 022406.517 INFO             PET1  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 815
+20220326 022406.517 INFO             PET1  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 823
+20220326 022406.517 INFO             PET1  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 830
+20220326 022406.517 INFO             PET1  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 842
+20220326 022406.517 INFO             PET1  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 850
+20220326 022406.517 INFO             PET1  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 860
+20220326 022406.517 INFO             PET1  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 868
+20220326 022406.517 INFO             PET1  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 885
+20220326 022406.517 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET1  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 901
+20220326 022406.517 INFO             PET1  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 912
+20220326 022406.517 INFO             PET1  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 920
+20220326 022406.517 INFO             PET1  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 935
+20220326 022406.517 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET1  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 951
+20220326 022406.517 INFO             PET1  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 963
+20220326 022406.517 INFO             PET1  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 978
+20220326 022406.517 INFO             PET1  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 985
+20220326 022406.517 INFO             PET1  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 993
+20220326 022406.517 INFO             PET1  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1000
+20220326 022406.517 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1012
+20220326 022406.517 INFO             PET1  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1022
+20220326 022406.517 INFO             PET1  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1030
+20220326 022406.517 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET1  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1045
+20220326 022406.517 INFO             PET1  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1056
+20220326 022406.517 INFO             PET1  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1065
+20220326 022406.517 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET1  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1078
+20220326 022406.517 INFO             PET1  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1091
+20220326 022406.517 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1098
+20220326 022406.517 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1105
+20220326 022406.517 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1112
+20220326 022406.517 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1124
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1134
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1142
+20220326 022406.518 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1158
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1169
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1178
+20220326 022406.518 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1191
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1204
+20220326 022406.518 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1211
+20220326 022406.518 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1218
+20220326 022406.518 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1225
+20220326 022406.518 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1237
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1247
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1255
+20220326 022406.518 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1271
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1282
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1291
+20220326 022406.518 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1304
+20220326 022406.518 INFO             PET1  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1317
+20220326 022406.518 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1324
+20220326 022406.518 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1331
+20220326 022406.518 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1338
+20220326 022406.518 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1350
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1359
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1367
+20220326 022406.518 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1383
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1393
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1402
+20220326 022406.518 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1415
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1428
+20220326 022406.518 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1435
+20220326 022406.518 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1442
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1451
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1459
+20220326 022406.518 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1475
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1485
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1494
+20220326 022406.518 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1507
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1520
+20220326 022406.518 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1527
+20220326 022406.518 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1534
+20220326 022406.518 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1541
+20220326 022406.518 INFO             PET1  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1553
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1562
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1570
+20220326 022406.518 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1586
+20220326 022406.518 INFO             PET1  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1596
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1605
+20220326 022406.519 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1618
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1631
+20220326 022406.519 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1638
+20220326 022406.519 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1645
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1654
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1662
+20220326 022406.519 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1678
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1688
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1697
+20220326 022406.519 ERROR            PET1 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET1  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1710
+20220326 022406.519 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1735
+20220326 022406.519 INFO             PET1  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1742
+20220326 022406.519 INFO             PET1  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1749
+20220326 022406.519 INFO             PET1  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1761
+20220326 022406.519 INFO             PET1  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1770
+20220326 022406.519 INFO             PET1  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1781
+20220326 022406.519 INFO             PET1  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1789
+20220326 022406.519 INFO             PET1  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1796
+20220326 022406.519 INFO             PET1  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1810
+20220326 022406.519 INFO             PET1  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1822
+20220326 022406.519 INFO             PET1  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1831
+20220326 022406.519 INFO             PET1  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1840
+20220326 022406.519 INFO             PET1  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1849
+20220326 022406.520 INFO             PET1  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1858
+20220326 022406.520 INFO             PET1  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1867
+20220326 022406.520 INFO             PET1  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1876
+20220326 022406.520 ERROR            PET1 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET1  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1890
+20220326 022406.520 INFO             PET1  Ending Test, file ESMF_ArrayIOUTest.F90, line 1901
+20220326 022406.520 INFO             PET1 Finalizing ESMF
+20220326 022406.514 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.514 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220326 022406.514 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220326 022406.514 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220326 022406.514 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220326 022406.514 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.514 INFO             PET2 Running with ESMF Version   : v8.3.0b10-105-ga5295e34ae
+20220326 022406.514 INFO             PET2 ESMF library build date/time: "Mar 26 2022" "02:11:03"
+20220326 022406.514 INFO             PET2 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_develop
+20220326 022406.514 INFO             PET2 ESMF_COMM                   : intelmpi
+20220326 022406.514 INFO             PET2 ESMF_MOAB                   : enabled
+20220326 022406.514 INFO             PET2 ESMF_LAPACK                 : enabled
+20220326 022406.514 INFO             PET2 ESMF_NETCDF                 : disabled
+20220326 022406.514 INFO             PET2 ESMF_PNETCDF                : disabled
+20220326 022406.514 INFO             PET2 ESMF_PIO                    : disabled
+20220326 022406.514 INFO             PET2 ESMF_YAMLCPP                : enabled
+20220326 022406.514 INFO             PET2  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220326 022406.514 INFO             PET2  NUMBER_OF_PROCESSORS           6
+20220326 022406.514 INFO             PET2  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220326 022406.514 INFO             PET2  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220326 022406.515 INFO             PET2  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220326 022406.515 INFO             PET2  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220326 022406.515 INFO             PET2  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220326 022406.515 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET2  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 239
+20220326 022406.515 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET2  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 253
+20220326 022406.515 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET2  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220326 022406.515 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET2  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 277
+20220326 022406.515 INFO             PET2  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 288
+20220326 022406.515 INFO             PET2  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 299
+20220326 022406.516 INFO             PET2  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 309
+20220326 022406.516 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET2  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 333
+20220326 022406.516 INFO             PET2  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 356
+20220326 022406.516 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET2  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 383
+20220326 022406.516 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET2  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 394
+20220326 022406.516 INFO             PET2  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 415
+20220326 022406.516 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET2  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 430
+20220326 022406.516 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET2  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 445
+20220326 022406.516 INFO             PET2  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 453
+20220326 022406.516 INFO             PET2  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 460
+20220326 022406.516 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 467
+20220326 022406.516 INFO             PET2  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 485
+20220326 022406.516 INFO             PET2  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 493
+20220326 022406.516 INFO             PET2  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 507
+20220326 022406.516 INFO             PET2  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 517
+20220326 022406.516 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET2  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 550
+20220326 022406.516 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET2  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 572
+20220326 022406.516 INFO             PET2  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 592
+20220326 022406.516 INFO             PET2  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 606
+20220326 022406.516 INFO             PET2  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 616
+20220326 022406.516 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET2  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 628
+20220326 022406.516 INFO             PET2  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220326 022406.516 INFO             PET2  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 669
+20220326 022406.516 INFO             PET2  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 678
+20220326 022406.516 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 686
+20220326 022406.516 INFO             PET2  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 698
+20220326 022406.516 INFO             PET2  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 706
+20220326 022406.516 INFO             PET2  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 716
+20220326 022406.516 INFO             PET2  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 724
+20220326 022406.516 INFO             PET2  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 732
+20220326 022406.516 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET2  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 745
+20220326 022406.517 INFO             PET2  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 756
+20220326 022406.517 INFO             PET2  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 764
+20220326 022406.517 INFO             PET2  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 772
+20220326 022406.517 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET2  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 785
+20220326 022406.517 INFO             PET2  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 797
+20220326 022406.517 INFO             PET2  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 808
+20220326 022406.517 INFO             PET2  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 815
+20220326 022406.517 INFO             PET2  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 823
+20220326 022406.517 INFO             PET2  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 830
+20220326 022406.517 INFO             PET2  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 842
+20220326 022406.517 INFO             PET2  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 850
+20220326 022406.517 INFO             PET2  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 860
+20220326 022406.517 INFO             PET2  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 868
+20220326 022406.517 ERROR            PET2 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220326 022406.517 ERROR            PET2 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220326 022406.517 INFO             PET2  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 885
+20220326 022406.517 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET2  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 901
+20220326 022406.517 INFO             PET2  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 912
+20220326 022406.517 INFO             PET2  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 920
+20220326 022406.517 ERROR            PET2 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220326 022406.517 ERROR            PET2 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220326 022406.517 INFO             PET2  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 935
+20220326 022406.517 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET2  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 951
+20220326 022406.517 INFO             PET2  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 963
+20220326 022406.517 INFO             PET2  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 978
+20220326 022406.517 INFO             PET2  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 985
+20220326 022406.517 INFO             PET2  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 993
+20220326 022406.517 INFO             PET2  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1000
+20220326 022406.517 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1012
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1022
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1030
+20220326 022406.517 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1045
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1056
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1065
+20220326 022406.517 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1078
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1091
+20220326 022406.517 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1098
+20220326 022406.517 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1105
+20220326 022406.517 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1112
+20220326 022406.517 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1124
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1134
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1142
+20220326 022406.517 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1158
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1169
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1178
+20220326 022406.517 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1191
+20220326 022406.517 INFO             PET2  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1204
+20220326 022406.517 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1211
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1218
+20220326 022406.518 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1225
+20220326 022406.518 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1237
+20220326 022406.518 INFO             PET2  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1247
+20220326 022406.518 INFO             PET2  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1255
+20220326 022406.518 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET2  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1271
+20220326 022406.518 INFO             PET2  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1282
+20220326 022406.518 INFO             PET2  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1291
+20220326 022406.518 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET2  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1304
+20220326 022406.518 INFO             PET2  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1317
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1324
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1331
+20220326 022406.518 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1338
+20220326 022406.518 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1350
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1359
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1367
+20220326 022406.518 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1383
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1393
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1402
+20220326 022406.518 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1415
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1428
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1435
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1442
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1451
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1459
+20220326 022406.518 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1475
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1485
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1494
+20220326 022406.518 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1507
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1520
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1527
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1534
+20220326 022406.518 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1541
+20220326 022406.518 INFO             PET2  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1553
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1562
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1570
+20220326 022406.518 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1586
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1596
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1605
+20220326 022406.518 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1618
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1631
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1638
+20220326 022406.518 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1645
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1654
+20220326 022406.518 INFO             PET2  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1662
+20220326 022406.519 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET2  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1678
+20220326 022406.519 INFO             PET2  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1688
+20220326 022406.519 INFO             PET2  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1697
+20220326 022406.519 ERROR            PET2 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET2  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1710
+20220326 022406.519 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1735
+20220326 022406.519 INFO             PET2  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1742
+20220326 022406.519 INFO             PET2  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1749
+20220326 022406.519 INFO             PET2  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1761
+20220326 022406.519 INFO             PET2  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1770
+20220326 022406.519 INFO             PET2  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1781
+20220326 022406.519 INFO             PET2  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1789
+20220326 022406.519 INFO             PET2  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1796
+20220326 022406.519 INFO             PET2  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1810
+20220326 022406.519 INFO             PET2  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1822
+20220326 022406.519 INFO             PET2  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1831
+20220326 022406.519 INFO             PET2  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1840
+20220326 022406.519 INFO             PET2  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1849
+20220326 022406.519 INFO             PET2  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1858
+20220326 022406.520 INFO             PET2  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1867
+20220326 022406.520 INFO             PET2  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1876
+20220326 022406.520 ERROR            PET2 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET2  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1890
+20220326 022406.520 INFO             PET2  Ending Test, file ESMF_ArrayIOUTest.F90, line 1901
+20220326 022406.520 INFO             PET2 Finalizing ESMF
+20220326 022406.514 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.514 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220326 022406.514 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220326 022406.514 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220326 022406.514 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220326 022406.514 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.514 INFO             PET3 Running with ESMF Version   : v8.3.0b10-105-ga5295e34ae
+20220326 022406.514 INFO             PET3 ESMF library build date/time: "Mar 26 2022" "02:11:03"
+20220326 022406.514 INFO             PET3 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_develop
+20220326 022406.514 INFO             PET3 ESMF_COMM                   : intelmpi
+20220326 022406.514 INFO             PET3 ESMF_MOAB                   : enabled
+20220326 022406.514 INFO             PET3 ESMF_LAPACK                 : enabled
+20220326 022406.514 INFO             PET3 ESMF_NETCDF                 : disabled
+20220326 022406.514 INFO             PET3 ESMF_PNETCDF                : disabled
+20220326 022406.514 INFO             PET3 ESMF_PIO                    : disabled
+20220326 022406.514 INFO             PET3 ESMF_YAMLCPP                : enabled
+20220326 022406.514 INFO             PET3  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220326 022406.514 INFO             PET3  NUMBER_OF_PROCESSORS           6
+20220326 022406.514 INFO             PET3  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220326 022406.514 INFO             PET3  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220326 022406.515 INFO             PET3  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220326 022406.515 INFO             PET3  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220326 022406.515 INFO             PET3  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220326 022406.515 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET3  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 239
+20220326 022406.515 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET3  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 253
+20220326 022406.515 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET3  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220326 022406.515 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET3  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 277
+20220326 022406.515 INFO             PET3  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 288
+20220326 022406.516 INFO             PET3  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 299
+20220326 022406.516 INFO             PET3  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 309
+20220326 022406.516 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET3  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 333
+20220326 022406.516 INFO             PET3  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 356
+20220326 022406.516 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET3  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 383
+20220326 022406.516 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET3  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 394
+20220326 022406.516 INFO             PET3  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 415
+20220326 022406.516 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET3  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 430
+20220326 022406.516 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET3  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 445
+20220326 022406.516 INFO             PET3  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 453
+20220326 022406.516 INFO             PET3  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 460
+20220326 022406.516 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 467
+20220326 022406.516 INFO             PET3  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 485
+20220326 022406.516 INFO             PET3  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 493
+20220326 022406.516 INFO             PET3  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 507
+20220326 022406.517 INFO             PET3  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 517
+20220326 022406.517 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET3  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 550
+20220326 022406.517 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET3  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 572
+20220326 022406.517 INFO             PET3  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 592
+20220326 022406.517 INFO             PET3  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 606
+20220326 022406.517 INFO             PET3  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 616
+20220326 022406.517 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET3  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 628
+20220326 022406.517 INFO             PET3  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220326 022406.517 INFO             PET3  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 669
+20220326 022406.517 INFO             PET3  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 678
+20220326 022406.517 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 686
+20220326 022406.517 INFO             PET3  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 698
+20220326 022406.517 INFO             PET3  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 706
+20220326 022406.517 INFO             PET3  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 716
+20220326 022406.517 INFO             PET3  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 724
+20220326 022406.517 INFO             PET3  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 732
+20220326 022406.517 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET3  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 745
+20220326 022406.517 INFO             PET3  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 756
+20220326 022406.517 INFO             PET3  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 764
+20220326 022406.517 INFO             PET3  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 772
+20220326 022406.517 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET3  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 785
+20220326 022406.517 INFO             PET3  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 797
+20220326 022406.517 INFO             PET3  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 808
+20220326 022406.517 INFO             PET3  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 815
+20220326 022406.517 INFO             PET3  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 823
+20220326 022406.517 INFO             PET3  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 830
+20220326 022406.517 INFO             PET3  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 842
+20220326 022406.517 INFO             PET3  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 850
+20220326 022406.517 INFO             PET3  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 860
+20220326 022406.517 INFO             PET3  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 868
+20220326 022406.517 ERROR            PET3 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220326 022406.517 ERROR            PET3 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220326 022406.517 INFO             PET3  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 885
+20220326 022406.517 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET3  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 901
+20220326 022406.517 INFO             PET3  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 912
+20220326 022406.517 INFO             PET3  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 920
+20220326 022406.517 ERROR            PET3 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220326 022406.517 ERROR            PET3 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220326 022406.518 INFO             PET3  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 935
+20220326 022406.518 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET3  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 951
+20220326 022406.518 INFO             PET3  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 963
+20220326 022406.518 INFO             PET3  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 978
+20220326 022406.518 INFO             PET3  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 985
+20220326 022406.518 INFO             PET3  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 993
+20220326 022406.518 INFO             PET3  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1000
+20220326 022406.518 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1012
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1022
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1030
+20220326 022406.518 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1045
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1056
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1065
+20220326 022406.518 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1078
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1091
+20220326 022406.518 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1098
+20220326 022406.518 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1105
+20220326 022406.518 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1112
+20220326 022406.518 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1124
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1134
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1142
+20220326 022406.518 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1158
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1169
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1178
+20220326 022406.518 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1191
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1204
+20220326 022406.518 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1211
+20220326 022406.518 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1218
+20220326 022406.518 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1225
+20220326 022406.518 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1237
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1247
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1255
+20220326 022406.518 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1271
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1282
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1291
+20220326 022406.518 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1304
+20220326 022406.518 INFO             PET3  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1317
+20220326 022406.518 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1324
+20220326 022406.518 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1331
+20220326 022406.519 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1338
+20220326 022406.519 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1350
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1359
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1367
+20220326 022406.519 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1383
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1393
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1402
+20220326 022406.519 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1415
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1428
+20220326 022406.519 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1435
+20220326 022406.519 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1442
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1451
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1459
+20220326 022406.519 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1475
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1485
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1494
+20220326 022406.519 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1507
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1520
+20220326 022406.519 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1527
+20220326 022406.519 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1534
+20220326 022406.519 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1541
+20220326 022406.519 INFO             PET3  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1553
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1562
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1570
+20220326 022406.519 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1586
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1596
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1605
+20220326 022406.519 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1618
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1631
+20220326 022406.519 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1638
+20220326 022406.519 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1645
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1654
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1662
+20220326 022406.519 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET3  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1678
+20220326 022406.520 INFO             PET3  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1688
+20220326 022406.520 INFO             PET3  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1697
+20220326 022406.520 ERROR            PET3 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET3  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1710
+20220326 022406.520 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1735
+20220326 022406.520 INFO             PET3  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1742
+20220326 022406.520 INFO             PET3  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1749
+20220326 022406.520 INFO             PET3  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1761
+20220326 022406.520 INFO             PET3  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1770
+20220326 022406.520 INFO             PET3  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1781
+20220326 022406.520 INFO             PET3  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1789
+20220326 022406.520 INFO             PET3  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1796
+20220326 022406.520 INFO             PET3  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1810
+20220326 022406.520 INFO             PET3  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1822
+20220326 022406.520 INFO             PET3  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1831
+20220326 022406.520 INFO             PET3  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1840
+20220326 022406.520 INFO             PET3  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1849
+20220326 022406.520 INFO             PET3  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1858
+20220326 022406.520 INFO             PET3  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1867
+20220326 022406.520 INFO             PET3  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1876
+20220326 022406.520 ERROR            PET3 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET3  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1890
+20220326 022406.520 INFO             PET3  Ending Test, file ESMF_ArrayIOUTest.F90, line 1901
+20220326 022406.520 INFO             PET3 Finalizing ESMF
+20220326 022406.513 INFO             PET4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.513 INFO             PET4 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220326 022406.513 INFO             PET4 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220326 022406.513 INFO             PET4 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220326 022406.513 INFO             PET4 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220326 022406.513 INFO             PET4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.513 INFO             PET4 Running with ESMF Version   : v8.3.0b10-105-ga5295e34ae
+20220326 022406.513 INFO             PET4 ESMF library build date/time: "Mar 26 2022" "02:11:03"
+20220326 022406.513 INFO             PET4 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_develop
+20220326 022406.513 INFO             PET4 ESMF_COMM                   : intelmpi
+20220326 022406.513 INFO             PET4 ESMF_MOAB                   : enabled
+20220326 022406.513 INFO             PET4 ESMF_LAPACK                 : enabled
+20220326 022406.513 INFO             PET4 ESMF_NETCDF                 : disabled
+20220326 022406.513 INFO             PET4 ESMF_PNETCDF                : disabled
+20220326 022406.513 INFO             PET4 ESMF_PIO                    : disabled
+20220326 022406.513 INFO             PET4 ESMF_YAMLCPP                : enabled
+20220326 022406.514 INFO             PET4  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220326 022406.514 INFO             PET4  NUMBER_OF_PROCESSORS           6
+20220326 022406.514 INFO             PET4  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220326 022406.514 INFO             PET4  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220326 022406.515 INFO             PET4  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220326 022406.515 INFO             PET4  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220326 022406.515 INFO             PET4  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220326 022406.515 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET4  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 239
+20220326 022406.515 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET4  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 253
+20220326 022406.515 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET4  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220326 022406.515 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET4  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 277
+20220326 022406.515 INFO             PET4  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 288
+20220326 022406.515 INFO             PET4  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 299
+20220326 022406.516 INFO             PET4  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 309
+20220326 022406.516 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET4  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 333
+20220326 022406.516 INFO             PET4  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 356
+20220326 022406.516 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET4  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 383
+20220326 022406.516 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET4  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 394
+20220326 022406.516 INFO             PET4  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 415
+20220326 022406.516 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET4  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 430
+20220326 022406.516 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET4  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 445
+20220326 022406.516 INFO             PET4  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 453
+20220326 022406.516 INFO             PET4  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 460
+20220326 022406.516 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 467
+20220326 022406.516 INFO             PET4  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 485
+20220326 022406.516 INFO             PET4  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 493
+20220326 022406.516 INFO             PET4  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 507
+20220326 022406.516 INFO             PET4  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 517
+20220326 022406.516 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET4  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 550
+20220326 022406.516 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET4  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 572
+20220326 022406.516 INFO             PET4  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 592
+20220326 022406.516 INFO             PET4  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 606
+20220326 022406.516 INFO             PET4  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 616
+20220326 022406.516 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET4  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 628
+20220326 022406.516 INFO             PET4  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220326 022406.516 INFO             PET4  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 669
+20220326 022406.516 INFO             PET4  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 678
+20220326 022406.516 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 686
+20220326 022406.517 INFO             PET4  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 698
+20220326 022406.517 INFO             PET4  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 706
+20220326 022406.517 INFO             PET4  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 716
+20220326 022406.517 INFO             PET4  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 724
+20220326 022406.517 INFO             PET4  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 732
+20220326 022406.517 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET4  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 745
+20220326 022406.517 INFO             PET4  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 756
+20220326 022406.517 INFO             PET4  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 764
+20220326 022406.517 INFO             PET4  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 772
+20220326 022406.517 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET4  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 785
+20220326 022406.517 INFO             PET4  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 797
+20220326 022406.517 INFO             PET4  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 808
+20220326 022406.517 INFO             PET4  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 815
+20220326 022406.517 INFO             PET4  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 823
+20220326 022406.517 INFO             PET4  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 830
+20220326 022406.517 INFO             PET4  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 842
+20220326 022406.517 INFO             PET4  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 850
+20220326 022406.517 INFO             PET4  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 860
+20220326 022406.517 INFO             PET4  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 868
+20220326 022406.517 ERROR            PET4 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220326 022406.517 ERROR            PET4 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220326 022406.517 INFO             PET4  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 885
+20220326 022406.517 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET4  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 901
+20220326 022406.517 INFO             PET4  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 912
+20220326 022406.517 INFO             PET4  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 920
+20220326 022406.517 ERROR            PET4 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220326 022406.517 ERROR            PET4 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220326 022406.517 INFO             PET4  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 935
+20220326 022406.517 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET4  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 951
+20220326 022406.517 INFO             PET4  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 963
+20220326 022406.517 INFO             PET4  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 978
+20220326 022406.517 INFO             PET4  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 985
+20220326 022406.517 INFO             PET4  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 993
+20220326 022406.517 INFO             PET4  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1000
+20220326 022406.517 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1012
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1022
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1030
+20220326 022406.517 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1045
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1056
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1065
+20220326 022406.517 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1078
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1091
+20220326 022406.517 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1098
+20220326 022406.517 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1105
+20220326 022406.517 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1112
+20220326 022406.517 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1124
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1134
+20220326 022406.517 INFO             PET4  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1142
+20220326 022406.517 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1158
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1169
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1178
+20220326 022406.518 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1191
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1204
+20220326 022406.518 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1211
+20220326 022406.518 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1218
+20220326 022406.518 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1225
+20220326 022406.518 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1237
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1247
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1255
+20220326 022406.518 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1271
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1282
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1291
+20220326 022406.518 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1304
+20220326 022406.518 INFO             PET4  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1317
+20220326 022406.518 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1324
+20220326 022406.518 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1331
+20220326 022406.518 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1338
+20220326 022406.518 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1350
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1359
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1367
+20220326 022406.518 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1383
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1393
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1402
+20220326 022406.518 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1415
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1428
+20220326 022406.518 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1435
+20220326 022406.518 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1442
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1451
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1459
+20220326 022406.518 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1475
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1485
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1494
+20220326 022406.518 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1507
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1520
+20220326 022406.518 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1527
+20220326 022406.518 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1534
+20220326 022406.518 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1541
+20220326 022406.518 INFO             PET4  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1553
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1562
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1570
+20220326 022406.518 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1586
+20220326 022406.518 INFO             PET4  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1596
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1605
+20220326 022406.519 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1618
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1631
+20220326 022406.519 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1638
+20220326 022406.519 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1645
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1654
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1662
+20220326 022406.519 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1678
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1688
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1697
+20220326 022406.519 ERROR            PET4 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET4  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1710
+20220326 022406.519 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1735
+20220326 022406.519 INFO             PET4  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1742
+20220326 022406.519 INFO             PET4  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1749
+20220326 022406.519 INFO             PET4  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1761
+20220326 022406.519 INFO             PET4  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1770
+20220326 022406.519 INFO             PET4  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1781
+20220326 022406.519 INFO             PET4  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1789
+20220326 022406.519 INFO             PET4  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1796
+20220326 022406.519 INFO             PET4  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1810
+20220326 022406.519 INFO             PET4  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1822
+20220326 022406.519 INFO             PET4  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1831
+20220326 022406.519 INFO             PET4  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1840
+20220326 022406.519 INFO             PET4  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1849
+20220326 022406.519 INFO             PET4  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1858
+20220326 022406.520 INFO             PET4  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1867
+20220326 022406.520 INFO             PET4  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1876
+20220326 022406.520 ERROR            PET4 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET4  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1890
+20220326 022406.520 INFO             PET4  Ending Test, file ESMF_ArrayIOUTest.F90, line 1901
+20220326 022406.520 INFO             PET4 Finalizing ESMF
+20220326 022406.513 INFO             PET5 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.513 INFO             PET5 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20220326 022406.513 INFO             PET5 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20220326 022406.513 INFO             PET5 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20220326 022406.513 INFO             PET5 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20220326 022406.513 INFO             PET5 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20220326 022406.513 INFO             PET5 Running with ESMF Version   : v8.3.0b10-105-ga5295e34ae
+20220326 022406.513 INFO             PET5 ESMF library build date/time: "Mar 26 2022" "02:11:03"
+20220326 022406.513 INFO             PET5 ESMF library build location : /gpfsm/dnb04/projects/p98/mpotts/esmf/gfortran_10.1.0_intelmpi_O_develop
+20220326 022406.513 INFO             PET5 ESMF_COMM                   : intelmpi
+20220326 022406.514 INFO             PET5 ESMF_MOAB                   : enabled
+20220326 022406.514 INFO             PET5 ESMF_LAPACK                 : enabled
+20220326 022406.514 INFO             PET5 ESMF_NETCDF                 : disabled
+20220326 022406.514 INFO             PET5 ESMF_PNETCDF                : disabled
+20220326 022406.514 INFO             PET5 ESMF_PIO                    : disabled
+20220326 022406.514 INFO             PET5 ESMF_YAMLCPP                : enabled
+20220326 022406.514 INFO             PET5  Beginning Test, file ESMF_ArrayIOUTest.F90, line 103
+20220326 022406.514 INFO             PET5  NUMBER_OF_PROCESSORS           6
+20220326 022406.514 INFO             PET5  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 137
+20220326 022406.514 INFO             PET5  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 145
+20220326 022406.515 INFO             PET5  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 160
+20220326 022406.515 INFO             PET5  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 170
+20220326 022406.515 INFO             PET5  PASS  Accessing Fortran pointers for Arrays Test, ESMF_ArrayIOUTest.F90, line 225
+20220326 022406.515 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET5  PASS  Write ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 239
+20220326 022406.515 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET5  PASS  Write ESMF_Array with Halo Test overwrite test, ESMF_ArrayIOUTest.F90, line 253
+20220326 022406.515 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET5  PASS  Write ESMF_Array with Halo to binary Test, ESMF_ArrayIOUTest.F90, line 264
+20220326 022406.515 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET5  PASS  Write ESMF_Array without Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 277
+20220326 022406.515 INFO             PET5  PASS  Create Array without Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 288
+20220326 022406.515 INFO             PET5  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 299
+20220326 022406.515 INFO             PET5  PASS  Create Array with Halo for PIO Read, ESMF_ArrayIOUTest.F90, line 309
+20220326 022406.515 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.515 INFO             PET5  PASS  Read ESMF_Array without Halo from NetCDF file Test, ESMF_ArrayIOUTest.F90, line 333
+20220326 022406.515 INFO             PET5  PASS  Compare read in data to the existing data - 3D without halo, ESMF_ArrayIOUTest.F90, line 356
+20220326 022406.516 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET5  PASS  Read ESMF_Array with Halo from NetCDF Test, ESMF_ArrayIOUTest.F90, line 383
+20220326 022406.516 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET5  PASS  Read ESMF_Array with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 394
+20220326 022406.516 INFO             PET5  PASS  Compare read in data to the existing NetCDF data - 3D with halo, ESMF_ArrayIOUTest.F90, line 415
+20220326 022406.516 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET5  PASS  Read ESMF_Array variable with Halo from binary Test, ESMF_ArrayIOUTest.F90, line 430
+20220326 022406.516 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET5  PASS  Write ESMF_Array with Halo to NetCDF variable copy Test, ESMF_ArrayIOUTest.F90, line 445
+20220326 022406.516 INFO             PET5  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 453
+20220326 022406.516 INFO             PET5  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 460
+20220326 022406.516 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 467
+20220326 022406.516 INFO             PET5  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 485
+20220326 022406.516 INFO             PET5  PASS  Array Spec Set Test, ESMF_ArrayIOUTest.F90, line 493
+20220326 022406.516 INFO             PET5  PASS  Array with Halo Create Test, ESMF_ArrayIOUTest.F90, line 507
+20220326 022406.516 INFO             PET5  PASS  Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 517
+20220326 022406.516 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET5  PASS  Write 2D ESMF_Array with Halo to NetCDF Test, ESMF_ArrayIOUTest.F90, line 550
+20220326 022406.516 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET5  PASS  Read 2D ESMF_Array written for Array with halo to ESMF_Array without halo Test, ESMF_ArrayIOUTest.F90, line 572
+20220326 022406.516 INFO             PET5  PASS  Compare read in data to the existing data - 2D with/without halo, ESMF_ArrayIOUTest.F90, line 592
+20220326 022406.516 INFO             PET5  PASS  dstDistgrid Create Test, ESMF_ArrayIOUTest.F90, line 606
+20220326 022406.516 INFO             PET5  PASS  Array Create Test, ESMF_ArrayIOUTest.F90, line 616
+20220326 022406.516 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET5  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 628
+20220326 022406.516 INFO             PET5  PASS  Read 2D ESMF_Array with different distgrid from NetCDF test, ESMF_ArrayIOUTest.F90, line 656
+20220326 022406.516 INFO             PET5  PASS  Destroy Array with Halo, ESMF_ArrayIOUTest.F90, line 669
+20220326 022406.516 INFO             PET5  PASS  Destroy Array without Halo, ESMF_ArrayIOUTest.F90, line 678
+20220326 022406.516 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 686
+20220326 022406.516 INFO             PET5  PASS  Distgrid Create 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 698
+20220326 022406.516 INFO             PET5  PASS  Array Spec Set 2 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 706
+20220326 022406.516 INFO             PET5  PASS  2 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 716
+20220326 022406.516 INFO             PET5  PASS  2 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 724
+20220326 022406.516 INFO             PET5  PASS  2 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 732
+20220326 022406.516 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.516 INFO             PET5  PASS  Write 2DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 745
+20220326 022406.517 INFO             PET5  PASS  2 DE read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 756
+20220326 022406.517 INFO             PET5  PASS  2 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 764
+20220326 022406.517 INFO             PET5  PASS  2 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 772
+20220326 022406.517 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET5  PASS  Read 2DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 785
+20220326 022406.517 INFO             PET5  PASS  2 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 797
+20220326 022406.517 INFO             PET5  PASS  2 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 808
+20220326 022406.517 INFO             PET5  PASS  Destroy 2 DE Array, ESMF_ArrayIOUTest.F90, line 815
+20220326 022406.517 INFO             PET5  PASS  Destroy 2 DE read Array, ESMF_ArrayIOUTest.F90, line 823
+20220326 022406.517 INFO             PET5  PASS  Destroy 2 DE DistGrid, ESMF_ArrayIOUTest.F90, line 830
+20220326 022406.517 INFO             PET5  PASS  Distgrid Create 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 842
+20220326 022406.517 INFO             PET5  PASS  Array Spec Set 2/0 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 850
+20220326 022406.517 INFO             PET5  PASS  2/0 DE Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 860
+20220326 022406.517 INFO             PET5  PASS  2/0 DE Array access and fill DE0 Test, ESMF_ArrayIOUTest.F90, line 868
+20220326 022406.517 ERROR            PET5 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220326 022406.517 ERROR            PET5 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220326 022406.517 INFO             PET5  PASS  2/0 DE Array access and fill DE1 Test, ESMF_ArrayIOUTest.F90, line 885
+20220326 022406.517 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET5  PASS  Write 2/0DE ESMF_Array to NetCDF Test, ESMF_ArrayIOUTest.F90, line 901
+20220326 022406.517 INFO             PET5  PASS  2/0 DE create read Array without Halo Create Test, ESMF_ArrayIOUTest.F90, line 912
+20220326 022406.517 INFO             PET5  PASS  2/0 DE read Array access and zero fill DE0 Test, ESMF_ArrayIOUTest.F90, line 920
+20220326 022406.517 ERROR            PET5 ESMCI_Array_F.C:747 c_esmc_arraygetlarray() Argument sizes do not match  - localDe is out of range.
+20220326 022406.517 ERROR            PET5 ESMF_ArrayGet.F90:1979 ESMF_ArrayGetFPtr Argument sizes do not match  - Internal subroutine call returned Error
+20220326 022406.517 INFO             PET5  PASS  2/0 DE read Array access and zero fill DE1 Test, ESMF_ArrayIOUTest.F90, line 935
+20220326 022406.517 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET5  PASS  Read 2/0DE ESMF_Array from NetCDF Test, ESMF_ArrayIOUTest.F90, line 951
+20220326 022406.517 INFO             PET5  PASS  2/0 DE read Array - DE 0 comparison Test, ESMF_ArrayIOUTest.F90, line 963
+20220326 022406.517 INFO             PET5  PASS  2/0 DE read Array - DE 1 comparison Test, ESMF_ArrayIOUTest.F90, line 978
+20220326 022406.517 INFO             PET5  PASS  Destroy 2/0 DE Array, ESMF_ArrayIOUTest.F90, line 985
+20220326 022406.517 INFO             PET5  PASS  Destroy 2/0 DE read Array, ESMF_ArrayIOUTest.F90, line 993
+20220326 022406.517 INFO             PET5  PASS  Destroy 2/0 DE DistGrid, ESMF_ArrayIOUTest.F90, line 1000
+20220326 022406.517 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1012
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1022
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1030
+20220326 022406.517 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimension (middle) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1045
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1056
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1065
+20220326 022406.517 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimension (middle) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1078
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1091
+20220326 022406.517 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1098
+20220326 022406.517 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1105
+20220326 022406.517 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1112
+20220326 022406.517 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1124
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1134
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1142
+20220326 022406.517 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimension (last) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1158
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1169
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1178
+20220326 022406.517 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimension (last) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1191
+20220326 022406.517 INFO             PET5  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1204
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1211
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1218
+20220326 022406.518 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1225
+20220326 022406.518 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1237
+20220326 022406.518 INFO             PET5  PASS  Array with undistributed dimensions Create Test, ESMF_ArrayIOUTest.F90, line 1247
+20220326 022406.518 INFO             PET5  PASS  Array with undistributed dimensions get and fill Test, ESMF_ArrayIOUTest.F90, line 1255
+20220326 022406.518 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET5  PASS  Array with undistributed dimension (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1271
+20220326 022406.518 INFO             PET5  PASS  Array with undistributed dimensions Create for read Test, ESMF_ArrayIOUTest.F90, line 1282
+20220326 022406.518 INFO             PET5  PASS  Array with undistributed dimensions access read-in data Test, ESMF_ArrayIOUTest.F90, line 1291
+20220326 022406.518 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET5  PASS  Array with undistributed dimension (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1304
+20220326 022406.518 INFO             PET5  PASS  Array with undistributed dimensions comparison Test, ESMF_ArrayIOUTest.F90, line 1317
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1324
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1331
+20220326 022406.518 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1338
+20220326 022406.518 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1350
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1359
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1367
+20220326 022406.518 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1383
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1393
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1402
+20220326 022406.518 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1415
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1428
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1435
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1442
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1451
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1459
+20220326 022406.518 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1475
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1485
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1494
+20220326 022406.518 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1507
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 2 comparison Test, ESMF_ArrayIOUTest.F90, line 1520
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1527
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1534
+20220326 022406.518 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1541
+20220326 022406.518 INFO             PET5  PASS  Distgrid Create 1 DE/Pet Test, ESMF_ArrayIOUTest.F90, line 1553
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 Create Test, ESMF_ArrayIOUTest.F90, line 1562
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 get and fill Test, ESMF_ArrayIOUTest.F90, line 1570
+20220326 022406.518 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1586
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 Create for read Test, ESMF_ArrayIOUTest.F90, line 1596
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1605
+20220326 022406.518 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1618
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 1 comparison Test, ESMF_ArrayIOUTest.F90, line 1631
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1638
+20220326 022406.518 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1645
+20220326 022406.518 INFO             PET5  PASS  Array with replicated dimension 2 Create Test, ESMF_ArrayIOUTest.F90, line 1654
+20220326 022406.519 INFO             PET5  PASS  Array with replicated dimension 2 get and fill Test, ESMF_ArrayIOUTest.F90, line 1662
+20220326 022406.519 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET5  PASS  Array with replicated dimension 2 (first) write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1678
+20220326 022406.519 INFO             PET5  PASS  Array with replicated dimension 2 Create for read Test, ESMF_ArrayIOUTest.F90, line 1688
+20220326 022406.519 INFO             PET5  PASS  Array with replicated dimension 2 access read-in data Test, ESMF_ArrayIOUTest.F90, line 1697
+20220326 022406.519 ERROR            PET5 ESMF_ArrayHa.F90:731 ESMF_ArrayRead Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.519 INFO             PET5  PASS  Array with replicated dimension 2 (first) read from NetCDF Test, ESMF_ArrayIOUTest.F90, line 1710
+20220326 022406.519 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1735
+20220326 022406.519 INFO             PET5  PASS  Destroy Array, ESMF_ArrayIOUTest.F90, line 1742
+20220326 022406.519 INFO             PET5  PASS  Destroy DistGrid, ESMF_ArrayIOUTest.F90, line 1749
+20220326 022406.519 INFO             PET5  PASS  Distgrid Create 1 DE/Pet for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1761
+20220326 022406.519 INFO             PET5  PASS  Create dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1770
+20220326 022406.519 INFO             PET5  PASS  Set dimensions attribute package on DistGrid Test, ESMF_ArrayIOUTest.F90, line 1781
+20220326 022406.519 INFO             PET5  PASS  Array Create for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1789
+20220326 022406.519 INFO             PET5  PASS  Array Fill for Attribute package Test, ESMF_ArrayIOUTest.F90, line 1796
+20220326 022406.519 INFO             PET5  PASS  Create custom attribute package Test, ESMF_ArrayIOUTest.F90, line 1810
+20220326 022406.519 INFO             PET5  PASS  Set attribute values Test, ESMF_ArrayIOUTest.F90, line 1822
+20220326 022406.519 INFO             PET5  PASS  Set numeric/integer range name Test, ESMF_ArrayIOUTest.F90, line 1831
+20220326 022406.519 INFO             PET5  PASS  Set numeric/integer range values Test, ESMF_ArrayIOUTest.F90, line 1840
+20220326 022406.519 INFO             PET5  PASS  Set numeric/float range name Test, ESMF_ArrayIOUTest.F90, line 1849
+20220326 022406.519 INFO             PET5  PASS  Set numeric/float range values Test, ESMF_ArrayIOUTest.F90, line 1858
+20220326 022406.520 INFO             PET5  PASS  Set numeric/double range name Test, ESMF_ArrayIOUTest.F90, line 1867
+20220326 022406.520 INFO             PET5  PASS  Set numeric/double range values Test, ESMF_ArrayIOUTest.F90, line 1876
+20220326 022406.520 ERROR            PET5 ESMF_Array.F90:4003 ESMF_ArrayWrite Library needed by ESMF not present  - ESMF must be compiled with PIO support to support I/O methods
+20220326 022406.520 INFO             PET5  PASS  Array with Attributes write to NetCDF Test, ESMF_ArrayIOUTest.F90, line 1890
+20220326 022406.520 INFO             PET5  Ending Test, file ESMF_ArrayIOUTest.F90, line 1901
+20220326 022406.520 INFO             PET5 Finalizing ESMF
