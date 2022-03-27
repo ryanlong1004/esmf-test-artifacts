@@ -1,4 +1,4 @@
-Sun 20 Mar 01:32:40 UTC 2022
+Sun 27 Mar 15:38:49 UTC 2022
 #!/bin/sh -l
 #PBS -N test-intel_19.1.3_mpi_O.bat
 #PBS -l walltime=1:00:00
@@ -44,7 +44,7 @@ cd ../src/addon/ESMPy
 
 export PATH=$PATH:$HOME/.local/bin
 python3 setup.py build 2>&1 | tee python_build.log
-ssh alogin01 /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/runpython.sh 2>&1 | tee python_build.log
+ssh alogin02 /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/runpython.sh 2>&1 | tee python_build.log
 python3 setup.py test 2>&1 | tee python_test.log
 python3 setup.py test_examples 2>&1 | tee python_examples.log
 python3 setup.py test_regrid_from_file 2>&1 | tee python_regrid.log
